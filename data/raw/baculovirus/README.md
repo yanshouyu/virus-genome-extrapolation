@@ -7,8 +7,9 @@ This folder holds a small **manifest** and a **runner script** to (re)download G
 - `run_download.sh` — reproducible runner that downloads all records listed in the CSV.
 - `Baculoviridae/` — **downloaded** `.gb` files (ignored by Git).
 - (Repo root) `scripts/download_genbank_batch.sh` — batch downloader used by the runner.
+- `Baculovirus_TSS.csv`: Experimentally validated TSS sites. Selected columns from table S2 of Chen *et al.* 2013. The table is neither tidy nor normal. [`notebooks/0_process_baculovirus_tss.ipynb`](notebooks/0_process_baculovirus_tss.ipynb) records the processing of this table.
 
-## Reproduce the data
+## Reproduce the genomes data
 From the repo root (or from this folder):
 ```bash
 # optional: make sure scripts are executable once

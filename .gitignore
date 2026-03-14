@@ -213,3 +213,7 @@ data/**
 !data/raw/baculovirus/Baculoviridae.csv
 !data/raw/baculovirus/run_download.sh
 !data/raw/baculovirus/README.md
+!data/raw/baculovirus/Baculovirus_TSS.csv
+
+# Misc
+notebooks/scratchpad.ipynb
