@@ -214,6 +214,8 @@ data/**
 !data/raw/baculovirus/run_download.sh
 !data/raw/baculovirus/README.md
 !data/raw/baculovirus/Baculovirus_TSS.csv
+!data/interim/
+!data/interim/tss_seq_range.csv
 
 # Misc
 notebooks/scratchpad.ipynb
