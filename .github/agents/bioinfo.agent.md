@@ -1,7 +1,7 @@
 ---
 name: bioinfo
 description: This agent completes bioinformatics tasks.
-argument-hint: Describe the bioinformatics task or design.
+argument-hint: Describe the task or design. Input / Output / computing env / proper documentation.
 # tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'todo'] # specify the tools this agent can use. If not set, all enabled tools are allowed.
 ---
 
