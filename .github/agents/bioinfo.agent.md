@@ -47,9 +47,9 @@ For exploratory work: Rapid scaffolding with minimal verification; separate orch
 <file_structure>
 Current structure (edit to match your repo):
 - `data/`: project data. 
-- source code files will be saved in `src/`. At current stage the folder is not created.
-- notebooks are stored in `notebooks/`. Notebooks are used for narrative experiements.
-- command line scripts are stored in `scripts/`.
+- `src/` (not created yet): source code files.
+- `notebooks/`: for narrative experiements.
+- `scripts/`: command line scripts.
 - `runs/` (not created at current stage): Each run of experiments should have a subfolder, named as the run_id, under `runs/`. The subfolder should contain the fitted model, and a json file of the configs for this run.
 - `documents/`: scientific design and report, for both human and agents to understand the project. The file `documents/agent_doc.tex` is specifically prepared for agents as an onboarding material.
 <!-- - `logs/`: log files. Each experiment run should have a log file named as the run_id. -->
