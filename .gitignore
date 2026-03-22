@@ -217,6 +217,8 @@ data/**
 !data/interim/
 !data/interim/tss_seq_range.csv
 !data/interim/README.md
+!data/processed/
+!data/processed/README.md
 
 # Misc
 notebooks/scratchpad.ipynb
