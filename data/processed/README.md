@@ -5,7 +5,9 @@ This directory contains the processed training and testing datasets for the viru
 ## Files
 
 - `train.fasta`: Combined FASTA file containing training sequences from both positive and negative TSS classes. Sequences are grouped by MMseqs2 clusters to prevent within-cluster leakage during training.
+- `train.csv`: Same sequences as in `train.fasta`, for easy loading by `datasets.load_dataset()`.
 - `test.fasta`: Combined FASTA file containing testing sequences from both positive and negative TSS classes, similarly grouped.
+- `test.csv`: Same sequences as in `test.fasta`, for easy loading by `datasets.load_dataset()`.
 
 ## Generation
 

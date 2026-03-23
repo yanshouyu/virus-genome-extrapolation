@@ -158,6 +158,22 @@ def write_fasta(records: List[SeqIO.SeqRecord], out_path: Path):
     with out_path.open("w") as handle:
         SeqIO.write(records, handle, "fasta")
 
+def write_csv(records: List[SeqIO.SeqRecord], out_path: Path):
+    """Write sequences to CSV with columns: sequence, name, label.
+    Label is extracted as the last part of record.id split by '|'.
+    """
+    rows = []
+    for record in records:
+        label = record.id.split("|")[-1]
+        rows.append({
+            "sequence": str(record.seq),
+            "name": record.id,
+            "label": label,
+        })
+
+    df = pd.DataFrame(rows, columns=["sequence", "name", "label"])
+    df.to_csv(out_path, index=False)
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -203,7 +219,7 @@ def main():
         "--out-dir",
         default="data/processed/",
         type=str,
-        help="Output directory for train.fasta and test.fasta. Default: data/processed/",
+        help="Output directory for {train,test}.{fasta,csv}. Default: data/processed/",
     )
 
     args = parser.parse_args()
@@ -252,6 +268,10 @@ def main():
     write_fasta(train_records, out_dir / "train.fasta")
     write_fasta(test_records, out_dir / "test.fasta")
 
+    # Write csv
+    write_csv(train_records, out_dir / "train.csv")
+    write_csv(test_records, out_dir / "test.csv")
+
     # Summary
     print("\n=== Grouped Train/Test Split Summary ===")
     print(f"Seed: {seed} | Test size target: {test_size}")
@@ -279,6 +299,8 @@ def main():
     print("Wrote:")
     print(f"  - {out_dir / 'train.fasta'}")
     print(f"  - {out_dir / 'test.fasta'}")
+    print(f"  - {out_dir / 'train.csv'}")
+    print(f"  - {out_dir / 'test.csv'}")
     print("========================================\n")
 
 
