@@ -14,13 +14,19 @@ def load_pretrained_nt(model_name, model_path: Optional[str] = None, **kwargs):
     "load pretrained nucleotide transformer model by name"
     assert model_name in NT_MODELS
     
-    # TODO: load model from path, either full model or cls head
-
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForSequenceClassification.from_pretrained(
-        model_name, 
-        num_labels=2
-    )
+
+    # TODO: make the classification head adjustable by customize the model 
+    if model_path:
+        model = AutoModelForSequenceClassification.from_pretrained(
+            model_path, 
+            num_labels=2
+        )
+    else:
+        model = AutoModelForSequenceClassification.from_pretrained(
+            model_name, 
+            num_labels=2
+        )
     model.config.problem_type = 'single_label_classification'
     
     for name, param in model.named_parameters():

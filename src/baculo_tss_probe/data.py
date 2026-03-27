@@ -17,7 +17,9 @@ def load_dataset_dict(name: str) -> datasets.dataset_dict.DatasetDict:
         }
         return datasets.load_dataset("csv", data_files=data_files)
     else:
-        raise ValueError(f"{name} not specified, (human, virus)")
+        raise ValueError(
+            f"{name} not specified, expected element in (human, virus)"
+        )
 
 # TODO: methods for sample a given sized subset
 
