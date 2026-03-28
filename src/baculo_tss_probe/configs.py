@@ -19,15 +19,17 @@ class Config:
     learning_rate: float = 3e-4
 
     # logging & monitoring config
+    logging_dir: str = "trainer_logging"
     logging_strategy: str = "steps"
-    logging_steps: int = 500
+    logging_steps: int = 100    # frequent tracking for experiments
     disable_tqdm: bool = True    # disable tqdm for easy slurm output
 
     # eval config
     eval_strategy: str = "steps"
 
     # checkpoint
-    save_strategy: str = "epoch"
+    save_strategy: str = "steps"
+    save_steps: int = 300
     prune_full_model: bool = False    # save only classifier if true
 
     # reproducibility
@@ -46,6 +48,12 @@ class Config:
         args = parser.parse_args()
 
         self.organism = args.organism
+        if self.organism == "virus":
+            self.per_device_train_batch_size //= 10
+            self.per_device_eval_batch_size //= 10
+            self.logging_steps //= 10
+            self.save_steps //= 10
+
         self.output_dir = "_".join([self.output_dir, self.organism])
         self.num_train_epochs = args.epochs
         self.learning_rate = args.lr
