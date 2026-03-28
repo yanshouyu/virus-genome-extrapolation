@@ -186,7 +186,7 @@ cython_debug/
 #  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
 #  and can be added to the global gitignore or merged into this file. However, if you prefer, 
 #  you could uncomment the following to ignore the entire vscode folder
-# .vscode/
+.vscode/
 
 # Ruff stuff:
 .ruff_cache/
@@ -214,6 +214,13 @@ data/**
 !data/raw/baculovirus/run_download.sh
 !data/raw/baculovirus/README.md
 !data/raw/baculovirus/Baculovirus_TSS.csv
+!data/interim/
+!data/interim/tss_seq_range.csv
+!data/interim/README.md
+!data/processed/
+!data/processed/README.md
 
 # Misc
 notebooks/scratchpad.ipynb
+documents/agent_doc.tex
+test_trainer/**
