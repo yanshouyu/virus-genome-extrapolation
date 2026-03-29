@@ -94,9 +94,8 @@ def load_pretrained_nt(
         **kwargs,
     )
     
-    for name, param in model.base_model.named_parameters():
-        if name.startswith("esm"):
-            param.requires_grad = False
+    for _, param in model.base_model.named_parameters():
+        param.requires_grad = False
     
     return tokenizer, model
 
