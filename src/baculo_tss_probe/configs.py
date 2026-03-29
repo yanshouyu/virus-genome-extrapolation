@@ -4,11 +4,21 @@ import argparse
 import dataclasses
 import time
 
+NON_TRAINING_ARGS = [
+    "organism", 
+    "run_id", 
+    "prune_full_model",
+    "hidden_dim"
+]
+
 @dataclasses.dataclass
 class Config:
     """Configurature for model training with command-line argument parsing"""
     # task config
     organism: str = ""
+
+    # model config
+    hidden_dim: int = 512
 
     # training config
     run_id: str = f"{int(time.time() * 1000)}"
@@ -40,6 +50,9 @@ class Config:
         parser = argparse.ArgumentParser()
         parser.add_argument("--organism", help="data source: human / virus")
         parser.add_argument(
+            "--hidden-dim", type=int, default=512, help="Hidden dim of MLP-1 classifier [512]"
+        )
+        parser.add_argument(
             "--epochs", type=int, default=50, help="Training epochs [50]"
         )
         parser.add_argument(
@@ -55,12 +68,13 @@ class Config:
             self.save_steps //= 10
 
         self.output_dir = "_".join([self.output_dir, self.organism])
+        self.hidden_dim = args.hidden_dim
         self.num_train_epochs = args.epochs
         self.learning_rate = args.lr
 
     def get_training_args(self):
         training_args = dataclasses.asdict(self)
-        for k in ["organism", "run_id", "prune_full_model"]:
+        for k in NON_TRAINING_ARGS:
             _ = training_args.pop(k)
         return training_args
 
