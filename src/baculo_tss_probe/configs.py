@@ -19,7 +19,7 @@ class Config:
     learning_rate: float = 3e-4
 
     # logging & monitoring config
-    logging_dir: str = "trainer_logging"
+    report_to: str = "tensorboard"
     logging_strategy: str = "steps"
     logging_steps: int = 100    # frequent tracking for experiments
     disable_tqdm: bool = True    # disable tqdm for easy slurm output

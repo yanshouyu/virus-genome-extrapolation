@@ -1,5 +1,5 @@
 from transformers import Trainer, TrainingArguments, default_data_collator
-import dataclasses
+import os
 import numpy as np
 from sklearn.metrics import accuracy_score, matthews_corrcoef, precision_score, recall_score
 from baculo_tss_probe.callbacks import SaveHeadCallback
@@ -7,6 +7,8 @@ from baculo_tss_probe.data import prep_ds
 from baculo_tss_probe.models import load_pretrained_nt
 from baculo_tss_probe.configs import Config
 
+# set tensorboard logging path relative to currend working dir
+os.environ["TENSORBOARD_LOGGING_DIR"] = "./tensorboard_logging"
 
 def compute_metrics(eval_pred):
     """Compute classification metrics from model logits and labels."""
@@ -45,7 +47,6 @@ def main():
         compute_metrics=compute_metrics,
         # set prune_full_model if we want to delete big base model files
         callbacks=[SaveHeadCallback(prune_full_model=cfg.prune_full_model)],
-
     )
     trainer.train()
 
