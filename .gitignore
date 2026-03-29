@@ -228,4 +228,5 @@ tensorboard_logging/
 
 # Misc
 notebooks/scratchpad.ipynb
+notebooks/trainer_states/
 documents/agent_doc.tex

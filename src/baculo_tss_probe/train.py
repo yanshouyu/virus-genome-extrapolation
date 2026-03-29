@@ -1,5 +1,6 @@
 from transformers import Trainer, TrainingArguments, default_data_collator
 import os
+import json
 import numpy as np
 from sklearn.metrics import accuracy_score, matthews_corrcoef, precision_score, recall_score
 from baculo_tss_probe.callbacks import SaveHeadCallback
@@ -49,6 +50,9 @@ def main():
         callbacks=[SaveHeadCallback(prune_full_model=cfg.prune_full_model)],
     )
     trainer.train()
+
+    with open(os.path.join(cfg.output_dir, "trainer_history.json"), "w") as f:
+        json.dump(trainer.state.log_history, f, indent=4)
 
 
 if __name__ == "__main__":
