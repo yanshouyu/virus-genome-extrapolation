@@ -131,6 +131,20 @@ def load_pretrained_nt(
         model.backbone = pretrained_backbone
         model.config.backbone_name_or_path = model_name
     
+    # Keep model and generation configs aligned with tokenizer special-token IDs.
+    special_token_attrs = ("pad_token_id", "bos_token_id", "eos_token_id")
+    for attr in special_token_attrs:
+        tok_val = getattr(tokenizer, attr, None)
+        if tok_val is not None:
+            setattr(model.config, attr, tok_val)
+
+    if getattr(model, "generation_config", None) is not None:
+        for attr in special_token_attrs:
+            tok_val = getattr(tokenizer, attr, None)
+            if tok_val is not None:
+                setattr(model.generation_config, attr, tok_val)
+
+    # freeze base model weights
     for _, param in model.backbone.named_parameters():
         param.requires_grad = False
 
