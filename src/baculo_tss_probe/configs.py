@@ -2,6 +2,8 @@
 """
 import argparse
 import dataclasses
+import json
+import os
 import time
 
 NON_TRAINING_ARGS = [
@@ -78,3 +80,8 @@ class Config:
             _ = training_args.pop(k)
         return training_args
 
+    def save_config(self):
+        os.makedirs(self.output_dir, exist_ok=True)
+        config_path = os.path.join(self.output_dir, "config.json")
+        with open(config_path, "w", encoding="utf-8") as f:
+            json.dump(dataclasses.asdict(self), f, indent=4)

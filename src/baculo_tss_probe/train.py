@@ -30,9 +30,10 @@ def main():
     cfg = Config()
     cfg.parse_args()
     print(f"Output dir: {cfg.output_dir}")
+    cfg.save_config()
 
     model_name = "InstaDeepAI/nucleotide-transformer-500m-human-ref"
-    tokenizer, model = load_pretrained_nt(model_name)
+    tokenizer, model = load_pretrained_nt(model_name, hidden_dim=cfg.hidden_dim)
     train_ds, eval_ds = prep_ds(cfg.organism, tokenizer)
 
     training_args = TrainingArguments(
@@ -44,6 +45,7 @@ def main():
         args=training_args,
         train_dataset=train_ds,
         eval_dataset=eval_ds,
+        processing_class=tokenizer,
         data_collator=default_data_collator,
         compute_metrics=compute_metrics,
         # set prune_full_model if we want to delete big base model files
