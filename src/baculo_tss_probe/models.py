@@ -1,17 +1,56 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from transformers import AutoConfig, AutoModel, AutoTokenizer, PreTrainedModel, PretrainedConfig
+import inspect
+import transformers.pytorch_utils as _pt_utils
+from transformers import AutoConfig, AutoModel, AutoModelForMaskedLM, AutoTokenizer, PreTrainedModel, PretrainedConfig
 from transformers.models.auto.configuration_auto import CONFIG_MAPPING
 from transformers.modeling_outputs import SequenceClassifierOutput
 from typing import Any, Optional, cast
 
-# not all NT models are to be experimented
-NT_MODELS = [
-    "InstaDeepAI/nucleotide-transformer-500m-human-ref",
-    "InstaDeepAI/nucleotide-transformer-500m-1000g",
-    "InstaDeepAI/nucleotide-transformer-2.5b-multi-species"
-]
+# Some trust_remote_code model files (e.g. NT v2) import find_pruneable_heads_and_indices
+# which was removed in transformers 5.x. Provide a stub so the import succeeds; the
+# function is only called for attention head pruning which we never do.
+if not hasattr(_pt_utils, "find_pruneable_heads_and_indices"):
+    def _find_pruneable_heads_and_indices(heads, n_heads, head_size, already_pruned_heads):
+        raise NotImplementedError("Head pruning is not supported with this version of transformers.")
+    _pt_utils.find_pruneable_heads_and_indices = _find_pruneable_heads_and_indices
+
+# NT v2's custom EsmForMaskedLM calls init_weights() (old transformers 4.x API) instead of
+# post_init() (transformers 5.x API), so all_tied_weights_keys is never set on the model.
+# Patch mark_tied_weights_as_initialized to lazily compute it when missing.
+_orig_mark_tied = PreTrainedModel.mark_tied_weights_as_initialized
+def _patched_mark_tied(self, loading_info):
+    if not hasattr(self, "all_tied_weights_keys"):
+        self.all_tied_weights_keys = self.get_expanded_tied_weights_keys(all_submodels=True)
+    _orig_mark_tied(self, loading_info)
+PreTrainedModel.mark_tied_weights_as_initialized = _patched_mark_tied
+# NT v2's custom EsmModel.forward calls get_head_mask which was removed from
+# PreTrainedModel in transformers 5.x. head_mask is always None in our usage
+# (no attention-head masking), so returning [None] * n is correct.
+if not hasattr(PreTrainedModel, "get_head_mask"):
+    def _get_head_mask(self, head_mask, num_hidden_layers, is_attention_chunked=False):
+        if head_mask is not None:
+            raise NotImplementedError("Non-None head_mask is not supported with this version of transformers.")
+        return [None] * num_hidden_layers
+    PreTrainedModel.get_head_mask = _get_head_mask
+
+
+
+
+
+def _normalize_backbone_config_fields(cfg):
+    """Populate common optional decoder fields expected by some model implementations."""
+    defaults = {
+        "is_decoder": False,
+        "add_cross_attention": False,
+        "is_encoder_decoder": False,
+        "cross_attention_hidden_size": None,
+    }
+    for attr, default in defaults.items():
+        if not hasattr(cfg, attr):
+            setattr(cfg, attr, default)
+    return cfg
 
 
 class SequenceClassificationConfig(PretrainedConfig):
@@ -56,7 +95,9 @@ class SequenceClassification(PreTrainedModel):
 
         backbone_config_class = CONFIG_MAPPING[backbone_model_type]
         backbone_config = backbone_config_class.from_dict(config.backbone_config)
+        backbone_config = _normalize_backbone_config_fields(backbone_config)
         self.backbone = AutoModel.from_config(backbone_config)
+        self._backbone_forward_params = set(inspect.signature(self.backbone.forward).parameters)
         self.num_labels = config.num_labels
 
         input_dim = getattr(backbone_config, "hidden_size", None)
@@ -78,12 +119,20 @@ class SequenceClassification(PreTrainedModel):
         labels=None,
         **kwargs,
     ):
-        outputs = self.backbone(
-            input_ids=input_ids,
-            attention_mask=attention_mask,
-            token_type_ids=token_type_ids,
+        backbone_kwargs = {
+            "input_ids": input_ids,
+            "attention_mask": attention_mask,
             **kwargs,
-        )
+        }
+        if token_type_ids is not None and "token_type_ids" in self._backbone_forward_params:
+            backbone_kwargs["token_type_ids"] = token_type_ids
+
+        filtered_backbone_kwargs = {
+            k: v
+            for k, v in backbone_kwargs.items()
+            if k in self._backbone_forward_params and v is not None
+        }
+        outputs = self.backbone(**filtered_backbone_kwargs)
 
         if getattr(outputs, "pooler_output", None) is not None:
             pooled = outputs.pooler_output
@@ -112,15 +161,28 @@ def load_pretrained_nt(
     **kwargs,
 ):
     "load pretrained nucleotide transformer model by name"
-    assert model_name in NT_MODELS
-
     base_source = model_path if model_path else model_name
-    tokenizer = AutoTokenizer.from_pretrained(base_source)
+    tokenizer = AutoTokenizer.from_pretrained(base_source, trust_remote_code=True)
 
     if model_path:
-        model = SequenceClassification.from_pretrained(model_path)
+        model = SequenceClassification.from_pretrained(model_path, trust_remote_code=True)
     else:
-        pretrained_backbone = AutoModel.from_pretrained(model_name)
+        pretrained_cfg = AutoConfig.from_pretrained(model_name, trust_remote_code=True)
+        _normalize_backbone_config_fields(pretrained_cfg)
+
+        auto_map = getattr(pretrained_cfg, "auto_map", {}) or {}
+        if "AutoModelForMaskedLM" in auto_map and "AutoModel" not in auto_map:
+            # Model has a custom architecture class registered only for MLM (e.g. NT v2
+            # with SwiGLU FFN using 2*intermediate_size). Load MLM and strip the head.
+            mlm = AutoModelForMaskedLM.from_pretrained(
+                model_name, config=pretrained_cfg, trust_remote_code=True
+            )
+            pretrained_backbone = mlm.esm
+        else:
+            pretrained_backbone = AutoModel.from_pretrained(
+                model_name, config=pretrained_cfg, trust_remote_code=True
+            )
+
         config = SequenceClassificationConfig(
             backbone_name_or_path=model_name,
             backbone_config=pretrained_backbone.config.to_dict(),

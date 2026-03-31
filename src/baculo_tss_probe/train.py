@@ -30,9 +30,10 @@ def main():
     cfg = Config()
     cfg.parse_args()
     print(f"Output dir: {cfg.output_dir}")
+    print(f"Base model: {cfg.base_model}")
     cfg.save_config()
 
-    model_name = "InstaDeepAI/nucleotide-transformer-500m-human-ref"
+    model_name = cfg.base_model
     tokenizer, model = load_pretrained_nt(model_name, hidden_dim=cfg.hidden_dim)
     train_ds, eval_ds = prep_ds(cfg.organism, tokenizer)
 

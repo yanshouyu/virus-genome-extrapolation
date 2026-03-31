@@ -10,7 +10,8 @@ NON_TRAINING_ARGS = [
     "organism", 
     "run_id", 
     "prune_full_model",
-    "hidden_dim"
+    "hidden_dim",
+    "base_model",
 ]
 
 @dataclasses.dataclass
@@ -21,6 +22,7 @@ class Config:
 
     # model config
     hidden_dim: int = 512
+    base_model: str = "InstaDeepAI/nucleotide-transformer-500m-human-ref"
 
     # training config
     run_id: str = f"{int(time.time() * 1000)}"
@@ -55,6 +57,12 @@ class Config:
             "--hidden-dim", type=int, default=512, help="Hidden dim of MLP-1 classifier [512]"
         )
         parser.add_argument(
+            "--base-model",
+            type=str,
+            default="InstaDeepAI/nucleotide-transformer-500m-human-ref",
+            help="HuggingFace base model name [InstaDeepAI/nucleotide-transformer-500m-human-ref]",
+        )
+        parser.add_argument(
             "--epochs", type=int, default=50, help="Training epochs [50]"
         )
         parser.add_argument(
@@ -71,6 +79,7 @@ class Config:
 
         self.output_dir = "_".join([self.output_dir, self.organism])
         self.hidden_dim = args.hidden_dim
+        self.base_model = args.base_model
         self.num_train_epochs = args.epochs
         self.learning_rate = args.lr
 
