@@ -22,6 +22,9 @@ dependencies = [
   "tensorboard==2.20.0"
 ]
 
+[project.scripts]
+nt-domain-adapt = "nt_domain_adapt.pretrain:main"
+
 [project.optional-dependencies]
 dev = [
   "pytest",
