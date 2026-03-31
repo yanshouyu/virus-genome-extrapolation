@@ -220,7 +220,14 @@ data/**
 !data/processed/
 !data/processed/README.md
 
+# checkpoints and logging
+test_trainer/**
+trainer_*_virus/
+trainer_*_human/
+tensorboard_logging/
+
 # Misc
 notebooks/scratchpad.ipynb
+notebooks/trainer_states/
+notebooks/figures/
 documents/agent_doc.tex
-test_trainer/**
