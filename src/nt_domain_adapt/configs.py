@@ -25,10 +25,10 @@ class AdaptConfig:
     """Configuration for MLM domain adaptation with command-line argument parsing."""
 
     # ── data ────────────────────────────────────────────────────────────────
-    base_model: str = "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species"
+    base_model: str = "InstaDeepAI/nucleotide-transformer-2.5b-multi-species"
     gb_dir: str = "data/raw/baculovirus/Baculoviridae"
-    window_nt: int = 6144      # nucleotides per window (= 1024 × 6-mer tokens)
-    stride_nt: int = 3072      # stride between windows
+    window_nt: int = 6000      # nucleotides per window (= 1000 × 6-mer tokens, model training max)
+    stride_nt: int = 3000      # stride between windows
     max_ambiguous_frac: float = 0.05   # drop window if non-ACGT fraction exceeds this
     val_frac: float = 0.10     # fraction of windows held out for validation
 
@@ -40,15 +40,16 @@ class AdaptConfig:
     output_dir: str = f"runs/domain_adapt_{_run_id}"
 
     # ── optimisation ─────────────────────────────────────────────────────────
-    per_device_train_batch_size: int = 4
-    per_device_eval_batch_size: int = 4
-    gradient_accumulation_steps: int = 32   # effective batch = 4 × 32 = 128
+    per_device_train_batch_size: int = 1
+    per_device_eval_batch_size: int = 1
+    gradient_accumulation_steps: int = 128  # effective batch = 1 × 128 = 128
     num_train_epochs: int = 10
     learning_rate: float = 1e-4
     weight_decay: float = 0.01
     warmup_ratio: float = 0.03
     lr_scheduler_type: str = "cosine"
     bf16: bool = True
+    gradient_checkpointing: bool = True  # reduces activation memory ~3-4x, ~25% slower
 
     # ── early stopping ────────────────────────────────────────────────────────
     early_stopping_patience: int = 3

@@ -59,7 +59,7 @@ def main() -> None:
 
     # ── Tokenisation ─────────────────────────────────────────────────────────
     print("\nLoading tokeniser …")
-    tokenizer = AutoTokenizer.from_pretrained(cfg.base_model, trust_remote_code=True)
+    tokenizer = AutoTokenizer.from_pretrained(cfg.base_model)
 
     print("Tokenising and splitting …")
     dataset = tokenize_and_split(
@@ -79,7 +79,7 @@ def main() -> None:
 
     # ── Model ─────────────────────────────────────────────────────────────────
     print("\nLoading model …")
-    model = AutoModelForMaskedLM.from_pretrained(cfg.base_model, trust_remote_code=True)
+    model = AutoModelForMaskedLM.from_pretrained(cfg.base_model)
 
     # ── Trainer setup ─────────────────────────────────────────────────────────
     training_args = TrainingArguments(**cfg.get_training_args())

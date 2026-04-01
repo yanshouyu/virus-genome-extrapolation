@@ -10,12 +10,12 @@
 #SBATCH --job-name=nt-domain-adapt
 #SBATCH --output=logs/slurm_%j.out
 #SBATCH --error=logs/slurm_%j.err
-#SBATCH --time=36:00:00
+#SBATCH --time=1-12:00 # D-HH:MM
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=8
-#SBATCH --mem=64G
-#SBATCH --gpus=h100_3g.40gb:1
+#SBATCH --mem=96G
+#SBATCH --gpus=h100:1
 #SBATCH --account=def-aucoin
 #SBATCH --mail-user=shouyu.yan@uwaterloo.ca
 #SBATCH --mail-type=BEGIN,END,FAIL
@@ -42,10 +42,10 @@ echo "────────────────────────�
 export HF_HUB_DISABLE_XET=1
 
 python -m nt_domain_adapt.pretrain \
-    --base-model  "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species" \
+    --base-model  "InstaDeepAI/nucleotide-transformer-2.5b-multi-species" \
     --gb-dir      "data/raw/baculovirus/Baculoviridae" \
-    --window-nt   6144 \
-    --stride-nt   3072 \
+    --window-nt   6000 \
+    --stride-nt   3000 \
     --mlm-probability 0.15 \
     --epochs      10 \
     --lr          1e-4 \
