@@ -15,7 +15,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=64G
-#SBATCH --gpus=h100_3g.40g:1
+#SBATCH --gpus=h100_3.40:1
 #SBATCH --account=def-aucoin
 #SBATCH --mail-user=shouyu.yan@uwaterloo.ca
 #SBATCH --mail-type=BEGIN,END,FAIL
