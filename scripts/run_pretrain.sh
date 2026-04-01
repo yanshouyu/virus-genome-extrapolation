@@ -14,8 +14,8 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=8
-#SBATCH --mem=96G
-#SBATCH --gpus=h100:1
+#SBATCH --mem=64G
+#SBATCH --gpus=h100_3g.40g:1
 #SBATCH --account=def-aucoin
 #SBATCH --mail-user=shouyu.yan@uwaterloo.ca
 #SBATCH --mail-type=BEGIN,END,FAIL
@@ -27,6 +27,7 @@ set -euo pipefail
 
 # ── Environment ────────Uncomment and set──────────────────────────────────────
 source ~/projects/def-aucoin/shouyu/venvs/huggingface/bin/activate
+pip install -e .
 
 # ── Working directory ─────────────────────────────────────────────────────────
 [ -d logs ] || mkdir -p logs
@@ -42,7 +43,8 @@ echo "────────────────────────�
 export HF_HUB_DISABLE_XET=1
 
 python -m nt_domain_adapt.pretrain \
-    --base-model  "InstaDeepAI/nucleotide-transformer-2.5b-multi-species" \
+#    --base-model  "InstaDeepAI/nucleotide-transformer-2.5b-multi-species" \
+    --base-model "InstaDeepAI/nucleotide-transformer-500m-human-ref" \
     --gb-dir      "data/raw/baculovirus/Baculoviridae" \
     --window-nt   6000 \
     --stride-nt   3000 \

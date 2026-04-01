@@ -40,9 +40,9 @@ class AdaptConfig:
     output_dir: str = f"runs/domain_adapt_{_run_id}"
 
     # ── optimisation ─────────────────────────────────────────────────────────
-    per_device_train_batch_size: int = 1
-    per_device_eval_batch_size: int = 1
-    gradient_accumulation_steps: int = 128  # effective batch = 1 × 128 = 128
+    per_device_train_batch_size: int = 2
+    per_device_eval_batch_size: int = 2
+    gradient_accumulation_steps: int = 64  # effective batch = 2 × 64 = 128
     num_train_epochs: int = 10
     learning_rate: float = 1e-4
     weight_decay: float = 0.01
