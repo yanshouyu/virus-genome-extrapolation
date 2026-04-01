@@ -20,6 +20,9 @@
 #SBATCH --mail-user=shouyu.yan@uwaterloo.ca
 #SBATCH --mail-type=BEGIN,END,FAIL
 
+module load python
+module load arrow/23.0.1
+
 set -euo pipefail
 
 # ── Environment ────────Uncomment and set──────────────────────────────────────
