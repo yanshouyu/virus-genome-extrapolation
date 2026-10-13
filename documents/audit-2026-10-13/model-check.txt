@@ -1,0 +1,25 @@
+MODEL InstaDeepAI/nucleotide-transformer-v2-500m-multi-species
+FORWARD [[-0.0006917333230376244, 0.04742756858468056], [-0.03581760823726654, 0.11702154576778412]] FINITE True
+BACKBONE <class 'transformers_modules.InstaDeepAI.nucleotide_hyphen_transformer_hyphen_v2_hyphen_500m_hyphen_multi_hyphen_species.06615c1660c892fc199840c18123f8385b3542a8.modeling_esm.EsmModel'> POOLER None
+MODEL InstaDeepAI/nucleotide-transformer-500m-human-ref
+EsmModel LOAD REPORT from: InstaDeepAI/nucleotide-transformer-500m-human-ref
+Key                         | Status     |
+----------------------------+------------+-
+lm_head.dense.weight        | UNEXPECTED |
+esm.embeddings.position_ids | UNEXPECTED |
+lm_head.decoder.weight      | UNEXPECTED |
+lm_head.layer_norm.weight   | UNEXPECTED |
+lm_head.layer_norm.bias     | UNEXPECTED |
+lm_head.bias                | UNEXPECTED |
+lm_head.dense.bias          | UNEXPECTED |
+pooler.dense.bias           | MISSING    |
+pooler.dense.weight         | MISSING    |
+
+Notes:
+- UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+FORWARD [[-0.0007824760396033525, 0.0036709653213620186], [-0.0004919935017824173, 0.0034584004897624254]] FINITE True
+BACKBONE <class 'transformers.models.esm.modeling_esm.EsmModel'> POOLER EsmPooler(
+  (dense): Linear(in_features=1280, out_features=1280, bias=True)
+  (activation): Tanh()
+)

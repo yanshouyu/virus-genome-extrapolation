@@ -13,4 +13,4 @@ This directory contains the processed training and testing datasets for the viru
 
 These files were created using the `grouped_train_test_split.py` script, which performs a grouped train-test split (20% test size) on the interim TSS sequence data (`data/interim/tss_seq_range.fasta` and `data/interim/tss_neg_seq_range.fasta`) using cluster information from MMseqs2 clustering results.
 
-The split ensures that sequences from the same cluster (based on sequence similarity) are not split across train and test sets, maintaining data integrity for model evaluation.
+The split ensures that sequences from the same cluster (based on sequence similarity) are not split across train and test sets, but does not guarantee genomic independence. The October 2026 audit found overlapping genomic windows across these splits. Preserve them as course artifacts; see [the assessment](../../documents/project-assessment.md) before new experiments.
