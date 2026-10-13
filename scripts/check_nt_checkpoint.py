@@ -13,8 +13,7 @@ import importlib
 import tempfile
 import torch
 from transformers import AutoConfig
-from transformers.dynamic_module_utils import get_class_from_dynamic_module
-from baculo_tss_probe.models import SequenceClassification, SequenceClassificationConfig
+from baculo_tss_probe.models import SequenceClassification, SequenceClassificationConfig, custom_nt_classes
 
 
 def main():
@@ -24,10 +23,7 @@ def main():
     revision = '06615c1660c892fc199840c18123f8385b3542a8'
     cfg = AutoConfig.from_pretrained(name, revision=revision, trust_remote_code=True,
                                      local_files_only=True)
-    mlm_class = get_class_from_dynamic_module(
-        cfg.auto_map['AutoModelForMaskedLM'], name, revision=revision,
-        local_files_only=True,
-    )
+    mlm_class, _ = custom_nt_classes(name, revision, local_files_only=True)
     remote = importlib.import_module(mlm_class.__module__)
     cfg.hidden_size = 16
     cfg.intermediate_size = 32
@@ -41,7 +37,9 @@ def main():
             setattr(cfg, key, value)
     encoder = remote.EsmModel(cfg, add_pooling_layer=False)
     wrapper = SequenceClassification(SequenceClassificationConfig(
-        backbone_config=cfg.to_dict(), hidden_dim=8))
+        backbone_name_or_path=name, backbone_revision=revision,
+        backbone_config=cfg.to_dict(), backbone_has_pooler=False,
+        pooling='cls', hidden_dim=8))
     print('Original encoder:', type(encoder))
     print('Reconstructed encoder:', type(wrapper.backbone))
     print('Original intermediate weight:', tuple(encoder.encoder.layer[0].intermediate.dense.weight.shape))

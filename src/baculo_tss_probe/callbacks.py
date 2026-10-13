@@ -10,6 +10,9 @@ class SaveHeadCallback(TrainerCallback):
     def on_save(self, args, state, control, **kwargs):
         model = kwargs["model"]
         output_dir = os.path.join(args.output_dir, f"checkpoint-{state.global_step}")
+        processor = kwargs.get("processing_class") or kwargs.get("tokenizer")
+        if processor is not None:
+            processor.save_pretrained(output_dir)
 
         sd = model.state_dict()
         head_sd = {k: v.cpu() for k, v in sd.items() if k.startswith("classifier.")}

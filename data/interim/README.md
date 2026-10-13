@@ -50,3 +50,8 @@ This produces the following outputs in `data/interim/`:
 - `cluster_tss_neg_cluster_report.tsv`
 
 These historical clusters do not guarantee genomic independence: overlapping windows remain across the course split. See [the audit](../../documents/project-assessment.md) before reusing this evaluation design.
+
+
+## Current export
+
+Use `PYTHONPATH=src python scripts/grouped_train_test_split.py` to generate the versioned clean export. It filters invalid TSS labels and joins same-strand intervals and associated ORFs before splitting. The historical extracted inputs remain unchanged; see [the repair report](../../documents/repair-2026-10-13/README.md).

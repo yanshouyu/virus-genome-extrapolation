@@ -1,5 +1,7 @@
 # Project assessment and continuation plan
 
+This is the historical initialization assessment. Subsequent repairs and the active dataset are described in [the repair report](repair-2026-10-13/README.md).
+
 Date: 2026-10-13. Baseline: `dev` at `42b39b5`. Scope: proposal and course report, tracked source and Git history, local data/results, cached model smoke checks, and a targeted literature check. No HPC login, training, dependency installation, or dataset regeneration was performed. Documented future work in the PDFs is background, not an instruction to execute it now.
 
 ## Assessment
@@ -48,7 +50,7 @@ Environment: Python 3.14.3; Transformers 5.3.0; PyTorch 2.9.1; datasets 4.7.0; N
 
 Cached revisions:
 
-- NTv1 human-ref: `f87b5d7233295242e79c951873d290f4cf99204598`.
+- NTv1 human-ref: `f87b5d7233295242e79c951873d290f4cf992045`.
 - NTv2 500M multispecies: `06615c1660c892fc199840c18123f8385b3542a8`.
 
 Using the current project loader, both cached 500M models loaded offline on CPU and returned finite logits for two short synthetic inputs. This checks basic execution, not scientific correctness, pretrained-weight parity, training, or historical HPC behavior.

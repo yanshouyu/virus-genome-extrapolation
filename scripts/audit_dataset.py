@@ -1,64 +1,52 @@
-"""Read-only audit of the existing single-genome, non-wrapping CSV splits.
-
-Run from the repository root: python scripts/audit_dataset.py
-Coordinates in sequence names are zero-based, half-open. Opposite-strand
-intersection means shared genomic territory, not necessarily identical input.
-"""
+"""Audit the strand-aware policy across every pair of dataset splits."""
+import argparse
 import csv
 import hashlib
 import json
 from collections import Counter
 from pathlib import Path
+from baculo_tss_probe.splitting import coordinates, cross_split_violations, read_known_tss, label_violations
 
 
-def interval(row):
-    fields = row['name'].split('|')
-    start, end = map(int, fields[1].split(':'))
-    if start < 0 or end <= start:
-        raise ValueError('This audit requires non-wrapping, nonnegative intervals.')
-    if end - start != len(row['sequence']):
-        raise ValueError('Coordinate length differs from sequence length.')
-    return start, end, fields[2]
-
-
-def audit(root):
-    rows = {}
-    result = {'scope': 'NC_001623.1; linear intervals; genomic overlap is not a homology search', 'splits': {}}
-    for split in ('train', 'test'):
-        path = root / 'data' / 'processed' / f'{split}.csv'
-        rows[split] = list(csv.DictReader(path.open()))
-        for row in rows[split]:
-            interval(row)
-        result['splits'][split] = {
-            'sha256': hashlib.sha256(path.read_bytes()).hexdigest(),
-            'rows': len(rows[split]),
-            'labels': dict(Counter(row['label'] for row in rows[split])),
-            'lengths': dict(Counter(len(row['sequence']) for row in rows[split])),
-        }
-    pairs = []
-    for train in rows['train']:
-        start, end, strand = interval(train)
-        for test in rows['test']:
-            other_start, other_end, other_strand = interval(test)
-            overlap = max(0, min(end, other_end) - max(start, other_start))
-            if overlap:
-                pairs.append({'train': train['name'], 'test': test['name'],
-                              'overlap_bp': overlap, 'same_strand': strand == other_strand})
-    result['overlap_pairs'] = len(pairs)
-    result['same_strand_pairs'] = sum(p['same_strand'] for p in pairs)
-    result['test_rows_overlapping_train'] = len({p['test'] for p in pairs})
-    result['test_rows_overlapping_train_same_strand'] = len({p['test'] for p in pairs if p['same_strand']})
-    result['max_overlap_bp'] = max((p['overlap_bp'] for p in pairs), default=0)
-    result['largest_overlaps'] = sorted(pairs, key=lambda p: -p['overlap_bp'])[:5]
-    train_sequences = {row['sequence'].upper() for row in rows['train']}
-    test_sequences = {row['sequence'].upper() for row in rows['test']}
-    complement = str.maketrans('ACGTN', 'TGCAN')
-    result['shared_exact_sequences'] = len(train_sequences & test_sequences)
-    result['test_sequences_matching_train_reverse_complement'] = len(
-        {s for s in test_sequences if s.translate(complement)[::-1] in train_sequences}
-    )
+def audit(directory):
+    files = {name: directory / f'{name}.csv' for name in ('train', 'validation', 'test')
+             if (directory / f'{name}.csv').is_file()}
+    if len(files) < 2:
+        raise ValueError('At least two CSV splits are required.')
+    rows = {name: list(csv.DictReader(path.open())) for name, path in files.items()}
+    identifiers = [row['name'] for records in rows.values() for row in records]
+    result = {
+        'policy': 'same-strand overlap and duplicate/group leakage prohibited; opposite-strand overlap allowed',
+        'splits': {name: {'rows': len(records), 'labels': dict(Counter(r['label'] for r in records)),
+                          'lengths': dict(Counter(len(r['sequence']) for r in records)),
+                          'sha256': hashlib.sha256(files[name].read_bytes()).hexdigest()}
+                   for name, records in rows.items()},
+        'duplicate_identifiers': len(identifiers) - len(set(identifiers)),
+        'violations': cross_split_violations(rows,
+            Path(__file__).resolve().parents[1] / 'data/interim/tss_seq_range.csv'),
+        'label_errors': label_violations([row for records in rows.values() for row in records],
+            read_known_tss(Path(__file__).resolve().parents[1] / 'data/raw/baculovirus/Baculovirus_TSS.csv')),
+        'allowed_opposite_strand_overlap_pairs': 0,
+    }
+    names = list(rows)
+    for i, first in enumerate(names):
+        for second in names[i+1:]:
+            for a in rows[first]:
+                start, end, strand = coordinates(a)
+                for b in rows[second]:
+                    other_start, other_end, other_strand = coordinates(b)
+                    if strand != other_strand and max(start, other_start) < min(end, other_end):
+                        result['allowed_opposite_strand_overlap_pairs'] += 1
     return result
 
 
 if __name__ == '__main__':
-    print(json.dumps(audit(Path(__file__).resolve().parents[1]), indent=2))
+    parser = argparse.ArgumentParser(description=__doc__)
+    root = Path(__file__).resolve().parents[1]
+    parser.add_argument('--data-dir', type=Path, default=root / 'data/processed/clean_v2')
+    parser.add_argument('--allow-leakage', action='store_true', help='Report historical violations without failing.')
+    args = parser.parse_args()
+    result = audit(args.data_dir)
+    print(json.dumps(result, indent=2))
+    if not args.allow_leakage and (result['violations'] or result['duplicate_identifiers'] or result['label_errors']):
+        raise SystemExit(1)

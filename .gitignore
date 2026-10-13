@@ -219,12 +219,19 @@ data/**
 !data/interim/README.md
 !data/processed/
 !data/processed/README.md
+!data/processed/clean_v2/
+!data/processed/clean_v2/*.csv
+!data/processed/clean_v2/*.fasta
+!data/processed/clean_v2/*.json
+!data/processed/clean_v2/README.md
 
 # checkpoints and logging
 test_trainer/**
 trainer_*_virus/
 trainer_*_human/
 tensorboard_logging/
+/runs/
+/tmp/
 
 # Misc
 notebooks/scratchpad.ipynb

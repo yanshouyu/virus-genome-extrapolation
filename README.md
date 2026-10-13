@@ -1,36 +1,48 @@
-# Project orientation
+# virus-genome-extrapolation
 
-This began as an ECE657D course project testing frozen Nucleotide Transformer representations on human promoter and AcMNPV TSS classification. The continuation goal is a publishable, reproducible study of generalization. Existing results are exploratory; the current split and model comparisons need validation before stronger claims.
+This began as an ECE657D course project probing frozen Nucleotide Transformer representations on human promoter and AcMNPV TSS classification. The continuation goal is a publishable, reproducible study of generalization.
 
-Start with [the project assessment and continuation plan](documents/project-assessment.md).
+The current [repair report](documents/repair-2026-10-13/README.md) explains the clean dataset, overlap causes, model compatibility fixes and verification. The [initial assessment](documents/project-assessment.md) records the course baseline and publication plan.
 
-## Layout
-
-- `data/raw/baculovirus/`: accession manifest, curated source TSS table, locally downloaded GenBank records.
-- `data/interim/`: fixed positive-window coordinates plus generated FASTA and clustering files.
-- `data/processed/`: generated course train/test CSV and FASTA files.
-- `src/baculo_tss_probe/`: configuration, data loading, frozen-backbone classifier, training and checkpoint callback.
-- `scripts/`: extraction, clustering, splitting and read-only dataset audit.
-- `notebooks/`: data preparation and course-result plotting. Local `trainer_states/` and `figures/` are ignored by Git.
-- `runs/`: local checkpoints; not a complete record of the HPC experiments.
-- `documents/`: assessment, next steps and compact audit evidence.
-
-## Local inspection (WSL Ubuntu)
+## Current workflow (WSL Ubuntu)
 
 ```bash
 cd /home/s34yan/projects/260308_virus-genome-extrapolation
 conda activate ece657d
-python scripts/audit_dataset.py
+PYTHONPATH=src python scripts/audit_dataset.py
 PYTHONPATH=src python -m baculo_tss_probe.train --help
 ```
 
-The existing environment differs from the package pins; see the assessment before installing or upgrading dependencies. The commands above do not train a model. Running training still uses the course test set for periodic evaluation and should not be treated as a publication-ready experiment.
+The active [clean dataset](data/processed/clean_v2/README.md) has 233 training, 77 validation and 78 test samples. Same-strand overlaps and related groups stay together; opposite-strand overlap is allowed. Three source rows with inconsistent TSS labels were excluded and documented. Original course files remain one directory above the versioned export.
 
-The course work is on `dev`; `main` is older. Domain-adaptation source lives on `feat/domain-adaptation`, not in this checkout. See the assessment before reviving it. The local `scripts/run_training.slurm` is an existing, untracked HPC example; no HPC access is required for this audit.
+Training now selects checkpoints by validation loss and predicts the final test once. New probes use an explicit raw first-token representation for both model versions, so their results form a new baseline. Model revisions, seeds, package versions and dataset metadata are saved with each run.
+
+```bash
+# Runs training; use a suitable compute node/environment.
+PYTHONPATH=src python -m baculo_tss_probe.train --organism virus --epochs 50 --seed 42
+# Prepared Nibi template for manual submission from the repository root:
+sbatch scripts/run_probe.slurm --organism virus --epochs 50
+```
+
+The local environment differs from the project dependency pins. See the repair report before installing or upgrading dependencies. No local environment changes were made during the repairs.
+
+## Layout
+
+- `data/raw/baculovirus/`: curated source TSS table, accession manifest and local GenBank records.
+- `data/interim/`: fixed course positive coordinates and generated FASTA/clustering inputs.
+- `data/processed/clean_v2/`: tracked, versioned train/validation/test export and manifest.
+- `src/baculo_tss_probe/`: splitting, validation, frozen-encoder classifier and training.
+- `scripts/`: extraction, split generation, auditing, compatibility check and Nibi template.
+- `tests/`: small regression tests plus opt-in cached pretrained checks.
+- `notebooks/`: course preparation and plotting; local `trainer_states/` and `figures/` are ignored.
+- `runs/`: ignored training outputs.
+- `documents/`: assessment, repair notes and compact verification evidence.
+
+Course work is on `dev`; `main` is older. Domain-adaptation code remains on `feat/domain-adaptation` and has not been merged. The original local `scripts/run_training.slurm` remains untracked; the new template is `scripts/run_probe.slurm`.
 
 ## Contributors
 
-Keep changes small and evidence-driven. Preserve the course data and outputs when introducing a revised experiment. This repository uses nbstripout to keep committed notebooks clean:
+Keep changes small and evidence-driven. Preserve the course artifacts when introducing revised experiments. Notebook output stripping:
 
 ```bash
 pip install nbstripout
