@@ -63,6 +63,10 @@ def main():
         models.append(model)
     selected = min(range(len(models)), key=lambda i: (candidates[i]['validation']['log_loss'],
                                                        candidates[i]['C']))
+    selected_model = models[selected]
+    np.savez_compressed(out/'kmer_model.npz',
+                        mean=selected_model[0].mean_, scale=selected_model[0].scale_,
+                        coefficients=selected_model[1].coef_, intercept=selected_model[1].intercept_)
     prevalence = float(y['train'].mean())
     results = dict(candidates=candidates, selected_C=candidates[selected]['C'],
                    train_prevalence=prevalence, packages={p: importlib.metadata.version(p)

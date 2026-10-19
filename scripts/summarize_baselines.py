@@ -1,0 +1,108 @@
+"""Summarize a fixed baseline experiment; never select models using test metrics."""
+import argparse
+import csv
+import json
+from pathlib import Path
+
+import numpy as np
+from run_sequence_baselines import metrics
+
+
+def mcc(y, p):
+    predicted = p > .5
+    tp = np.sum((y == 1) & predicted)
+    tn = np.sum((y == 0) & ~predicted)
+    fp = np.sum((y == 0) & predicted)
+    fn = np.sum((y == 1) & ~predicted)
+    denominator = float((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)) ** .5
+    return float((tp * tn - fp * fn) / denominator) if denominator else 0.
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--run-dir', required=True)
+    parser.add_argument('--baseline-dir', required=True)
+    parser.add_argument('--output-dir', required=True)
+    args = parser.parse_args()
+    run = Path(args.run_dir)
+    baseline = Path(args.baseline_dir)
+    out = Path(args.output_dir)
+    out.mkdir(parents=True, exist_ok=True)
+    test_rows = list(csv.DictReader(open('data/processed/clean_v2/test.csv')))
+    labels = np.array([int(r['label']) for r in test_rows])
+    probabilities = {}
+    summaries = []
+    histories = {}
+    for name in ('prevalence', 'kmer_logistic'):
+        data = np.load(baseline/f'{name}_test_predictions.npz')
+        np.testing.assert_array_equal(data['labels'], labels)
+        np.testing.assert_array_equal(data['names'], [r['name'] for r in test_rows])
+        probabilities[name] = data['probabilities']
+        summaries.append(dict(model=name, **metrics(labels, probabilities[name])))
+    for model in ('ntv1', 'ntv2'):
+        for seed in (42, 43, 44):
+            name = f'{model}-seed{seed}'
+            directory = run/name
+            predictions = np.load(directory/'test_predictions.npz')
+            np.testing.assert_array_equal(predictions['labels'], labels)
+            logits = predictions['logits'].astype(np.float64)
+            logits -= logits.max(axis=1, keepdims=True)
+            exp = np.exp(logits)
+            probabilities[name] = exp[:, 1] / exp.sum(axis=1)
+            history = json.loads((directory/'trainer_history.json').read_text())
+            evals = [h for h in history if 'eval_loss' in h]
+            eligible = [h for h in evals if h['step'] % 30 == 0]
+            best = min(eligible, key=lambda h: (h['eval_loss'], h['step']))
+            state = json.loads((directory/'trainer_state.json').read_text())
+            assert state['best_model_checkpoint'].endswith(f"checkpoint-{best['step']}")
+            assert abs(state['best_metric'] - best['eval_loss']) < 1e-7
+            metadata = json.loads((directory/'run_metadata.json').read_text())
+            summaries.append(dict(model=name, **metrics(labels, probabilities[name]),
+                                  validation_loss=best['eval_loss'], selected_step=best['step'],
+                                  selected_epoch=best['epoch'], git_commit=metadata['git_commit'],
+                                  pooling=metadata['pooling'], revision=metadata['model_revision']))
+            histories[name] = history
+    with (out/'metrics.csv').open('w', newline='') as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(dict.fromkeys(k for r in summaries for k in r)))
+        writer.writeheader()
+        writer.writerows(summaries)
+    with (out/'test_predictions.csv').open('w', newline='') as handle:
+        writer = csv.DictWriter(handle, fieldnames=['name', 'group', 'label', *probabilities])
+        writer.writeheader()
+        writer.writerows(dict(name=r['name'], group=r['group'], label=int(r['label']),
+                              **{key: float(value[i]) for key, value in probabilities.items()})
+                         for i, r in enumerate(test_rows))
+    groups = sorted(set(r['group'] for r in test_rows))
+    members = {g: np.array([i for i, r in enumerate(test_rows) if r['group'] == g]) for g in groups}
+    rng = np.random.default_rng(20261019)
+    draws = {key: [] for key in probabilities}
+    differences = {model: [] for model in ('ntv1', 'ntv2')}
+    for _ in range(2000):
+        sampled = rng.choice(groups, size=len(groups), replace=True)
+        indices = np.concatenate([members[g] for g in sampled])
+        scores = {key: mcc(labels[indices], p[indices]) for key, p in probabilities.items()}
+        for key, score in scores.items():
+            draws[key].append(score)
+        for model in differences:
+            differences[model].append(np.mean([scores[f'{model}-seed{s}'] for s in (42, 43, 44)])
+                                      - scores['kmer_logistic'])
+    uncertainty = dict(method='2000 paired bootstrap draws of test groups; fixed trained models',
+                       test_groups=len(groups),
+                       mcc_ci95={k: np.quantile(v, [.025, .975]).tolist() for k, v in draws.items()},
+                       mean_seed_mcc_minus_kmer_ci95={k: np.quantile(v, [.025, .975]).tolist()
+                                                    for k, v in differences.items()})
+    (out/'uncertainty.json').write_text(json.dumps(uncertainty, indent=2)+'\n')
+    (out/'metrics.json').write_text(json.dumps(summaries, indent=2)+'\n')
+    (out/'training_histories.json').write_text(json.dumps(histories, indent=2)+'\n')
+    errors = []
+    for i, row in enumerate(test_rows):
+        wrong = [name for name, p in probabilities.items() if (p[i] > .5) != bool(labels[i])]
+        errors.append(dict(name=row['name'], group=row['group'], label=int(labels[i]),
+                           gc_fraction=(row['sequence'].count('G') + row['sequence'].count('C'))/300,
+                           wrong_models=wrong))
+    (out/'errors.json').write_text(json.dumps(errors, indent=2)+'\n')
+    print(json.dumps(dict(metrics=summaries, uncertainty=uncertainty), indent=2))
+
+
+if __name__ == '__main__':
+    main()
