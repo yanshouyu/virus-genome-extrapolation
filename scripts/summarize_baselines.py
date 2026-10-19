@@ -1,6 +1,7 @@
 """Summarize a fixed baseline experiment; never select models using test metrics."""
 import argparse
 import csv
+import hashlib
 import json
 from pathlib import Path
 
@@ -29,7 +30,7 @@ def plot_results(out, summaries, uncertainty, histories, baseline):
         evaluations = [h for h in history if 'eval_loss' in h]
         curves.plot([h['epoch'] for h in evaluations], [h['eval_loss'] for h in evaluations],
                     color=colors[model], alpha=.6, linewidth=1.3,
-                    label=model.upper()+' (3 seeds)' if seed == '42' else None)
+                    label=model.replace('ntv', 'NTv')+' (3 seeds)' if seed == '42' else None)
         selected = next(row for row in summaries if row['model'] == name)
         curves.scatter(selected['selected_epoch'], selected['validation_loss'],
                        color=colors[model], s=23, zorder=3)
@@ -47,8 +48,10 @@ def plot_results(out, summaries, uncertainty, histories, baseline):
         scores.scatter(row['mcc'], position, color=colors[family], s=34, zorder=3)
         labels.append(name.replace('ntv', 'NTv').replace('-seed', ' / seed ')
                       .replace('kmer_logistic', 'k-mer logistic'))
+    lower = max(-1., min(0., min(v[0] for v in uncertainty['mcc_ci95'].values()))-.05)
+    upper = min(1., max(v[1] for v in uncertainty['mcc_ci95'].values())+.05)
     scores.set(yticks=range(len(labels)), yticklabels=labels, xlabel='MCC',
-               title='Test MCC: 95% group bootstrap intervals', xlim=(-.1, 1))
+               title='Test MCC: 95% group bootstrap intervals', xlim=(lower, upper))
     scores.invert_yaxis()
     scores.axvline(0, color='#bbbbbb', linewidth=.8)
     for axis in (curves, scores):
@@ -71,6 +74,11 @@ def main():
     out = Path(args.output_dir)
     out.mkdir(parents=True, exist_ok=True)
     test_rows = list(csv.DictReader(open('data/processed/clean_v2/test.csv')))
+    manifest = json.loads(Path('data/processed/clean_v2/manifest.json').read_text())
+    reference = json.loads((baseline/'metrics.json').read_text())
+    for split in ('train', 'validation', 'test'):
+        digest = hashlib.sha256(Path(f'data/processed/clean_v2/{split}.csv').read_bytes()).hexdigest()
+        assert digest == manifest['splits'][split]['sha256'] == reference['dataset_sha256'][split]
     labels = np.array([int(r['label']) for r in test_rows])
     probabilities = {}
     summaries = []
@@ -102,7 +110,16 @@ def main():
             assert state['best_model_checkpoint'].endswith(f"checkpoint-{best['step']}")
             assert abs(state['best_metric'] - best['eval_loss']) < 1e-7
             metadata = json.loads((directory/'run_metadata.json').read_text())
-            summaries.append(dict(model=name, **metrics(labels, probabilities[name]),
+            config = json.loads((directory/'config.json').read_text())
+            assert config['eval_steps'] == config['save_steps'] == 30
+            assert config['seed'] == seed and config['num_train_epochs'] == 50
+            assert metadata['dataset_manifest'] == manifest and metadata['pooling'] == 'cls'
+            calculated = metrics(labels, probabilities[name])
+            recorded = json.loads((directory/'test_metrics.json').read_text())
+            assert abs(calculated['accuracy'] - recorded['test_accuracy']) < 1e-12
+            assert abs(calculated['mcc'] - recorded['test_matthews_correlation']) < 1e-12
+            assert abs(calculated['log_loss'] - recorded['test_loss']) < 1e-5
+            summaries.append(dict(model=name, **calculated,
                                   validation_loss=best['eval_loss'], selected_step=best['step'],
                                   selected_epoch=best['epoch'], git_commit=metadata['git_commit'],
                                   pooling=metadata['pooling'], revision=metadata['model_revision']))

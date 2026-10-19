@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --job-name=baculo-probe
-#SBATCH --account=def-aucoin
+#SBATCH --account=def-aucoin_gpu
 #SBATCH --time=0-07:00
-#SBATCH --mem=6G
+#SBATCH --mem=16G
 #SBATCH --gpus=h100_1g.10gb:1
 #SBATCH --cpus-per-task=4
 

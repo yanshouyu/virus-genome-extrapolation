@@ -20,6 +20,8 @@ Derive the token budget from the actual loaded model and tokenizer, including sp
 
 The new 300-base probing experiments do not use the adaptation corpus code. The adaptation branch was not merged or restarted. Its overlapping-window random validation split and loss of accession metadata still need repair before any scientific adaptation experiment.
 
+The recovered [corpus report](failed-corpus-report.json) also explicitly includes **44 windows from NC_001623.1**, the genome used for the downstream TSS benchmark. Future adaptation must decide whether target-genome exposure is permitted. For a claim about unseen-genome transfer, exclude downstream target genomes and define the treatment of close relatives before adaptation; a randomly split unlabeled target-genome corpus does not provide that independence.
+
 ## Evidence and reproduction
 
 - [Diagnostic result](position-budget.json).

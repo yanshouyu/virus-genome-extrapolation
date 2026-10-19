@@ -1,0 +1,51 @@
+{
+  "engineering_job": "24606627_2",
+  "original_git_commit": "f93a2f0385f37a843fec20915c8a8777d42ea0c0",
+  "trainer_state_sha256": "f5f0530cb4fdf33fd97938e9284c3a56d59a34fd5f922b03d836a7018a38b81e",
+  "best_global_step": 230,
+  "recorded_best_metric": 0.4316054582595825,
+  "actual_checkpoint_pointer": "runs/2026-10-19/ntv1-seed44/checkpoint-210",
+  "saved_candidate_validation_losses": [
+    {
+      "step": 30,
+      "validation_loss": 0.6335265636444092
+    },
+    {
+      "step": 60,
+      "validation_loss": 0.5647625923156738
+    },
+    {
+      "step": 90,
+      "validation_loss": 0.5005280375480652
+    },
+    {
+      "step": 120,
+      "validation_loss": 0.5100867748260498
+    },
+    {
+      "step": 150,
+      "validation_loss": 0.457220196723938
+    },
+    {
+      "step": 180,
+      "validation_loss": 0.4395206868648529
+    },
+    {
+      "step": 210,
+      "validation_loss": 0.4352979362010956
+    },
+    {
+      "step": 240,
+      "validation_loss": 0.43646949529647827
+    },
+    {
+      "step": 250,
+      "validation_loss": 0.43240541219711304
+    }
+  ],
+  "best_saved_candidate": {
+    "step": 250,
+    "validation_loss": 0.43240541219711304
+  },
+  "consequence": "Checkpoint pointer 210 does not identify the lowest-loss saved candidate 250. Initial NT runs excluded from comparison."
+}

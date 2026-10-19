@@ -1,0 +1,692 @@
+{
+    "total_windows": 4190,
+    "total_tokens": 4290560,
+    "train_windows": 3771,
+    "val_windows": 419,
+    "mean_gc_frac": 0.4164,
+    "mean_ambiguous_frac": 6.3e-05,
+    "n_genomes": 97,
+    "per_accession_windows": {
+        "NC_001623.1": 44,
+        "NC_001875.2": 43,
+        "NC_001962.1": 42,
+        "NC_001973.1": 53,
+        "NC_002169.1": 45,
+        "NC_002331.1": 59,
+        "NC_002593.1": 33,
+        "NC_002654.2": 43,
+        "NC_002816.1": 41,
+        "NC_003083.1": 39,
+        "NC_003084.1": 36,
+        "NC_003094.2": 43,
+        "NC_003102.1": 46,
+        "NC_003529.1": 51,
+        "NC_004062.1": 39,
+        "NC_004117.1": 52,
+        "NC_004323.1": 43,
+        "NC_004690.1": 37,
+        "NC_004778.3": 43,
+        "NC_005038.1": 33,
+        "NC_005068.1": 36,
+        "NC_005137.2": 43,
+        "NC_005905.1": 28,
+        "NC_005906.1": 27,
+        "NC_007151.1": 49,
+        "NC_007383.1": 44,
+        "NC_007767.1": 44,
+        "NC_007921.1": 49,
+        "NC_008035.3": 42,
+        "NC_008168.1": 34,
+        "NC_008252.1": 28,
+        "NC_008293.1": 45,
+        "NC_008348.1": 56,
+        "NC_008586.1": 43,
+        "NC_008725.1": 37,
+        "NC_009011.2": 43,
+        "NC_009503.1": 41,
+        "NC_010240.1": 56,
+        "NC_010276.1": 52,
+        "NC_011345.1": 51,
+        "NC_011423.1": 37,
+        "NC_011616.1": 49,
+        "NC_012639.1": 47,
+        "NC_013772.1": 58,
+        "NC_013797.1": 36,
+        "NC_013953.1": 52,
+        "NC_015398.1": 33,
+        "NC_018504.1": 41,
+        "NC_018875.1": 39,
+        "NC_019945.1": 44,
+        "NC_021923.1": 46,
+        "NC_021924.1": 43,
+        "NC_022646.1": 33,
+        "NC_023177.1": 41,
+        "NC_023442.1": 40,
+        "NC_023681.1": 50,
+        "NC_024625.1": 50,
+        "NC_025257.1": 34,
+        "NC_025960.1": 49,
+        "NC_026268.1": 46,
+        "NC_026430.1": 41,
+        "NC_026511.1": 46,
+        "NC_026922.1": 52,
+        "NC_027923.1": 44,
+        "NC_028491.1": 32,
+        "NC_028636.1": 45,
+        "NC_029996.1": 44,
+        "NC_029997.2": 35,
+        "NC_030240.1": 42,
+        "NC_031761.1": 43,
+        "NC_032255.1": 37,
+        "NC_038369.1": 45,
+        "NC_038371.1": 35,
+        "NC_038375.1": 58,
+        "NC_039213.1": 43,
+        "NC_040606.1": 43,
+        "NC_040621.1": 39,
+        "NC_043520.1": 40,
+        "NC_043529.1": 37,
+        "NC_043530.1": 49,
+        "NC_055453.1": 46,
+        "NC_055455.1": 43,
+        "NC_055467.1": 47,
+        "NC_055500.1": 38,
+        "NC_055502.1": 49,
+        "NC_076031.1": 52,
+        "NC_076246.1": 42,
+        "NC_076652.1": 38,
+        "NC_076682.1": 42,
+        "NC_076692.1": 40,
+        "NC_076728.1": 53,
+        "NC_076869.1": 45,
+        "NC_076905.1": 38,
+        "NC_077025.1": 43,
+        "NC_077106.1": 55,
+        "NC_077147.1": 47,
+        "NC_077155.1": 41
+    },
+    "manifest": [
+        {
+            "accession": "NC_001623.1",
+            "file": "NC_001623.1.gb",
+            "length": 133894,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_001875.2",
+            "file": "NC_001875.2.gb",
+            "length": 131995,
+            "ambiguous_frac": 1.5e-05
+        },
+        {
+            "accession": "NC_001962.1",
+            "file": "NC_001962.1.gb",
+            "length": 128413,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_001973.1",
+            "file": "NC_001973.1.gb",
+            "length": 161046,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_002169.1",
+            "file": "NC_002169.1.gb",
+            "length": 135611,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_002331.1",
+            "file": "NC_002331.1.gb",
+            "length": 178733,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_002593.1",
+            "file": "NC_002593.1.gb",
+            "length": 100999,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_002654.2",
+            "file": "NC_002654.2.gb",
+            "length": 131405,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_002816.1",
+            "file": "NC_002816.1.gb",
+            "length": 123500,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_003083.1",
+            "file": "NC_003083.1.gb",
+            "length": 118584,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_003084.1",
+            "file": "NC_003084.1.gb",
+            "length": 108252,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_003094.2",
+            "file": "NC_003094.2.gb",
+            "length": 130759,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_003102.1",
+            "file": "NC_003102.1.gb",
+            "length": 139342,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_003529.1",
+            "file": "NC_003529.1.gb",
+            "length": 155060,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_004062.1",
+            "file": "NC_004062.1.gb",
+            "length": 119217,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_004117.1",
+            "file": "NC_004117.1.gb",
+            "length": 158482,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_004323.1",
+            "file": "NC_004323.1.gb",
+            "length": 131526,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_004690.1",
+            "file": "NC_004690.1.gb",
+            "length": 113220,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_004778.3",
+            "file": "NC_004778.3.gb",
+            "length": 129593,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_005038.1",
+            "file": "NC_005038.1.gb",
+            "length": 99657,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_005068.1",
+            "file": "NC_005068.1.gb",
+            "length": 110907,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_005137.2",
+            "file": "NC_005137.2.gb",
+            "length": 131160,
+            "ambiguous_frac": 2.3e-05
+        },
+        {
+            "accession": "NC_005905.1",
+            "file": "NC_005905.1.gb",
+            "length": 86462,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_005906.1",
+            "file": "NC_005906.1.gb",
+            "length": 81755,
+            "ambiguous_frac": 0.001982
+        },
+        {
+            "accession": "NC_007151.1",
+            "file": "NC_007151.1.gb",
+            "length": 149622,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_007383.1",
+            "file": "NC_007383.1.gb",
+            "length": 134394,
+            "ambiguous_frac": 0.000268
+        },
+        {
+            "accession": "NC_007767.1",
+            "file": "NC_007767.1.gb",
+            "length": 132959,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_007921.1",
+            "file": "NC_007921.1.gb",
+            "length": 147544,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_008035.3",
+            "file": "NC_008035.3.gb",
+            "length": 126629,
+            "ambiguous_frac": 3.9e-05
+        },
+        {
+            "accession": "NC_008168.1",
+            "file": "NC_008168.1.gb",
+            "length": 104710,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_008252.1",
+            "file": "NC_008252.1.gb",
+            "length": 84264,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_008293.1",
+            "file": "NC_008293.1.gb",
+            "length": 135454,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_008348.1",
+            "file": "NC_008348.1.gb",
+            "length": 168041,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_008586.1",
+            "file": "NC_008586.1.gb",
+            "length": 131204,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_008725.1",
+            "file": "NC_008725.1.gb",
+            "length": 111953,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_009011.2",
+            "file": "NC_009011.2.gb",
+            "length": 131331,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_009503.1",
+            "file": "NC_009503.1.gb",
+            "length": 124121,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_010240.1",
+            "file": "NC_010240.1.gb",
+            "length": 169794,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_010276.1",
+            "file": "NC_010276.1.gb",
+            "length": 156179,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_011345.1",
+            "file": "NC_011345.1.gb",
+            "length": 155122,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_011423.1",
+            "file": "NC_011423.1.gb",
+            "length": 111724,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_011616.1",
+            "file": "NC_011616.1.gb",
+            "length": 148634,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_012639.1",
+            "file": "NC_012639.1.gb",
+            "length": 141291,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_013772.1",
+            "file": "NC_013772.1.gb",
+            "length": 176677,
+            "ambiguous_frac": 1.1e-05
+        },
+        {
+            "accession": "NC_013797.1",
+            "file": "NC_013797.1.gb",
+            "length": 108592,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_013953.1",
+            "file": "NC_013953.1.gb",
+            "length": 156344,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_015398.1",
+            "file": "NC_015398.1.gb",
+            "length": 101487,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_018504.1",
+            "file": "NC_018504.1.gb",
+            "length": 123876,
+            "ambiguous_frac": 5.7e-05
+        },
+        {
+            "accession": "NC_018875.1",
+            "file": "NC_018875.1.gb",
+            "length": 119082,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_019945.1",
+            "file": "NC_019945.1.gb",
+            "length": 132978,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_021923.1",
+            "file": "NC_021923.1.gb",
+            "length": 140633,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_021924.1",
+            "file": "NC_021924.1.gb",
+            "length": 129052,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_022646.1",
+            "file": "NC_022646.1.gb",
+            "length": 101818,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_023177.1",
+            "file": "NC_023177.1.gb",
+            "length": 124688,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_023442.1",
+            "file": "NC_023442.1.gb",
+            "length": 120420,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_023681.1",
+            "file": "NC_023681.1.gb",
+            "length": 152710,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_024625.1",
+            "file": "NC_024625.1.gb",
+            "length": 151109,
+            "ambiguous_frac": 7e-06
+        },
+        {
+            "accession": "NC_025257.1",
+            "file": "NC_025257.1.gb",
+            "length": 102759,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_025960.1",
+            "file": "NC_025960.1.gb",
+            "length": 148981,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_026268.1",
+            "file": "NC_026268.1.gb",
+            "length": 139132,
+            "ambiguous_frac": 0.000129
+        },
+        {
+            "accession": "NC_026430.1",
+            "file": "NC_026430.1.gb",
+            "length": 125767,
+            "ambiguous_frac": 1.6e-05
+        },
+        {
+            "accession": "NC_026511.1",
+            "file": "NC_026511.1.gb",
+            "length": 140913,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_026922.1",
+            "file": "NC_026922.1.gb",
+            "length": 157977,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_027923.1",
+            "file": "NC_027923.1.gb",
+            "length": 132831,
+            "ambiguous_frac": 0.000587
+        },
+        {
+            "accession": "NC_028491.1",
+            "file": "NC_028491.1.gb",
+            "length": 98392,
+            "ambiguous_frac": 0.000102
+        },
+        {
+            "accession": "NC_028636.1",
+            "file": "NC_028636.1.gb",
+            "length": 135952,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_029996.1",
+            "file": "NC_029996.1.gb",
+            "length": 134272,
+            "ambiguous_frac": 0.000938
+        },
+        {
+            "accession": "NC_029997.2",
+            "file": "NC_029997.2.gb",
+            "length": 105555,
+            "ambiguous_frac": 0.000133
+        },
+        {
+            "accession": "NC_030240.1",
+            "file": "NC_030240.1.gb",
+            "length": 128058,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_031761.1",
+            "file": "NC_031761.1.gb",
+            "length": 131855,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_032255.1",
+            "file": "NC_032255.1.gb",
+            "length": 112536,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_038369.1",
+            "file": "NC_038369.1.gb",
+            "length": 137998,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_038371.1",
+            "file": "NC_038371.1.gb",
+            "length": 107439,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_038375.1",
+            "file": "NC_038375.1.gb",
+            "length": 175360,
+            "ambiguous_frac": 1.7e-05
+        },
+        {
+            "accession": "NC_039213.1",
+            "file": "NC_039213.1.gb",
+            "length": 131557,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_040606.1",
+            "file": "NC_040606.1.gb",
+            "length": 130202,
+            "ambiguous_frac": 9.2e-05
+        },
+        {
+            "accession": "NC_040621.1",
+            "file": "NC_040621.1.gb",
+            "length": 119054,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_043520.1",
+            "file": "NC_043520.1.gb",
+            "length": 120023,
+            "ambiguous_frac": 0.000217
+        },
+        {
+            "accession": "NC_043529.1",
+            "file": "NC_043529.1.gb",
+            "length": 113971,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_043530.1",
+            "file": "NC_043530.1.gb",
+            "length": 148482,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_055453.1",
+            "file": "NC_055453.1.gb",
+            "length": 139089,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_055455.1",
+            "file": "NC_055455.1.gb",
+            "length": 129528,
+            "ambiguous_frac": 1.5e-05
+        },
+        {
+            "accession": "NC_055467.1",
+            "file": "NC_055467.1.gb",
+            "length": 142900,
+            "ambiguous_frac": 0.001288
+        },
+        {
+            "accession": "NC_055500.1",
+            "file": "NC_055500.1.gb",
+            "length": 115728,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_055502.1",
+            "file": "NC_055502.1.gb",
+            "length": 149090,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_076031.1",
+            "file": "NC_076031.1.gb",
+            "length": 156647,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_076246.1",
+            "file": "NC_076246.1.gb",
+            "length": 128525,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_076652.1",
+            "file": "NC_076652.1.gb",
+            "length": 114825,
+            "ambiguous_frac": 9e-06
+        },
+        {
+            "accession": "NC_076682.1",
+            "file": "NC_076682.1.gb",
+            "length": 128587,
+            "ambiguous_frac": 4.7e-05
+        },
+        {
+            "accession": "NC_076692.1",
+            "file": "NC_076692.1.gb",
+            "length": 122075,
+            "ambiguous_frac": 0.000672
+        },
+        {
+            "accession": "NC_076728.1",
+            "file": "NC_076728.1.gb",
+            "length": 161734,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_076869.1",
+            "file": "NC_076869.1.gb",
+            "length": 137373,
+            "ambiguous_frac": 8.7e-05
+        },
+        {
+            "accession": "NC_076905.1",
+            "file": "NC_076905.1.gb",
+            "length": 116875,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_077025.1",
+            "file": "NC_077025.1.gb",
+            "length": 130540,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_077106.1",
+            "file": "NC_077106.1.gb",
+            "length": 165657,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_077147.1",
+            "file": "NC_077147.1.gb",
+            "length": 142291,
+            "ambiguous_frac": 0.0
+        },
+        {
+            "accession": "NC_077155.1",
+            "file": "NC_077155.1.gb",
+            "length": 125247,
+            "ambiguous_frac": 0.0
+        }
+    ]
+}

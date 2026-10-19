@@ -1,0 +1,541 @@
+{
+  "training_commit": "13d693ef5b510a09ab3aa6359c2cc09860570ad8",
+  "training_source_sha256": {
+    "src/baculo_tss_probe/configs.py": "fb7cdf27e2762a95aa76713a60f4db180a6b9dadfd8d32ff98e70e1a7f8e1076",
+    "src/baculo_tss_probe/train.py": "ca9d95d95a25aca1130b0e9721e9324a421ab36216e37b50cd4d2f11dccb0412",
+    "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c",
+    "src/baculo_tss_probe/data.py": "f835a3f4b1d84ed25506a980423eba326065b86724dd060fe2838a74e5223c3e",
+    "src/baculo_tss_probe/callbacks.py": "6a91a98c5f2d07c228e577d2765a9dc556de677d2717c272c54d8f1a301002ad",
+    "src/baculo_tss_probe/splitting.py": "72814ff9b7f7e8b90f629d75838deaa53805144261084391248bd9f8e75d413f"
+  },
+  "model_runs": {
+    "ntv1-seed42": {
+      "config": {
+        "organism": "virus",
+        "hidden_dim": 512,
+        "base_model": "InstaDeepAI/nucleotide-transformer-500m-human-ref",
+        "model_revision": "f87b5d7233295242e79c951873d290f4cf992045",
+        "data_dir": "data/processed/clean_v2",
+        "run_id": "1792444687818019409_150d75",
+        "output_dir": "runs/2026-10-19/verified/ntv1-seed42",
+        "per_device_train_batch_size": 50,
+        "per_device_eval_batch_size": 50,
+        "num_train_epochs": 50,
+        "learning_rate": 0.0003,
+        "report_to": "tensorboard",
+        "logging_strategy": "steps",
+        "logging_steps": 10,
+        "disable_tqdm": true,
+        "eval_strategy": "steps",
+        "save_strategy": "steps",
+        "save_steps": 30,
+        "save_total_limit": 2,
+        "load_best_model_at_end": true,
+        "metric_for_best_model": "loss",
+        "greater_is_better": false,
+        "prune_full_model": false,
+        "seed": 42,
+        "data_seed": 42,
+        "eval_steps": 30
+      },
+      "metadata": {
+        "git_commit": "13d693ef5b510a09ab3aa6359c2cc09860570ad8",
+        "git_dirty": true,
+        "packages": {
+          "torch": "2.10.0+computecanada",
+          "transformers": "5.3.0+computecanada",
+          "datasets": "4.6.1+computecanada",
+          "numpy": "2.4.2+computecanada",
+          "pandas": "3.0.0+computecanada",
+          "accelerate": "1.13.0+computecanada"
+        },
+        "model_revision": "f87b5d7233295242e79c951873d290f4cf992045",
+        "python": "3.11.5 (main, Sep 19 2023, 16:07:22) [GCC 12.3.1 20230526]",
+        "pooling": "cls",
+        "seed": 42,
+        "dataset_fingerprints": {
+          "train": "d8596c66c12f576d",
+          "validation": "2a1c94a1739e3903",
+          "test": "005abbda50b0c243"
+        }
+      },
+      "best_checkpoint": "runs/2026-10-19/verified/ntv1-seed42/checkpoint-240",
+      "best_validation_loss": 0.42769792675971985,
+      "gpu_reload": {
+        "run": "runs/2026-10-19/verified/ntv1-seed42",
+        "samples": 78,
+        "cuda_device": "NVIDIA H100 80GB HBM3 MIG 1g.10gb",
+        "device_memory_bytes": 10468982784,
+        "torch_version": "2.10.0",
+        "cuda_version": "12.9",
+        "max_absolute_logit_difference": 0.0,
+        "tolerance": {
+          "rtol": 1e-05,
+          "atol": 1e-05
+        },
+        "passed": true
+      },
+      "frozen_encoder": {
+        "run": "runs/2026-10-19/verified/ntv1-seed42",
+        "model": "InstaDeepAI/nucleotide-transformer-500m-human-ref",
+        "revision": "f87b5d7233295242e79c951873d290f4cf992045",
+        "reference_snapshot": "/home/shouyu/.cache/huggingface/hub/models--InstaDeepAI--nucleotide-transformer-500m-human-ref/snapshots/f87b5d7233295242e79c951873d290f4cf992045",
+        "tensors_checked": 390,
+        "elements_checked": 478798561,
+        "equality": "exact torch.equal",
+        "passed": true
+      },
+      "artifact_sha256": {
+        "trainer_state.json": "35b4774c1ff3815876b7b84fefdf42080b92a8492f412aaed47b0e28732fd532",
+        "test_metrics.json": "1b824e142e970cc2063e240a6598184b0ba383219d580195dee8401d7c479e80",
+        "config.json": "991792c5fc5e6dd2169b4c6c7a4acf123f6928572b98cf30269fcd8e5aac53f2",
+        "gpu_reload_check.json": "718e3759a3a405bb9de44e3fbdc0c5c76ca242d11f9b8d33ad46f0d18d29b78f",
+        "frozen_encoder_check.json": "53d51993c1e99a777c9b10ade4b449e00c4f06876c77d16d641d38f7782f39ea",
+        "test_predictions.npz": "f3703a8524aa9b95466dfa99118b6e68fc9f750267d26f0efba2d6d35cd480cb",
+        "trainer_history.json": "323f6f44158d6467f9982cf11e3965982d533df96f2f792d2399740f4c15ef72",
+        "run_metadata.json": "4e81aef263cf1374b03a5b3afade24ccca48f0f951580adf3c34d42bccb7e39a"
+      }
+    },
+    "ntv1-seed43": {
+      "config": {
+        "organism": "virus",
+        "hidden_dim": 512,
+        "base_model": "InstaDeepAI/nucleotide-transformer-500m-human-ref",
+        "model_revision": "f87b5d7233295242e79c951873d290f4cf992045",
+        "data_dir": "data/processed/clean_v2",
+        "run_id": "1792444687719227051_998271",
+        "output_dir": "runs/2026-10-19/verified/ntv1-seed43",
+        "per_device_train_batch_size": 50,
+        "per_device_eval_batch_size": 50,
+        "num_train_epochs": 50,
+        "learning_rate": 0.0003,
+        "report_to": "tensorboard",
+        "logging_strategy": "steps",
+        "logging_steps": 10,
+        "disable_tqdm": true,
+        "eval_strategy": "steps",
+        "save_strategy": "steps",
+        "save_steps": 30,
+        "save_total_limit": 2,
+        "load_best_model_at_end": true,
+        "metric_for_best_model": "loss",
+        "greater_is_better": false,
+        "prune_full_model": false,
+        "seed": 43,
+        "data_seed": 43,
+        "eval_steps": 30
+      },
+      "metadata": {
+        "git_commit": "13d693ef5b510a09ab3aa6359c2cc09860570ad8",
+        "git_dirty": true,
+        "packages": {
+          "torch": "2.10.0+computecanada",
+          "transformers": "5.3.0+computecanada",
+          "datasets": "4.6.1+computecanada",
+          "numpy": "2.4.2+computecanada",
+          "pandas": "3.0.0+computecanada",
+          "accelerate": "1.13.0+computecanada"
+        },
+        "model_revision": "f87b5d7233295242e79c951873d290f4cf992045",
+        "python": "3.11.5 (main, Sep 19 2023, 16:07:22) [GCC 12.3.1 20230526]",
+        "pooling": "cls",
+        "seed": 43,
+        "dataset_fingerprints": {
+          "train": "d8596c66c12f576d",
+          "validation": "2a1c94a1739e3903",
+          "test": "005abbda50b0c243"
+        }
+      },
+      "best_checkpoint": "runs/2026-10-19/verified/ntv1-seed43/checkpoint-240",
+      "best_validation_loss": 0.4358384907245636,
+      "gpu_reload": {
+        "run": "runs/2026-10-19/verified/ntv1-seed43",
+        "samples": 78,
+        "cuda_device": "NVIDIA H100 80GB HBM3 MIG 1g.10gb",
+        "device_memory_bytes": 10468982784,
+        "torch_version": "2.10.0",
+        "cuda_version": "12.9",
+        "max_absolute_logit_difference": 0.0,
+        "tolerance": {
+          "rtol": 1e-05,
+          "atol": 1e-05
+        },
+        "passed": true
+      },
+      "frozen_encoder": {
+        "run": "runs/2026-10-19/verified/ntv1-seed43",
+        "model": "InstaDeepAI/nucleotide-transformer-500m-human-ref",
+        "revision": "f87b5d7233295242e79c951873d290f4cf992045",
+        "reference_snapshot": "/home/shouyu/.cache/huggingface/hub/models--InstaDeepAI--nucleotide-transformer-500m-human-ref/snapshots/f87b5d7233295242e79c951873d290f4cf992045",
+        "tensors_checked": 390,
+        "elements_checked": 478798561,
+        "equality": "exact torch.equal",
+        "passed": true
+      },
+      "artifact_sha256": {
+        "trainer_state.json": "5229bb671955fe8d29c3e63360ee1709140f88100bad48a5a455185ea1025cda",
+        "test_metrics.json": "8e9f2a6e7a814068ccd8f4ca024a7d650b68d8d480b89b2037617dae1d394e17",
+        "config.json": "065e18f58d591a60ef54d19124079b89600a74cf3e780a93b2a418b9e3ff8ce9",
+        "gpu_reload_check.json": "ced12c38ceab1f7c8931b73bdd8a46ee5f999583d4e6a829bee568eecbff86b5",
+        "frozen_encoder_check.json": "41c1954549464004107e33959a62f7a25784ff17145b393ee736cb8d5dff65a0",
+        "test_predictions.npz": "38f2c0d5454593696bd3fdcf8aff89ee5b9fb506af7c8d3ab6d3ba0b5afb6951",
+        "trainer_history.json": "c0118d935101ffcbccaf214c0d0a80f9a58d8a766f2bed4fb9420c5b68dda3d6",
+        "run_metadata.json": "7d2610ff9673896b6c05e80aae6029ee8b64704ebf4c183d56aa4d1969069daf"
+      }
+    },
+    "ntv1-seed44": {
+      "config": {
+        "organism": "virus",
+        "hidden_dim": 512,
+        "base_model": "InstaDeepAI/nucleotide-transformer-500m-human-ref",
+        "model_revision": "f87b5d7233295242e79c951873d290f4cf992045",
+        "data_dir": "data/processed/clean_v2",
+        "run_id": "1792445016365277891_ad46e3",
+        "output_dir": "runs/2026-10-19/verified/ntv1-seed44",
+        "per_device_train_batch_size": 50,
+        "per_device_eval_batch_size": 50,
+        "num_train_epochs": 50,
+        "learning_rate": 0.0003,
+        "report_to": "tensorboard",
+        "logging_strategy": "steps",
+        "logging_steps": 10,
+        "disable_tqdm": true,
+        "eval_strategy": "steps",
+        "save_strategy": "steps",
+        "save_steps": 30,
+        "save_total_limit": 2,
+        "load_best_model_at_end": true,
+        "metric_for_best_model": "loss",
+        "greater_is_better": false,
+        "prune_full_model": false,
+        "seed": 44,
+        "data_seed": 44,
+        "eval_steps": 30
+      },
+      "metadata": {
+        "git_commit": "13d693ef5b510a09ab3aa6359c2cc09860570ad8",
+        "git_dirty": true,
+        "packages": {
+          "torch": "2.10.0+computecanada",
+          "transformers": "5.3.0+computecanada",
+          "datasets": "4.6.1+computecanada",
+          "numpy": "2.4.2+computecanada",
+          "pandas": "3.0.0+computecanada",
+          "accelerate": "1.13.0+computecanada"
+        },
+        "model_revision": "f87b5d7233295242e79c951873d290f4cf992045",
+        "python": "3.11.5 (main, Sep 19 2023, 16:07:22) [GCC 12.3.1 20230526]",
+        "pooling": "cls",
+        "seed": 44,
+        "dataset_fingerprints": {
+          "train": "d8596c66c12f576d",
+          "validation": "2a1c94a1739e3903",
+          "test": "005abbda50b0c243"
+        }
+      },
+      "best_checkpoint": "runs/2026-10-19/verified/ntv1-seed44/checkpoint-210",
+      "best_validation_loss": 0.4352979362010956,
+      "gpu_reload": {
+        "run": "runs/2026-10-19/verified/ntv1-seed44",
+        "samples": 78,
+        "cuda_device": "NVIDIA H100 80GB HBM3 MIG 1g.10gb",
+        "device_memory_bytes": 10468982784,
+        "torch_version": "2.10.0",
+        "cuda_version": "12.9",
+        "max_absolute_logit_difference": 0.0,
+        "tolerance": {
+          "rtol": 1e-05,
+          "atol": 1e-05
+        },
+        "passed": true
+      },
+      "frozen_encoder": {
+        "run": "runs/2026-10-19/verified/ntv1-seed44",
+        "model": "InstaDeepAI/nucleotide-transformer-500m-human-ref",
+        "revision": "f87b5d7233295242e79c951873d290f4cf992045",
+        "reference_snapshot": "/home/shouyu/.cache/huggingface/hub/models--InstaDeepAI--nucleotide-transformer-500m-human-ref/snapshots/f87b5d7233295242e79c951873d290f4cf992045",
+        "tensors_checked": 390,
+        "elements_checked": 478798561,
+        "equality": "exact torch.equal",
+        "passed": true
+      },
+      "artifact_sha256": {
+        "trainer_state.json": "873dfb8545c52c4515f92db8fda4d683afe612cac9a6c6ac206b6095e61d5c07",
+        "test_metrics.json": "2b0c41d6eef204e6f706b52791b91d13deeb2294616d6774115fc3e4ffa3d7c7",
+        "config.json": "53415a190cdbe84e6315a392bba0cde8dbdbb370fcd301d8c4f888256781f1bd",
+        "gpu_reload_check.json": "d4cbe3fbe50bd1560f1e80082a8a6407b031538c0ecf44f52683a8b25e409901",
+        "frozen_encoder_check.json": "1036738e80235934615291380c9939459b36142fe87ef97af52776d5c5774b08",
+        "test_predictions.npz": "96b304d5d6720099cee06b701b26efe10bcf9adf355025609867d3ac002db0ee",
+        "trainer_history.json": "6a163e0e72a8c9828f1db8b195610c526011c936c828e16a7822001ff61c7935",
+        "run_metadata.json": "ea0c1b7c2cb2169e92849d8c63f9caf6c7fc53f2f503a96e06c0e067ab4f10a2"
+      }
+    },
+    "ntv2-seed42": {
+      "config": {
+        "organism": "virus",
+        "hidden_dim": 512,
+        "base_model": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+        "model_revision": "06615c1660c892fc199840c18123f8385b3542a8",
+        "data_dir": "data/processed/clean_v2",
+        "run_id": "1792445038542766747_5bb2b0",
+        "output_dir": "runs/2026-10-19/verified/ntv2-seed42",
+        "per_device_train_batch_size": 50,
+        "per_device_eval_batch_size": 50,
+        "num_train_epochs": 50,
+        "learning_rate": 0.0003,
+        "report_to": "tensorboard",
+        "logging_strategy": "steps",
+        "logging_steps": 10,
+        "disable_tqdm": true,
+        "eval_strategy": "steps",
+        "save_strategy": "steps",
+        "save_steps": 30,
+        "save_total_limit": 2,
+        "load_best_model_at_end": true,
+        "metric_for_best_model": "loss",
+        "greater_is_better": false,
+        "prune_full_model": false,
+        "seed": 42,
+        "data_seed": 42,
+        "eval_steps": 30
+      },
+      "metadata": {
+        "git_commit": "13d693ef5b510a09ab3aa6359c2cc09860570ad8",
+        "git_dirty": true,
+        "packages": {
+          "torch": "2.10.0+computecanada",
+          "transformers": "5.3.0+computecanada",
+          "datasets": "4.6.1+computecanada",
+          "numpy": "2.4.2+computecanada",
+          "pandas": "3.0.0+computecanada",
+          "accelerate": "1.13.0+computecanada"
+        },
+        "model_revision": "06615c1660c892fc199840c18123f8385b3542a8",
+        "python": "3.11.5 (main, Sep 19 2023, 16:07:22) [GCC 12.3.1 20230526]",
+        "pooling": "cls",
+        "seed": 42,
+        "dataset_fingerprints": {
+          "train": "f517e9e6a8be3f87",
+          "validation": "6984cf283a0f87dc",
+          "test": "ff2d92cfbf85b709"
+        }
+      },
+      "best_checkpoint": "runs/2026-10-19/verified/ntv2-seed42/checkpoint-60",
+      "best_validation_loss": 0.6426725387573242,
+      "gpu_reload": {
+        "run": "runs/2026-10-19/verified/ntv2-seed42",
+        "samples": 78,
+        "cuda_device": "NVIDIA H100 80GB HBM3 MIG 1g.10gb",
+        "device_memory_bytes": 10468982784,
+        "torch_version": "2.10.0",
+        "cuda_version": "12.9",
+        "max_absolute_logit_difference": 0.0,
+        "tolerance": {
+          "rtol": 1e-05,
+          "atol": 1e-05
+        },
+        "passed": true
+      },
+      "frozen_encoder": {
+        "run": "runs/2026-10-19/verified/ntv2-seed42",
+        "model": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+        "revision": "06615c1660c892fc199840c18123f8385b3542a8",
+        "reference_snapshot": "/home/shouyu/.cache/huggingface/hub/models--InstaDeepAI--nucleotide-transformer-v2-500m-multi-species/snapshots/06615c1660c892fc199840c18123f8385b3542a8",
+        "tensors_checked": 441,
+        "elements_checked": 493085041,
+        "equality": "exact torch.equal",
+        "passed": true
+      },
+      "artifact_sha256": {
+        "trainer_state.json": "c4a9749a5517d9d24d0f2128b6ad99b587e99526fc3d1dac522ec210a17b2e40",
+        "test_metrics.json": "bc99713f7ba9ae1fcb128eeec7fcf4bc09fbdd483f9953a56c7cd9549b10753c",
+        "config.json": "955b994d02e05e169d0afb72a4ede1b628469790a3c740bd198f92347fb689e2",
+        "gpu_reload_check.json": "4152306c1ecc05dd152d4b14550272b000516663cc78a0bbb8688f18f321bed1",
+        "frozen_encoder_check.json": "f435641a00b69e3df67f6ac2630f3717f78b3112a454cd5c5e85b9d309f27a7c",
+        "test_predictions.npz": "ae704489344d92bfa67fc66f41106f64a6b6bea6ae13abc8725f67f0de0b9661",
+        "trainer_history.json": "d15e800de4935b69b8d730986ae33a85df2b49779a4bf3dc8948162f78049ab8",
+        "run_metadata.json": "bb716af2d74f1cc3340e6e925f3a375143a0dd48df053ed5c0c874f572e5a3c1"
+      }
+    },
+    "ntv2-seed43": {
+      "config": {
+        "organism": "virus",
+        "hidden_dim": 512,
+        "base_model": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+        "model_revision": "06615c1660c892fc199840c18123f8385b3542a8",
+        "data_dir": "data/processed/clean_v2",
+        "run_id": "1792445298310215022_d5d5b5",
+        "output_dir": "runs/2026-10-19/verified/ntv2-seed43",
+        "per_device_train_batch_size": 50,
+        "per_device_eval_batch_size": 50,
+        "num_train_epochs": 50,
+        "learning_rate": 0.0003,
+        "report_to": "tensorboard",
+        "logging_strategy": "steps",
+        "logging_steps": 10,
+        "disable_tqdm": true,
+        "eval_strategy": "steps",
+        "save_strategy": "steps",
+        "save_steps": 30,
+        "save_total_limit": 2,
+        "load_best_model_at_end": true,
+        "metric_for_best_model": "loss",
+        "greater_is_better": false,
+        "prune_full_model": false,
+        "seed": 43,
+        "data_seed": 43,
+        "eval_steps": 30
+      },
+      "metadata": {
+        "git_commit": "13d693ef5b510a09ab3aa6359c2cc09860570ad8",
+        "git_dirty": true,
+        "packages": {
+          "torch": "2.10.0+computecanada",
+          "transformers": "5.3.0+computecanada",
+          "datasets": "4.6.1+computecanada",
+          "numpy": "2.4.2+computecanada",
+          "pandas": "3.0.0+computecanada",
+          "accelerate": "1.13.0+computecanada"
+        },
+        "model_revision": "06615c1660c892fc199840c18123f8385b3542a8",
+        "python": "3.11.5 (main, Sep 19 2023, 16:07:22) [GCC 12.3.1 20230526]",
+        "pooling": "cls",
+        "seed": 43,
+        "dataset_fingerprints": {
+          "train": "f517e9e6a8be3f87",
+          "validation": "6984cf283a0f87dc",
+          "test": "ff2d92cfbf85b709"
+        }
+      },
+      "best_checkpoint": "runs/2026-10-19/verified/ntv2-seed43/checkpoint-60",
+      "best_validation_loss": 0.648786187171936,
+      "gpu_reload": {
+        "run": "runs/2026-10-19/verified/ntv2-seed43",
+        "samples": 78,
+        "cuda_device": "NVIDIA H100 80GB HBM3 MIG 1g.10gb",
+        "device_memory_bytes": 10468982784,
+        "torch_version": "2.10.0",
+        "cuda_version": "12.9",
+        "max_absolute_logit_difference": 0.0,
+        "tolerance": {
+          "rtol": 1e-05,
+          "atol": 1e-05
+        },
+        "passed": true
+      },
+      "frozen_encoder": {
+        "run": "runs/2026-10-19/verified/ntv2-seed43",
+        "model": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+        "revision": "06615c1660c892fc199840c18123f8385b3542a8",
+        "reference_snapshot": "/home/shouyu/.cache/huggingface/hub/models--InstaDeepAI--nucleotide-transformer-v2-500m-multi-species/snapshots/06615c1660c892fc199840c18123f8385b3542a8",
+        "tensors_checked": 441,
+        "elements_checked": 493085041,
+        "equality": "exact torch.equal",
+        "passed": true
+      },
+      "artifact_sha256": {
+        "trainer_state.json": "2c83e97dac1f6dce629f269fb8054a0ebe5c7576e486bc95cdb0d607083d448a",
+        "test_metrics.json": "11169e2149f67326d68acbf35b417657102f45625dbb552d23ec91ee1c84692f",
+        "config.json": "b32b91b8ee295c3588a1b4c0908c04dc9bf1b4b9f066396f92a487492e20ff94",
+        "gpu_reload_check.json": "097669b99b23b67f2c96fbd70a6288c04266b3f00157f42477b436c1a06598c3",
+        "frozen_encoder_check.json": "9e71cc4533f77811a93198d7f0f65d7af97c2a35013b5b9e79e1565b22c83218",
+        "test_predictions.npz": "45047fec5cc2c61e5a6635984e14a36adee5d961ceda2f722b9088dc6beab0fb",
+        "trainer_history.json": "29bf92d97a9cac6b502793e94482680b0553a9532192c48118c70858924a71f4",
+        "run_metadata.json": "37c7610e431b3a3576c3b4bd8822c3cc58c4ce5606e53289354b00cbd2444cc7"
+      }
+    },
+    "ntv2-seed44": {
+      "config": {
+        "organism": "virus",
+        "hidden_dim": 512,
+        "base_model": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+        "model_revision": "06615c1660c892fc199840c18123f8385b3542a8",
+        "data_dir": "data/processed/clean_v2",
+        "run_id": "1792445306895103634_7c3009",
+        "output_dir": "runs/2026-10-19/verified/ntv2-seed44",
+        "per_device_train_batch_size": 50,
+        "per_device_eval_batch_size": 50,
+        "num_train_epochs": 50,
+        "learning_rate": 0.0003,
+        "report_to": "tensorboard",
+        "logging_strategy": "steps",
+        "logging_steps": 10,
+        "disable_tqdm": true,
+        "eval_strategy": "steps",
+        "save_strategy": "steps",
+        "save_steps": 30,
+        "save_total_limit": 2,
+        "load_best_model_at_end": true,
+        "metric_for_best_model": "loss",
+        "greater_is_better": false,
+        "prune_full_model": false,
+        "seed": 44,
+        "data_seed": 44,
+        "eval_steps": 30
+      },
+      "metadata": {
+        "git_commit": "13d693ef5b510a09ab3aa6359c2cc09860570ad8",
+        "git_dirty": true,
+        "packages": {
+          "torch": "2.10.0+computecanada",
+          "transformers": "5.3.0+computecanada",
+          "datasets": "4.6.1+computecanada",
+          "numpy": "2.4.2+computecanada",
+          "pandas": "3.0.0+computecanada",
+          "accelerate": "1.13.0+computecanada"
+        },
+        "model_revision": "06615c1660c892fc199840c18123f8385b3542a8",
+        "python": "3.11.5 (main, Sep 19 2023, 16:07:22) [GCC 12.3.1 20230526]",
+        "pooling": "cls",
+        "seed": 44,
+        "dataset_fingerprints": {
+          "train": "f517e9e6a8be3f87",
+          "validation": "6984cf283a0f87dc",
+          "test": "ff2d92cfbf85b709"
+        }
+      },
+      "best_checkpoint": "runs/2026-10-19/verified/ntv2-seed44/checkpoint-60",
+      "best_validation_loss": 0.6464649438858032,
+      "gpu_reload": {
+        "run": "runs/2026-10-19/verified/ntv2-seed44",
+        "samples": 78,
+        "cuda_device": "NVIDIA H100 80GB HBM3 MIG 1g.10gb",
+        "device_memory_bytes": 10468982784,
+        "torch_version": "2.10.0",
+        "cuda_version": "12.9",
+        "max_absolute_logit_difference": 0.0,
+        "tolerance": {
+          "rtol": 1e-05,
+          "atol": 1e-05
+        },
+        "passed": true
+      },
+      "frozen_encoder": {
+        "run": "runs/2026-10-19/verified/ntv2-seed44",
+        "model": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+        "revision": "06615c1660c892fc199840c18123f8385b3542a8",
+        "reference_snapshot": "/home/shouyu/.cache/huggingface/hub/models--InstaDeepAI--nucleotide-transformer-v2-500m-multi-species/snapshots/06615c1660c892fc199840c18123f8385b3542a8",
+        "tensors_checked": 441,
+        "elements_checked": 493085041,
+        "equality": "exact torch.equal",
+        "passed": true
+      },
+      "artifact_sha256": {
+        "trainer_state.json": "05ee7e663e8a786e47d74cd499ba63f02eb20c272c5257b3297b15cd87e77b30",
+        "test_metrics.json": "d7ed5e8064709506eb2a0d9407304b98b67bdec2cbfc19c643414c655b77fe1b",
+        "config.json": "c0733c20d7a9600ceba3816e2f7663c47c014f27cf1008a8e1aaf679b2aa8758",
+        "gpu_reload_check.json": "94f166169500a597238575ed7937fe8a3122713349fbd3dce0eae526e8439a98",
+        "frozen_encoder_check.json": "7dad707c8687e9156351295fa03aabce0645ab30b081605ca8de151c20c6ae16",
+        "test_predictions.npz": "920fb5161ffb1a798a381f3485841b9ade125104805b664d3e8abcadfe887a3c",
+        "trainer_history.json": "b393119cea1fef94e80f517893c0ed41faa60f22db1fd2334589993ab0d28913",
+        "run_metadata.json": "aeb80bf24efe4bdae3861ed9f413bff5c8e68f45297e6b4f25e6bdf1c26b8afc"
+      }
+    }
+  },
+  "meaning_of_git_dirty": "Pre-existing untracked Nibi logs and job scripts; tracked source was clean.",
+  "regression_tests": "18 passed, 2 opt-in pretrained checks skipped locally; actual Nibi tensors checked separately.",
+  "baseline_replay": "Exported scaling/coefficient arrays reproduce recorded probabilities; deterministic rerun matches.",
+  "scientific_array": "24608406",
+  "gpu_reload_job": "24608445",
+  "frozen_weight_job": "24609086"
+}

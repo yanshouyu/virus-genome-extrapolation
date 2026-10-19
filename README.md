@@ -4,6 +4,8 @@ This began as an ECE657D course project probing frozen Nucleotide Transformer re
 
 The current [repair report](documents/repair-2026-10-13/README.md) explains the clean dataset, overlap causes, model compatibility fixes and verification. The [initial assessment](documents/project-assessment.md) records the course baseline and publication plan.
 
+The [October 19 baseline experiment](documents/experiments-2026-10-19/README.md) compares sequence-composition baselines with three-seed frozen NT probes on Nibi. It records an additional checkpoint-selection fix, prediction/weight verification and the recovered cause of the historical adaptation CUDA failure.
+
 ## Current workflow (WSL Ubuntu)
 
 ```bash
@@ -15,7 +17,7 @@ PYTHONPATH=src python -m baculo_tss_probe.train --help
 
 The active [clean dataset](data/processed/clean_v2/README.md) has 233 training, 77 validation and 78 test samples. Same-strand overlaps and related groups stay together; opposite-strand overlap is allowed. Three source rows with inconsistent TSS labels were excluded and documented. Original course files remain one directory above the versioned export.
 
-Training now selects checkpoints by validation loss and predicts the final test once. New probes use an explicit raw first-token representation for both model versions, so their results form a new baseline. Model revisions, seeds, package versions and dataset metadata are saved with each run.
+Training now selects checkpoints by validation loss and predicts the final test once per run. Step-based validation and checkpoint saving use the same interval so unsaved evaluations cannot corrupt best-checkpoint selection. New probes use an explicit raw first-token representation for both model versions, so their results form a new baseline. Model revisions, seeds, package versions and dataset metadata are saved with each run.
 
 ```bash
 # Runs training; use a suitable compute node/environment.
