@@ -15,7 +15,7 @@ export OMP_NUM_THREADS="${SLURM_CPUS_PER_TASK:-4}"
 export HF_HUB_DISABLE_XET=1
 for model in ntv1 ntv2; do
     for seed in 42 43 44; do
-        python scripts/check_probe_reload.py "runs/2026-10-19/${model}-seed${seed}"
+        python scripts/check_probe_reload.py "${EXPERIMENT_ROOT:-runs/2026-10-19/verified}/${model}-seed${seed}"
     done
 done
 echo 'All six saved probes reproduced their recorded test logits on CUDA.'

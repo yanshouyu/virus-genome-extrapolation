@@ -6,7 +6,7 @@ from pathlib import Path
 import datasets
 import pytest
 import torch
-from transformers import AutoTokenizer, Trainer
+from transformers import AutoTokenizer, Trainer, TrainingArguments
 from transformers.models.esm.configuration_esm import EsmConfig
 from baculo_tss_probe.configs import Config
 from baculo_tss_probe.data import load_dataset_dict, prep_ds
@@ -16,6 +16,37 @@ import baculo_tss_probe.train as training
 ROOT = Path(__file__).resolve().parents[1]
 TOKENIZER = 'InstaDeepAI/nucleotide-transformer-v2-500m-multi-species'
 REVISION = '06615c1660c892fc199840c18123f8385b3542a8'
+
+
+def test_selection_never_tracks_an_unsaved_validation_candidate(tmp_path):
+    """An unsaved step-1 improvement must not block selecting saved step 2."""
+    cfg = Config(organism='virus', output_dir=str(tmp_path), num_train_epochs=3,
+                 per_device_train_batch_size=4, per_device_eval_batch_size=4,
+                 logging_steps=1, save_steps=2, report_to='none')
+    cfg.save_config()
+    data = datasets.Dataset.from_dict({'x': [[1.], [2.], [3.], [4.]], 'labels': [0, 1, 0, 1]})
+    class TinyClassifier(torch.nn.Module):
+        def __init__(self):
+            super().__init__()
+            self.linear = torch.nn.Linear(1, 2)
+        def forward(self, x, labels=None):
+            logits = self.linear(x)
+            return {'loss': torch.nn.functional.cross_entropy(logits, labels), 'logits': logits}
+    observed_steps = []
+    class ControlledValidationTrainer(Trainer):
+        def evaluate(self, *args, **kwargs):
+            result = super().evaluate(*args, **kwargs)
+            observed_steps.append(self.state.global_step)
+            result['eval_loss'] = self.state.global_step / 10
+            return result
+    trainer = ControlledValidationTrainer(model=TinyClassifier(),
+                args=TrainingArguments(**cfg.get_training_args()), train_dataset=data, eval_dataset=data)
+    trainer.train()
+    assert 1 not in observed_steps and 2 in observed_steps
+    assert trainer.state.best_global_step == 2
+    assert trainer.state.best_model_checkpoint.endswith('checkpoint-2')
+    assert (Path(trainer.state.best_model_checkpoint)/'model.safetensors').is_file()
+    assert json.loads((tmp_path/'config.json').read_text())['eval_steps'] == 2
 
 
 def test_configuration_ids_and_required_organism():

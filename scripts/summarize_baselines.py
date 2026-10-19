@@ -18,11 +18,53 @@ def mcc(y, p):
     return float((tp * tn - fp * fn) / denominator) if denominator else 0.
 
 
+def plot_results(out, summaries, uncertainty, histories, baseline):
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+    colors = dict(ntv1='#2864a5', ntv2='#c56a25', kmer_logistic='#31815b', prevalence='#777777')
+    fig, (curves, scores) = plt.subplots(1, 2, figsize=(12, 5.3), layout='constrained')
+    for name, history in histories.items():
+        model, seed = name.split('-seed')
+        evaluations = [h for h in history if 'eval_loss' in h]
+        curves.plot([h['epoch'] for h in evaluations], [h['eval_loss'] for h in evaluations],
+                    color=colors[model], alpha=.6, linewidth=1.3,
+                    label=model.upper()+' (3 seeds)' if seed == '42' else None)
+        selected = next(row for row in summaries if row['model'] == name)
+        curves.scatter(selected['selected_epoch'], selected['validation_loss'],
+                       color=colors[model], s=23, zorder=3)
+    reference = json.loads((baseline/'metrics.json').read_text())
+    curves.axhline(reference['models']['kmer_logistic']['validation']['log_loss'],
+                   color=colors['kmer_logistic'], linestyle='--', label='k-mer logistic')
+    curves.set(xlabel='Epoch', ylabel='Validation log loss', title='Validation during head training')
+    curves.legend(frameon=False, fontsize=9)
+    labels = []
+    for position, row in enumerate(summaries):
+        name = row['model']
+        family = name.split('-seed')[0]
+        low, high = uncertainty['mcc_ci95'][name]
+        scores.plot([low, high], [position, position], color=colors[family], linewidth=2)
+        scores.scatter(row['mcc'], position, color=colors[family], s=34, zorder=3)
+        labels.append(name.replace('ntv', 'NTv').replace('-seed', ' / seed ')
+                      .replace('kmer_logistic', 'k-mer logistic'))
+    scores.set(yticks=range(len(labels)), yticklabels=labels, xlabel='MCC',
+               title='Test MCC: 95% group bootstrap intervals', xlim=(-.1, 1))
+    scores.invert_yaxis()
+    scores.axvline(0, color='#bbbbbb', linewidth=.8)
+    for axis in (curves, scores):
+        axis.spines[['top', 'right']].set_visible(False)
+        axis.grid(axis='x', alpha=.15)
+    fig.suptitle('Clean AcMNPV baseline: 233 train / 77 validation / 78 test', fontsize=13)
+    fig.savefig(out/'baseline-comparison.png', dpi=180)
+    plt.close(fig)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--run-dir', required=True)
     parser.add_argument('--baseline-dir', required=True)
     parser.add_argument('--output-dir', required=True)
+    parser.add_argument('--plot', action='store_true', help='Render the optional matplotlib figure.')
     args = parser.parse_args()
     run = Path(args.run_dir)
     baseline = Path(args.baseline_dir)
@@ -51,9 +93,12 @@ def main():
             probabilities[name] = exp[:, 1] / exp.sum(axis=1)
             history = json.loads((directory/'trainer_history.json').read_text())
             evals = [h for h in history if 'eval_loss' in h]
-            eligible = [h for h in evals if h['step'] % 30 == 0]
-            best = min(eligible, key=lambda h: (h['eval_loss'], h['step']))
             state = json.loads((directory/'trainer_state.json').read_text())
+            # Trainer also saves a final checkpoint at step 250 in this run.
+            eligible = [h for h in evals if h['step'] % 30 == 0 or h['step'] == state['global_step']]
+            best = min(eligible, key=lambda h: (h['eval_loss'], h['step']))
+            assert state['global_step'] == max(h['step'] for h in history)
+            assert state['best_global_step'] == best['step']
             assert state['best_model_checkpoint'].endswith(f"checkpoint-{best['step']}")
             assert abs(state['best_metric'] - best['eval_loss']) < 1e-7
             metadata = json.loads((directory/'run_metadata.json').read_text())
@@ -109,6 +154,8 @@ def main():
                            gc_fraction=(row['sequence'].count('G') + row['sequence'].count('C'))/300,
                            wrong_models=wrong))
     (out/'errors.json').write_text(json.dumps(errors, indent=2)+'\n')
+    if args.plot:
+        plot_results(out, summaries, uncertainty, histories, baseline)
     print(json.dumps(dict(metrics=summaries, uncertainty=uncertainty), indent=2))
 
 

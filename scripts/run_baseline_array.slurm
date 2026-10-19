@@ -19,6 +19,6 @@ else
     name=ntv2
     model=InstaDeepAI/nucleotide-transformer-v2-500m-multi-species
 fi
-output="runs/2026-10-19/${name}-seed${seed}"
+output="${EXPERIMENT_ROOT:-runs/2026-10-19/verified}/${name}-seed${seed}"
 [[ ! -e "$output" ]] || { echo "Refusing to overwrite $output" >&2; exit 1; }
 bash scripts/run_probe.slurm --organism virus --base-model "$model" --epochs 50 --seed "$seed" --output-dir "$output"

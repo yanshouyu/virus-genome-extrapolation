@@ -27,3 +27,13 @@ Preserve existing untracked server files. Save configurations, package/Git/datas
 ## Interpretation
 
 A single small test split cannot establish broad generalization. Same-strand genomic separation and ORF grouping reduce the previously observed leakage; opposite-strand overlaps remain by explicit policy. Pretraining overlap and distant homology are not ruled out. A winning frozen probe would justify a subsequent matched-data transfer or carefully scoped adaptation experiment, rather than an immediate larger-model sweep.
+
+## Engineering amendment: checkpoint selection, 2026-10-19
+
+The first launch exposed an additional Trainer behavior: with logging/evaluation every 10 steps and checkpoint saving every 30 steps, an unsaved validation improvement updates `best_metric` and can prevent a later, better saved checkpoint from being selected. In the original NTv1 seed-44 run, step 230 had the lowest overall validation loss but was not saved; the pointer stayed at checkpoint 210 even though saved checkpoint 250 had lower validation loss than 210. This violates the intended selection among saved candidates.
+
+The NTv2 array and queued reload job were stopped when the discrepancy was found. All initial NT run results are retained as engineering evidence and excluded from the scientific comparison, including initially completed runs. No model, data, seed, head size, learning rate or epoch-budget tuning was based on their test performance.
+
+The correction explicitly sets `eval_steps=save_steps=30` for these step-based best-checkpoint runs. A controlled synthetic Trainer regression verifies that unsaved evaluations cannot become selection candidates. Config exports now record the effective interval. All six scientific runs are repeated under `runs/2026-10-19/verified/`, followed by GPU reload checks. Trainer also saves at the final step; only checkpoints with a corresponding validation evaluation are eligible for best-model selection. The summary checks the actual saved Trainer state against validation history rather than assuming its checkpoint pointer is correct.
+
+Because some initial engineering runs reached the test-prediction path before this failure was detected, the test has been accessed during engineering verification. The correction was driven by inconsistent validation bookkeeping, not by test optimization, but this is not a pristine never-inspected external test cohort. Subsequent model/hyperparameter exploration should use training/validation and reserve an external biological evaluation for stronger claims.

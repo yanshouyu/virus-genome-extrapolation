@@ -22,7 +22,7 @@ The launcher refuses to overwrite an existing run directory. For a deliberate re
 
 The recorded launch sequence used two disjoint arrays with a dependency, maintaining at most two active experimental jobs. The two initial smoke jobs were separately bounded engineering checks. The historical position diagnostic was a tiny CPU job.
 
-Collect each run's `config.json`, `run_metadata.json`, `trainer_history.json`, `test_metrics.json`, `test_predictions.npz` and `gpu_reload_check.json`. Also copy `checkpoint-240/trainer_state.json` to the collected run directory as `trainer_state.json`; this records validation checkpoint selection after the last checkpoint eligible under the fixed 50-epoch/30-step-save protocol. Keep the full selected/final models and tokenizer on Nibi under the original ignored `runs/` paths.
+Collect each run's `config.json`, `run_metadata.json`, `trainer_history.json`, `test_metrics.json`, `test_predictions.npz` and `gpu_reload_check.json`. Also copy the numerically last retained checkpoint's `trainer_state.json` to the collected run directory as `trainer_state.json`. Trainer saves at the 30-step intervals and also at the final step 250; the summary includes that final checkpoint when verifying validation selection. Keep the full selected/final models and tokenizer on Nibi under the original ignored `runs/` paths.
 
 Then, from the local repository root:
 

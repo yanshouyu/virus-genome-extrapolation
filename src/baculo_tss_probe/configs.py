@@ -71,9 +71,15 @@ class Config:
         training_args = dataclasses.asdict(self)
         for key in NON_TRAINING_ARGS:
             training_args.pop(key)
+        if self.load_best_model_at_end and self.eval_strategy == self.save_strategy == 'steps':
+            # Transformers tracks the best metric even at unsaved evaluations.
+            # Equal intervals ensure every selection candidate has a checkpoint.
+            training_args['eval_steps'] = self.save_steps
         return training_args
 
     def save_config(self):
         os.makedirs(self.output_dir, exist_ok=True)
         with open(os.path.join(self.output_dir, 'config.json'), 'w', encoding='utf-8') as handle:
-            json.dump(dataclasses.asdict(self), handle, indent=2)
+            values = dataclasses.asdict(self)
+            values['eval_steps'] = self.get_training_args().get('eval_steps')
+            json.dump(values, handle, indent=2)
