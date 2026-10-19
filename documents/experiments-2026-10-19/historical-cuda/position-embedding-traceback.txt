@@ -1,0 +1,82 @@
+1044: Traceback (most recent call last):
+1045:   File "<frozen runpy>", line 198, in _run_module_as_main
+1046:   File "<frozen runpy>", line 88, in _run_code
+1047:   File "/project/6002642/shouyu/virus-genome-extrapolation/src/nt_domain_adapt/pretrain.py", line 121, in <module>
+1048:     main()
+1049:   File "/project/6002642/shouyu/virus-genome-extrapolation/src/nt_domain_adapt/pretrain.py", line 112, in main
+1050:     trainer.train()
+1051:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/transformers/trainer.py", line 1424, in train
+1052:     return inner_training_loop(
+1053:            ^^^^^^^^^^^^^^^^^^^^
+1054:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/transformers/trainer.py", line 1506, in _inner_training_loop
+1055:     self._run_epoch(
+1056:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/transformers/trainer.py", line 1734, in _run_epoch
+1057:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+1058:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1059:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/transformers/trainer.py", line 1906, in training_step
+1060:     loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+1061:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1062:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/transformers/trainer.py", line 1978, in compute_loss
+1063:     outputs = model(**inputs)
+1064:               ^^^^^^^^^^^^^^^
+1065:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+1066:     return self._call_impl(*args, **kwargs)
+1067:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1068:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+1069:     return forward_call(*args, **kwargs)
+1070:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1071:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/accelerate/utils/operations.py", line 823, in forward
+1072:     return model_forward(*args, **kwargs)
+1073:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1074:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/accelerate/utils/operations.py", line 811, in __call__
+1075:     return convert_to_fp32(self.model_forward(*args, **kwargs))
+1076:                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1077:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+1078:     return func(*args, **kwargs)
+1079:            ^^^^^^^^^^^^^^^^^^^^^
+1080:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/transformers/utils/generic.py", line 843, in wrapper
+1081:     output = func(self, *args, **kwargs)
+1082:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1083:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/transformers/models/esm/modeling_esm.py", line 771, in forward
+1084:     outputs = self.esm(
+1085:               ^^^^^^^^^
+1086:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+1087:     return self._call_impl(*args, **kwargs)
+1088:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1089:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+1090:     return forward_call(*args, **kwargs)
+1091:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1092:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/transformers/utils/generic.py", line 917, in wrapper
+1093:     output = func(self, *args, **kwargs)
+1094:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1095:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/transformers/utils/output_capturing.py", line 253, in wrapper
+1096:     outputs = func(self, *args, **kwargs)
+1097:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1098:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/transformers/models/esm/modeling_esm.py", line 649, in forward
+1099:     inputs_embeds = self.embeddings(
+1100:                     ^^^^^^^^^^^^^^^^
+1101:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+1102:     return self._call_impl(*args, **kwargs)
+1103:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1104:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+1105:     return forward_call(*args, **kwargs)
+1106:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1107:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/transformers/models/esm/modeling_esm.py", line 227, in forward
+1108:     position_embeddings = self.position_embeddings(position_ids)
+1109:                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1110:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+1111:     return self._call_impl(*args, **kwargs)
+1112:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1113:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+1114:     return forward_call(*args, **kwargs)
+1115:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1116:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/torch/nn/modules/sparse.py", line 191, in forward
+1117:     return F.embedding(
+1118:            ^^^^^^^^^^^^
+1119:   File "/project/6002642/shouyu/venvs/huggingface/lib/python3.11/site-packages/torch/nn/functional.py", line 2567, in embedding
+1120:     return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+1121:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1122: torch.AcceleratorError: CUDA error: device-side assert triggered
+1123: Search for `cudaErrorAssert' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+1124: Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+1125: 

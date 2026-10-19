@@ -94,10 +94,18 @@ def main():
     (out/'uncertainty.json').write_text(json.dumps(uncertainty, indent=2)+'\n')
     (out/'metrics.json').write_text(json.dumps(summaries, indent=2)+'\n')
     (out/'training_histories.json').write_text(json.dumps(histories, indent=2)+'\n')
+    subgroups = {}
+    for strand in ('+', '-'):
+        indices = np.array([i for i, row in enumerate(test_rows) if row['name'].split('|')[2] == strand])
+        subgroups[strand] = dict(samples=len(indices), positives=int(labels[indices].sum()),
+                                 models={name: metrics(labels[indices], p[indices])
+                                         for name, p in probabilities.items()})
+    (out/'exploratory_strand_metrics.json').write_text(json.dumps(subgroups, indent=2)+'\n')
     errors = []
     for i, row in enumerate(test_rows):
         wrong = [name for name, p in probabilities.items() if (p[i] > .5) != bool(labels[i])]
         errors.append(dict(name=row['name'], group=row['group'], label=int(labels[i]),
+                           strand=row['name'].split('|')[2],
                            gc_fraction=(row['sequence'].count('G') + row['sequence'].count('C'))/300,
                            wrong_models=wrong))
     (out/'errors.json').write_text(json.dumps(errors, indent=2)+'\n')

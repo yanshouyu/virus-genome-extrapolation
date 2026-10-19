@@ -1,0 +1,83 @@
+{
+  "train": {
+    "classes": {
+      "0": {
+        "n": 111,
+        "mean_gc": 0.3957357357357357,
+        "median_gc": 0.39666666666666667,
+        "oriented_strands": {
+          "-": 56,
+          "+": 55
+        }
+      },
+      "1": {
+        "n": 122,
+        "mean_gc": 0.4056830601092896,
+        "median_gc": 0.41333333333333333,
+        "oriented_strands": {
+          "+": 63,
+          "-": 59
+        }
+      }
+    },
+    "positive_tss_oriented_offset_0based": {
+      "min": 14,
+      "max": 299,
+      "median": 270.5
+    }
+  },
+  "validation": {
+    "classes": {
+      "0": {
+        "n": 37,
+        "mean_gc": 0.4036036036036036,
+        "median_gc": 0.39,
+        "oriented_strands": {
+          "+": 16,
+          "-": 21
+        }
+      },
+      "1": {
+        "n": 40,
+        "mean_gc": 0.40325,
+        "median_gc": 0.4033333333333333,
+        "oriented_strands": {
+          "-": 27,
+          "+": 13
+        }
+      }
+    },
+    "positive_tss_oriented_offset_0based": {
+      "min": 52,
+      "max": 298,
+      "median": 269.5
+    }
+  },
+  "test": {
+    "classes": {
+      "0": {
+        "n": 37,
+        "mean_gc": 0.41468468468468467,
+        "median_gc": 0.41333333333333333,
+        "oriented_strands": {
+          "+": 21,
+          "-": 16
+        }
+      },
+      "1": {
+        "n": 41,
+        "mean_gc": 0.4063414634146342,
+        "median_gc": 0.4066666666666667,
+        "oriented_strands": {
+          "-": 29,
+          "+": 12
+        }
+      }
+    },
+    "positive_tss_oriented_offset_0based": {
+      "min": 27,
+      "max": 297,
+      "median": 271
+    }
+  }
+}
