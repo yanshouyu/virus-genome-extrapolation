@@ -1,0 +1,5 @@
+Invocation: OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 PYTHONPATH=src /home/s34yan/miniconda3/envs/ece657d/bin/python -m pytest -q
+Result: 19 passed, 2 skipped, 5 warnings in 17.53s
+Skipped: opt-in large pretrained checks.
+Warnings: five CPU-only pin_memory warnings from synthetic Trainer regression tests.
+New end-to-end workflow test: tests/test_validation_readouts.py (float32 synthetic caches, grouped nested analysis, no test dataset present).

@@ -1,0 +1,54 @@
+{
+  "source_sha256": "ce88c2dc6f0274822d29ff7a808f81c05292185ff4458bea88427ba28b36004b",
+  "splits": {
+    "train": {
+      "0": {
+        "n": 111,
+        "overlapping_same_strand_cds": 0,
+        "median_cds_fraction": 0.0,
+        "mean_gc_fraction": 0.3957357357357358,
+        "strands": {
+          "+": 55,
+          "-": 56
+        },
+        "multiple_recorded_tss": 0
+      },
+      "1": {
+        "n": 122,
+        "overlapping_same_strand_cds": 65,
+        "median_cds_fraction": 0.5366666666666666,
+        "mean_gc_fraction": 0.4056830601092896,
+        "strands": {
+          "+": 63,
+          "-": 59
+        },
+        "multiple_recorded_tss": 39
+      }
+    },
+    "validation": {
+      "0": {
+        "n": 37,
+        "overlapping_same_strand_cds": 0,
+        "median_cds_fraction": 0.0,
+        "mean_gc_fraction": 0.40360360360360364,
+        "strands": {
+          "+": 16,
+          "-": 21
+        },
+        "multiple_recorded_tss": 0
+      },
+      "1": {
+        "n": 40,
+        "overlapping_same_strand_cds": 25,
+        "median_cds_fraction": 0.74,
+        "mean_gc_fraction": 0.40325000000000005,
+        "strands": {
+          "+": 13,
+          "-": 27
+        },
+        "multiple_recorded_tss": 17
+      }
+    }
+  },
+  "cross_split_violations": []
+}
