@@ -6,6 +6,8 @@ The current [repair report](documents/repair-2026-10-13/README.md) explains the 
 
 The [October 19 baseline experiment](documents/experiments-2026-10-19/README.md) compares sequence-composition baselines with three-seed frozen NT probes on Nibi. It records an additional checkpoint-selection fix, prediction/weight verification and the recovered cause of the historical adaptation CUDA failure.
 
+For continuation in a new chat, read the [October 20 discussion handoff](documents/handoff-2026-10-20.md): model/corpus confounding, the inherited head choice, and expectations for longer work windows.
+
 ## Current workflow (WSL Ubuntu)
 
 ```bash
