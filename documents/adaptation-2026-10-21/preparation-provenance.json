@@ -1,0 +1,30 @@
+{
+  "source_sha256": {
+    "src/baculo_adapt/__init__.py": "bf000d554657e1c8522d68268ecf873faa3c75b6fb94cc1b26656382a552061c",
+    "src/baculo_adapt/masking.py": "3c776076796c913b0d25c0203f6eb0c90bbd58660b7ee32e15c43446eb48ea2d",
+    "scripts/run_controlled_adaptation_array.slurm": "2b444bc79599459b9f75b2706545de67b1d418259c719885e66f57f9915e2da3",
+    "scripts/prepare_adaptation_corpus.py": "57febe00e2865403236f2131d94d5f4f5c8aed612f6fa2e50b7076669f74fe4b",
+    "scripts/evaluate_controlled_adaptation.py": "4d6a842c0769ac657d132275de79f16a602cc561c0c116a847fba3f47b2b2334",
+    "scripts/cache_adaptation_sources.sh": "3ed84b212916b62a998fc5a4f8bd497344d661713e1cc5f344a42038e91bfe71",
+    "scripts/run_controlled_adaptation.slurm": "bc7f890b5c7ab516525e69cdcf2d792d1f094cf3c6eaa2839e96d9c678d6c4ac",
+    "scripts/evaluate_adaptation_secondary_test.py": "ad3327a77e4660f825b70941998c6daac7ae085b65eeea6149e12ab61e12ad3b",
+    "scripts/cache_adaptation_sources.py": "ef66044c70367113d3336c79f6bb7ac5cdcbd959ca27df6ebaa23885dcac68dd",
+    "scripts/run_controlled_adaptation.py": "5eeb982fa5896015a79f5d3da8698a9c212abf05c77db5479adc121a9e857e2a",
+    "scripts/verify_adaptation_corpus.py": "6c8d11b771cfd636361229d68e9f34c6a5773dd55ebfd365564f4c3a5dfb20b8",
+    "scripts/submit_controlled_adaptation.sh": "55d62e8ec4f5c937d440c52d9b09217f9941c8c8f8dc1fe15f77ea484b02b733",
+    "tests/test_adaptation.py": "053cca45c1119bd8df5f80a61bbe60c7f3865e8b2f81ad3b512287688db566a9",
+    "tests/test_adaptation_evaluation.py": "a9d4096668293a9b9b808c83db2003d2d5c2810273a39830ec3d48741caccadd",
+    "documents/adaptation-2026-10-21/protocol.md": "7426bc26112a84f01f49ec51e753450020af9091be13e43dd2503648ae843354"
+  },
+  "downstream_dataset_sha256": {
+    "train": "998e6bdf8659e906319179c98bb11b0c23446a9f57fb2310b5bad8721ddaeb40",
+    "validation": "cf57a574aaa279cf2eedcb2050646e3b64228d322ccbe48706c2a9c2def38d7e",
+    "test": "4d3f1779600d68022322e3d0be4aa42d3b80ebaf79e83d7566a37d948907ff52"
+  },
+  "note": "Hashes only for downstream test; no test predictions or selection in preparation.",
+  "scientific_results_available": false,
+  "smoke_jobs": [
+    24757107,
+    24757108
+  ]
+}

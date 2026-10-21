@@ -1,0 +1,9 @@
+{
+  "verified_windows": 29904,
+  "coordinates_and_orientation_match": true,
+  "accession_group_and_exact_sequence_separation": true,
+  "target_accession_absent": true,
+  "equal_training_window_counts": true,
+  "heldout_mlm_subset_verified": true,
+  "all_file_hashes_match": true
+}
