@@ -1,5 +1,7 @@
 # Validation-only readout and pooling results — October 20, 2026
 
+**October 21 clarification:** The aggregate CDS audit below did not distinguish the assigned downstream gene from other genes. Other-gene overlap is acceptable under the user's policy; the counts alone do not justify new negatives. A [gene-specific follow-up](../cds-audit-2026-10-21/README.md) finds eight 1-bp assigned-CDS boundary overlaps and one compound-CDS exception. The dataset is unchanged; the blanket recommendation to replace negative sampling on this basis is withdrawn.
+
 Masked-mean pooling improves the declared NTv2 linear probe relative to CLS on both fixed validation and nested grouped cross-validation. The k-mer baseline has the lowest pooled nested-CV log loss; these results do not establish a foundation-model advantage. The prior test cohort was not used for new fitting, selection, inference or scoring.
 
 ## Comparison

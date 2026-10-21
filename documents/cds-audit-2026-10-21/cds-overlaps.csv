@@ -1,0 +1,236 @@
+split,window,cds_name,product,cds_strand,cds_start_1based,cds_end_1based,overlap_bp,relationship
+train,2737|2453:2753|+|1,AcOrf-4,AcOrf-4 peptide,-,2295,2750,297,other_opposite_strand
+train,3030|2742:3042|+|1,AcOrf-4,AcOrf-4 peptide,-,2295,2750,8,other_opposite_strand
+train,3030|2742:3042|+|1,AcOrf-5,AcOrf-5 peptide,+,2779,3108,264,other_same_strand
+train,3050|2776:3076|+|1,AcOrf-5,AcOrf-5 peptide,+,2779,3108,298,other_same_strand
+train,4469|4218:4518|+|1,Ac-ORF603,hypothetical protein,-,3759,4364,146,other_opposite_strand
+train,7346|7252:7552|-|1,Ac-pk-1,protein kinase,+,6917,7735,300,other_opposite_strand
+train,8952|8938:9238|-|1,AcOrf-12,AcOrf-12 peptide,+,8958,9611,281,other_opposite_strand
+train,10676|10641:10941|-|1,Ac-lef1,late expression factor 1,-,10513,11313,300,other_same_strand
+train,10835|10718:11018|-|1,Ac-lef1,late expression factor 1,-,10513,11313,300,other_same_strand
+train,11459|11370:11670|-|1,Ac-egt,ecdysteroid UDP-glucosyl transferase,+,11426,12946,245,other_opposite_strand
+train,11383|11123:11423|+|1,Ac-lef1,late expression factor 1,-,10513,11313,190,other_opposite_strand
+train,13054|12781:13081|+|1,Ac-egt,ecdysteroid UDP-glucosyl transferase,+,11426,12946,165,other_same_strand
+train,15416|15157:15457|+|1,AcOrf-18,AcOrf-18 peptide,-,14398,15459,300,other_opposite_strand
+train,16712|16698:16998|-|1,AcOrf-21,actin rearrangement inducing factor,-,16305,17264,300,other_same_strand
+train,17313|17274:17574|-|1,AcOrf-22,AcOrf-22 peptide,+,17301,18449,274,other_opposite_strand
+train,17317|17304:17604|-|1,AcOrf-22,AcOrf-22 peptide,+,17301,18449,300,other_opposite_strand
+train,22172|22162:22462|-|1,AcOrf-26,AcOrf-26 peptide,+,22209,22598,254,other_opposite_strand
+train,22261|22240:22540|-|1,AcOrf-26,AcOrf-26 peptide,+,22209,22598,300,other_opposite_strand
+train,22192|21901:22201|+|1,AcOrf-25,ssDNA binding protein,-,21183,22133,232,other_opposite_strand
+train,22412|22194:22494|+|1,AcOrf-26,AcOrf-26 peptide,+,22209,22598,286,other_same_strand
+train,23396|23160:23460|+|1,Ac-IAP1,apoptosis inhibitor,+,22600,23460,300,other_same_strand
+train,24273|24262:24562|-|1,AcOrf-30,AcOrf-30 peptide,-,24315,25706,248,other_same_strand
+train,24998|24760:25060|-|1,AcOrf-30,AcOrf-30 peptide,-,24315,25706,300,other_same_strand
+train,25033|24845:25145|-|1,AcOrf-30,AcOrf-30 peptide,-,24315,25706,300,other_same_strand
+train,25896|25755:26055|-|1,Ac-sod,superoxide dismutase,+,25820,26275,236,other_opposite_strand
+train,26196|26028:26328|-|1,Ac-sod,superoxide dismutase,+,25820,26275,247,other_opposite_strand
+train,25809|25519:25819|+|1,AcOrf-30,AcOrf-30 peptide,-,24315,25706,187,other_opposite_strand
+train,28146|27868:28168|-|1,Ac-HisP,putative histidinol-phosphatase,-,27733,28281,300,other_same_strand
+train,27786|27589:27889|-|1,Ac-HisP,putative histidinol-phosphatase,-,27733,28281,157,other_same_strand
+train,27595|27587:27887|-|1,Ac-HisP,putative histidinol-phosphatase,-,27733,28281,155,other_same_strand
+train,29089|29066:29366|-|1,Ac-v-ubi,viral ubiquitin,+,28962,29195,129,other_opposite_strand
+train,29089|29066:29366|-|1,Ac-39K/pp31,nuclear matrix associated phosphoprotein,-,29242,30069,125,other_same_strand
+train,28945|28657:28957|+|1,AcOrf-34,AcOrf-34 peptide,-,28294,28941,284,other_opposite_strand
+train,30224|30191:30491|-|1,Ac-lef11,late expression factor 11,-,30063,30401,210,other_same_strand
+train,30224|30191:30491|-|1,AcOrf-38,AcOrf-38 peptide,-,30364,31014,128,other_same_strand
+train,30197|30173:30473|-|1,Ac-lef11,late expression factor 11,-,30063,30401,228,other_same_strand
+train,30197|30173:30473|-|1,AcOrf-38,AcOrf-38 peptide,-,30364,31014,110,other_same_strand
+train,30200|30173:30473|-|1,Ac-lef11,late expression factor 11,-,30063,30401,228,other_same_strand
+train,30200|30173:30473|-|1,AcOrf-38,AcOrf-38 peptide,-,30364,31014,110,other_same_strand
+train,30208|30105:30405|-|1,Ac-lef11,late expression factor 11,-,30063,30401,296,other_same_strand
+train,30208|30105:30405|-|1,AcOrf-38,AcOrf-38 peptide,-,30364,31014,42,other_same_strand
+train,30596|30464:30764|-|1,AcOrf-38,AcOrf-38 peptide,-,30364,31014,300,other_same_strand
+train,31031|31026:31326|-|1,Ac-p43,hypothetical protein,-,31078,32169,249,other_same_strand
+train,32189|32184:32484|-|1,Ac-p47,transcription regulator,-,32177,33382,300,other_same_strand
+train,33239|33028:33328|+|1,Ac-p47,transcription regulator,-,32177,33382,300,other_opposite_strand
+train,35254|34992:35292|+|1,Ac-GTA,global transactivator-like protein,+,34010,35530,300,other_same_strand
+train,35597|35447:35747|+|1,Ac-GTA,global transactivator-like protein,+,34010,35530,83,other_same_strand
+train,35597|35447:35747|+|1,AcOrf-43,AcOrf-43 peptide,+,35544,35777,204,other_same_strand
+train,35657|35360:35660|+|1,Ac-GTA,global transactivator-like protein,+,34010,35530,170,other_same_strand
+train,35657|35360:35660|+|1,AcOrf-43,AcOrf-43 peptide,+,35544,35777,117,other_same_strand
+train,36703|36414:36714|+|1,AcOrf-45,AcOrf-45 peptide,+,36155,36733,300,other_same_strand
+train,36681|36410:36710|+|1,AcOrf-45,AcOrf-45 peptide,+,36155,36733,300,other_same_strand
+train,43017|42724:43024|+|1,Ac-lef8,late expression factor 8,-,40523,43153,300,other_opposite_strand
+train,44768|44740:45040|-|1,AcOrf-53,AcOrf-53 peptide,+,44712,45131,300,other_opposite_strand
+train,44087|43882:44182|+|1,AcOrf-51,AcOrf-51 peptide,+,43180,44136,254,other_same_strand
+train,44677|44394:44694|+|1,AcOrf-52,AcOrf-52 peptide,-,44339,44710,300,other_opposite_strand
+train,50560|50443:50743|+|1,Ac-lef9,late expression factor 9,+,49184,50734,291,other_same_strand
+train,52203|52194:52494|-|1,Ac-DNA-pol,DNA-dependant DNA-polymerase,-,52329,55283,166,other_same_strand
+train,52279|52268:52568|-|1,Ac-DNA-pol,DNA-dependant DNA-polymerase,-,52329,55283,240,other_same_strand
+train,55401|55297:55597|-|1,AcOrf-66,AcOrf-66 peptide,+,55292,57718,300,other_opposite_strand
+train,55484|55424:55724|-|1,AcOrf-66,AcOrf-66 peptide,+,55292,57718,300,other_opposite_strand
+train,55267|54973:55273|+|1,Ac-DNA-pol,DNA-dependant DNA-polymerase,-,52329,55283,300,other_opposite_strand
+train,55075|54798:55098|+|1,Ac-DNA-pol,DNA-dependant DNA-polymerase,-,52329,55283,300,other_opposite_strand
+train,61307|61163:61463|+|1,Ac-IAP2,apoptosis inhibitor,+,61016,61765,300,other_same_strand
+train,61467|61203:61503|+|1,Ac-IAP2,apoptosis inhibitor,+,61016,61765,300,other_same_strand
+train,62372|62348:62648|-|1,AcOrf-74,AcOrf-74 peptide,-,62311,63108,300,other_same_strand
+train,63808|63741:64041|-|1,AcOrf-76,AcOrf-76 peptide,-,63543,63797,56,other_same_strand
+train,63808|63741:64041|-|1,Ac-vlf-1,very late expression factor 1,-,63813,64952,229,other_same_strand
+train,63540|63526:63826|-|1,AcOrf-75,AcOrf-75 peptide,-,63126,63527,1,assigned_downstream
+train,63540|63526:63826|-|1,AcOrf-76,AcOrf-76 peptide,-,63543,63797,255,other_same_strand
+train,63540|63526:63826|-|1,Ac-vlf-1,very late expression factor 1,-,63813,64952,14,other_same_strand
+train,63619|63574:63874|-|1,AcOrf-76,AcOrf-76 peptide,-,63543,63797,223,other_same_strand
+train,63619|63574:63874|-|1,Ac-vlf-1,very late expression factor 1,-,63813,64952,62,other_same_strand
+train,64046|63994:64294|-|1,Ac-vlf-1,very late expression factor 1,-,63813,64952,300,other_same_strand
+train,65026|64984:65284|-|1,AcOrf-78,AcOrf-78 peptide,-,64958,65287,300,other_same_strand
+train,67581|67541:67841|-|1,Ac-TLP,telokin-like protein-20,-,67376,67918,300,other_same_strand
+train,67814|67565:67865|+|1,Ac-TLP,telokin-like protein-20,-,67376,67918,300,other_opposite_strand
+train,71879|71616:71916|+|1,AcOrf-84,AcOrf-84 peptide,+,71165,71731,115,other_same_strand
+train,74110|73982:74282|+|1,Ac-PNK/PNL,polynucleotide kinase/ligase,-,72131,74215,233,other_opposite_strand
+train,74334|74038:74338|+|1,Ac-PNK/PNL,polynucleotide kinase/ligase,-,72131,74215,177,other_opposite_strand
+train,75772|75544:75844|-|1,Ac-vp39,major viral capsid protein,-,75534,76577,300,other_same_strand
+train,76538|76272:76572|+|1,Ac-vp39,major viral capsid protein,-,75534,76577,300,other_opposite_strand
+train,79660|79566:79866|-|1,AcOrf-93,AcOrf-93 peptide,+,79477,79962,300,other_opposite_strand
+train,79348|79133:79433|+|1,AcOrf-92,AcOrf-92 peptide,-,78699,79478,300,other_opposite_strand
+train,84430|84412:84712|-|1,AcOrf-96,AcOrf-96 peptide,+,84346,84867,300,other_opposite_strand
+train,84542|84484:84784|-|1,AcOrf-96,AcOrf-96 peptide,+,84346,84867,300,other_opposite_strand
+train,84201|83985:84285|+|1,Ac-helicase,helicase,-,80694,84359,300,other_opposite_strand
+train,85653|85426:85726|+|1,Ac-38K,hypothetical protein,-,85021,85983,300,other_opposite_strand
+train,88198|88190:88490|-|1,AcOrf-102,AcOrf-102,-,88026,88394,204,other_same_strand
+train,88198|88190:88490|-|1,Ac-p48,hypothetical protein,-,88375,89538,116,other_same_strand
+train,88111|88049:88349|-|1,AcOrf-102,AcOrf-102,-,88026,88394,300,other_same_strand
+train,88455|88411:88711|-|1,Ac-p48,hypothetical protein,-,88375,89538,300,other_same_strand
+train,89528|89257:89557|+|1,Ac-p48,hypothetical protein,-,88375,89538,281,other_opposite_strand
+train,89376|89119:89419|+|1,Ac-p48,hypothetical protein,-,88375,89538,300,other_opposite_strand
+train,94717|94712:95012|-|1,AcOrf-109,AcOrf-109 peptide,-,94721,95893,292,other_same_strand
+train,95909|95906:96206|-|1,AcOrf-110,AcOrf-110 peptide,-,95929,96099,171,other_same_strand
+train,95909|95906:96206|-|1,AcOrf-111,AcOrf-111 peptide,-,96148,96351,59,other_same_strand
+train,96109|96098:96398|-|1,AcOrf-110,AcOrf-110 peptide,-,95929,96099,1,assigned_downstream
+train,96109|96098:96398|-|1,AcOrf-111,AcOrf-111 peptide,-,96148,96351,204,other_same_strand
+train,96382|96353:96653|-|1,AcOrf-112,AcOrf-112 peptide,+,96521,96784,133,other_opposite_strand
+train,96409|96134:96434|+|1,AcOrf-111,AcOrf-111 peptide,-,96148,96351,204,other_opposite_strand
+train,99772|99481:99781|+|1,AcOrf-115,AcOrf-115 peptide,-,99182,99796,300,other_opposite_strand
+train,99360|99340:99640|+|1,AcOrf-115,AcOrf-115 peptide,-,99182,99796,300,other_opposite_strand
+train,101037|100756:101056|-|1,AcOrf-119,AcOrf-119 peptide,+,100699,102291,300,other_opposite_strand
+train,101114|100980:101280|-|1,AcOrf-119,AcOrf-119 peptide,+,100699,102291,300,other_opposite_strand
+train,100852|100710:101010|-|1,AcOrf-119,AcOrf-119 peptide,+,100699,102291,300,other_opposite_strand
+train,100691|100397:100697|+|1,AcOrf-118,AcOrf-118 peptide,-,100231,100704,300,other_opposite_strand
+train,102935|102920:103220|-|1,Ac-pk-2,protein kinase,-,102964,103611,257,other_same_strand
+train,103622|103413:103713|+|1,Ac-pk-2,protein kinase,-,102964,103611,198,other_opposite_strand
+train,103781|103486:103786|+|1,Ac-pk-2,protein kinase,-,102964,103611,125,other_opposite_strand
+train,105245|105238:105538|-|1,Ac-chitinase,chitinase,-,105282,106937,257,other_same_strand
+train,106949|106942:107242|-|1,Ac-v-cath,viral cathepsin-like protein,+,106983,107954,260,other_opposite_strand
+train,106956|106668:106968|+|1,Ac-chitinase,chitinase,-,105282,106937,269,other_opposite_strand
+train,109862|109593:109893|+|1,Ac-gp64,major budded virus envelope glycoprotein,-,108179,109717,124,other_opposite_strand
+train,112519|112221:112521|+|1,AcOrf-132,AcOrf-132 peptide,+,111873,112532,300,other_same_strand
+train,112539|112253:112553|+|1,AcOrf-132,AcOrf-132 peptide,+,111873,112532,279,other_same_strand
+train,116461|116182:116482|+|1,Ac-94K,hypothetical protein,-,113870,116281,99,other_opposite_strand
+train,116465|116185:116485|+|1,Ac-94K,hypothetical protein,-,113870,116281,96,other_opposite_strand
+train,118768|118474:118774|+|1,Ac-p26,hypothetical protein,+,118044,118766,292,other_same_strand
+train,121085|121074:121374|-|1,Ac-ME53,DNA synthesis regulator,-,121205,122554,170,other_same_strand
+train,122805|122531:122831|+|1,Ac-ME53,DNA synthesis regulator,-,121205,122554,23,other_opposite_strand
+train,122805|122531:122831|+|1,AcOrf-140,AcOrf-140 peptide,+,122625,122807,183,other_same_strand
+train,122755|122589:122889|+|1,AcOrf-140,AcOrf-140 peptide,+,122625,122807,183,other_same_strand
+train,122755|122589:122889|+|1,Ac-IE-01,putative early gene transactivator,+,122832,128946,58,assigned_other_cds_part
+train,122755|122589:122889|+|1,Ac-IE-0,hypothetical protein,+,122832,123617,58,other_same_strand
+train,123615|123321:123621|+|1,Ac-IE-0,hypothetical protein,+,122832,123617,296,other_same_strand
+train,124959|124848:125148|+|1,Ac-49K,early 49 Daa protein,+,123632,125065,217,other_same_strand
+train,125343|125055:125355|+|1,Ac-49K,early 49 Daa protein,+,123632,125065,10,other_same_strand
+train,125343|125055:125355|+|1,Ac-odv-e18,occlusion-derived virus envelope protein,+,125153,125341,189,other_same_strand
+train,125981|125712:126012|+|1,Ac-odv-ec27,occlusion-derived virus envelope/capsid protein,+,125357,126229,300,other_same_strand
+train,127139|127138:127438|-|1,Ac-IE-01,putative early gene transactivator,+,122832,128946,289,other_opposite_strand
+train,127139|127138:127438|-|1,Ac-IE-1,early gene transactivator,+,127198,128946,241,other_opposite_strand
+train,131290|131165:131465|-|1,Ac-IE-2,early gene transactivator,-,130857,132083,300,other_same_strand
+train,132130|132125:132425|-|1,AcOrf-152,AcOrf-152 peptide,-,132109,132387,262,other_same_strand
+train,132480|132222:132522|+|1,AcOrf-152,AcOrf-152 peptide,-,132109,132387,165,other_opposite_strand
+train,133576|133277:133577|+|1,Ac-PE38,hypothetical protein,+,132526,133491,214,other_same_strand
+train,133587|133291:133591|+|1,Ac-PE38,hypothetical protein,+,132526,133491,200,other_same_strand
+train,133587|133291:133591|+|1,AcOrf-154,AcOrf-154 peptide,+,133591,133836,1,assigned_downstream
+train,132913|132816:133116|+|1,Ac-PE38,hypothetical protein,+,132526,133491,300,other_same_strand
+validation,2271|2265:2565|-|1,AcOrf-4,AcOrf-4 peptide,-,2295,2750,271,other_same_strand
+validation,8815|8559:8859|+|1,AcOrf-11,AcOrf-11 peptide,-,7899,8921,300,other_opposite_strand
+validation,13307|13255:13555|+|1,AcOrf-16,AcOrf-16 peptide,+,13092,13769,300,other_same_strand
+validation,13519|13393:13693|+|1,AcOrf-16,AcOrf-16 peptide,+,13092,13769,300,other_same_strand
+validation,15511|15475:15775|-|1,AcOrf-19,AcOrf-19 peptide,+,15461,15787,300,other_opposite_strand
+validation,18468|18210:18510|+|1,AcOrf-22,AcOrf-22 peptide,+,17301,18449,239,other_same_strand
+validation,33444|33424:33724|-|1,AcOrf-41,AcOrf-41 peptide,+,33381,33926,300,other_opposite_strand
+validation,39643|39620:39920|-|1,Ac-pcna,proliferating cell nuclear antigen,-,39643,40413,278,other_same_strand
+validation,46360|46079:46379|+|1,AcOrf-54,viral capsid associated protein,+,45222,46319,240,other_same_strand
+validation,46520|46322:46622|+|1,AcOrf-55,AcOrf-55 peptide,+,46411,46632,212,other_same_strand
+validation,48281|48220:48520|-|1,AcOrf-60,AcOrf-60 peptide,-,48103,48366,146,other_same_strand
+validation,48281|48220:48520|-|1,Ac-FP,FP protein,-,48513,49157,8,other_same_strand
+validation,48326|48125:48425|-|1,AcOrf-60,AcOrf-60 peptide,-,48103,48366,241,other_same_strand
+validation,48466|48379:48679|-|1,Ac-FP,FP protein,-,48513,49157,167,other_same_strand
+validation,49214|49194:49494|-|1,Ac-lef9,late expression factor 9,+,49184,50734,300,other_opposite_strand
+validation,59123|58870:59170|+|1,Ac-lef3,late expression factor 3,-,57721,58878,8,other_opposite_strand
+validation,59123|58870:59170|+|1,AcOrf-68,AcOrf-68 peptide,+,58720,59298,300,other_same_strand
+validation,60099|59810:60110|+|1,AcOrf-69,putative methyl transferase,+,59276,60064,254,other_same_strand
+validation,60099|59810:60110|+|1,AcOrf-70,AcOrf-70 peptide,+,60110,60982,1,assigned_downstream
+validation,63120|63110:63410|-|1,AcOrf-75,AcOrf-75 peptide,-,63126,63527,285,other_same_strand
+validation,63297|63159:63459|-|1,AcOrf-75,AcOrf-75 peptide,-,63126,63527,300,other_same_strand
+validation,63343|63164:63464|-|1,AcOrf-75,AcOrf-75 peptide,-,63126,63527,300,other_same_strand
+validation,68008|67965:68265|-|1,Ac-p95,viral capsid associated protein,+,67884,70427,300,other_opposite_strand
+validation,68087|68059:68359|-|1,Ac-p95,viral capsid associated protein,+,67884,70427,300,other_opposite_strand
+validation,67924|67918:68218|-|1,Ac-p95,viral capsid associated protein,+,67884,70427,300,other_opposite_strand
+validation,74870|74668:74968|-|1,Ac-p15,p15,+,74356,74736,68,other_opposite_strand
+validation,74870|74668:74968|-|1,Ac-cg30,hypothetical protein,-,74737,75531,232,other_same_strand
+validation,79901|79658:79958|+|1,AcOrf-93,AcOrf-93 peptide,+,79477,79962,300,other_same_strand
+validation,84837|84539:84839|+|1,AcOrf-96,AcOrf-96 peptide,+,84346,84867,300,other_same_strand
+validation,84837|84539:84839|+|1,AcOrf-97,AcOrf-97 peptide,+,84839,85009,1,assigned_downstream
+validation,86918|86878:87178|-|1,Ac-p6.9,basic protein,-,86712,86879,1,assigned_downstream
+validation,86918|86878:87178|-|1,Ac-p40,hypothetical protein,-,86921,88006,258,other_same_strand
+validation,89557|89554:89854|-|1,Ac-vp80,viral capsid associated protein,+,89564,91639,291,other_opposite_strand
+validation,99175|99170:99470|-|1,AcOrf-115,AcOrf-115 peptide,-,99182,99796,289,other_same_strand
+validation,99225|99203:99503|-|1,AcOrf-115,AcOrf-115 peptide,-,99182,99796,300,other_same_strand
+validation,99804|99801:100101|-|1,AcOrf-116,AcOrf-116 peptide,-,99804,99974,171,other_same_strand
+validation,99804|99801:100101|-|1,AcOrf-117,AcOrf-117 peptide,+,99910,100197,192,other_opposite_strand
+validation,110500|110220:110520|+|1,Ac-p24,viral capsid protein,+,109900,110496,276,other_same_strand
+validation,110856|110592:110892|+|1,Ac-gp16,hypothetical protein,+,110524,110844,252,other_same_strand
+validation,116290|116285:116585|-|1,Ac-35K/p35,annihilator,+,116492,117391,94,other_opposite_strand
+validation,116293|116285:116585|-|1,Ac-35K/p35,annihilator,+,116492,117391,94,other_opposite_strand
+validation,116356|116282:116582|-|1,Ac-35K/p35,annihilator,+,116492,117391,91,other_opposite_strand
+validation,122634|122584:122884|-|1,AcOrf-140,AcOrf-140 peptide,+,122625,122807,183,other_opposite_strand
+validation,122634|122584:122884|-|1,Ac-IE-01,putative early gene transactivator,+,122832,128946,53,other_opposite_strand
+validation,122634|122584:122884|-|1,Ac-IE-0,hypothetical protein,+,122832,123617,53,other_opposite_strand
+validation,122594|122565:122865|-|1,AcOrf-140,AcOrf-140 peptide,+,122625,122807,183,other_opposite_strand
+validation,122594|122565:122865|-|1,Ac-IE-01,putative early gene transactivator,+,122832,128946,34,other_opposite_strand
+validation,122594|122565:122865|-|1,Ac-IE-0,hypothetical protein,+,122832,123617,34,other_opposite_strand
+validation,127147|126878:127178|+|1,Ac-IE-01,putative early gene transactivator,+,122832,128946,29,other_same_strand
+validation,127147|126878:127178|+|1,AcOrf-146,AcOrf-146 peptide,-,126527,127132,254,other_opposite_strand
+test,2834|2799:3099|-|1,AcOrf-5,AcOrf-5 peptide,+,2779,3108,300,other_opposite_strand
+test,2834|2799:3099|-|1,Ac-lef2,late expression factor 2,+,3089,3721,11,other_opposite_strand
+test,4386|4378:4678|-|1,Ac-PH,major occlusion body protein,+,4520,5257,159,other_opposite_strand
+test,6884|6607:6907|+|1,Ac-ORF1629,viral capsid associated protein,-,5287,6918,300,other_opposite_strand
+test,16552|16370:16670|+|1,AcOrf-21,actin rearrangement inducing factor,-,16305,17264,300,other_opposite_strand
+test,17287|16993:17293|+|1,AcOrf-21,actin rearrangement inducing factor,-,16305,17264,271,other_opposite_strand
+test,21508|21299:21599|-|1,AcOrf-25,ssDNA binding protein,-,21183,22133,300,other_same_strand
+test,21150|21147:21447|-|1,AcOrf-25,ssDNA binding protein,-,21183,22133,265,other_same_strand
+test,28294|28290:28590|-|1,AcOrf-34,AcOrf-34 peptide,-,28294,28941,297,other_same_strand
+test,33967|33691:33991|+|1,AcOrf-41,AcOrf-41 peptide,+,33381,33926,235,other_same_strand
+test,39217|39215:39515|-|1,AcOrf-48,AcOrf-48 peptide,-,39278,39619,238,other_same_strand
+test,40454|40435:40735|-|1,Ac-lef8,late expression factor 8,-,40523,43153,213,other_same_strand
+test,43174|43160:43460|-|1,AcOrf-51,AcOrf-51 peptide,+,43180,44136,281,other_opposite_strand
+test,45123|44828:45128|+|1,AcOrf-53,AcOrf-53 peptide,+,44712,45131,300,other_same_strand
+test,45123|44828:45128|+|1,Ac-lef10,late expression factor 10,+,45128,45364,1,assigned_downstream
+test,47030|46768:47068|+|1,AcOrf-56,AcOrf-56 peptide,+,46634,46888,120,other_same_strand
+test,48734|48707:49007|+|1,Ac-FP,FP protein,-,48513,49157,300,other_opposite_strand
+test,58925|58908:59208|-|1,AcOrf-68,AcOrf-68 peptide,+,58720,59298,300,other_opposite_strand
+test,59177|58970:59270|-|1,AcOrf-68,AcOrf-68 peptide,+,58720,59298,300,other_opposite_strand
+test,59171|58950:59250|-|1,AcOrf-68,AcOrf-68 peptide,+,58720,59298,300,other_opposite_strand
+test,60986|60716:61016|+|1,AcOrf-70,AcOrf-70 peptide,+,60110,60982,266,other_same_strand
+test,60986|60716:61016|+|1,Ac-IAP2,apoptosis inhibitor,+,61016,61765,1,assigned_downstream
+test,65297|65289:65589|-|1,AcOrf-79,AcOrf-79 peptide,-,65290,65604,300,other_same_strand
+test,65378|65375:65675|-|1,AcOrf-79,AcOrf-79 peptide,-,65290,65604,229,other_same_strand
+test,65378|65375:65675|-|1,Ac-gp41,occlusion-derived virus glycoprotein,-,65607,66836,69,other_same_strand
+test,65714|65663:65963|-|1,Ac-gp41,occlusion-derived virus glycoprotein,-,65607,66836,300,other_same_strand
+test,65776|65746:66046|-|1,Ac-gp41,occlusion-derived virus glycoprotein,-,65607,66836,300,other_same_strand
+test,66885|66860:67160|-|1,AcOrf-81,AcOrf-81 peptide,-,66826,67527,300,other_same_strand
+test,66854|66837:67137|-|1,AcOrf-81,AcOrf-81 peptide,-,66826,67527,300,other_same_strand
+test,76898|76736:77036|-|1,Ac-lef4,late expression factor 4,+,76596,77990,300,other_opposite_strand
+test,76634|76583:76883|-|1,Ac-lef4,late expression factor 4,+,76596,77990,288,other_opposite_strand
+test,76682|76627:76927|-|1,Ac-lef4,late expression factor 4,+,76596,77990,300,other_opposite_strand
+test,78664|78661:78961|-|1,AcOrf-92,AcOrf-92 peptide,-,78699,79478,263,other_same_strand
+test,86071|86043:86343|-|1,Ac-lef5,late expression factor 5,+,85918,86715,300,other_opposite_strand
+test,96710|96461:96761|+|1,AcOrf-112,AcOrf-112 peptide,+,96521,96784,241,other_same_strand
+test,102200|101945:102245|+|1,AcOrf-119,AcOrf-119 peptide,+,100699,102291,300,other_same_strand
+test,104205|103955:104255|-|1,AcOrf-124,AcOrf-124 peptide,+,103793,104536,300,other_opposite_strand
+test,103639|103628:103928|-|1,AcOrf-124,AcOrf-124 peptide,+,103793,104536,136,other_opposite_strand
+test,109854|109809:110109|-|1,Ac-p24,viral capsid protein,+,109900,110496,210,other_opposite_strand
+test,109841|109732:110032|-|1,Ac-p24,viral capsid protein,+,109900,110496,133,other_opposite_strand
+test,109781|109717:110017|-|1,Ac-p24,viral capsid protein,+,109900,110496,118,other_opposite_strand
+test,109754|109744:110044|-|1,Ac-p24,viral capsid protein,+,109900,110496,145,other_opposite_strand
+test,111868|111571:111871|+|1,Ac-PE/pp34,major polyhedral calyx protein,+,110903,111661,90,other_same_strand
+test,130151|130143:130443|-|1,AcOrf-149,AcOrf-149 peptide,-,130167,130490,277,other_same_strand
+test,130318|130065:130365|+|1,Ac-odv-e56,occlusion-derived virus envelope protein,-,129008,130138,73,other_opposite_strand
+test,130318|130065:130365|+|1,AcOrf-149,AcOrf-149 peptide,-,130167,130490,199,other_opposite_strand
