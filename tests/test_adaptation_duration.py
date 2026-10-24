@@ -66,3 +66,14 @@ def test_injected_custom_nt_backward_matches_zero_adapter_baseline():
     optimizer.step()
     assert any(torch.count_nonzero(v) for k,v in model.named_parameters() if k.endswith('lora_B'))
     assert all(torch.equal(before[k],v) for k,v in model.named_parameters() if not v.requires_grad)
+
+
+def test_audit_excludes_both_strands_of_selection_loci():
+    from baculo_adapt.audit import independent_audit_rows
+    rows = [dict(accession='A', start=i, end=i+1, strand=strand)
+            for i in range(10) for strand in ['+','-']]
+    audit = independent_audit_rows(rows, rows[:1], count=8)
+    assert all(row['start'] != 0 for row in audit)
+    assert audit == independent_audit_rows(rows, rows[:1], count=8)
+    with pytest.raises(ValueError):
+        independent_audit_rows(rows, rows[:1], count=19)
