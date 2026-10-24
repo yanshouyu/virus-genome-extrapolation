@@ -24,8 +24,16 @@ assert not {r['sequence'] for r in train}&{r['sequence'] for r in val}
 assert len(rows['general_train.jsonl'])==len(train)
 valkeys={(r['accession'],r['start'],r['strand']) for r in val}
 assert all((r['accession'],r['start'],r['strand']) in valkeys for r in rows['mlm_validation.jsonl'])
-result=dict(verified_windows=sum(map(len,rows.values())),coordinates_and_orientation_match=True,
+locus_counts={}
+for domain in ['baculo','general']:
+    pairing={}
+    for row in rows[domain+'_train.jsonl']:
+        pairing.setdefault((row['accession'],row['start'],row['end']),set()).add(row['strand'])
+    assert all(strands=={'+','-'} for strands in pairing.values())
+    locus_counts[domain]=len(pairing)
+assert locus_counts['baculo']==locus_counts['general']
+result=dict(exact_strand_pairing_and_unique_locus_counts_match=True,verified_windows=sum(map(len,rows.values())),coordinates_and_orientation_match=True,
             accession_group_and_exact_sequence_separation=True,target_accession_absent=True,
             equal_training_window_counts=True,heldout_mlm_subset_verified=True,all_file_hashes_match=True)
-Path('documents/adaptation-2026-10-21/corpus-verification.json').write_text(json.dumps(result,indent=2)+'\n')
+Path('documents/adaptation-2026-10-23/corpus-verification-v2.json').write_text(json.dumps(result,indent=2)+'\n')
 print(json.dumps(result,indent=2))

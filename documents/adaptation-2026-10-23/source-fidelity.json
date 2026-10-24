@@ -1,0 +1,20 @@
+{
+  "100m": {
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "all_mlm_parameters_exact": true,
+    "unique_parameter_tensors": 320,
+    "includes_lm_head": true
+  },
+  "500m": {
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+      "revision": "06615c1660c892fc199840c18123f8385b3542a8"
+    },
+    "all_mlm_parameters_exact": true,
+    "unique_parameter_tensors": 418,
+    "includes_lm_head": true
+  }
+}

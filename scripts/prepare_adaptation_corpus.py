@@ -1,7 +1,7 @@
 """Prepare accession/species-partitioned corpus and matched general control."""
 import argparse,csv,gzip,hashlib,json,random,urllib.request
 from pathlib import Path
-from Bio import SeqIO
+
 
 
 def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
@@ -15,7 +15,19 @@ def tiles(sequence,accession,group):
         for strand,text in [('+',seq),('-',rc(seq))]:
             yield dict(sequence=text,accession=accession,group=group,start=start,end=start+1536,strand=strand)
 
+def paired_sample(candidates,n_loci,seed):
+    """Sample forward loci, then include both orientations of every selected locus."""
+    forward=[w for w in candidates if w['strand']=='+']
+    if len({(w['accession'],w['start'],w['end']) for w in forward})!=len(forward):
+        raise ValueError('Duplicate genomic loci in candidates')
+    if n_loci>len(forward):raise ValueError('Not enough unique loci')
+    result=[]
+    for w in random.Random(seed).sample(forward,n_loci):
+        result.extend([w,dict(w,sequence=rc(w['sequence']),strand='-')])
+    return result
+
 def main():
+    from Bio import SeqIO
     p=argparse.ArgumentParser();p.add_argument('--output',required=True);p.add_argument('--general-manifest',required=True)
     args=p.parse_args();out=Path(args.output);out.mkdir(parents=True,exist_ok=False)
     records=[];manifest=[]
@@ -61,9 +73,9 @@ def main():
         candidates=[]
         with gzip.open(archive,'rt') as f:
             for record in SeqIO.parse(f,'fasta'):candidates.extend(tiles(str(record.seq),record.id,organism))
-        n=len(split['train'])//3+(i<len(split['train'])%3)
-        assert len(candidates)>=n,(organism,len(candidates),n)
-        general.extend(random.Random(42+i).sample(candidates,n))
+        n_loci=(len(split['train'])//2)//3+(i<(len(split['train'])//2)%3)
+        n=2*n_loci
+        general.extend(paired_sample(candidates,n_loci,42+i))
         sources.append(dict(organism=organism,url=url,archive_sha256=sha(archive),candidate_windows=len(candidates),selected_windows=n))
     assert len(general)==len(split['train'])
     write('general_train',general)

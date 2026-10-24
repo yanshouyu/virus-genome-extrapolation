@@ -40,6 +40,11 @@ def test_custom_mlm_backward_and_exact_state_reload(tmp_path):
     before=model.esm.embeddings.word_embeddings.weight.detach().clone()
     ids=torch.tensor([[0,4,5,6,7],[0,8,9,10,11]])
     masked,labels=mask_tokens(ids,Tokenizer(),torch.Generator().manual_seed(42))
+    # NTv2 caches rotary cos/sin tensors: evaluation must precede training safely.
+    model.eval()
+    with torch.no_grad():
+        model(input_ids=masked,attention_mask=torch.ones_like(ids),labels=labels)
+    model.train()
     optimizer=torch.optim.AdamW(model.parameters(),lr=1e-3)
     loss=model(input_ids=masked,attention_mask=torch.ones_like(ids),labels=labels).loss
     assert torch.isfinite(loss);loss.backward()

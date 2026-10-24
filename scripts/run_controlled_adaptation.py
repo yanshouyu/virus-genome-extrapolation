@@ -22,7 +22,7 @@ def extract(model,tokenizer,out,prefix):
             special=torch.isin(tokens['input_ids'],torch.tensor(tokenizer.all_special_ids))
             check_token_budget(tokens['input_ids'],tokens['attention_mask'],model.config,tokenizer)
             inputs={k:v.cuda() for k,v in tokens.items() if k in ['input_ids','attention_mask']}
-            with torch.inference_mode():
+            with torch.no_grad():
                 h=model.esm(**inputs).last_hidden_state
                 mask=(tokens['attention_mask'].bool()&~special).cuda()
                 assert (mask.sum(1)>0).all()
@@ -70,7 +70,7 @@ def main():
     val_masked,val_labels=mask_tokens(val,tokenizer,fixed_generator)
     def evaluate():
         model.eval();total=0.;n=0
-        with torch.inference_mode(),torch.autocast('cuda',dtype=torch.bfloat16):
+        with torch.no_grad(),torch.autocast('cuda',dtype=torch.bfloat16):
             for start in range(0,len(val),args.microbatch):
                 labels=val_labels[start:start+args.microbatch].cuda();count=int((labels!=-100).sum())
                 loss=model(input_ids=val_masked[start:start+args.microbatch].cuda(),attention_mask=val_attention[start:start+args.microbatch].cuda(),labels=labels).loss

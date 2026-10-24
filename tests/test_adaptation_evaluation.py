@@ -33,3 +33,11 @@ def test_paired_development_selection_uses_no_test_file(tmp_path):
     for size in ['100m','500m']:
         assert abs(result['comparison'][size+'_baculo_minus_general']['log_loss_delta'])<1e-12
         assert abs(result['comparison'][size+'_baculo_minus_general']['mcc_delta'])<1e-12
+    (tmp_path/'frozen-readout-selection.json').write_text(json.dumps({'selection':result['selection']}))
+    subprocess.run([sys.executable,str(script),'--root',str(root),'--data-dir',str(data),
+                    '--output',str(tmp_path/'partial'),'--bootstrap','20','--sizes','100m'],check=True,capture_output=True)
+    partial=json.loads((tmp_path/'partial/metrics.json').read_text())
+    assert partial['independent_frozen_selection_matches'] is True
+    assert len(partial['models'])==8
+    assert (tmp_path/'partial/SIZE_PANEL_COMPLETE').exists()
+    assert not (tmp_path/'partial/COMPLETE').exists()

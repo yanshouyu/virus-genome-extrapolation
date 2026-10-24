@@ -1,0 +1,29 @@
+{
+  "note": "Historical MIG/inference extraction versus new full-H100/no_grad extraction. Small numerical differences, not bit-identical embeddings. All source MLM parameters independently verified identical.",
+  "splits": {
+    "train": {
+      "cls": {
+        "max_abs": 4.38690185546875e-05,
+        "mean_abs": 1.2919372238684446e-06
+      },
+      "mean": {
+        "max_abs": 1.0013580322265625e-05,
+        "mean_abs": 1.5483861659504328e-07
+      },
+      "historical_mean_readout_probability_max_abs": 2.6404685472547484e-06,
+      "historical_mean_readout_changed_decisions": 0
+    },
+    "validation": {
+      "cls": {
+        "max_abs": 2.288818359375e-05,
+        "mean_abs": 1.248288413080445e-06
+      },
+      "mean": {
+        "max_abs": 1.049041748046875e-05,
+        "mean_abs": 1.61813474619521e-07
+      },
+      "historical_mean_readout_probability_max_abs": 1.8314234330740753e-06,
+      "historical_mean_readout_changed_decisions": 0
+    }
+  }
+}
