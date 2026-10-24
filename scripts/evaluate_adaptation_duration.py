@@ -1,5 +1,5 @@
 """Fixed-readout development analysis for the predeclared duration study."""
-import argparse, csv, hashlib, json
+import argparse, csv, hashlib, json, importlib.metadata
 from pathlib import Path
 import numpy as np
 from analyze_validation_readouts import fit
@@ -18,7 +18,9 @@ def main():
     groups={s:np.array([r['group'] for r in rows[s]]) for s in rows}
     result=dict(models={},comparison={},runs={},selection=frozen,pilot_included=args.include_pilot,
                 dataset_sha256={s:hashlib.sha256(Path('data/processed/clean_v2',s+'.csv').read_bytes()).hexdigest() for s in rows},
-                source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
+                source_sha256={str(q):hashlib.sha256(q.read_bytes()).hexdigest() for q in [Path(__file__),Path('scripts/analyze_validation_readouts.py'),Path('scripts/evaluate_controlled_adaptation.py'),Path('scripts/run_sequence_baselines.py')]},
+                frozen_readout_sha256=hashlib.sha256(Path('runs/2026-10-21/frozen-readout-selection.json').read_bytes()).hexdigest(),
+                packages={name:importlib.metadata.version(name) for name in ['numpy','scikit-learn','scipy']})
     predictions={}; budgets=[512,1024,2048,4096]
     def read(path,prefix,split,pooling):
         with np.load(path/(prefix+'_'+split+'.npz')) as a:
