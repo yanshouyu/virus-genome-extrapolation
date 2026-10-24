@@ -1,0 +1,18 @@
+{
+  "audit_windows": 256,
+  "selection_windows": 128,
+  "total_validation_windows": 1448,
+  "groups": {
+    "Betabaculovirus myunipunctae": 41,
+    "Alphabaculovirus orpseudotsugatae": 35,
+    "Alphabaculovirus heleucae": 38,
+    "Alphabaculovirus chrychalcites": 47,
+    "Alphabaculovirus adhonmai": 22,
+    "Betabaculovirus disaccharalis": 22,
+    "Betabaculovirus agsegetum": 20,
+    "Alphabaculovirus busuppressariae": 22,
+    "Alphabaculovirus peluscae": 9
+  },
+  "panel_sha256": "d413528d968556c2cb6521000844f5f350af1bbef7e58a9faa7c962ae384dc95",
+  "no_selection_locus_overlap_in_either_orientation": true
+}
