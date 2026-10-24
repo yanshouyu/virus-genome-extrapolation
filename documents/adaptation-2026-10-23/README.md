@@ -10,12 +10,12 @@ All NT entries use frozen final-layer masked-mean embeddings and standardized L2
 
 | Model | Additional pretraining | Log loss ↓ | MCC ↑ | ROC AUC ↑ |
 |---|---|---:|---:|---:|
-| NTv2 100M | None | 0.477 | 0.584 | 0.848 |
-| NTv2 100M | General control | 0.468 ± 0.016 | 0.550 ± 0.054 | 0.859 ± 0.014 |
-| NTv2 100M | Baculovirus | 0.457 ± 0.011 | **0.627 ± 0.015** | 0.867 ± 0.011 |
-| NTv2 500M | None | 0.524 | 0.506 | 0.824 |
-| NTv2 500M | General control | 0.507 ± 0.012 | 0.575 ± 0.040 | 0.832 ± 0.008 |
-| NTv2 500M | Baculovirus | 0.470 ± 0.017 | 0.575 ± 0.040 | 0.857 ± 0.008 |
+| NTv2 100M (multispecies) | None | 0.477 | 0.584 | 0.848 |
+| NTv2 100M (multispecies) | General control | 0.468 ± 0.016 | 0.550 ± 0.054 | 0.859 ± 0.014 |
+| NTv2 100M (multispecies) | Baculovirus | 0.457 ± 0.011 | **0.627 ± 0.015** | 0.867 ± 0.011 |
+| NTv2 500M (multispecies) | None | 0.524 | 0.506 | 0.824 |
+| NTv2 500M (multispecies) | General control | 0.507 ± 0.012 | 0.575 ± 0.040 | 0.832 ± 0.008 |
+| NTv2 500M (multispecies) | Baculovirus | 0.470 ± 0.017 | 0.575 ± 0.040 | 0.857 ± 0.008 |
 | Oriented 1–4-mer logistic | None | **0.449** | 0.565 | **0.882** |
 | NTv1 2.5B multispecies* | None | 0.512 | 0.513 | 0.847 |
 
@@ -51,6 +51,8 @@ The study tests the value of adaptation **from broad-genome pretrained models**,
 The results support a modest, reproducible direction of improvement across these adaptation seeds, especially the 100M MCC point estimates. They do not yet demonstrate a reliable advantage attributable specifically to baculovirus exposure, nor a clear practical superiority over k-mers. The exploratory 2.5B reference does not improve the point estimates over unadapted 100M, so a larger pretrained model is not automatically a stronger probe on this cohort; this is not a causal size comparison.
 
 **Current decision:** baculovirus adaptation is a promising option for this TSS-window task, but the present evidence does not justify calling it necessary. This is not proof that adaptation is ineffective. A larger independent annotated evaluation is more informative for that claim than a performance-driven expansion of this small validation sweep. The conclusion is conditional on this corpus, 512-step adaptation regime, frozen readouts and AcMNPV sampling definition; it does not cover every NT layer/readout, supervised fine-tuning, longer adaptation or all baculoviruses.
+
+Display labels were clarified on October 24 to identify original pretraining scope. Scores and scientific artifacts are unchanged; execution-verification.json retains the reporting-script hash from the original execution.
 
 ## Adaptation design and corpus
 
