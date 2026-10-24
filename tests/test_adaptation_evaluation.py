@@ -41,3 +41,16 @@ def test_paired_development_selection_uses_no_test_file(tmp_path):
     assert len(partial['models'])==8
     assert (tmp_path/'partial/SIZE_PANEL_COMPLETE').exists()
     assert not (tmp_path/'partial/COMPLETE').exists()
+
+
+def test_bootstrap_metric_kernel_matches_sklearn(monkeypatch):
+    monkeypatch.syspath_prepend(str(Path(__file__).resolve().parents[1]/'scripts'))
+    from evaluate_controlled_adaptation import basic_scores
+    from sklearn.metrics import log_loss,matthews_corrcoef
+    rng=np.random.default_rng(1729)
+    for n in [2,10,77]:
+        y=rng.integers(0,2,size=n);prob=rng.random(n)
+        expected=[log_loss(y,prob,labels=[0,1]),matthews_corrcoef(y,prob>.5)]
+        np.testing.assert_allclose(basic_scores(y,prob),expected,rtol=0,atol=1e-12)
+    y=np.array([0,0,1,1]);prob=np.array([0.,.5,1.,.5])
+    np.testing.assert_allclose(basic_scores(y,prob),[log_loss(y,prob,labels=[0,1]),matthews_corrcoef(y,prob>.5)],rtol=0,atol=1e-12)

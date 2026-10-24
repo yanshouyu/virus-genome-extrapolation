@@ -1,0 +1,67 @@
+{
+  "scope": "Supplementary fixed-model comparisons, no additional selection or fitting.",
+  "resamples": 2000,
+  "groups": 64,
+  "comparisons": {
+    "100m_before_minus_kmer": {
+      "log_loss_delta": 0.028118598046295407,
+      "mcc_delta": 0.018983159915049952,
+      "log_loss_interval": [
+        -0.06807602897756729,
+        0.12247825546550174
+      ],
+      "mcc_interval": [
+        -0.19300146274168412,
+        0.22083608563688184
+      ]
+    },
+    "100m_baculo_minus_kmer": {
+      "log_loss_delta": 0.008079652576789942,
+      "mcc_delta": 0.06259103927453291,
+      "log_loss_interval": [
+        -0.09083335261457569,
+        0.09959426976491842
+      ],
+      "mcc_interval": [
+        -0.167703558149894,
+        0.30606580553585794
+      ]
+    },
+    "500m_before_minus_kmer": {
+      "log_loss_delta": 0.07562709319128036,
+      "mcc_delta": -0.05833430729005884,
+      "log_loss_interval": [
+        -0.06052144369096646,
+        0.22188910984735552
+      ],
+      "mcc_interval": [
+        -0.3151362899394885,
+        0.21414765476114378
+      ]
+    },
+    "500m_baculo_minus_kmer": {
+      "log_loss_delta": 0.02153666851799385,
+      "mcc_delta": 0.010564012247505916,
+      "log_loss_interval": [
+        -0.09600755749438245,
+        0.15295229678513741
+      ],
+      "mcc_interval": [
+        -0.19804772303292698,
+        0.21377400351383097
+      ]
+    },
+    "capacity_2.5b_minus_kmer": {
+      "log_loss_delta": 0.06329586298485901,
+      "mcc_delta": -0.05220368976638745,
+      "log_loss_interval": [
+        -0.08888615035383682,
+        0.236981676974886
+      ],
+      "mcc_interval": [
+        -0.3160585015155314,
+        0.22805055521355327
+      ]
+    }
+  }
+}

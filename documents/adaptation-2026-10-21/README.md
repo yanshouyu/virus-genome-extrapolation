@@ -1,5 +1,7 @@
 # Controlled multispecies adaptation — preparation status
 
+**October 23 update:** The complete experiment and verification are now reported in [the October 23 results](../adaptation-2026-10-23/README.md). The text below records the earlier preparation state; it is no longer the current job status.
+
 As of October 21, 2026, 16:48 Toronto: **prepared and locally tested; GPU execution is blocked by Nibi's scheduler. No new adaptation or downstream scientific results exist yet.** All partitions report down; the two GPU smoke jobs are pending with PartitionDown. This is cluster availability, not GPU memory exhaustion or an SSH failure.
 
 ## Completed preparation

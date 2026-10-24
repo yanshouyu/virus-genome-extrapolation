@@ -1,3 +1,5 @@
+> Superseded by [the completed handoff](handoff-adaptation-2026-10-23-results.md). The snapshot below is historical.
+
 # Progress checkpoint — October 23 adaptation window
 
 This is an active-work checkpoint, not a completion report. Continue until the declared development comparison and verification are done or the window ends. Deadline: October 23 at 23:43:37 Toronto / October 24 at 03:43:37 UTC. Do not run real downstream test inference in this window.
