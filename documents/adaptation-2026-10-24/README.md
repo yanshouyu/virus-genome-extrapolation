@@ -1,4 +1,8 @@
-# October24 study: submitted, running
+# October 24 study: all jobs completed
+
+All 14 scientific runs, replay/audit, analysis and final report jobs completed successfully. [Checked results](results/README.md) and [verification](results/verification.json) are available locally and on Nibi. The next work is scientific interpretation and figures; follow [the saved new-chat instructions](../handoff-adaptation-2026-10-24-next-chat.md).
+
+The earlier running-status text below is a historical snapshot.
 
 The longer adaptation experiment and bounded LoRA pilot are now executing on Nibi. This page is a status entry, not a completed results claim. The server will create [the final checked report](results/README.md) only after all14 scientific runs, independent replay/audit and fixed-readout analysis pass. Until results/COMPLETE exists, treat the study as unfinished.
 

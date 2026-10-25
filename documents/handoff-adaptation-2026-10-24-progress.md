@@ -1,3 +1,5 @@
+> Superseded: all jobs completed successfully. Continue with [the new-chat instructions](handoff-adaptation-2026-10-24-next-chat.md). This progress snapshot is historical.
+
 # October 24 duration study — running checkpoint
 
 Authorized window: 08:57:11–10:57:11 Toronto (12:57:11–14:57:11 UTC). Source/protocol and scientific jobs have been saved and submitted. This is a progress checkpoint, not a completed scientific result.

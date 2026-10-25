@@ -1,0 +1,1888 @@
+{
+  "_verification": {
+    "source_sha256": {
+      "/project/6002642/shouyu/virus-genome-extrapolation/scripts/check_adaptation_duration.py": "64e3acefd2ab749379b5901dae492bbbc6ced804798a7308096e622f939ce23a",
+      "src/baculo_adapt/duration.py": "990066639e15877a90964090eeaa39c39c36c129e4b7a0de64780b6c77242772",
+      "src/baculo_adapt/audit.py": "27f20f23a193d9b341f17a813ed3051fa2c0d458864d9deadfa1c6c60bb74c9c"
+    },
+    "amendment_sha256": "045dc7c0093efa07c5798956dcf6ac78b4f76f6056d38a072cab0b59230cfa6a",
+    "audit_panel": [
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 0,
+        "end": 1536,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 23040,
+        "end": 24576,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 9216,
+        "end": 10752,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 104448,
+        "end": 105984,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 136704,
+        "end": 138240,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 135168,
+        "end": 136704,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 12288,
+        "end": 13824,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 44544,
+        "end": 46080,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 69120,
+        "end": 70656,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 27648,
+        "end": 29184,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 4608,
+        "end": 6144,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 32256,
+        "end": 33792,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 129024,
+        "end": 130560,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 78336,
+        "end": 79872,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 4608,
+        "end": 6144,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 1536,
+        "end": 3072,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 55296,
+        "end": 56832,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 39936,
+        "end": 41472,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 33792,
+        "end": 35328,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 15360,
+        "end": 16896,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 13824,
+        "end": 15360,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 30720,
+        "end": 32256,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 135168,
+        "end": 136704,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 59904,
+        "end": 61440,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 95232,
+        "end": 96768,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 58368,
+        "end": 59904,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 76800,
+        "end": 78336,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 44544,
+        "end": 46080,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 112128,
+        "end": 113664,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 110592,
+        "end": 112128,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 92160,
+        "end": 93696,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 152064,
+        "end": 153600,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 29184,
+        "end": 30720,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 73728,
+        "end": 75264,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 73728,
+        "end": 75264,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 3072,
+        "end": 4608,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 38400,
+        "end": 39936,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 170496,
+        "end": 172032,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 66048,
+        "end": 67584,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 35328,
+        "end": 36864,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 113664,
+        "end": 115200,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 41472,
+        "end": 43008,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 62976,
+        "end": 64512,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 76800,
+        "end": 78336,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 7680,
+        "end": 9216,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 36864,
+        "end": 38400,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 49152,
+        "end": 50688,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 145920,
+        "end": 147456,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 121344,
+        "end": 122880,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 136704,
+        "end": 138240,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_027923.1",
+        "group": "Alphabaculovirus peluscae",
+        "start": 50688,
+        "end": 52224,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 92160,
+        "end": 93696,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 23040,
+        "end": 24576,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 104448,
+        "end": 105984,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 81408,
+        "end": 82944,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 141312,
+        "end": 142848,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 138240,
+        "end": 139776,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 116736,
+        "end": 118272,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 98304,
+        "end": 99840,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 16896,
+        "end": 18432,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 124416,
+        "end": 125952,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 7680,
+        "end": 9216,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 95232,
+        "end": 96768,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 26112,
+        "end": 27648,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 59904,
+        "end": 61440,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 50688,
+        "end": 52224,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_027923.1",
+        "group": "Alphabaculovirus peluscae",
+        "start": 26112,
+        "end": 27648,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 86016,
+        "end": 87552,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 3072,
+        "end": 4608,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 44544,
+        "end": 46080,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 24576,
+        "end": 26112,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 29184,
+        "end": 30720,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 3072,
+        "end": 4608,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 33792,
+        "end": 35328,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 119808,
+        "end": 121344,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_027923.1",
+        "group": "Alphabaculovirus peluscae",
+        "start": 116736,
+        "end": 118272,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 139776,
+        "end": 141312,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 121344,
+        "end": 122880,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 172032,
+        "end": 173568,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_027923.1",
+        "group": "Alphabaculovirus peluscae",
+        "start": 129024,
+        "end": 130560,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 145920,
+        "end": 147456,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 118272,
+        "end": 119808,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 19968,
+        "end": 21504,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 50688,
+        "end": 52224,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 102912,
+        "end": 104448,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 81408,
+        "end": 82944,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 6144,
+        "end": 7680,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 96768,
+        "end": 98304,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 127488,
+        "end": 129024,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 6144,
+        "end": 7680,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 21504,
+        "end": 23040,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 41472,
+        "end": 43008,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 107520,
+        "end": 109056,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 119808,
+        "end": 121344,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 70656,
+        "end": 72192,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 24576,
+        "end": 26112,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 127488,
+        "end": 129024,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 118272,
+        "end": 119808,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 1536,
+        "end": 3072,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 19968,
+        "end": 21504,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 78336,
+        "end": 79872,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 70656,
+        "end": 72192,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 135168,
+        "end": 136704,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 47616,
+        "end": 49152,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 93696,
+        "end": 95232,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 13824,
+        "end": 15360,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 32256,
+        "end": 33792,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 92160,
+        "end": 93696,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 26112,
+        "end": 27648,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 104448,
+        "end": 105984,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 19968,
+        "end": 21504,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 4608,
+        "end": 6144,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 113664,
+        "end": 115200,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 19968,
+        "end": 21504,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 26112,
+        "end": 27648,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 46080,
+        "end": 47616,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 73728,
+        "end": 75264,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 18432,
+        "end": 19968,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 35328,
+        "end": 36864,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 35328,
+        "end": 36864,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 53760,
+        "end": 55296,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 89088,
+        "end": 90624,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 84480,
+        "end": 86016,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 81408,
+        "end": 82944,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 124416,
+        "end": 125952,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 105984,
+        "end": 107520,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 69120,
+        "end": 70656,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 41472,
+        "end": 43008,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 87552,
+        "end": 89088,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 87552,
+        "end": 89088,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 67584,
+        "end": 69120,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 18432,
+        "end": 19968,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 53760,
+        "end": 55296,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 67584,
+        "end": 69120,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 55296,
+        "end": 56832,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 81408,
+        "end": 82944,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 92160,
+        "end": 93696,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 19968,
+        "end": 21504,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_027923.1",
+        "group": "Alphabaculovirus peluscae",
+        "start": 95232,
+        "end": 96768,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 24576,
+        "end": 26112,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 82944,
+        "end": 84480,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 62976,
+        "end": 64512,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 92160,
+        "end": 93696,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 155136,
+        "end": 156672,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 92160,
+        "end": 93696,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_027923.1",
+        "group": "Alphabaculovirus peluscae",
+        "start": 121344,
+        "end": 122880,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 43008,
+        "end": 44544,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 27648,
+        "end": 29184,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 6144,
+        "end": 7680,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 119808,
+        "end": 121344,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 16896,
+        "end": 18432,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 99840,
+        "end": 101376,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 26112,
+        "end": 27648,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 46080,
+        "end": 47616,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 115200,
+        "end": 116736,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 82944,
+        "end": 84480,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 156672,
+        "end": 158208,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 78336,
+        "end": 79872,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 58368,
+        "end": 59904,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 6144,
+        "end": 7680,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 153600,
+        "end": 155136,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 121344,
+        "end": 122880,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 62976,
+        "end": 64512,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 147456,
+        "end": 148992,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 102912,
+        "end": 104448,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 41472,
+        "end": 43008,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 35328,
+        "end": 36864,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 96768,
+        "end": 98304,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 89088,
+        "end": 90624,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 84480,
+        "end": 86016,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 61440,
+        "end": 62976,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 105984,
+        "end": 107520,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 55296,
+        "end": 56832,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 50688,
+        "end": 52224,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 3072,
+        "end": 4608,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 96768,
+        "end": 98304,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 12288,
+        "end": 13824,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 79872,
+        "end": 81408,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 130560,
+        "end": 132096,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_027923.1",
+        "group": "Alphabaculovirus peluscae",
+        "start": 89088,
+        "end": 90624,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 12288,
+        "end": 13824,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 69120,
+        "end": 70656,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 64512,
+        "end": 66048,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 84480,
+        "end": 86016,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 59904,
+        "end": 61440,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 47616,
+        "end": 49152,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 58368,
+        "end": 59904,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 55296,
+        "end": 56832,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 39936,
+        "end": 41472,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 99840,
+        "end": 101376,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 79872,
+        "end": 81408,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 44544,
+        "end": 46080,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 59904,
+        "end": 61440,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 144384,
+        "end": 145920,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_027923.1",
+        "group": "Alphabaculovirus peluscae",
+        "start": 0,
+        "end": 1536,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 116736,
+        "end": 118272,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 110592,
+        "end": 112128,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 89088,
+        "end": 90624,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 4608,
+        "end": 6144,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 98304,
+        "end": 99840,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 90624,
+        "end": 92160,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 46080,
+        "end": 47616,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 127488,
+        "end": 129024,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 50688,
+        "end": 52224,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 82944,
+        "end": 84480,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 23040,
+        "end": 24576,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 86016,
+        "end": 87552,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 49152,
+        "end": 50688,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 35328,
+        "end": 36864,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 89088,
+        "end": 90624,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 141312,
+        "end": 142848,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 26112,
+        "end": 27648,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 13824,
+        "end": 15360,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 81408,
+        "end": 82944,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 13824,
+        "end": 15360,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 87552,
+        "end": 89088,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 98304,
+        "end": 99840,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 84480,
+        "end": 86016,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 7680,
+        "end": 9216,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 53760,
+        "end": 55296,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 113664,
+        "end": 115200,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 130560,
+        "end": 132096,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 75264,
+        "end": 76800,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 113664,
+        "end": 115200,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 26112,
+        "end": 27648,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 118272,
+        "end": 119808,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 16896,
+        "end": 18432,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 115200,
+        "end": 116736,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 33792,
+        "end": 35328,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 96768,
+        "end": 98304,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 39936,
+        "end": 41472,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 10752,
+        "end": 12288,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 49152,
+        "end": 50688,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 110592,
+        "end": 112128,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 13824,
+        "end": 15360,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 150528,
+        "end": 152064,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 19968,
+        "end": 21504,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 52224,
+        "end": 53760,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 4608,
+        "end": 6144,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_039213.1",
+        "group": "Betabaculovirus agsegetum",
+        "start": 82944,
+        "end": 84480,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 90624,
+        "end": 92160,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 7680,
+        "end": 9216,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 4608,
+        "end": 6144,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_004690.1",
+        "group": "Alphabaculovirus adhonmai",
+        "start": 109056,
+        "end": 110592,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 6144,
+        "end": 7680,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_007151.1",
+        "group": "Alphabaculovirus chrychalcites",
+        "start": 119808,
+        "end": 121344,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 159744,
+        "end": 161280,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_023442.1",
+        "group": "Alphabaculovirus busuppressariae",
+        "start": 89088,
+        "end": 90624,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_027923.1",
+        "group": "Alphabaculovirus peluscae",
+        "start": 10752,
+        "end": 12288,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 76800,
+        "end": 78336,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_028491.1",
+        "group": "Betabaculovirus disaccharalis",
+        "start": 64512,
+        "end": 66048,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 52224,
+        "end": 53760,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 24576,
+        "end": 26112,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_013772.1",
+        "group": "Betabaculovirus myunipunctae",
+        "start": 47616,
+        "end": 49152,
+        "strand": "-"
+      },
+      {
+        "accession": "NC_001875.2",
+        "group": "Alphabaculovirus orpseudotsugatae",
+        "start": 119808,
+        "end": 121344,
+        "strand": "+"
+      },
+      {
+        "accession": "NC_021923.1",
+        "group": "Alphabaculovirus heleucae",
+        "start": 30720,
+        "end": 32256,
+        "strand": "-"
+      }
+    ],
+    "audit_panel_sha256": "d413528d968556c2cb6521000844f5f350af1bbef7e58a9faa7c962ae384dc95",
+    "audit_mask_sha256": "fb156e2e7d34e4dd18e3bfe20e1b652ad37560be7e93df50a38eb69880e2098c",
+    "audit_groups": {
+      "Betabaculovirus myunipunctae": 41,
+      "Alphabaculovirus orpseudotsugatae": 35,
+      "Alphabaculovirus heleucae": 38,
+      "Alphabaculovirus chrychalcites": 47,
+      "Alphabaculovirus adhonmai": 22,
+      "Betabaculovirus disaccharalis": 22,
+      "Betabaculovirus agsegetum": 20,
+      "Alphabaculovirus busuppressariae": 22,
+      "Alphabaculovirus peluscae": 9
+    },
+    "original_audit_mlm_loss": 8.22314485844249
+  },
+  "100m-lora-baculo-seed42": {
+    "selected_states_exact": true,
+    "embedding_replay_max_abs": {
+      "512": {
+        "train_cls": 0.0,
+        "train_mean": 0.0,
+        "validation_cls": 0.0,
+        "validation_mean": 0.0
+      },
+      "1024": {
+        "train_cls": 0.0,
+        "train_mean": 0.0,
+        "validation_cls": 0.0,
+        "validation_mean": 0.0
+      },
+      "2048": {
+        "train_cls": 0.0,
+        "train_mean": 0.0,
+        "validation_cls": 0.0,
+        "validation_mean": 0.0
+      },
+      "4096": {
+        "train_cls": 0.0,
+        "train_mean": 0.0,
+        "validation_cls": 0.0,
+        "validation_mean": 0.0
+      }
+    },
+    "independent_audit_mlm_losses": {
+      "512": 6.99835786174715,
+      "1024": 6.987754120984498,
+      "2048": 6.979304105335591,
+      "4096": 6.9733931830311136
+    }
+  },
+  "100m-lora-general-seed42": {
+    "selected_states_exact": true,
+    "embedding_replay_max_abs": {
+      "512": {
+        "train_cls": 0.0,
+        "train_mean": 0.0,
+        "validation_cls": 0.0,
+        "validation_mean": 0.0
+      },
+      "1024": {
+        "train_cls": 0.0,
+        "train_mean": 0.0,
+        "validation_cls": 0.0,
+        "validation_mean": 0.0
+      },
+      "2048": {
+        "train_cls": 0.0,
+        "train_mean": 0.0,
+        "validation_cls": 0.0,
+        "validation_mean": 0.0
+      },
+      "4096": {
+        "train_cls": 0.0,
+        "train_mean": 0.0,
+        "validation_cls": 0.0,
+        "validation_mean": 0.0
+      }
+    },
+    "independent_audit_mlm_losses": {
+      "512": 7.052409550089852,
+      "1024": 7.052409550089852,
+      "2048": 7.052409550089852,
+      "4096": 7.052409550089852
+    }
+  }
+}

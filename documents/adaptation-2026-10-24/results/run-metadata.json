@@ -1,0 +1,1562 @@
+{
+  "100m-full-baculo-seed42": {
+    "args": {
+      "size": "100m",
+      "condition": "baculo",
+      "method": "full",
+      "seed": 42,
+      "steps": 4096,
+      "lr": 1e-05,
+      "rank": 8,
+      "alpha": 16,
+      "microbatch": 16,
+      "smoke": false,
+      "output": "runs/2026-10-24/scientific/100m-full-baculo-seed42"
+    },
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "pretraining_scope": "multispecies",
+    "initial_mlm_loss": 8.10370220388782,
+    "all_source_parameters_exact": true,
+    "token_limit": 2048,
+    "lora_targets": [],
+    "parameters": 97889132,
+    "trainable_parameters": 97889132,
+    "packages": {
+      "torch": "2.10.0+computecanada",
+      "transformers": "5.3.0+computecanada",
+      "numpy": "2.4.2+computecanada"
+    },
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017493504,
+    "corpus_sha256": "941b0822a71a7bebcc8675af0264715aa27ace8db07cb3be4482a4a3f3abffc4",
+    "eval_sha256": "d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761",
+    "source_sha256": {
+      "/project/6002642/shouyu/virus-genome-extrapolation/scripts/run_adaptation_duration.py": "6ceea286eea0789df43c69daa2f7b359a98e44376fa50e4414585920b9562b7b",
+      "src/baculo_adapt/duration.py": "990066639e15877a90964090eeaa39c39c36c129e4b7a0de64780b6c77242772",
+      "src/baculo_adapt/masking.py": "3c776076796c913b0d25c0203f6eb0c90bbd58660b7ee32e15c43446eb48ea2d",
+      "scripts/run_controlled_adaptation.py": "2c6a2ad9907ea0f85cc7513b170026c135ed31ca7e2b168312f0ab063096c2dc",
+      "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c"
+    },
+    "protocol_sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+    "budgets": {
+      "512": {
+        "budget": 512,
+        "selected_step": 512,
+        "selected_mlm_loss": 6.845195868993354,
+        "endpoint_mlm_loss": 6.845195868993354,
+        "input_tokens": 4210688,
+        "masked_tokens": 629159,
+        "state_sha256": "7da598e726e3ac6c5a6bce55c91f760d7bc1378d22e65f0c5628d1bc876fc1e9",
+        "state_exact_reload": true
+      },
+      "1024": {
+        "budget": 1024,
+        "selected_step": 1024,
+        "selected_mlm_loss": 6.828423509292649,
+        "endpoint_mlm_loss": 6.828423509292649,
+        "input_tokens": 8421376,
+        "masked_tokens": 1258365,
+        "state_sha256": "45f068951cff24be7da6e8fc8d49abcf9069ced5a162bfca517601314714ed7a",
+        "state_exact_reload": true
+      },
+      "2048": {
+        "budget": 2048,
+        "selected_step": 2048,
+        "selected_mlm_loss": 6.806216704716672,
+        "endpoint_mlm_loss": 6.806216704716672,
+        "input_tokens": 16842752,
+        "masked_tokens": 2517562,
+        "state_sha256": "81cd5f40450f6be6e544cff84b604faeed16eb50588e8e3f64ab5af5729baab5",
+        "state_exact_reload": true
+      },
+      "4096": {
+        "budget": 4096,
+        "selected_step": 3584,
+        "selected_mlm_loss": 6.79121473225698,
+        "endpoint_mlm_loss": 6.791229366211534,
+        "input_tokens": 33685504,
+        "masked_tokens": 5032151,
+        "state_sha256": "697d72c6f00089ace85a8d0d5d52f2fc920245fc6c8825d0f42dec19c87f9e1d",
+        "state_exact_reload": true
+      }
+    },
+    "selected_step": 3584,
+    "selected_mlm_loss": 6.79121473225698,
+    "trainable_parameter_max_change": 0.002687811851501465,
+    "frozen_parameters_exact": null,
+    "frozen_parameters_sha256": null,
+    "training_seconds": 664.5308818817139,
+    "input_tokens": 33685504,
+    "masked_tokens": 5032151,
+    "max_gpu_allocated_bytes": 6881845760,
+    "max_gpu_reserved_bytes": 7325351936,
+    "plateau": {
+      "assessable": true,
+      "horizon": 1024,
+      "relative_tolerance": 0.005,
+      "best_loss_relative_improvement": 0.00031638931603679264,
+      "plateau_by_rule": true
+    },
+    "total_seconds": 681.8875527381897,
+    "state_sha256": "697d72c6f00089ace85a8d0d5d52f2fc920245fc6c8825d0f42dec19c87f9e1d",
+    "saved_state_exact_replay": true
+  },
+  "100m-full-baculo-seed43": {
+    "args": {
+      "size": "100m",
+      "condition": "baculo",
+      "method": "full",
+      "seed": 43,
+      "steps": 4096,
+      "lr": 1e-05,
+      "rank": 8,
+      "alpha": 16,
+      "microbatch": 16,
+      "smoke": false,
+      "output": "runs/2026-10-24/scientific/100m-full-baculo-seed43"
+    },
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "pretraining_scope": "multispecies",
+    "initial_mlm_loss": 8.10370220388782,
+    "all_source_parameters_exact": true,
+    "token_limit": 2048,
+    "lora_targets": [],
+    "parameters": 97889132,
+    "trainable_parameters": 97889132,
+    "packages": {
+      "torch": "2.10.0+computecanada",
+      "transformers": "5.3.0+computecanada",
+      "numpy": "2.4.2+computecanada"
+    },
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017493504,
+    "corpus_sha256": "941b0822a71a7bebcc8675af0264715aa27ace8db07cb3be4482a4a3f3abffc4",
+    "eval_sha256": "d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761",
+    "source_sha256": {
+      "/project/6002642/shouyu/virus-genome-extrapolation/scripts/run_adaptation_duration.py": "6ceea286eea0789df43c69daa2f7b359a98e44376fa50e4414585920b9562b7b",
+      "src/baculo_adapt/duration.py": "990066639e15877a90964090eeaa39c39c36c129e4b7a0de64780b6c77242772",
+      "src/baculo_adapt/masking.py": "3c776076796c913b0d25c0203f6eb0c90bbd58660b7ee32e15c43446eb48ea2d",
+      "scripts/run_controlled_adaptation.py": "2c6a2ad9907ea0f85cc7513b170026c135ed31ca7e2b168312f0ab063096c2dc",
+      "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c"
+    },
+    "protocol_sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+    "budgets": {
+      "512": {
+        "budget": 512,
+        "selected_step": 512,
+        "selected_mlm_loss": 6.843943161514497,
+        "endpoint_mlm_loss": 6.843943161514497,
+        "input_tokens": 4210688,
+        "masked_tokens": 628006,
+        "state_sha256": "6ee2b934b6c327393008b01c43b21a2f17e9840feb17ea69e2d9d38b65248afd",
+        "state_exact_reload": true
+      },
+      "1024": {
+        "budget": 1024,
+        "selected_step": 1024,
+        "selected_mlm_loss": 6.825892305966912,
+        "endpoint_mlm_loss": 6.825892305966912,
+        "input_tokens": 8421376,
+        "masked_tokens": 1256849,
+        "state_sha256": "41df0343872ec740c61ea2b83907a135a826bc7a195e2c58de836212bbc3023f",
+        "state_exact_reload": true
+      },
+      "2048": {
+        "budget": 2048,
+        "selected_step": 2048,
+        "selected_mlm_loss": 6.8049171113277955,
+        "endpoint_mlm_loss": 6.8049171113277955,
+        "input_tokens": 16842752,
+        "masked_tokens": 2513673,
+        "state_sha256": "149c22671aa942df1fc1cdfeb6beab9ce2ca68a9645d6c5bd7e2ec9a243e488e",
+        "state_exact_reload": true
+      },
+      "4096": {
+        "budget": 4096,
+        "selected_step": 4096,
+        "selected_mlm_loss": 6.790113335207715,
+        "endpoint_mlm_loss": 6.790113335207715,
+        "input_tokens": 33685504,
+        "masked_tokens": 5033073,
+        "state_sha256": "31b3db736fcd3699fe55ee335de9e7ffc34fab749895011ce53d94dfab40c9c6",
+        "state_exact_reload": true
+      }
+    },
+    "selected_step": 4096,
+    "selected_mlm_loss": 6.790113335207715,
+    "trainable_parameter_max_change": 0.002454996109008789,
+    "frozen_parameters_exact": null,
+    "frozen_parameters_sha256": null,
+    "training_seconds": 670.7718803882599,
+    "input_tokens": 33685504,
+    "masked_tokens": 5033073,
+    "max_gpu_allocated_bytes": 6881849344,
+    "max_gpu_reserved_bytes": 7325351936,
+    "plateau": {
+      "assessable": true,
+      "horizon": 1024,
+      "relative_tolerance": 0.005,
+      "best_loss_relative_improvement": 0.000431740256762695,
+      "plateau_by_rule": true
+    },
+    "total_seconds": 684.1672208309174,
+    "state_sha256": "31b3db736fcd3699fe55ee335de9e7ffc34fab749895011ce53d94dfab40c9c6",
+    "saved_state_exact_replay": true
+  },
+  "100m-full-baculo-seed44": {
+    "args": {
+      "size": "100m",
+      "condition": "baculo",
+      "method": "full",
+      "seed": 44,
+      "steps": 4096,
+      "lr": 1e-05,
+      "rank": 8,
+      "alpha": 16,
+      "microbatch": 16,
+      "smoke": false,
+      "output": "runs/2026-10-24/scientific/100m-full-baculo-seed44"
+    },
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "pretraining_scope": "multispecies",
+    "initial_mlm_loss": 8.10370220388782,
+    "all_source_parameters_exact": true,
+    "token_limit": 2048,
+    "lora_targets": [],
+    "parameters": 97889132,
+    "trainable_parameters": 97889132,
+    "packages": {
+      "torch": "2.10.0+computecanada",
+      "transformers": "5.3.0+computecanada",
+      "numpy": "2.4.2+computecanada"
+    },
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017493504,
+    "corpus_sha256": "941b0822a71a7bebcc8675af0264715aa27ace8db07cb3be4482a4a3f3abffc4",
+    "eval_sha256": "d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761",
+    "source_sha256": {
+      "/project/6002642/shouyu/virus-genome-extrapolation/scripts/run_adaptation_duration.py": "6ceea286eea0789df43c69daa2f7b359a98e44376fa50e4414585920b9562b7b",
+      "src/baculo_adapt/duration.py": "990066639e15877a90964090eeaa39c39c36c129e4b7a0de64780b6c77242772",
+      "src/baculo_adapt/masking.py": "3c776076796c913b0d25c0203f6eb0c90bbd58660b7ee32e15c43446eb48ea2d",
+      "scripts/run_controlled_adaptation.py": "2c6a2ad9907ea0f85cc7513b170026c135ed31ca7e2b168312f0ab063096c2dc",
+      "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c"
+    },
+    "protocol_sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+    "budgets": {
+      "512": {
+        "budget": 512,
+        "selected_step": 512,
+        "selected_mlm_loss": 6.847824488780346,
+        "endpoint_mlm_loss": 6.847824488780346,
+        "input_tokens": 4210688,
+        "masked_tokens": 628740,
+        "state_sha256": "d07924c7c697e6f9188014c76a9ddbf1dd3ab91679d6932b484b981094d1c76d",
+        "state_exact_reload": true
+      },
+      "1024": {
+        "budget": 1024,
+        "selected_step": 1024,
+        "selected_mlm_loss": 6.829167730336474,
+        "endpoint_mlm_loss": 6.829167730336474,
+        "input_tokens": 8421376,
+        "masked_tokens": 1258514,
+        "state_sha256": "da03ef37eb47ff15caee46fecd1cabaf8d200fa668e82f8b26862e43be9f4a36",
+        "state_exact_reload": true
+      },
+      "2048": {
+        "budget": 2048,
+        "selected_step": 2048,
+        "selected_mlm_loss": 6.806025730220125,
+        "endpoint_mlm_loss": 6.806025730220125,
+        "input_tokens": 16842752,
+        "masked_tokens": 2516684,
+        "state_sha256": "36537570c412aebd880756f9c44c48ac1ac0a75ada7108e69c0eb7cb7994942a",
+        "state_exact_reload": true
+      },
+      "4096": {
+        "budget": 4096,
+        "selected_step": 4096,
+        "selected_mlm_loss": 6.790504749423257,
+        "endpoint_mlm_loss": 6.790504749423257,
+        "input_tokens": 33685504,
+        "masked_tokens": 5031934,
+        "state_sha256": "22c4d161c937b127994b144003fcfd8a9d36ffd1c3841bc7c1f0ceae9e451e29",
+        "state_exact_reload": true
+      }
+    },
+    "selected_step": 4096,
+    "selected_mlm_loss": 6.790504749423257,
+    "trainable_parameter_max_change": 0.002443671226501465,
+    "frozen_parameters_exact": null,
+    "frozen_parameters_sha256": null,
+    "training_seconds": 683.0199730396271,
+    "input_tokens": 33685504,
+    "masked_tokens": 5031934,
+    "max_gpu_allocated_bytes": 6881845760,
+    "max_gpu_reserved_bytes": 7325351936,
+    "plateau": {
+      "assessable": true,
+      "horizon": 1024,
+      "relative_tolerance": 0.005,
+      "best_loss_relative_improvement": 0.00020867867687497315,
+      "plateau_by_rule": true
+    },
+    "total_seconds": 697.6653287410736,
+    "state_sha256": "22c4d161c937b127994b144003fcfd8a9d36ffd1c3841bc7c1f0ceae9e451e29",
+    "saved_state_exact_replay": true
+  },
+  "100m-full-general-seed42": {
+    "args": {
+      "size": "100m",
+      "condition": "general",
+      "method": "full",
+      "seed": 42,
+      "steps": 4096,
+      "lr": 1e-05,
+      "rank": 8,
+      "alpha": 16,
+      "microbatch": 16,
+      "smoke": false,
+      "output": "runs/2026-10-24/scientific/100m-full-general-seed42"
+    },
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "pretraining_scope": "multispecies",
+    "initial_mlm_loss": 8.10370220388782,
+    "all_source_parameters_exact": true,
+    "token_limit": 2048,
+    "lora_targets": [],
+    "parameters": 97889132,
+    "trainable_parameters": 97889132,
+    "packages": {
+      "torch": "2.10.0+computecanada",
+      "transformers": "5.3.0+computecanada",
+      "numpy": "2.4.2+computecanada"
+    },
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017493504,
+    "corpus_sha256": "6455320fd95ae86d27d32c80c101b18c9529cc064f252e7972181a947d852e04",
+    "eval_sha256": "d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761",
+    "source_sha256": {
+      "/project/6002642/shouyu/virus-genome-extrapolation/scripts/run_adaptation_duration.py": "6ceea286eea0789df43c69daa2f7b359a98e44376fa50e4414585920b9562b7b",
+      "src/baculo_adapt/duration.py": "990066639e15877a90964090eeaa39c39c36c129e4b7a0de64780b6c77242772",
+      "src/baculo_adapt/masking.py": "3c776076796c913b0d25c0203f6eb0c90bbd58660b7ee32e15c43446eb48ea2d",
+      "scripts/run_controlled_adaptation.py": "2c6a2ad9907ea0f85cc7513b170026c135ed31ca7e2b168312f0ab063096c2dc",
+      "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c"
+    },
+    "protocol_sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+    "budgets": {
+      "512": {
+        "budget": 512,
+        "selected_step": 128,
+        "selected_mlm_loss": 6.961866077639213,
+        "endpoint_mlm_loss": 6.974670950837307,
+        "input_tokens": 4210688,
+        "masked_tokens": 629159,
+        "state_sha256": "99dd8e2589bd133a42d138844ceb799cace7e1fbb26566db33bb24974bc79ff8",
+        "state_exact_reload": true
+      },
+      "1024": {
+        "budget": 1024,
+        "selected_step": 128,
+        "selected_mlm_loss": 6.961866077639213,
+        "endpoint_mlm_loss": 6.985683588673584,
+        "input_tokens": 8421376,
+        "masked_tokens": 1258365,
+        "state_sha256": "99dd8e2589bd133a42d138844ceb799cace7e1fbb26566db33bb24974bc79ff8",
+        "state_exact_reload": true
+      },
+      "2048": {
+        "budget": 2048,
+        "selected_step": 128,
+        "selected_mlm_loss": 6.961866077639213,
+        "endpoint_mlm_loss": 6.982833226780943,
+        "input_tokens": 16842752,
+        "masked_tokens": 2517562,
+        "state_sha256": "99dd8e2589bd133a42d138844ceb799cace7e1fbb26566db33bb24974bc79ff8",
+        "state_exact_reload": true
+      },
+      "4096": {
+        "budget": 4096,
+        "selected_step": 128,
+        "selected_mlm_loss": 6.961866077639213,
+        "endpoint_mlm_loss": 6.98351939253635,
+        "input_tokens": 33685504,
+        "masked_tokens": 5032151,
+        "state_sha256": "99dd8e2589bd133a42d138844ceb799cace7e1fbb26566db33bb24974bc79ff8",
+        "state_exact_reload": true
+      }
+    },
+    "selected_step": 128,
+    "selected_mlm_loss": 6.961866077639213,
+    "trainable_parameter_max_change": 0.0027446746826171875,
+    "frozen_parameters_exact": null,
+    "frozen_parameters_sha256": null,
+    "training_seconds": 664.8417687416077,
+    "input_tokens": 33685504,
+    "masked_tokens": 5032151,
+    "max_gpu_allocated_bytes": 6881849344,
+    "max_gpu_reserved_bytes": 7325351936,
+    "plateau": {
+      "assessable": true,
+      "horizon": 1024,
+      "relative_tolerance": 0.005,
+      "best_loss_relative_improvement": 0.0,
+      "plateau_by_rule": true
+    },
+    "total_seconds": 678.7901434898376,
+    "state_sha256": "99dd8e2589bd133a42d138844ceb799cace7e1fbb26566db33bb24974bc79ff8",
+    "saved_state_exact_replay": true
+  },
+  "100m-full-general-seed43": {
+    "args": {
+      "size": "100m",
+      "condition": "general",
+      "method": "full",
+      "seed": 43,
+      "steps": 4096,
+      "lr": 1e-05,
+      "rank": 8,
+      "alpha": 16,
+      "microbatch": 16,
+      "smoke": false,
+      "output": "runs/2026-10-24/scientific/100m-full-general-seed43"
+    },
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "pretraining_scope": "multispecies",
+    "initial_mlm_loss": 8.10370220388782,
+    "all_source_parameters_exact": true,
+    "token_limit": 2048,
+    "lora_targets": [],
+    "parameters": 97889132,
+    "trainable_parameters": 97889132,
+    "packages": {
+      "torch": "2.10.0+computecanada",
+      "transformers": "5.3.0+computecanada",
+      "numpy": "2.4.2+computecanada"
+    },
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017493504,
+    "corpus_sha256": "6455320fd95ae86d27d32c80c101b18c9529cc064f252e7972181a947d852e04",
+    "eval_sha256": "d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761",
+    "source_sha256": {
+      "/project/6002642/shouyu/virus-genome-extrapolation/scripts/run_adaptation_duration.py": "6ceea286eea0789df43c69daa2f7b359a98e44376fa50e4414585920b9562b7b",
+      "src/baculo_adapt/duration.py": "990066639e15877a90964090eeaa39c39c36c129e4b7a0de64780b6c77242772",
+      "src/baculo_adapt/masking.py": "3c776076796c913b0d25c0203f6eb0c90bbd58660b7ee32e15c43446eb48ea2d",
+      "scripts/run_controlled_adaptation.py": "2c6a2ad9907ea0f85cc7513b170026c135ed31ca7e2b168312f0ab063096c2dc",
+      "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c"
+    },
+    "protocol_sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+    "budgets": {
+      "512": {
+        "budget": 512,
+        "selected_step": 128,
+        "selected_mlm_loss": 6.963922827215138,
+        "endpoint_mlm_loss": 6.983500389210289,
+        "input_tokens": 4210688,
+        "masked_tokens": 628006,
+        "state_sha256": "3517d7e7d987cfe52c13ef4b786ae0eb18732c42500e776baf342ca0ff73666e",
+        "state_exact_reload": true
+      },
+      "1024": {
+        "budget": 1024,
+        "selected_step": 128,
+        "selected_mlm_loss": 6.963922827215138,
+        "endpoint_mlm_loss": 6.97983802261337,
+        "input_tokens": 8421376,
+        "masked_tokens": 1256849,
+        "state_sha256": "3517d7e7d987cfe52c13ef4b786ae0eb18732c42500e776baf342ca0ff73666e",
+        "state_exact_reload": true
+      },
+      "2048": {
+        "budget": 2048,
+        "selected_step": 128,
+        "selected_mlm_loss": 6.963922827215138,
+        "endpoint_mlm_loss": 6.994228330094823,
+        "input_tokens": 16842752,
+        "masked_tokens": 2513673,
+        "state_sha256": "3517d7e7d987cfe52c13ef4b786ae0eb18732c42500e776baf342ca0ff73666e",
+        "state_exact_reload": true
+      },
+      "4096": {
+        "budget": 4096,
+        "selected_step": 128,
+        "selected_mlm_loss": 6.963922827215138,
+        "endpoint_mlm_loss": 6.989722887901709,
+        "input_tokens": 33685504,
+        "masked_tokens": 5033073,
+        "state_sha256": "3517d7e7d987cfe52c13ef4b786ae0eb18732c42500e776baf342ca0ff73666e",
+        "state_exact_reload": true
+      }
+    },
+    "selected_step": 128,
+    "selected_mlm_loss": 6.963922827215138,
+    "trainable_parameter_max_change": 0.002501845359802246,
+    "frozen_parameters_exact": null,
+    "frozen_parameters_sha256": null,
+    "training_seconds": 671.848185300827,
+    "input_tokens": 33685504,
+    "masked_tokens": 5033073,
+    "max_gpu_allocated_bytes": 6881849344,
+    "max_gpu_reserved_bytes": 7325351936,
+    "plateau": {
+      "assessable": true,
+      "horizon": 1024,
+      "relative_tolerance": 0.005,
+      "best_loss_relative_improvement": 0.0,
+      "plateau_by_rule": true
+    },
+    "total_seconds": 685.6314451694489,
+    "state_sha256": "3517d7e7d987cfe52c13ef4b786ae0eb18732c42500e776baf342ca0ff73666e",
+    "saved_state_exact_replay": true
+  },
+  "100m-full-general-seed44": {
+    "args": {
+      "size": "100m",
+      "condition": "general",
+      "method": "full",
+      "seed": 44,
+      "steps": 4096,
+      "lr": 1e-05,
+      "rank": 8,
+      "alpha": 16,
+      "microbatch": 16,
+      "smoke": false,
+      "output": "runs/2026-10-24/scientific/100m-full-general-seed44"
+    },
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "pretraining_scope": "multispecies",
+    "initial_mlm_loss": 8.10370220388782,
+    "all_source_parameters_exact": true,
+    "token_limit": 2048,
+    "lora_targets": [],
+    "parameters": 97889132,
+    "trainable_parameters": 97889132,
+    "packages": {
+      "torch": "2.10.0+computecanada",
+      "transformers": "5.3.0+computecanada",
+      "numpy": "2.4.2+computecanada"
+    },
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017493504,
+    "corpus_sha256": "6455320fd95ae86d27d32c80c101b18c9529cc064f252e7972181a947d852e04",
+    "eval_sha256": "d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761",
+    "source_sha256": {
+      "/project/6002642/shouyu/virus-genome-extrapolation/scripts/run_adaptation_duration.py": "6ceea286eea0789df43c69daa2f7b359a98e44376fa50e4414585920b9562b7b",
+      "src/baculo_adapt/duration.py": "990066639e15877a90964090eeaa39c39c36c129e4b7a0de64780b6c77242772",
+      "src/baculo_adapt/masking.py": "3c776076796c913b0d25c0203f6eb0c90bbd58660b7ee32e15c43446eb48ea2d",
+      "scripts/run_controlled_adaptation.py": "2c6a2ad9907ea0f85cc7513b170026c135ed31ca7e2b168312f0ab063096c2dc",
+      "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c"
+    },
+    "protocol_sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+    "budgets": {
+      "512": {
+        "budget": 512,
+        "selected_step": 256,
+        "selected_mlm_loss": 6.958350804179075,
+        "endpoint_mlm_loss": 6.974057238578602,
+        "input_tokens": 4210688,
+        "masked_tokens": 628740,
+        "state_sha256": "b1cdcafe9421d93974989ced0ddd8dabd3097c6b9eb88a2d77a487a0c9a664ad",
+        "state_exact_reload": true
+      },
+      "1024": {
+        "budget": 1024,
+        "selected_step": 256,
+        "selected_mlm_loss": 6.958350804179075,
+        "endpoint_mlm_loss": 6.981101218274686,
+        "input_tokens": 8421376,
+        "masked_tokens": 1258514,
+        "state_sha256": "b1cdcafe9421d93974989ced0ddd8dabd3097c6b9eb88a2d77a487a0c9a664ad",
+        "state_exact_reload": true
+      },
+      "2048": {
+        "budget": 2048,
+        "selected_step": 256,
+        "selected_mlm_loss": 6.958350804179075,
+        "endpoint_mlm_loss": 6.987982854207616,
+        "input_tokens": 16842752,
+        "masked_tokens": 2516684,
+        "state_sha256": "b1cdcafe9421d93974989ced0ddd8dabd3097c6b9eb88a2d77a487a0c9a664ad",
+        "state_exact_reload": true
+      },
+      "4096": {
+        "budget": 4096,
+        "selected_step": 256,
+        "selected_mlm_loss": 6.958350804179075,
+        "endpoint_mlm_loss": 6.984468720900398,
+        "input_tokens": 33685504,
+        "masked_tokens": 5031934,
+        "state_sha256": "b1cdcafe9421d93974989ced0ddd8dabd3097c6b9eb88a2d77a487a0c9a664ad",
+        "state_exact_reload": true
+      }
+    },
+    "selected_step": 256,
+    "selected_mlm_loss": 6.958350804179075,
+    "trainable_parameter_max_change": 0.0024340152740478516,
+    "frozen_parameters_exact": null,
+    "frozen_parameters_sha256": null,
+    "training_seconds": 667.0500349998474,
+    "input_tokens": 33685504,
+    "masked_tokens": 5031934,
+    "max_gpu_allocated_bytes": 6881845760,
+    "max_gpu_reserved_bytes": 7325351936,
+    "plateau": {
+      "assessable": true,
+      "horizon": 1024,
+      "relative_tolerance": 0.005,
+      "best_loss_relative_improvement": 0.0,
+      "plateau_by_rule": true
+    },
+    "total_seconds": 680.5410931110382,
+    "state_sha256": "b1cdcafe9421d93974989ced0ddd8dabd3097c6b9eb88a2d77a487a0c9a664ad",
+    "saved_state_exact_replay": true
+  },
+  "100m-lora-baculo-seed42": {
+    "args": {
+      "size": "100m",
+      "condition": "baculo",
+      "method": "lora",
+      "seed": 42,
+      "steps": 4096,
+      "lr": 0.0001,
+      "rank": 8,
+      "alpha": 16,
+      "microbatch": 16,
+      "smoke": false,
+      "output": "runs/2026-10-24/scientific/100m-lora-baculo-seed42"
+    },
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "pretraining_scope": "multispecies",
+    "initial_mlm_loss": 8.10370220388782,
+    "all_source_parameters_exact": true,
+    "token_limit": 2048,
+    "lora_targets": [
+      "esm.encoder.layer.0.attention.self.query",
+      "esm.encoder.layer.0.attention.self.value",
+      "esm.encoder.layer.1.attention.self.query",
+      "esm.encoder.layer.1.attention.self.value",
+      "esm.encoder.layer.2.attention.self.query",
+      "esm.encoder.layer.2.attention.self.value",
+      "esm.encoder.layer.3.attention.self.query",
+      "esm.encoder.layer.3.attention.self.value",
+      "esm.encoder.layer.4.attention.self.query",
+      "esm.encoder.layer.4.attention.self.value",
+      "esm.encoder.layer.5.attention.self.query",
+      "esm.encoder.layer.5.attention.self.value",
+      "esm.encoder.layer.6.attention.self.query",
+      "esm.encoder.layer.6.attention.self.value",
+      "esm.encoder.layer.7.attention.self.query",
+      "esm.encoder.layer.7.attention.self.value",
+      "esm.encoder.layer.8.attention.self.query",
+      "esm.encoder.layer.8.attention.self.value",
+      "esm.encoder.layer.9.attention.self.query",
+      "esm.encoder.layer.9.attention.self.value",
+      "esm.encoder.layer.10.attention.self.query",
+      "esm.encoder.layer.10.attention.self.value",
+      "esm.encoder.layer.11.attention.self.query",
+      "esm.encoder.layer.11.attention.self.value",
+      "esm.encoder.layer.12.attention.self.query",
+      "esm.encoder.layer.12.attention.self.value",
+      "esm.encoder.layer.13.attention.self.query",
+      "esm.encoder.layer.13.attention.self.value",
+      "esm.encoder.layer.14.attention.self.query",
+      "esm.encoder.layer.14.attention.self.value",
+      "esm.encoder.layer.15.attention.self.query",
+      "esm.encoder.layer.15.attention.self.value",
+      "esm.encoder.layer.16.attention.self.query",
+      "esm.encoder.layer.16.attention.self.value",
+      "esm.encoder.layer.17.attention.self.query",
+      "esm.encoder.layer.17.attention.self.value",
+      "esm.encoder.layer.18.attention.self.query",
+      "esm.encoder.layer.18.attention.self.value",
+      "esm.encoder.layer.19.attention.self.query",
+      "esm.encoder.layer.19.attention.self.value",
+      "esm.encoder.layer.20.attention.self.query",
+      "esm.encoder.layer.20.attention.self.value",
+      "esm.encoder.layer.21.attention.self.query",
+      "esm.encoder.layer.21.attention.self.value"
+    ],
+    "parameters": 98249580,
+    "trainable_parameters": 360448,
+    "packages": {
+      "torch": "2.10.0+computecanada",
+      "transformers": "5.3.0+computecanada",
+      "numpy": "2.4.2+computecanada"
+    },
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017493504,
+    "corpus_sha256": "941b0822a71a7bebcc8675af0264715aa27ace8db07cb3be4482a4a3f3abffc4",
+    "eval_sha256": "d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761",
+    "source_sha256": {
+      "/project/6002642/shouyu/virus-genome-extrapolation/scripts/run_adaptation_duration.py": "6ceea286eea0789df43c69daa2f7b359a98e44376fa50e4414585920b9562b7b",
+      "src/baculo_adapt/duration.py": "990066639e15877a90964090eeaa39c39c36c129e4b7a0de64780b6c77242772",
+      "src/baculo_adapt/masking.py": "3c776076796c913b0d25c0203f6eb0c90bbd58660b7ee32e15c43446eb48ea2d",
+      "scripts/run_controlled_adaptation.py": "2c6a2ad9907ea0f85cc7513b170026c135ed31ca7e2b168312f0ab063096c2dc",
+      "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c"
+    },
+    "protocol_sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+    "budgets": {
+      "512": {
+        "budget": 512,
+        "selected_step": 512,
+        "selected_mlm_loss": 6.890027968198917,
+        "endpoint_mlm_loss": 6.890027968198917,
+        "input_tokens": 4210688,
+        "masked_tokens": 629159,
+        "state_sha256": "208f91add08d9116d7984a63d5848784a204800188018e27e245dceb293a1326",
+        "state_exact_reload": true
+      },
+      "1024": {
+        "budget": 1024,
+        "selected_step": 1024,
+        "selected_mlm_loss": 6.879961515507874,
+        "endpoint_mlm_loss": 6.879961515507874,
+        "input_tokens": 8421376,
+        "masked_tokens": 1258365,
+        "state_sha256": "ce1216c4ae170fe77ad013eaf9781440fb915693391e137f3099eadbed618ff6",
+        "state_exact_reload": true
+      },
+      "2048": {
+        "budget": 2048,
+        "selected_step": 2048,
+        "selected_mlm_loss": 6.870441394399329,
+        "endpoint_mlm_loss": 6.870441394399329,
+        "input_tokens": 16842752,
+        "masked_tokens": 2517562,
+        "state_sha256": "e05fc967fb46c5168e7ab11b54bad90e2c72699868fad0769c1b8f153672de38",
+        "state_exact_reload": true
+      },
+      "4096": {
+        "budget": 4096,
+        "selected_step": 3328,
+        "selected_mlm_loss": 6.864203394953384,
+        "endpoint_mlm_loss": 6.864523896185667,
+        "input_tokens": 33685504,
+        "masked_tokens": 5032151,
+        "state_sha256": "4b361bc29de83bb80464a933d2e1c2f02a7af5c752eed21cf8ccc88768319da5",
+        "state_exact_reload": true
+      }
+    },
+    "selected_step": 3328,
+    "selected_mlm_loss": 6.864203394953384,
+    "trainable_parameter_max_change": 0.10272672772407532,
+    "frozen_parameters_exact": true,
+    "frozen_parameters_sha256": "ad56ace6dca1ce31e0781740a7d704f441ab97e4a8e0140bd46690af6efae264",
+    "training_seconds": 621.5687255859375,
+    "input_tokens": 33685504,
+    "masked_tokens": 5032151,
+    "max_gpu_allocated_bytes": 5056764928,
+    "max_gpu_reserved_bytes": 5322571776,
+    "plateau": {
+      "assessable": true,
+      "horizon": 1024,
+      "relative_tolerance": 0.005,
+      "best_loss_relative_improvement": 5.832642974306925e-05,
+      "plateau_by_rule": true
+    },
+    "total_seconds": 638.4847331047058,
+    "state_sha256": "4b361bc29de83bb80464a933d2e1c2f02a7af5c752eed21cf8ccc88768319da5",
+    "saved_state_exact_replay": true
+  },
+  "100m-lora-general-seed42": {
+    "args": {
+      "size": "100m",
+      "condition": "general",
+      "method": "lora",
+      "seed": 42,
+      "steps": 4096,
+      "lr": 0.0001,
+      "rank": 8,
+      "alpha": 16,
+      "microbatch": 16,
+      "smoke": false,
+      "output": "runs/2026-10-24/scientific/100m-lora-general-seed42"
+    },
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "pretraining_scope": "multispecies",
+    "initial_mlm_loss": 8.10370220388782,
+    "all_source_parameters_exact": true,
+    "token_limit": 2048,
+    "lora_targets": [
+      "esm.encoder.layer.0.attention.self.query",
+      "esm.encoder.layer.0.attention.self.value",
+      "esm.encoder.layer.1.attention.self.query",
+      "esm.encoder.layer.1.attention.self.value",
+      "esm.encoder.layer.2.attention.self.query",
+      "esm.encoder.layer.2.attention.self.value",
+      "esm.encoder.layer.3.attention.self.query",
+      "esm.encoder.layer.3.attention.self.value",
+      "esm.encoder.layer.4.attention.self.query",
+      "esm.encoder.layer.4.attention.self.value",
+      "esm.encoder.layer.5.attention.self.query",
+      "esm.encoder.layer.5.attention.self.value",
+      "esm.encoder.layer.6.attention.self.query",
+      "esm.encoder.layer.6.attention.self.value",
+      "esm.encoder.layer.7.attention.self.query",
+      "esm.encoder.layer.7.attention.self.value",
+      "esm.encoder.layer.8.attention.self.query",
+      "esm.encoder.layer.8.attention.self.value",
+      "esm.encoder.layer.9.attention.self.query",
+      "esm.encoder.layer.9.attention.self.value",
+      "esm.encoder.layer.10.attention.self.query",
+      "esm.encoder.layer.10.attention.self.value",
+      "esm.encoder.layer.11.attention.self.query",
+      "esm.encoder.layer.11.attention.self.value",
+      "esm.encoder.layer.12.attention.self.query",
+      "esm.encoder.layer.12.attention.self.value",
+      "esm.encoder.layer.13.attention.self.query",
+      "esm.encoder.layer.13.attention.self.value",
+      "esm.encoder.layer.14.attention.self.query",
+      "esm.encoder.layer.14.attention.self.value",
+      "esm.encoder.layer.15.attention.self.query",
+      "esm.encoder.layer.15.attention.self.value",
+      "esm.encoder.layer.16.attention.self.query",
+      "esm.encoder.layer.16.attention.self.value",
+      "esm.encoder.layer.17.attention.self.query",
+      "esm.encoder.layer.17.attention.self.value",
+      "esm.encoder.layer.18.attention.self.query",
+      "esm.encoder.layer.18.attention.self.value",
+      "esm.encoder.layer.19.attention.self.query",
+      "esm.encoder.layer.19.attention.self.value",
+      "esm.encoder.layer.20.attention.self.query",
+      "esm.encoder.layer.20.attention.self.value",
+      "esm.encoder.layer.21.attention.self.query",
+      "esm.encoder.layer.21.attention.self.value"
+    ],
+    "parameters": 98249580,
+    "trainable_parameters": 360448,
+    "packages": {
+      "torch": "2.10.0+computecanada",
+      "transformers": "5.3.0+computecanada",
+      "numpy": "2.4.2+computecanada"
+    },
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017493504,
+    "corpus_sha256": "6455320fd95ae86d27d32c80c101b18c9529cc064f252e7972181a947d852e04",
+    "eval_sha256": "d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761",
+    "source_sha256": {
+      "/project/6002642/shouyu/virus-genome-extrapolation/scripts/run_adaptation_duration.py": "6ceea286eea0789df43c69daa2f7b359a98e44376fa50e4414585920b9562b7b",
+      "src/baculo_adapt/duration.py": "990066639e15877a90964090eeaa39c39c36c129e4b7a0de64780b6c77242772",
+      "src/baculo_adapt/masking.py": "3c776076796c913b0d25c0203f6eb0c90bbd58660b7ee32e15c43446eb48ea2d",
+      "scripts/run_controlled_adaptation.py": "2c6a2ad9907ea0f85cc7513b170026c135ed31ca7e2b168312f0ab063096c2dc",
+      "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c"
+    },
+    "protocol_sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+    "budgets": {
+      "512": {
+        "budget": 512,
+        "selected_step": 256,
+        "selected_mlm_loss": 6.944973931818843,
+        "endpoint_mlm_loss": 6.950150260571577,
+        "input_tokens": 4210688,
+        "masked_tokens": 629159,
+        "state_sha256": "b623245f3c76de7a80f41bd41ee576519b5cc97ff1fb65ae1752e95e360927d2",
+        "state_exact_reload": true
+      },
+      "1024": {
+        "budget": 1024,
+        "selected_step": 256,
+        "selected_mlm_loss": 6.944973931818843,
+        "endpoint_mlm_loss": 6.9507403322215575,
+        "input_tokens": 8421376,
+        "masked_tokens": 1258365,
+        "state_sha256": "b623245f3c76de7a80f41bd41ee576519b5cc97ff1fb65ae1752e95e360927d2",
+        "state_exact_reload": true
+      },
+      "2048": {
+        "budget": 2048,
+        "selected_step": 256,
+        "selected_mlm_loss": 6.944973931818843,
+        "endpoint_mlm_loss": 6.95747818217055,
+        "input_tokens": 16842752,
+        "masked_tokens": 2517562,
+        "state_sha256": "b623245f3c76de7a80f41bd41ee576519b5cc97ff1fb65ae1752e95e360927d2",
+        "state_exact_reload": true
+      },
+      "4096": {
+        "budget": 4096,
+        "selected_step": 256,
+        "selected_mlm_loss": 6.944973931818843,
+        "endpoint_mlm_loss": 6.9626684219938735,
+        "input_tokens": 33685504,
+        "masked_tokens": 5032151,
+        "state_sha256": "b623245f3c76de7a80f41bd41ee576519b5cc97ff1fb65ae1752e95e360927d2",
+        "state_exact_reload": true
+      }
+    },
+    "selected_step": 256,
+    "selected_mlm_loss": 6.944973931818843,
+    "trainable_parameter_max_change": 0.059529006481170654,
+    "frozen_parameters_exact": true,
+    "frozen_parameters_sha256": "ad56ace6dca1ce31e0781740a7d704f441ab97e4a8e0140bd46690af6efae264",
+    "training_seconds": 626.179779291153,
+    "input_tokens": 33685504,
+    "masked_tokens": 5032151,
+    "max_gpu_allocated_bytes": 5056764928,
+    "max_gpu_reserved_bytes": 5322571776,
+    "plateau": {
+      "assessable": true,
+      "horizon": 1024,
+      "relative_tolerance": 0.005,
+      "best_loss_relative_improvement": 0.0,
+      "plateau_by_rule": true
+    },
+    "total_seconds": 640.2331080436707,
+    "state_sha256": "b623245f3c76de7a80f41bd41ee576519b5cc97ff1fb65ae1752e95e360927d2",
+    "saved_state_exact_replay": true
+  },
+  "500m-full-baculo-seed42": {
+    "args": {
+      "size": "500m",
+      "condition": "baculo",
+      "method": "full",
+      "seed": 42,
+      "steps": 4096,
+      "lr": 1e-05,
+      "rank": 8,
+      "alpha": 16,
+      "microbatch": 16,
+      "smoke": false,
+      "output": "runs/2026-10-24/scientific/500m-full-baculo-seed42"
+    },
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+      "revision": "06615c1660c892fc199840c18123f8385b3542a8"
+    },
+    "pretraining_scope": "multispecies",
+    "initial_mlm_loss": 7.223035174619163,
+    "all_source_parameters_exact": true,
+    "token_limit": 2048,
+    "lora_targets": [],
+    "parameters": 498345436,
+    "trainable_parameters": 498345436,
+    "packages": {
+      "torch": "2.10.0+computecanada",
+      "transformers": "5.3.0+computecanada",
+      "numpy": "2.4.2+computecanada"
+    },
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017493504,
+    "corpus_sha256": "941b0822a71a7bebcc8675af0264715aa27ace8db07cb3be4482a4a3f3abffc4",
+    "eval_sha256": "d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761",
+    "source_sha256": {
+      "/project/6002642/shouyu/virus-genome-extrapolation/scripts/run_adaptation_duration.py": "6ceea286eea0789df43c69daa2f7b359a98e44376fa50e4414585920b9562b7b",
+      "src/baculo_adapt/duration.py": "990066639e15877a90964090eeaa39c39c36c129e4b7a0de64780b6c77242772",
+      "src/baculo_adapt/masking.py": "3c776076796c913b0d25c0203f6eb0c90bbd58660b7ee32e15c43446eb48ea2d",
+      "scripts/run_controlled_adaptation.py": "2c6a2ad9907ea0f85cc7513b170026c135ed31ca7e2b168312f0ab063096c2dc",
+      "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c"
+    },
+    "protocol_sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+    "budgets": {
+      "512": {
+        "budget": 512,
+        "selected_step": 512,
+        "selected_mlm_loss": 6.691089644897535,
+        "endpoint_mlm_loss": 6.691089644897535,
+        "input_tokens": 4210688,
+        "masked_tokens": 629159,
+        "state_sha256": "38ed1d800f9f02682b2d6f2d3a28ea3624d4bdd90a83129372390fbcc2989cc9",
+        "state_exact_reload": true
+      },
+      "1024": {
+        "budget": 1024,
+        "selected_step": 1024,
+        "selected_mlm_loss": 6.632069643971778,
+        "endpoint_mlm_loss": 6.632069643971778,
+        "input_tokens": 8421376,
+        "masked_tokens": 1258365,
+        "state_sha256": "b11434b9af317a6c6a51762a0d0f2afbbb25fb12f5b8b81e3a5d2ad39f0b271e",
+        "state_exact_reload": true
+      },
+      "2048": {
+        "budget": 2048,
+        "selected_step": 2048,
+        "selected_mlm_loss": 6.535168720550102,
+        "endpoint_mlm_loss": 6.535168720550102,
+        "input_tokens": 16842752,
+        "masked_tokens": 2517562,
+        "state_sha256": "cd5507e32a7cd62d5f10b3fd02c20a3ec9c7aea40eb50048570068c7ecacda59",
+        "state_exact_reload": true
+      },
+      "4096": {
+        "budget": 4096,
+        "selected_step": 4096,
+        "selected_mlm_loss": 6.479428744155762,
+        "endpoint_mlm_loss": 6.479428744155762,
+        "input_tokens": 33685504,
+        "masked_tokens": 5032151,
+        "state_sha256": "59e3102f5eebfc451c774d19606461b030103bfe0153991fdbcf5e04820db9a8",
+        "state_exact_reload": true
+      }
+    },
+    "selected_step": 4096,
+    "selected_mlm_loss": 6.479428744155762,
+    "trainable_parameter_max_change": 0.0022438932210206985,
+    "frozen_parameters_exact": null,
+    "frozen_parameters_sha256": null,
+    "training_seconds": 1133.3400762081146,
+    "input_tokens": 33685504,
+    "masked_tokens": 5032151,
+    "max_gpu_allocated_bytes": 19067677696,
+    "max_gpu_reserved_bytes": 20172505088,
+    "plateau": {
+      "assessable": true,
+      "horizon": 1024,
+      "relative_tolerance": 0.005,
+      "best_loss_relative_improvement": 0.0013937176255835087,
+      "plateau_by_rule": true
+    },
+    "total_seconds": 1147.7483048439026,
+    "state_sha256": "59e3102f5eebfc451c774d19606461b030103bfe0153991fdbcf5e04820db9a8",
+    "saved_state_exact_replay": true
+  },
+  "500m-full-baculo-seed43": {
+    "args": {
+      "size": "500m",
+      "condition": "baculo",
+      "method": "full",
+      "seed": 43,
+      "steps": 4096,
+      "lr": 1e-05,
+      "rank": 8,
+      "alpha": 16,
+      "microbatch": 16,
+      "smoke": false,
+      "output": "runs/2026-10-24/scientific/500m-full-baculo-seed43"
+    },
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+      "revision": "06615c1660c892fc199840c18123f8385b3542a8"
+    },
+    "pretraining_scope": "multispecies",
+    "initial_mlm_loss": 7.223035174619163,
+    "all_source_parameters_exact": true,
+    "token_limit": 2048,
+    "lora_targets": [],
+    "parameters": 498345436,
+    "trainable_parameters": 498345436,
+    "packages": {
+      "torch": "2.10.0+computecanada",
+      "transformers": "5.3.0+computecanada",
+      "numpy": "2.4.2+computecanada"
+    },
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017493504,
+    "corpus_sha256": "941b0822a71a7bebcc8675af0264715aa27ace8db07cb3be4482a4a3f3abffc4",
+    "eval_sha256": "d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761",
+    "source_sha256": {
+      "/project/6002642/shouyu/virus-genome-extrapolation/scripts/run_adaptation_duration.py": "6ceea286eea0789df43c69daa2f7b359a98e44376fa50e4414585920b9562b7b",
+      "src/baculo_adapt/duration.py": "990066639e15877a90964090eeaa39c39c36c129e4b7a0de64780b6c77242772",
+      "src/baculo_adapt/masking.py": "3c776076796c913b0d25c0203f6eb0c90bbd58660b7ee32e15c43446eb48ea2d",
+      "scripts/run_controlled_adaptation.py": "2c6a2ad9907ea0f85cc7513b170026c135ed31ca7e2b168312f0ab063096c2dc",
+      "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c"
+    },
+    "protocol_sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+    "budgets": {
+      "512": {
+        "budget": 512,
+        "selected_step": 512,
+        "selected_mlm_loss": 6.709818752472285,
+        "endpoint_mlm_loss": 6.709818752472285,
+        "input_tokens": 4210688,
+        "masked_tokens": 628006,
+        "state_sha256": "72046cbb62eb902db7e8476a3801589a47388723be62c3260b9255e8c070956f",
+        "state_exact_reload": true
+      },
+      "1024": {
+        "budget": 1024,
+        "selected_step": 1024,
+        "selected_mlm_loss": 6.63749183519129,
+        "endpoint_mlm_loss": 6.63749183519129,
+        "input_tokens": 8421376,
+        "masked_tokens": 1256849,
+        "state_sha256": "5aba3f2504d9eaa69ad6f379d32639c86ce4424016cceb8299fdf35fc5e15da4",
+        "state_exact_reload": true
+      },
+      "2048": {
+        "budget": 2048,
+        "selected_step": 2048,
+        "selected_mlm_loss": 6.528831229278894,
+        "endpoint_mlm_loss": 6.528831229278894,
+        "input_tokens": 16842752,
+        "masked_tokens": 2513673,
+        "state_sha256": "aea18f2ae1855434209c0720f837982a5c4dfbc5405284100c632dce31d0f998",
+        "state_exact_reload": true
+      },
+      "4096": {
+        "budget": 4096,
+        "selected_step": 4096,
+        "selected_mlm_loss": 6.473785519332684,
+        "endpoint_mlm_loss": 6.473785519332684,
+        "input_tokens": 33685504,
+        "masked_tokens": 5033073,
+        "state_sha256": "33c9c9c98bcd973d6698b1af7b04984e679561442d3b5180a62ce3e4e74cbd76",
+        "state_exact_reload": true
+      }
+    },
+    "selected_step": 4096,
+    "selected_mlm_loss": 6.473785519332684,
+    "trainable_parameter_max_change": 0.0023723840713500977,
+    "frozen_parameters_exact": null,
+    "frozen_parameters_sha256": null,
+    "training_seconds": 1126.3877930641174,
+    "input_tokens": 33685504,
+    "masked_tokens": 5033073,
+    "max_gpu_allocated_bytes": 19067677696,
+    "max_gpu_reserved_bytes": 20172505088,
+    "plateau": {
+      "assessable": true,
+      "horizon": 1024,
+      "relative_tolerance": 0.005,
+      "best_loss_relative_improvement": 0.0015129273576294654,
+      "plateau_by_rule": true
+    },
+    "total_seconds": 1141.2830893993378,
+    "state_sha256": "33c9c9c98bcd973d6698b1af7b04984e679561442d3b5180a62ce3e4e74cbd76",
+    "saved_state_exact_replay": true
+  },
+  "500m-full-baculo-seed44": {
+    "args": {
+      "size": "500m",
+      "condition": "baculo",
+      "method": "full",
+      "seed": 44,
+      "steps": 4096,
+      "lr": 1e-05,
+      "rank": 8,
+      "alpha": 16,
+      "microbatch": 16,
+      "smoke": false,
+      "output": "runs/2026-10-24/scientific/500m-full-baculo-seed44"
+    },
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+      "revision": "06615c1660c892fc199840c18123f8385b3542a8"
+    },
+    "pretraining_scope": "multispecies",
+    "initial_mlm_loss": 7.223035174619163,
+    "all_source_parameters_exact": true,
+    "token_limit": 2048,
+    "lora_targets": [],
+    "parameters": 498345436,
+    "trainable_parameters": 498345436,
+    "packages": {
+      "torch": "2.10.0+computecanada",
+      "transformers": "5.3.0+computecanada",
+      "numpy": "2.4.2+computecanada"
+    },
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017493504,
+    "corpus_sha256": "941b0822a71a7bebcc8675af0264715aa27ace8db07cb3be4482a4a3f3abffc4",
+    "eval_sha256": "d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761",
+    "source_sha256": {
+      "/project/6002642/shouyu/virus-genome-extrapolation/scripts/run_adaptation_duration.py": "6ceea286eea0789df43c69daa2f7b359a98e44376fa50e4414585920b9562b7b",
+      "src/baculo_adapt/duration.py": "990066639e15877a90964090eeaa39c39c36c129e4b7a0de64780b6c77242772",
+      "src/baculo_adapt/masking.py": "3c776076796c913b0d25c0203f6eb0c90bbd58660b7ee32e15c43446eb48ea2d",
+      "scripts/run_controlled_adaptation.py": "2c6a2ad9907ea0f85cc7513b170026c135ed31ca7e2b168312f0ab063096c2dc",
+      "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c"
+    },
+    "protocol_sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+    "budgets": {
+      "512": {
+        "budget": 512,
+        "selected_step": 512,
+        "selected_mlm_loss": 6.697367616260467,
+        "endpoint_mlm_loss": 6.697367616260467,
+        "input_tokens": 4210688,
+        "masked_tokens": 628740,
+        "state_sha256": "1c21ab2869f5d9f7414b8f3bc2d55a25b06c1ba87772c6a8fd018211864b79ff",
+        "state_exact_reload": true
+      },
+      "1024": {
+        "budget": 1024,
+        "selected_step": 1024,
+        "selected_mlm_loss": 6.634188237684866,
+        "endpoint_mlm_loss": 6.634188237684866,
+        "input_tokens": 8421376,
+        "masked_tokens": 1258514,
+        "state_sha256": "eedfe27505723a9c1c0103aa8f5c7aa1dafb1aa32f4fecafb1261d9420e4cc92",
+        "state_exact_reload": true
+      },
+      "2048": {
+        "budget": 2048,
+        "selected_step": 2048,
+        "selected_mlm_loss": 6.529947096931733,
+        "endpoint_mlm_loss": 6.529947096931733,
+        "input_tokens": 16842752,
+        "masked_tokens": 2516684,
+        "state_sha256": "edc93c125955a01aa9666f89b1707c02cd64a60a4dd5991bfe8df342636d8fe7",
+        "state_exact_reload": true
+      },
+      "4096": {
+        "budget": 4096,
+        "selected_step": 4096,
+        "selected_mlm_loss": 6.473745034040782,
+        "endpoint_mlm_loss": 6.473745034040782,
+        "input_tokens": 33685504,
+        "masked_tokens": 5031934,
+        "state_sha256": "2ec1d379a614d5f9a24b6caeb02af23f7e75fbd38574e221c96739993d7d56f6",
+        "state_exact_reload": true
+      }
+    },
+    "selected_step": 4096,
+    "selected_mlm_loss": 6.473745034040782,
+    "trainable_parameter_max_change": 0.002252340316772461,
+    "frozen_parameters_exact": null,
+    "frozen_parameters_sha256": null,
+    "training_seconds": 1135.2970702648163,
+    "input_tokens": 33685504,
+    "masked_tokens": 5031934,
+    "max_gpu_allocated_bytes": 19067677696,
+    "max_gpu_reserved_bytes": 20172505088,
+    "plateau": {
+      "assessable": true,
+      "horizon": 1024,
+      "relative_tolerance": 0.005,
+      "best_loss_relative_improvement": 0.0013026171020825749,
+      "plateau_by_rule": true
+    },
+    "total_seconds": 1158.5884945392609,
+    "state_sha256": "2ec1d379a614d5f9a24b6caeb02af23f7e75fbd38574e221c96739993d7d56f6",
+    "saved_state_exact_replay": true
+  },
+  "500m-full-general-seed42": {
+    "args": {
+      "size": "500m",
+      "condition": "general",
+      "method": "full",
+      "seed": 42,
+      "steps": 4096,
+      "lr": 1e-05,
+      "rank": 8,
+      "alpha": 16,
+      "microbatch": 16,
+      "smoke": false,
+      "output": "runs/2026-10-24/scientific/500m-full-general-seed42"
+    },
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+      "revision": "06615c1660c892fc199840c18123f8385b3542a8"
+    },
+    "pretraining_scope": "multispecies",
+    "initial_mlm_loss": 7.223035174619163,
+    "all_source_parameters_exact": true,
+    "token_limit": 2048,
+    "lora_targets": [],
+    "parameters": 498345436,
+    "trainable_parameters": 498345436,
+    "packages": {
+      "torch": "2.10.0+computecanada",
+      "transformers": "5.3.0+computecanada",
+      "numpy": "2.4.2+computecanada"
+    },
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017493504,
+    "corpus_sha256": "6455320fd95ae86d27d32c80c101b18c9529cc064f252e7972181a947d852e04",
+    "eval_sha256": "d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761",
+    "source_sha256": {
+      "/project/6002642/shouyu/virus-genome-extrapolation/scripts/run_adaptation_duration.py": "6ceea286eea0789df43c69daa2f7b359a98e44376fa50e4414585920b9562b7b",
+      "src/baculo_adapt/duration.py": "990066639e15877a90964090eeaa39c39c36c129e4b7a0de64780b6c77242772",
+      "src/baculo_adapt/masking.py": "3c776076796c913b0d25c0203f6eb0c90bbd58660b7ee32e15c43446eb48ea2d",
+      "scripts/run_controlled_adaptation.py": "2c6a2ad9907ea0f85cc7513b170026c135ed31ca7e2b168312f0ab063096c2dc",
+      "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c"
+    },
+    "protocol_sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+    "budgets": {
+      "512": {
+        "budget": 512,
+        "selected_step": 256,
+        "selected_mlm_loss": 6.874177333267395,
+        "endpoint_mlm_loss": 6.889868964725244,
+        "input_tokens": 4210688,
+        "masked_tokens": 629159,
+        "state_sha256": "0cd4f04ff4d8f08521ac6aec1a4b70673e1443bc00be77cbda5a249165952bc8",
+        "state_exact_reload": true
+      },
+      "1024": {
+        "budget": 1024,
+        "selected_step": 256,
+        "selected_mlm_loss": 6.874177333267395,
+        "endpoint_mlm_loss": 6.8966670751523065,
+        "input_tokens": 8421376,
+        "masked_tokens": 1258365,
+        "state_sha256": "0cd4f04ff4d8f08521ac6aec1a4b70673e1443bc00be77cbda5a249165952bc8",
+        "state_exact_reload": true
+      },
+      "2048": {
+        "budget": 2048,
+        "selected_step": 256,
+        "selected_mlm_loss": 6.874177333267395,
+        "endpoint_mlm_loss": 6.900009187924199,
+        "input_tokens": 16842752,
+        "masked_tokens": 2517562,
+        "state_sha256": "0cd4f04ff4d8f08521ac6aec1a4b70673e1443bc00be77cbda5a249165952bc8",
+        "state_exact_reload": true
+      },
+      "4096": {
+        "budget": 4096,
+        "selected_step": 256,
+        "selected_mlm_loss": 6.874177333267395,
+        "endpoint_mlm_loss": 6.899543626648067,
+        "input_tokens": 33685504,
+        "masked_tokens": 5032151,
+        "state_sha256": "0cd4f04ff4d8f08521ac6aec1a4b70673e1443bc00be77cbda5a249165952bc8",
+        "state_exact_reload": true
+      }
+    },
+    "selected_step": 256,
+    "selected_mlm_loss": 6.874177333267395,
+    "trainable_parameter_max_change": 0.002297043800354004,
+    "frozen_parameters_exact": null,
+    "frozen_parameters_sha256": null,
+    "training_seconds": 1082.8197729587555,
+    "input_tokens": 33685504,
+    "masked_tokens": 5032151,
+    "max_gpu_allocated_bytes": 19067677696,
+    "max_gpu_reserved_bytes": 20172505088,
+    "plateau": {
+      "assessable": true,
+      "horizon": 1024,
+      "relative_tolerance": 0.005,
+      "best_loss_relative_improvement": 0.0,
+      "plateau_by_rule": true
+    },
+    "total_seconds": 1097.6928544044495,
+    "state_sha256": "0cd4f04ff4d8f08521ac6aec1a4b70673e1443bc00be77cbda5a249165952bc8",
+    "saved_state_exact_replay": true
+  },
+  "500m-full-general-seed43": {
+    "args": {
+      "size": "500m",
+      "condition": "general",
+      "method": "full",
+      "seed": 43,
+      "steps": 4096,
+      "lr": 1e-05,
+      "rank": 8,
+      "alpha": 16,
+      "microbatch": 16,
+      "smoke": false,
+      "output": "runs/2026-10-24/scientific/500m-full-general-seed43"
+    },
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+      "revision": "06615c1660c892fc199840c18123f8385b3542a8"
+    },
+    "pretraining_scope": "multispecies",
+    "initial_mlm_loss": 7.223035174619163,
+    "all_source_parameters_exact": true,
+    "token_limit": 2048,
+    "lora_targets": [],
+    "parameters": 498345436,
+    "trainable_parameters": 498345436,
+    "packages": {
+      "torch": "2.10.0+computecanada",
+      "transformers": "5.3.0+computecanada",
+      "numpy": "2.4.2+computecanada"
+    },
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017493504,
+    "corpus_sha256": "6455320fd95ae86d27d32c80c101b18c9529cc064f252e7972181a947d852e04",
+    "eval_sha256": "d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761",
+    "source_sha256": {
+      "/project/6002642/shouyu/virus-genome-extrapolation/scripts/run_adaptation_duration.py": "6ceea286eea0789df43c69daa2f7b359a98e44376fa50e4414585920b9562b7b",
+      "src/baculo_adapt/duration.py": "990066639e15877a90964090eeaa39c39c36c129e4b7a0de64780b6c77242772",
+      "src/baculo_adapt/masking.py": "3c776076796c913b0d25c0203f6eb0c90bbd58660b7ee32e15c43446eb48ea2d",
+      "scripts/run_controlled_adaptation.py": "2c6a2ad9907ea0f85cc7513b170026c135ed31ca7e2b168312f0ab063096c2dc",
+      "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c"
+    },
+    "protocol_sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+    "budgets": {
+      "512": {
+        "budget": 512,
+        "selected_step": 128,
+        "selected_mlm_loss": 6.874082176608079,
+        "endpoint_mlm_loss": 6.891204433526676,
+        "input_tokens": 4210688,
+        "masked_tokens": 628006,
+        "state_sha256": "ee667d1347eb57e60cad7c495b1b5d5fbe6ee2ca54db3aeb33cd669bc07d05f7",
+        "state_exact_reload": true
+      },
+      "1024": {
+        "budget": 1024,
+        "selected_step": 128,
+        "selected_mlm_loss": 6.874082176608079,
+        "endpoint_mlm_loss": 6.890408985187693,
+        "input_tokens": 8421376,
+        "masked_tokens": 1256849,
+        "state_sha256": "ee667d1347eb57e60cad7c495b1b5d5fbe6ee2ca54db3aeb33cd669bc07d05f7",
+        "state_exact_reload": true
+      },
+      "2048": {
+        "budget": 2048,
+        "selected_step": 128,
+        "selected_mlm_loss": 6.874082176608079,
+        "endpoint_mlm_loss": 6.899334840675418,
+        "input_tokens": 16842752,
+        "masked_tokens": 2513673,
+        "state_sha256": "ee667d1347eb57e60cad7c495b1b5d5fbe6ee2ca54db3aeb33cd669bc07d05f7",
+        "state_exact_reload": true
+      },
+      "4096": {
+        "budget": 4096,
+        "selected_step": 128,
+        "selected_mlm_loss": 6.874082176608079,
+        "endpoint_mlm_loss": 6.895988341526415,
+        "input_tokens": 33685504,
+        "masked_tokens": 5033073,
+        "state_sha256": "ee667d1347eb57e60cad7c495b1b5d5fbe6ee2ca54db3aeb33cd669bc07d05f7",
+        "state_exact_reload": true
+      }
+    },
+    "selected_step": 128,
+    "selected_mlm_loss": 6.874082176608079,
+    "trainable_parameter_max_change": 0.0021813511848449707,
+    "frozen_parameters_exact": null,
+    "frozen_parameters_sha256": null,
+    "training_seconds": 1071.6914117336273,
+    "input_tokens": 33685504,
+    "masked_tokens": 5033073,
+    "max_gpu_allocated_bytes": 19067677696,
+    "max_gpu_reserved_bytes": 20172505088,
+    "plateau": {
+      "assessable": true,
+      "horizon": 1024,
+      "relative_tolerance": 0.005,
+      "best_loss_relative_improvement": 0.0,
+      "plateau_by_rule": true
+    },
+    "total_seconds": 1085.8726160526276,
+    "state_sha256": "ee667d1347eb57e60cad7c495b1b5d5fbe6ee2ca54db3aeb33cd669bc07d05f7",
+    "saved_state_exact_replay": true
+  },
+  "500m-full-general-seed44": {
+    "args": {
+      "size": "500m",
+      "condition": "general",
+      "method": "full",
+      "seed": 44,
+      "steps": 4096,
+      "lr": 1e-05,
+      "rank": 8,
+      "alpha": 16,
+      "microbatch": 16,
+      "smoke": false,
+      "output": "runs/2026-10-24/scientific/500m-full-general-seed44"
+    },
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+      "revision": "06615c1660c892fc199840c18123f8385b3542a8"
+    },
+    "pretraining_scope": "multispecies",
+    "initial_mlm_loss": 7.223035174619163,
+    "all_source_parameters_exact": true,
+    "token_limit": 2048,
+    "lora_targets": [],
+    "parameters": 498345436,
+    "trainable_parameters": 498345436,
+    "packages": {
+      "torch": "2.10.0+computecanada",
+      "transformers": "5.3.0+computecanada",
+      "numpy": "2.4.2+computecanada"
+    },
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017493504,
+    "corpus_sha256": "6455320fd95ae86d27d32c80c101b18c9529cc064f252e7972181a947d852e04",
+    "eval_sha256": "d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761",
+    "source_sha256": {
+      "/project/6002642/shouyu/virus-genome-extrapolation/scripts/run_adaptation_duration.py": "6ceea286eea0789df43c69daa2f7b359a98e44376fa50e4414585920b9562b7b",
+      "src/baculo_adapt/duration.py": "990066639e15877a90964090eeaa39c39c36c129e4b7a0de64780b6c77242772",
+      "src/baculo_adapt/masking.py": "3c776076796c913b0d25c0203f6eb0c90bbd58660b7ee32e15c43446eb48ea2d",
+      "scripts/run_controlled_adaptation.py": "2c6a2ad9907ea0f85cc7513b170026c135ed31ca7e2b168312f0ab063096c2dc",
+      "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c"
+    },
+    "protocol_sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+    "budgets": {
+      "512": {
+        "budget": 512,
+        "selected_step": 128,
+        "selected_mlm_loss": 6.869735672004067,
+        "endpoint_mlm_loss": 6.887621762384726,
+        "input_tokens": 4210688,
+        "masked_tokens": 628740,
+        "state_sha256": "aa4f2eab1852c238b32b6d08320cb683352f0977c4c5706f013b195297c6733a",
+        "state_exact_reload": true
+      },
+      "1024": {
+        "budget": 1024,
+        "selected_step": 128,
+        "selected_mlm_loss": 6.869735672004067,
+        "endpoint_mlm_loss": 6.889947789396072,
+        "input_tokens": 8421376,
+        "masked_tokens": 1258514,
+        "state_sha256": "aa4f2eab1852c238b32b6d08320cb683352f0977c4c5706f013b195297c6733a",
+        "state_exact_reload": true
+      },
+      "2048": {
+        "budget": 2048,
+        "selected_step": 128,
+        "selected_mlm_loss": 6.869735672004067,
+        "endpoint_mlm_loss": 6.901180540395409,
+        "input_tokens": 16842752,
+        "masked_tokens": 2516684,
+        "state_sha256": "aa4f2eab1852c238b32b6d08320cb683352f0977c4c5706f013b195297c6733a",
+        "state_exact_reload": true
+      },
+      "4096": {
+        "budget": 4096,
+        "selected_step": 128,
+        "selected_mlm_loss": 6.869735672004067,
+        "endpoint_mlm_loss": 6.896218004648423,
+        "input_tokens": 33685504,
+        "masked_tokens": 5031934,
+        "state_sha256": "aa4f2eab1852c238b32b6d08320cb683352f0977c4c5706f013b195297c6733a",
+        "state_exact_reload": true
+      }
+    },
+    "selected_step": 128,
+    "selected_mlm_loss": 6.869735672004067,
+    "trainable_parameter_max_change": 0.0021909475326538086,
+    "frozen_parameters_exact": null,
+    "frozen_parameters_sha256": null,
+    "training_seconds": 1062.6685366630554,
+    "input_tokens": 33685504,
+    "masked_tokens": 5031934,
+    "max_gpu_allocated_bytes": 19067677696,
+    "max_gpu_reserved_bytes": 20172505088,
+    "plateau": {
+      "assessable": true,
+      "horizon": 1024,
+      "relative_tolerance": 0.005,
+      "best_loss_relative_improvement": 0.0,
+      "plateau_by_rule": true
+    },
+    "total_seconds": 1077.4694390296936,
+    "state_sha256": "aa4f2eab1852c238b32b6d08320cb683352f0977c4c5706f013b195297c6733a",
+    "saved_state_exact_replay": true
+  }
+}

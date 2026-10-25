@@ -1,0 +1,15 @@
+{
+  "completed_utc": "2026-10-24T15:43:13.275887+00:00",
+  "all_scientific_and_analysis_sources_match": true,
+  "scientific_runs": 14,
+  "readouts": 59,
+  "all_budget_checkpoint_selections_match": true,
+  "dataset_sha256_matches_october23": true,
+  "fresh_process_embedding_max_abs": 0.0,
+  "readout_replay_max_abs": 1.1102230246251565e-16,
+  "independent_audit_panel_and_masks_match": true,
+  "test_predictions_generated": false,
+  "protocol_sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+  "verification_amendment_sha256": "045dc7c0093efa07c5798956dcf6ac78b4f76f6056d38a072cab0b59230cfa6a",
+  "finalizer_source_sha256": "4c412154de4656ea1d8c56e325efbdbffe2bba4a0a325a6c9b2d83e86e59a9b8"
+}
