@@ -1,3 +1,5 @@
+> Analysis is now complete. Read [the interpretation](adaptation-2026-10-24/interpretation.md) and [independent verification](adaptation-2026-10-24/analysis/verification.json). The next deliverable is final report assembly; no new training or test inference was performed.
+
 > Superseded: all jobs completed successfully. Continue with [the new-chat instructions](handoff-adaptation-2026-10-24-next-chat.md). This progress snapshot is historical.
 
 # October 24 duration study — running checkpoint

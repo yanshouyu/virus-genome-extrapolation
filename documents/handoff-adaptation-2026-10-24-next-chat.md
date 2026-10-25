@@ -1,3 +1,5 @@
+> Executed: compact collection, independent verification, figures and interpretation are complete. See [the completed report](adaptation-2026-10-24/interpretation.md) and [study index](adaptation-2026-10-24/README.md). The instructions below are retained as the historical analysis plan; the next work is final report assembly, with test inference remaining a separate decision.
+
 # New-chat instructions — interpret the completed October 24 study
 
 Saved October 24, 2026 (America/Toronto). This supersedes handoff-adaptation-2026-10-24-progress.md for current status. The user requested a saved next-step plan so work can continue in a new chat. Do not restart training or redo completed GPU work merely because the old handoff says jobs were running.
