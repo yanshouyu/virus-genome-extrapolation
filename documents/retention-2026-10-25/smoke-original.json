@@ -1,0 +1,40 @@
+{
+  "backbone": "original",
+  "split": "train",
+  "smoke": true,
+  "rows": 1024,
+  "hidden_size": 1024,
+  "layers": [
+    8,
+    15,
+    22,
+    29
+  ],
+  "batch_size": 64,
+  "source": {
+    "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+    "revision": "06615c1660c892fc199840c18123f8385b3542a8"
+  },
+  "state_sha256": null,
+  "repeat_max_abs": 0.0,
+  "seconds": 1.9188971519470215,
+  "total_seconds": 15.597930192947388,
+  "tokens": 138674,
+  "max_tokens": 171,
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "peak_allocated_gb": 3.231785984,
+  "peak_reserved_gb": 3.550478336,
+  "output_sha256": "8a755283528b967325f28e3570eddb0e47989368a78d3fb1d54d2f2b5fd6efcc",
+  "dataset_sha256": "526b54f39e2774f83c66d1848bf9bf77845d0da33f1c64dd874862664ba99a11",
+  "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+  "source_sha256": {
+    "/project/6002642/shouyu/virus-genome-extrapolation/scripts/extract_nt_retention.py": "3a30f90dc73311b2c06fd8796ee5b403fba90e25094e48a5a3693691d0eafe53",
+    "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c"
+  },
+  "packages": {
+    "torch": "2.10.0+computecanada",
+    "transformers": "5.3.0+computecanada",
+    "numpy": "2.4.2+computecanada"
+  },
+  "precision": "FP32 weights; BF16 autocast; FP32 mean pooling"
+}

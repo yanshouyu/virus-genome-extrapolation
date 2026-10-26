@@ -2,9 +2,6 @@
 import csv,hashlib,json,time
 from pathlib import Path
 import numpy as np
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
 from scipy.special import expit,softmax
 from baculo_adapt.retention import point_scores
 R=Path('runs/2026-10-25-retention');O=Path('documents/retention-2026-10-25/results')
@@ -32,6 +29,7 @@ def main():
  fresh=load(R/'fresh-replay.json');assert fresh['max_abs']==0 and len(fresh['backbones'])==7
  for path,digest in fresh['source_sha256'].items():assert sha(Path(path.split('virus-genome-extrapolation/')[-1]))==digest
  frozen=load(R/'selection/frozen.json');assert set(frozen['tasks'])==set(tasks) and (R/'selection/COMPLETE').exists()
+ pretest=load(O.parent/'pre-test-freeze-verification.json');assert sha(R/'selection/frozen.json')==pretest['frozen_settings_sha256']
  download=load(R/'dataset/download.json')
  assert audit['source_sha256']==sha('scripts/prepare_nt_retention.py')
  assert audit['protocol_sha256']==sha('documents/retention-2026-10-25/protocol.md')
@@ -89,9 +87,12 @@ def main():
   summary[label]={}
   for key,left,right in [('baculo-minus-original',slice(1,4),slice(0,1)),('general-minus-original',slice(4,7),slice(0,1)),('baculo-minus-general',slice(1,4),slice(4,7))]:
    delta=sc[:,left,:].mean(1)-sc[:,right,:].mean(1);summary[label][key]=effect(delta[:,0],.02)
+   if label!='Category-balanced overall':summary[label][key]={k:summary[label][key][k] for k in ['delta','interval','one_sided95_lower','one_sided95_upper']}
   summary[label]['mcc']={name:float(sc[0,j,0]) for j,name in enumerate(NAMES)}
  all_tasks=all(comparisons[t]['baculo-minus-original']['mcc']['simultaneous_one_sided95_lower']>-.05 for t in tasks)
  verification=dict(tasks=18,backbones=7,readouts=126,all_embedding_hashes_match=True,all_raw_dataset_hashes_match=True,source_hashes_checked=len(sources),full_training_scalers_verified=True,fresh_process_embedding_max_abs=fresh['max_abs'],full_test_probability_replay_max_abs=max_replay,all_metrics_recomputed=True,paired_common_bootstrap_resamples=int(valid.sum()),frozen_settings_sha256=sha(R/'selection/frozen.json'),acmnpv_test_opened=False,new_backbone_training=False,all18_task_preservation_supported=all_tasks)
+ import importlib.metadata,platform
+ write(O/'environment.json',dict(python=platform.python_version(),packages={k:importlib.metadata.version(k) for k in ['numpy','scipy','scikit-learn','torch','transformers','pyarrow']}))
  write(O/'verification.json',verification);write(O/'summary.json',summary);write(O/'paired-effects.json',comparisons);write(O/'readout-evidence.json',models);write(O/'embedding-evidence.json',embedding_checks)
  for filename,records in [('scores.csv',csvrows),('task-retention.csv',taskrows)]:
   with (O/filename).open('w',newline='') as f:
@@ -102,27 +103,6 @@ def main():
  shutil.copy2(R/'bootstrap/weights.npy',O/'bootstrap-weights.npy')
  for filename in ['audit.json','download.json']:shutil.copy2(R/'dataset'/filename,O/('dataset-'+filename))
  shutil.copy2(R/'selection/frozen.json',O/'frozen-readout-settings.json');shutil.copy2(R/'bootstrap/metadata.json',O/'bootstrap-metadata.json');shutil.copy2(R/'fresh-replay.json',O/'fresh-replay.json')
- plt.rcParams.update({'font.size':9,'axes.spines.top':False,'axes.spines.right':False})
- def save(fig,name):
-  for ext in ['png','pdf']:fig.savefig(O/(name+'.'+ext),dpi=180)
-  plt.close(fig)
- fig,ax=plt.subplots(figsize=(10,8),layout='constrained')
- for i,t in enumerate(tasks):
-  for key,color,offset in [('baculo-minus-original','#2563eb',-.12),('general-minus-original','#d97706',.12)]:
-   v=comparisons[t][key]['mcc'];lo,hi=v['interval'];point=v['delta'];ax.errorbar(point,i+offset,xerr=[[point-lo],[hi-point]],fmt='o',color=color,capsize=2,label=key if i==0 else None,ms=4)
- ax.axvline(0,color='#64748b');ax.axvline(-.05,color='#b91c1c',ls='--',label='Proposed task loss margin (-.05)');ax.set_yticks(range(18),labels=tasks);ax.invert_yaxis();ax.set_xlabel('MCC change vs original (mean seed-specific scores), paired95% intervals');ax.set_title('NTv2 500M (multispecies): fixed frozen-probe retention');ax.legend(fontsize=8);ax.grid(axis='x',alpha=.15);save(fig,'task-retention')
- fig,ax=plt.subplots(figsize=(10,4.5),layout='constrained')
- labels=families+['Overall'];keys=families+['Category-balanced overall']
- for j,(condition,color) in enumerate([('baculo-minus-original','#2563eb'),('general-minus-original','#d97706')]):
-  for i,key in enumerate(keys):
-   v=summary[key][condition];lo,hi=v['interval'];point=v['delta'];ax.errorbar(i+(j-.5)*.15,point,yerr=[[point-lo],[hi-point]],fmt='o',color=color,capsize=3,label=condition if i==0 else None)
- ax.axhline(0,color='#64748b');ax.axhline(-.02,color='#b91c1c',ls='--',label='Overall loss margin (-.02)');ax.set_xticks(range(5),labels=labels);ax.set_ylabel('MCC change, paired95% intervals');ax.set_title('NTv2 500M (multispecies): family means and category-balanced overall');ax.legend(fontsize=8);ax.grid(axis='y',alpha=.15);save(fig,'family-retention')
- old=load(Path('documents/adaptation-2026-10-24/results/development-metrics.json'))['models'];base=old['500m_before']['mcc']
- fig,ax=plt.subplots(figsize=(7,5),layout='constrained');ax.scatter([0],[0],color='#64748b',label='Original')
- for c,color,sl in [('baculo','#2563eb',slice(1,4)),('general','#d97706',slice(4,7))]:
-  x=[old[f'500m-full-{c}-seed{s}-budget4096']['mcc']-base for s in [42,43,44]];yy=overall[0,sl,0]-overall[0,0,0]
-  ax.scatter(x,yy,color=color,alpha=.5,label=c+' seeds');ax.scatter([np.mean(x)],[np.mean(yy)],color=color,marker='D',s=70,label=c+' mean')
- ax.axhline(0,color='#64748b');ax.axvline(0,color='#64748b');ax.axhline(-.02,color='#b91c1c',ls='--');ax.set_xlabel('AcMNPV validation MCC change vs original');ax.set_ylabel('NT benchmark category-balanced MCC change vs original');ax.set_title('NTv2 500M (multispecies): adaptation benefit / retention');ax.legend(fontsize=8);ax.grid(alpha=.15);save(fig,'benefit-retention')
  lines=['# NTv2 500M multispecies: general benchmark retention','',
  'All18 revised NT benchmark tasks evaluated with frozen backbones, train-only selected logistic probes and the existing4096-budget selected adaptation states. No backbone training or AcMNPV test inference. These are fixed-probe retention results, not a replication of the paper\'s fine-tuned leaderboard.','',
  '| Task | Original MCC | Baculo MCC (mean seeds) | General MCC (mean seeds) | Baculo-original [95% CI] | Preservation at .05 margin |','|---|---:|---:|---:|---:|---|']
