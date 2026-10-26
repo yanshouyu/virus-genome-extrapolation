@@ -1,0 +1,5983 @@
+{
+  "tasks": {
+    "H2AFZ": {
+      "task": "H2AFZ",
+      "selected": {
+        "layer": 15,
+        "layer_index": 1,
+        "C": 0.01,
+        "oof_log_loss": 0.5281642779252996,
+        "iterations": [
+          107,
+          96,
+          98
+        ]
+      },
+      "candidates": [
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.001,
+          "oof_log_loss": 0.531698791555017,
+          "iterations": [
+            47,
+            47,
+            47
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.01,
+          "oof_log_loss": 0.5290202709256239,
+          "iterations": [
+            98,
+            105,
+            95
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.1,
+          "oof_log_loss": 0.5387070042367543,
+          "iterations": [
+            163,
+            154,
+            164
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 1,
+          "oof_log_loss": 0.5430707094413171,
+          "iterations": [
+            124,
+            111,
+            127
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 10,
+          "oof_log_loss": 0.543131298205902,
+          "iterations": [
+            16,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.001,
+          "oof_log_loss": 0.5282653734040401,
+          "iterations": [
+            50,
+            49,
+            52
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.01,
+          "oof_log_loss": 0.5281642779252996,
+          "iterations": [
+            107,
+            96,
+            98
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.1,
+          "oof_log_loss": 0.5384868418510047,
+          "iterations": [
+            145,
+            134,
+            142
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 1,
+          "oof_log_loss": 0.5422443350775361,
+          "iterations": [
+            123,
+            88,
+            96
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 10,
+          "oof_log_loss": 0.5422428209045892,
+          "iterations": [
+            7,
+            2,
+            0
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.001,
+          "oof_log_loss": 0.5507846332680782,
+          "iterations": [
+            46,
+            46,
+            42
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.01,
+          "oof_log_loss": 0.5529020242057343,
+          "iterations": [
+            93,
+            89,
+            96
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.1,
+          "oof_log_loss": 0.5660339388984108,
+          "iterations": [
+            133,
+            137,
+            127
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 1,
+          "oof_log_loss": 0.570960288069624,
+          "iterations": [
+            100,
+            85,
+            95
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 10,
+          "oof_log_loss": 0.5709737701048646,
+          "iterations": [
+            8,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.001,
+          "oof_log_loss": 0.5586962132985123,
+          "iterations": [
+            50,
+            48,
+            47
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.01,
+          "oof_log_loss": 0.5642785466283042,
+          "iterations": [
+            97,
+            104,
+            99
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.1,
+          "oof_log_loss": 0.5735318897043375,
+          "iterations": [
+            184,
+            188,
+            195
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 1,
+          "oof_log_loss": 0.5771955919732072,
+          "iterations": [
+            220,
+            208,
+            192
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 10,
+          "oof_log_loss": 0.5771973825120418,
+          "iterations": [
+            4,
+            8,
+            3
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "fit_chromosomes": [
+            "chr10",
+            "chr11",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr17",
+            "chr18",
+            "chr19",
+            "chr3",
+            "chr5",
+            "chr6",
+            "chr7",
+            "chr8",
+            "chr9",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr1",
+            "chr12",
+            "chr16",
+            "chr2",
+            "chr4"
+          ],
+          "fit_rows": 20189,
+          "validation_rows": 9811
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr12",
+            "chr16",
+            "chr18",
+            "chr19",
+            "chr2",
+            "chr4",
+            "chr5",
+            "chr6",
+            "chr7",
+            "chr9",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr11",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr17",
+            "chr3",
+            "chr8",
+            "chrX"
+          ],
+          "fit_rows": 19716,
+          "validation_rows": 10284
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr2",
+            "chr3",
+            "chr4",
+            "chr8",
+            "chrX"
+          ],
+          "validation_chromosomes": [
+            "chr10",
+            "chr18",
+            "chr19",
+            "chr5",
+            "chr6",
+            "chr7",
+            "chr9",
+            "chrY"
+          ],
+          "fit_rows": 20095,
+          "validation_rows": 9905
+        }
+      ],
+      "train_rows": 30000,
+      "source_sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+      "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+      "train_index_sha256": "6500f16da11b1142a1f0247e46e40762d8a39f71e50d42889ac1d750f1e078f3",
+      "embedding_sha256": "9c78438f20d2d06dd7174a7a9ae53c804e6969f46fef8aa6038eb481b008a55f",
+      "seconds": 75.89522290229797
+    },
+    "H3K27ac": {
+      "task": "H3K27ac",
+      "selected": {
+        "layer": 15,
+        "layer_index": 1,
+        "C": 0.01,
+        "oof_log_loss": 0.513941011804798,
+        "iterations": [
+          108,
+          96,
+          101
+        ]
+      },
+      "candidates": [
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.001,
+          "oof_log_loss": 0.5207291895710305,
+          "iterations": [
+            45,
+            47,
+            49
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.01,
+          "oof_log_loss": 0.5199161428335253,
+          "iterations": [
+            97,
+            95,
+            98
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.1,
+          "oof_log_loss": 0.5298917218158868,
+          "iterations": [
+            157,
+            157,
+            164
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 1,
+          "oof_log_loss": 0.5343435736499759,
+          "iterations": [
+            122,
+            131,
+            119
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 10,
+          "oof_log_loss": 0.5343435448372392,
+          "iterations": [
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.001,
+          "oof_log_loss": 0.5144210359034717,
+          "iterations": [
+            50,
+            51,
+            54
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.01,
+          "oof_log_loss": 0.513941011804798,
+          "iterations": [
+            108,
+            96,
+            101
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.1,
+          "oof_log_loss": 0.5247221395595609,
+          "iterations": [
+            162,
+            141,
+            148
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 1,
+          "oof_log_loss": 0.5289741741501758,
+          "iterations": [
+            109,
+            88,
+            93
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 10,
+          "oof_log_loss": 0.5289741741501758,
+          "iterations": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.001,
+          "oof_log_loss": 0.5379685918433427,
+          "iterations": [
+            49,
+            47,
+            48
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.01,
+          "oof_log_loss": 0.5396090182525769,
+          "iterations": [
+            95,
+            88,
+            93
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.1,
+          "oof_log_loss": 0.5526612012587618,
+          "iterations": [
+            147,
+            145,
+            159
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 1,
+          "oof_log_loss": 0.5579401687000374,
+          "iterations": [
+            98,
+            111,
+            116
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 10,
+          "oof_log_loss": 0.5579883145304224,
+          "iterations": [
+            8,
+            0,
+            11
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.001,
+          "oof_log_loss": 0.5415550905538493,
+          "iterations": [
+            49,
+            46,
+            50
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.01,
+          "oof_log_loss": 0.5456681398472665,
+          "iterations": [
+            112,
+            110,
+            97
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.1,
+          "oof_log_loss": 0.5545099558457847,
+          "iterations": [
+            177,
+            177,
+            175
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 1,
+          "oof_log_loss": 0.5585371558095799,
+          "iterations": [
+            166,
+            150,
+            185
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 10,
+          "oof_log_loss": 0.5585371558095799,
+          "iterations": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr3",
+            "chr5",
+            "chr7",
+            "chr8",
+            "chr9",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr10",
+            "chr19",
+            "chr2",
+            "chr4",
+            "chr6",
+            "chrX"
+          ],
+          "fit_rows": 20076,
+          "validation_rows": 9924
+        },
+        {
+          "fit_chromosomes": [
+            "chr10",
+            "chr11",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr19",
+            "chr2",
+            "chr4",
+            "chr5",
+            "chr6",
+            "chr7",
+            "chr8",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr1",
+            "chr12",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr3",
+            "chr9"
+          ],
+          "fit_rows": 19523,
+          "validation_rows": 10477
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr12",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr4",
+            "chr6",
+            "chr9",
+            "chrX"
+          ],
+          "validation_chromosomes": [
+            "chr11",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr5",
+            "chr7",
+            "chr8",
+            "chrY"
+          ],
+          "fit_rows": 20401,
+          "validation_rows": 9599
+        }
+      ],
+      "train_rows": 30000,
+      "source_sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+      "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+      "train_index_sha256": "278fb680d920361956384342090415239ef5e3728f8a2c1517d9518a4527e1aa",
+      "embedding_sha256": "9c78438f20d2d06dd7174a7a9ae53c804e6969f46fef8aa6038eb481b008a55f",
+      "seconds": 75.7294864654541
+    },
+    "H3K27me3": {
+      "task": "H3K27me3",
+      "selected": {
+        "layer": 15,
+        "layer_index": 1,
+        "C": 0.01,
+        "oof_log_loss": 0.46373816164225756,
+        "iterations": [
+          94,
+          102,
+          98
+        ]
+      },
+      "candidates": [
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.001,
+          "oof_log_loss": 0.4747319038579119,
+          "iterations": [
+            45,
+            47,
+            46
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.01,
+          "oof_log_loss": 0.4720995555639193,
+          "iterations": [
+            102,
+            102,
+            91
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.1,
+          "oof_log_loss": 0.4826505100062672,
+          "iterations": [
+            174,
+            156,
+            162
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 1,
+          "oof_log_loss": 0.48787355635222956,
+          "iterations": [
+            123,
+            131,
+            133
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 10,
+          "oof_log_loss": 0.4878802571839327,
+          "iterations": [
+            5,
+            0,
+            4
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.001,
+          "oof_log_loss": 0.46767895950824495,
+          "iterations": [
+            46,
+            52,
+            51
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.01,
+          "oof_log_loss": 0.46373816164225756,
+          "iterations": [
+            94,
+            102,
+            98
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.1,
+          "oof_log_loss": 0.4722825530747654,
+          "iterations": [
+            153,
+            157,
+            157
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 1,
+          "oof_log_loss": 0.4763459799870801,
+          "iterations": [
+            129,
+            137,
+            89
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 10,
+          "oof_log_loss": 0.47677831830071987,
+          "iterations": [
+            51,
+            40,
+            52
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.001,
+          "oof_log_loss": 0.49697641612833976,
+          "iterations": [
+            43,
+            48,
+            47
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.01,
+          "oof_log_loss": 0.49503324101987395,
+          "iterations": [
+            101,
+            90,
+            85
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.1,
+          "oof_log_loss": 0.5082865525994694,
+          "iterations": [
+            130,
+            141,
+            145
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 1,
+          "oof_log_loss": 0.5145404040733388,
+          "iterations": [
+            113,
+            104,
+            88
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 10,
+          "oof_log_loss": 0.5149564869871431,
+          "iterations": [
+            29,
+            36,
+            19
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.001,
+          "oof_log_loss": 0.4987444643708985,
+          "iterations": [
+            51,
+            46,
+            47
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.01,
+          "oof_log_loss": 0.5028128046794392,
+          "iterations": [
+            98,
+            110,
+            100
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.1,
+          "oof_log_loss": 0.5120662780862411,
+          "iterations": [
+            185,
+            180,
+            193
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 1,
+          "oof_log_loss": 0.5164879568893804,
+          "iterations": [
+            185,
+            175,
+            236
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 10,
+          "oof_log_loss": 0.5164879568893804,
+          "iterations": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "fit_chromosomes": [
+            "chr10",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr4",
+            "chr6",
+            "chr7",
+            "chr8",
+            "chr9",
+            "chrX"
+          ],
+          "validation_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr5",
+            "chrY"
+          ],
+          "fit_rows": 19284,
+          "validation_rows": 10716
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr16",
+            "chr18",
+            "chr4",
+            "chr5",
+            "chr6",
+            "chr8",
+            "chr9",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr17",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr7",
+            "chrX"
+          ],
+          "fit_rows": 20719,
+          "validation_rows": 9281
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr17",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr5",
+            "chr7",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr10",
+            "chr16",
+            "chr18",
+            "chr4",
+            "chr6",
+            "chr8",
+            "chr9"
+          ],
+          "fit_rows": 19997,
+          "validation_rows": 10003
+        }
+      ],
+      "train_rows": 30000,
+      "source_sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+      "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+      "train_index_sha256": "1956c44b59e3d892afdf546f90b00da224fa23b2672fadf1e53dbc39627b90d3",
+      "embedding_sha256": "9c78438f20d2d06dd7174a7a9ae53c804e6969f46fef8aa6038eb481b008a55f",
+      "seconds": 75.87802362442017
+    },
+    "H3K36me3": {
+      "task": "H3K36me3",
+      "selected": {
+        "layer": 8,
+        "layer_index": 0,
+        "C": 0.01,
+        "oof_log_loss": 0.4382538616367119,
+        "iterations": [
+          97,
+          108,
+          95
+        ]
+      },
+      "candidates": [
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.001,
+          "oof_log_loss": 0.44982733849084533,
+          "iterations": [
+            50,
+            48,
+            49
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.01,
+          "oof_log_loss": 0.4382538616367119,
+          "iterations": [
+            97,
+            108,
+            95
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.1,
+          "oof_log_loss": 0.4464094057208296,
+          "iterations": [
+            180,
+            159,
+            179
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 1,
+          "oof_log_loss": 0.45233454507770016,
+          "iterations": [
+            163,
+            120,
+            166
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 10,
+          "oof_log_loss": 0.45253563424795284,
+          "iterations": [
+            69,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.001,
+          "oof_log_loss": 0.4490094147095008,
+          "iterations": [
+            50,
+            45,
+            50
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.01,
+          "oof_log_loss": 0.4416247213360245,
+          "iterations": [
+            101,
+            98,
+            93
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.1,
+          "oof_log_loss": 0.45208631462714316,
+          "iterations": [
+            152,
+            155,
+            152
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 1,
+          "oof_log_loss": 0.45776989403506485,
+          "iterations": [
+            108,
+            107,
+            118
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 10,
+          "oof_log_loss": 0.4582504763951582,
+          "iterations": [
+            0,
+            34,
+            55
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.001,
+          "oof_log_loss": 0.486334636821585,
+          "iterations": [
+            47,
+            41,
+            49
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.01,
+          "oof_log_loss": 0.4781238190365029,
+          "iterations": [
+            101,
+            91,
+            93
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.1,
+          "oof_log_loss": 0.4911178026845215,
+          "iterations": [
+            144,
+            140,
+            152
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 1,
+          "oof_log_loss": 0.49811829504364674,
+          "iterations": [
+            101,
+            99,
+            112
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 10,
+          "oof_log_loss": 0.49811829504364674,
+          "iterations": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.001,
+          "oof_log_loss": 0.5051239305990907,
+          "iterations": [
+            53,
+            47,
+            52
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.01,
+          "oof_log_loss": 0.5024196447610402,
+          "iterations": [
+            107,
+            105,
+            97
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.1,
+          "oof_log_loss": 0.5094015745086008,
+          "iterations": [
+            177,
+            186,
+            203
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 1,
+          "oof_log_loss": 0.5134091069838101,
+          "iterations": [
+            179,
+            191,
+            206
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 10,
+          "oof_log_loss": 0.5134518297315975,
+          "iterations": [
+            0,
+            12,
+            4
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr13",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr3",
+            "chr5",
+            "chr6",
+            "chr7",
+            "chr8",
+            "chr9",
+            "chrX"
+          ],
+          "validation_chromosomes": [
+            "chr11",
+            "chr12",
+            "chr14",
+            "chr19",
+            "chr2",
+            "chr4",
+            "chrY"
+          ],
+          "fit_rows": 20656,
+          "validation_rows": 9344
+        },
+        {
+          "fit_chromosomes": [
+            "chr10",
+            "chr11",
+            "chr12",
+            "chr14",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr4",
+            "chr7",
+            "chr9",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr1",
+            "chr13",
+            "chr15",
+            "chr5",
+            "chr6",
+            "chr8"
+          ],
+          "fit_rows": 20389,
+          "validation_rows": 9611
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr19",
+            "chr2",
+            "chr4",
+            "chr5",
+            "chr6",
+            "chr8",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr10",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr3",
+            "chr7",
+            "chr9",
+            "chrX"
+          ],
+          "fit_rows": 18955,
+          "validation_rows": 11045
+        }
+      ],
+      "train_rows": 30000,
+      "source_sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+      "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+      "train_index_sha256": "14d849b699113cd9a71219811ba626e1aa00612ed9cfbf9ed6ea2c4b194746dd",
+      "embedding_sha256": "9c78438f20d2d06dd7174a7a9ae53c804e6969f46fef8aa6038eb481b008a55f",
+      "seconds": 76.09657025337219
+    },
+    "H3K4me1": {
+      "task": "H3K4me1",
+      "selected": {
+        "layer": 15,
+        "layer_index": 1,
+        "C": 0.001,
+        "oof_log_loss": 0.5393671562647471,
+        "iterations": [
+          52,
+          50,
+          49
+        ]
+      },
+      "candidates": [
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.001,
+          "oof_log_loss": 0.543933171306342,
+          "iterations": [
+            50,
+            47,
+            48
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.01,
+          "oof_log_loss": 0.5419435585367621,
+          "iterations": [
+            102,
+            96,
+            101
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.1,
+          "oof_log_loss": 0.550798376153101,
+          "iterations": [
+            175,
+            158,
+            166
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 1,
+          "oof_log_loss": 0.5550199288081028,
+          "iterations": [
+            109,
+            117,
+            119
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 10,
+          "oof_log_loss": 0.5550166580607256,
+          "iterations": [
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.001,
+          "oof_log_loss": 0.5393671562647471,
+          "iterations": [
+            52,
+            50,
+            49
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.01,
+          "oof_log_loss": 0.5398816220652533,
+          "iterations": [
+            106,
+            95,
+            109
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.1,
+          "oof_log_loss": 0.5495317234368692,
+          "iterations": [
+            154,
+            138,
+            146
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 1,
+          "oof_log_loss": 0.5531863673825111,
+          "iterations": [
+            118,
+            87,
+            88
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 10,
+          "oof_log_loss": 0.5531863673825111,
+          "iterations": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.001,
+          "oof_log_loss": 0.5632237200401925,
+          "iterations": [
+            49,
+            47,
+            45
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.01,
+          "oof_log_loss": 0.5655217780383704,
+          "iterations": [
+            102,
+            90,
+            100
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.1,
+          "oof_log_loss": 0.5799979777596418,
+          "iterations": [
+            129,
+            139,
+            134
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 1,
+          "oof_log_loss": 0.5853053591519026,
+          "iterations": [
+            88,
+            94,
+            90
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 10,
+          "oof_log_loss": 0.5853053591519026,
+          "iterations": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.001,
+          "oof_log_loss": 0.5651825727101755,
+          "iterations": [
+            48,
+            49,
+            49
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.01,
+          "oof_log_loss": 0.5688574775167617,
+          "iterations": [
+            103,
+            111,
+            111
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.1,
+          "oof_log_loss": 0.5769598798103528,
+          "iterations": [
+            219,
+            191,
+            192
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 1,
+          "oof_log_loss": 0.5804070929391862,
+          "iterations": [
+            247,
+            183,
+            178
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 10,
+          "oof_log_loss": 0.5805082048446879,
+          "iterations": [
+            24,
+            7,
+            0
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr11",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr19",
+            "chr3",
+            "chr6",
+            "chr7",
+            "chr8",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr12",
+            "chr2",
+            "chr4",
+            "chr5",
+            "chr9",
+            "chrX"
+          ],
+          "fit_rows": 19988,
+          "validation_rows": 10012
+        },
+        {
+          "fit_chromosomes": [
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr17",
+            "chr18",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr4",
+            "chr5",
+            "chr6",
+            "chr9",
+            "chrX"
+          ],
+          "validation_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr14",
+            "chr15",
+            "chr16",
+            "chr7",
+            "chr8",
+            "chrY"
+          ],
+          "fit_rows": 19551,
+          "validation_rows": 10449
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr12",
+            "chr14",
+            "chr15",
+            "chr16",
+            "chr2",
+            "chr4",
+            "chr5",
+            "chr7",
+            "chr8",
+            "chr9",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr11",
+            "chr13",
+            "chr17",
+            "chr18",
+            "chr19",
+            "chr3",
+            "chr6"
+          ],
+          "fit_rows": 20461,
+          "validation_rows": 9539
+        }
+      ],
+      "train_rows": 30000,
+      "source_sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+      "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+      "train_index_sha256": "423f1b3fe7aea0f06bf061cc0b7ca6ec8602b44d3608de01395295818e5f86bb",
+      "embedding_sha256": "9c78438f20d2d06dd7174a7a9ae53c804e6969f46fef8aa6038eb481b008a55f",
+      "seconds": 104.1675226688385
+    },
+    "H3K4me2": {
+      "task": "H3K4me2",
+      "selected": {
+        "layer": 15,
+        "layer_index": 1,
+        "C": 0.01,
+        "oof_log_loss": 0.4829767625507152,
+        "iterations": [
+          93,
+          100,
+          92
+        ]
+      },
+      "candidates": [
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.001,
+          "oof_log_loss": 0.4905798574871788,
+          "iterations": [
+            46,
+            46,
+            51
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.01,
+          "oof_log_loss": 0.48528426696435406,
+          "iterations": [
+            92,
+            93,
+            101
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.1,
+          "oof_log_loss": 0.4954831857110551,
+          "iterations": [
+            157,
+            166,
+            166
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 1,
+          "oof_log_loss": 0.5010012838485814,
+          "iterations": [
+            134,
+            108,
+            107
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 10,
+          "oof_log_loss": 0.5010202298317908,
+          "iterations": [
+            0,
+            0,
+            15
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.001,
+          "oof_log_loss": 0.48593953678117674,
+          "iterations": [
+            47,
+            51,
+            49
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.01,
+          "oof_log_loss": 0.4829767625507152,
+          "iterations": [
+            93,
+            100,
+            92
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.1,
+          "oof_log_loss": 0.49364966200793436,
+          "iterations": [
+            139,
+            140,
+            155
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 1,
+          "oof_log_loss": 0.4981871784740609,
+          "iterations": [
+            108,
+            90,
+            114
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 10,
+          "oof_log_loss": 0.4982136492050094,
+          "iterations": [
+            0,
+            0,
+            10
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.001,
+          "oof_log_loss": 0.5104471265085315,
+          "iterations": [
+            46,
+            50,
+            43
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.01,
+          "oof_log_loss": 0.5111572506528068,
+          "iterations": [
+            85,
+            96,
+            100
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.1,
+          "oof_log_loss": 0.5244211115809082,
+          "iterations": [
+            138,
+            131,
+            149
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 1,
+          "oof_log_loss": 0.5300584985794888,
+          "iterations": [
+            90,
+            96,
+            95
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 10,
+          "oof_log_loss": 0.5300939583131598,
+          "iterations": [
+            0,
+            8,
+            6
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.001,
+          "oof_log_loss": 0.5155641479232863,
+          "iterations": [
+            47,
+            44,
+            45
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.01,
+          "oof_log_loss": 0.5187858885885027,
+          "iterations": [
+            104,
+            96,
+            91
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.1,
+          "oof_log_loss": 0.5270941806631807,
+          "iterations": [
+            185,
+            173,
+            178
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 1,
+          "oof_log_loss": 0.5307898861245649,
+          "iterations": [
+            189,
+            168,
+            181
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 10,
+          "oof_log_loss": 0.5307896640585207,
+          "iterations": [
+            2,
+            0,
+            0
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr16",
+            "chr18",
+            "chr2",
+            "chr3",
+            "chr4",
+            "chr6",
+            "chr9",
+            "chrX"
+          ],
+          "validation_chromosomes": [
+            "chr10",
+            "chr14",
+            "chr15",
+            "chr17",
+            "chr19",
+            "chr5",
+            "chr7",
+            "chr8",
+            "chrY"
+          ],
+          "fit_rows": 19198,
+          "validation_rows": 10802
+        },
+        {
+          "fit_chromosomes": [
+            "chr10",
+            "chr12",
+            "chr14",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr19",
+            "chr3",
+            "chr4",
+            "chr5",
+            "chr7",
+            "chr8",
+            "chr9",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr13",
+            "chr2",
+            "chr6"
+          ],
+          "fit_rows": 20300,
+          "validation_rows": 9700
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr11",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr17",
+            "chr19",
+            "chr2",
+            "chr5",
+            "chr6",
+            "chr7",
+            "chr8",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr12",
+            "chr16",
+            "chr18",
+            "chr3",
+            "chr4",
+            "chr9",
+            "chrX"
+          ],
+          "fit_rows": 20502,
+          "validation_rows": 9498
+        }
+      ],
+      "train_rows": 30000,
+      "source_sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+      "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+      "train_index_sha256": "f33f0b1507b3535baef88564b5326936d7d9e803179df0d5a7596eb87851d74b",
+      "embedding_sha256": "9c78438f20d2d06dd7174a7a9ae53c804e6969f46fef8aa6038eb481b008a55f",
+      "seconds": 102.08088731765747
+    },
+    "H3K4me3": {
+      "task": "H3K4me3",
+      "selected": {
+        "layer": 15,
+        "layer_index": 1,
+        "C": 0.01,
+        "oof_log_loss": 0.37164152925450683,
+        "iterations": [
+          71,
+          76,
+          84
+        ]
+      },
+      "candidates": [
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.001,
+          "oof_log_loss": 0.37717912978780027,
+          "iterations": [
+            44,
+            45,
+            45
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.01,
+          "oof_log_loss": 0.3730009549689982,
+          "iterations": [
+            76,
+            78,
+            74
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.1,
+          "oof_log_loss": 0.394680517866655,
+          "iterations": [
+            147,
+            141,
+            128
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 1,
+          "oof_log_loss": 0.4169169407754538,
+          "iterations": [
+            154,
+            160,
+            138
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 10,
+          "oof_log_loss": 0.4227678302897847,
+          "iterations": [
+            76,
+            129,
+            82
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.001,
+          "oof_log_loss": 0.37224799517888496,
+          "iterations": [
+            43,
+            45,
+            44
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.01,
+          "oof_log_loss": 0.37164152925450683,
+          "iterations": [
+            71,
+            76,
+            84
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.1,
+          "oof_log_loss": 0.39724833618332617,
+          "iterations": [
+            141,
+            142,
+            141
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 1,
+          "oof_log_loss": 0.42055326109634594,
+          "iterations": [
+            153,
+            168,
+            156
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 10,
+          "oof_log_loss": 0.4221169305552014,
+          "iterations": [
+            0,
+            80,
+            0
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.001,
+          "oof_log_loss": 0.388225342035536,
+          "iterations": [
+            38,
+            40,
+            37
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.01,
+          "oof_log_loss": 0.3870927689262368,
+          "iterations": [
+            61,
+            68,
+            70
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.1,
+          "oof_log_loss": 0.41537703409447657,
+          "iterations": [
+            131,
+            137,
+            148
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 1,
+          "oof_log_loss": 0.44448261378229365,
+          "iterations": [
+            143,
+            152,
+            134
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 10,
+          "oof_log_loss": 0.45122488934632965,
+          "iterations": [
+            62,
+            61,
+            83
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.001,
+          "oof_log_loss": 0.3926685263367208,
+          "iterations": [
+            40,
+            43,
+            42
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.01,
+          "oof_log_loss": 0.40012188362655604,
+          "iterations": [
+            71,
+            71,
+            73
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.1,
+          "oof_log_loss": 0.4238774460085464,
+          "iterations": [
+            153,
+            147,
+            144
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 1,
+          "oof_log_loss": 0.44141798820466854,
+          "iterations": [
+            184,
+            190,
+            226
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 10,
+          "oof_log_loss": 0.44668186137849347,
+          "iterations": [
+            121,
+            136,
+            169
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr14",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr2",
+            "chr4",
+            "chr7",
+            "chr9",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr10",
+            "chr15",
+            "chr19",
+            "chr3",
+            "chr5",
+            "chr6",
+            "chr8"
+          ],
+          "fit_rows": 11194,
+          "validation_rows": 6274
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr11",
+            "chr13",
+            "chr15",
+            "chr16",
+            "chr19",
+            "chr3",
+            "chr5",
+            "chr6",
+            "chr7",
+            "chr8",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr12",
+            "chr14",
+            "chr17",
+            "chr18",
+            "chr2",
+            "chr4",
+            "chr9"
+          ],
+          "fit_rows": 11777,
+          "validation_rows": 5691
+        },
+        {
+          "fit_chromosomes": [
+            "chr10",
+            "chr12",
+            "chr14",
+            "chr15",
+            "chr17",
+            "chr18",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr4",
+            "chr5",
+            "chr6",
+            "chr8",
+            "chr9"
+          ],
+          "validation_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr13",
+            "chr16",
+            "chr7",
+            "chrX",
+            "chrY"
+          ],
+          "fit_rows": 11965,
+          "validation_rows": 5503
+        }
+      ],
+      "train_rows": 17468,
+      "source_sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+      "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+      "train_index_sha256": "b0e2f80200db8f690a198c4a7939601de9d4c69fc6344009b0edc316ddefc9c2",
+      "embedding_sha256": "9c78438f20d2d06dd7174a7a9ae53c804e6969f46fef8aa6038eb481b008a55f",
+      "seconds": 24.62157416343689
+    },
+    "H3K9ac": {
+      "task": "H3K9ac",
+      "selected": {
+        "layer": 15,
+        "layer_index": 1,
+        "C": 0.001,
+        "oof_log_loss": 0.47861092185456666,
+        "iterations": [
+          43,
+          42,
+          44
+        ]
+      },
+      "candidates": [
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.001,
+          "oof_log_loss": 0.48708713822399763,
+          "iterations": [
+            45,
+            39,
+            41
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.01,
+          "oof_log_loss": 0.4854531173570436,
+          "iterations": [
+            95,
+            89,
+            84
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.1,
+          "oof_log_loss": 0.49961583036244805,
+          "iterations": [
+            157,
+            151,
+            151
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 1,
+          "oof_log_loss": 0.5081522306819001,
+          "iterations": [
+            134,
+            122,
+            142
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 10,
+          "oof_log_loss": 0.5084230818484902,
+          "iterations": [
+            0,
+            0,
+            35
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.001,
+          "oof_log_loss": 0.47861092185456666,
+          "iterations": [
+            43,
+            42,
+            44
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.01,
+          "oof_log_loss": 0.4808645399067754,
+          "iterations": [
+            90,
+            91,
+            94
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.1,
+          "oof_log_loss": 0.49804980323404013,
+          "iterations": [
+            129,
+            133,
+            150
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 1,
+          "oof_log_loss": 0.505985516767843,
+          "iterations": [
+            92,
+            111,
+            116
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 10,
+          "oof_log_loss": 0.505985516767843,
+          "iterations": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.001,
+          "oof_log_loss": 0.49587933822471125,
+          "iterations": [
+            44,
+            40,
+            37
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.01,
+          "oof_log_loss": 0.49798593998270635,
+          "iterations": [
+            89,
+            95,
+            83
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.1,
+          "oof_log_loss": 0.5174024851606961,
+          "iterations": [
+            124,
+            152,
+            131
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 1,
+          "oof_log_loss": 0.5281081488669097,
+          "iterations": [
+            102,
+            112,
+            105
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 10,
+          "oof_log_loss": 0.5281035695683081,
+          "iterations": [
+            0,
+            7,
+            0
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.001,
+          "oof_log_loss": 0.501176807497415,
+          "iterations": [
+            44,
+            45,
+            43
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.01,
+          "oof_log_loss": 0.50859848257679,
+          "iterations": [
+            87,
+            85,
+            89
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.1,
+          "oof_log_loss": 0.5230885056622789,
+          "iterations": [
+            181,
+            168,
+            167
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 1,
+          "oof_log_loss": 0.5299082777281314,
+          "iterations": [
+            186,
+            173,
+            227
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 10,
+          "oof_log_loss": 0.5303667146644198,
+          "iterations": [
+            0,
+            66,
+            4
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr12",
+            "chr13",
+            "chr16",
+            "chr18",
+            "chr2",
+            "chr3",
+            "chr4",
+            "chr6",
+            "chr7",
+            "chr9",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr11",
+            "chr14",
+            "chr15",
+            "chr17",
+            "chr19",
+            "chr5",
+            "chr8"
+          ],
+          "fit_rows": 16120,
+          "validation_rows": 7154
+        },
+        {
+          "fit_chromosomes": [
+            "chr10",
+            "chr11",
+            "chr14",
+            "chr15",
+            "chr17",
+            "chr19",
+            "chr2",
+            "chr4",
+            "chr5",
+            "chr6",
+            "chr7",
+            "chr8",
+            "chrX"
+          ],
+          "validation_chromosomes": [
+            "chr1",
+            "chr12",
+            "chr13",
+            "chr16",
+            "chr18",
+            "chr3",
+            "chr9",
+            "chrY"
+          ],
+          "fit_rows": 15138,
+          "validation_rows": 8136
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr19",
+            "chr3",
+            "chr5",
+            "chr8",
+            "chr9",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr10",
+            "chr2",
+            "chr4",
+            "chr6",
+            "chr7",
+            "chrX"
+          ],
+          "fit_rows": 15290,
+          "validation_rows": 7984
+        }
+      ],
+      "train_rows": 23274,
+      "source_sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+      "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+      "train_index_sha256": "425d935887517e3be2f427f2ca29bbd50601ded69b799677c83548157efcb4a0",
+      "embedding_sha256": "9c78438f20d2d06dd7174a7a9ae53c804e6969f46fef8aa6038eb481b008a55f",
+      "seconds": 31.40078353881836
+    },
+    "H3K9me3": {
+      "task": "H3K9me3",
+      "selected": {
+        "layer": 15,
+        "layer_index": 1,
+        "C": 0.01,
+        "oof_log_loss": 0.5967631055214285,
+        "iterations": [
+          103,
+          114,
+          107
+        ]
+      },
+      "candidates": [
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.001,
+          "oof_log_loss": 0.6124023086514219,
+          "iterations": [
+            51,
+            52,
+            51
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.01,
+          "oof_log_loss": 0.6075652094236594,
+          "iterations": [
+            103,
+            106,
+            111
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.1,
+          "oof_log_loss": 0.6173061482060661,
+          "iterations": [
+            170,
+            162,
+            159
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 1,
+          "oof_log_loss": 0.6225229175155068,
+          "iterations": [
+            118,
+            118,
+            136
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 10,
+          "oof_log_loss": 0.6225229175155068,
+          "iterations": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.001,
+          "oof_log_loss": 0.5988318430011088,
+          "iterations": [
+            51,
+            53,
+            52
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.01,
+          "oof_log_loss": 0.5967631055214285,
+          "iterations": [
+            103,
+            114,
+            107
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.1,
+          "oof_log_loss": 0.6082389663527826,
+          "iterations": [
+            131,
+            172,
+            158
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 1,
+          "oof_log_loss": 0.6126854584133244,
+          "iterations": [
+            94,
+            134,
+            99
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 10,
+          "oof_log_loss": 0.6127967728658488,
+          "iterations": [
+            0,
+            39,
+            0
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.001,
+          "oof_log_loss": 0.6218192191276299,
+          "iterations": [
+            49,
+            58,
+            51
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.01,
+          "oof_log_loss": 0.6246311012287826,
+          "iterations": [
+            103,
+            95,
+            94
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.1,
+          "oof_log_loss": 0.6390967433907503,
+          "iterations": [
+            130,
+            134,
+            130
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 1,
+          "oof_log_loss": 0.6441538846222294,
+          "iterations": [
+            79,
+            71,
+            75
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 10,
+          "oof_log_loss": 0.6441538846222294,
+          "iterations": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.001,
+          "oof_log_loss": 0.63872741957757,
+          "iterations": [
+            54,
+            55,
+            55
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.01,
+          "oof_log_loss": 0.6420925563115994,
+          "iterations": [
+            114,
+            117,
+            116
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.1,
+          "oof_log_loss": 0.6516898612048281,
+          "iterations": [
+            223,
+            230,
+            227
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 1,
+          "oof_log_loss": 0.6552594431849134,
+          "iterations": [
+            305,
+            272,
+            311
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 10,
+          "oof_log_loss": 0.6553082171403923,
+          "iterations": [
+            0,
+            10,
+            11
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr12",
+            "chr14",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr2",
+            "chr4",
+            "chr5",
+            "chr7",
+            "chr8",
+            "chr9",
+            "chrX"
+          ],
+          "validation_chromosomes": [
+            "chr10",
+            "chr11",
+            "chr13",
+            "chr19",
+            "chr3",
+            "chr6",
+            "chrY"
+          ],
+          "fit_rows": 18798,
+          "validation_rows": 8640
+        },
+        {
+          "fit_chromosomes": [
+            "chr10",
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr14",
+            "chr18",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr5",
+            "chr6",
+            "chr7",
+            "chr9",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr1",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr4",
+            "chr8",
+            "chrX"
+          ],
+          "fit_rows": 18438,
+          "validation_rows": 9000
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr11",
+            "chr13",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr19",
+            "chr3",
+            "chr4",
+            "chr6",
+            "chr8",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr12",
+            "chr14",
+            "chr18",
+            "chr2",
+            "chr5",
+            "chr7",
+            "chr9"
+          ],
+          "fit_rows": 17640,
+          "validation_rows": 9798
+        }
+      ],
+      "train_rows": 27438,
+      "source_sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+      "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+      "train_index_sha256": "ec3a6e0a7d6b6bf863a501b1a1f8ec5e0cdf8187e2b5f85f18e9e9a1600b8eea",
+      "embedding_sha256": "9c78438f20d2d06dd7174a7a9ae53c804e6969f46fef8aa6038eb481b008a55f",
+      "seconds": 36.40684986114502
+    },
+    "H4K20me1": {
+      "task": "H4K20me1",
+      "selected": {
+        "layer": 15,
+        "layer_index": 1,
+        "C": 0.01,
+        "oof_log_loss": 0.413201835820331,
+        "iterations": [
+          85,
+          84,
+          83
+        ]
+      },
+      "candidates": [
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.001,
+          "oof_log_loss": 0.42473411527431937,
+          "iterations": [
+            46,
+            45,
+            43
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.01,
+          "oof_log_loss": 0.420060207738653,
+          "iterations": [
+            97,
+            85,
+            93
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.1,
+          "oof_log_loss": 0.4307755118955009,
+          "iterations": [
+            149,
+            165,
+            144
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 1,
+          "oof_log_loss": 0.4371313508111345,
+          "iterations": [
+            122,
+            132,
+            120
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 10,
+          "oof_log_loss": 0.4371239405363234,
+          "iterations": [
+            4,
+            3,
+            0
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.001,
+          "oof_log_loss": 0.41730871481637943,
+          "iterations": [
+            43,
+            44,
+            49
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.01,
+          "oof_log_loss": 0.413201835820331,
+          "iterations": [
+            85,
+            84,
+            83
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.1,
+          "oof_log_loss": 0.42329921007020965,
+          "iterations": [
+            129,
+            142,
+            147
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 1,
+          "oof_log_loss": 0.42860892585256194,
+          "iterations": [
+            104,
+            151,
+            136
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 10,
+          "oof_log_loss": 0.42908823132142393,
+          "iterations": [
+            0,
+            58,
+            53
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.001,
+          "oof_log_loss": 0.44591256685849595,
+          "iterations": [
+            40,
+            39,
+            40
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.01,
+          "oof_log_loss": 0.44310099362730815,
+          "iterations": [
+            80,
+            75,
+            90
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.1,
+          "oof_log_loss": 0.4567678749404605,
+          "iterations": [
+            151,
+            153,
+            137
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 1,
+          "oof_log_loss": 0.4646719793415371,
+          "iterations": [
+            123,
+            105,
+            125
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 10,
+          "oof_log_loss": 0.4650684512834611,
+          "iterations": [
+            25,
+            0,
+            32
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.001,
+          "oof_log_loss": 0.45387133422191306,
+          "iterations": [
+            41,
+            43,
+            45
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.01,
+          "oof_log_loss": 0.456687205975217,
+          "iterations": [
+            85,
+            96,
+            99
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.1,
+          "oof_log_loss": 0.4655312377903195,
+          "iterations": [
+            174,
+            191,
+            184
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 1,
+          "oof_log_loss": 0.47027702814804484,
+          "iterations": [
+            214,
+            186,
+            183
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 10,
+          "oof_log_loss": 0.4702795723719361,
+          "iterations": [
+            0,
+            4,
+            0
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "fit_chromosomes": [
+            "chr10",
+            "chr12",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr4",
+            "chr5",
+            "chr7",
+            "chr8",
+            "chrX"
+          ],
+          "validation_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr13",
+            "chr14",
+            "chr18",
+            "chr6",
+            "chr9",
+            "chrY"
+          ],
+          "fit_rows": 19360,
+          "validation_rows": 10640
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr17",
+            "chr18",
+            "chr2",
+            "chr4",
+            "chr5",
+            "chr6",
+            "chr9",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr10",
+            "chr16",
+            "chr19",
+            "chr3",
+            "chr7",
+            "chr8",
+            "chrX"
+          ],
+          "fit_rows": 19814,
+          "validation_rows": 10186
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr11",
+            "chr13",
+            "chr14",
+            "chr16",
+            "chr18",
+            "chr19",
+            "chr3",
+            "chr6",
+            "chr7",
+            "chr8",
+            "chr9",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr12",
+            "chr15",
+            "chr17",
+            "chr2",
+            "chr4",
+            "chr5"
+          ],
+          "fit_rows": 20826,
+          "validation_rows": 9174
+        }
+      ],
+      "train_rows": 30000,
+      "source_sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+      "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+      "train_index_sha256": "fb31e2223462c95435127e9884cbf483f73c6ba78a39a50f813dfcb8d5de2e61",
+      "embedding_sha256": "9c78438f20d2d06dd7174a7a9ae53c804e6969f46fef8aa6038eb481b008a55f",
+      "seconds": 39.64875602722168
+    },
+    "enhancers": {
+      "task": "enhancers",
+      "selected": {
+        "layer": 15,
+        "layer_index": 1,
+        "C": 0.001,
+        "oof_log_loss": 0.5157521915725543,
+        "iterations": [
+          45,
+          47,
+          47
+        ]
+      },
+      "candidates": [
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.001,
+          "oof_log_loss": 0.5271240070312154,
+          "iterations": [
+            47,
+            50,
+            48
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.01,
+          "oof_log_loss": 0.5294652003038548,
+          "iterations": [
+            84,
+            92,
+            93
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.1,
+          "oof_log_loss": 0.5397896025662874,
+          "iterations": [
+            108,
+            131,
+            120
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 1,
+          "oof_log_loss": 0.5429206879537628,
+          "iterations": [
+            68,
+            77,
+            74
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 10,
+          "oof_log_loss": 0.5429308905570095,
+          "iterations": [
+            6,
+            0,
+            6
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.001,
+          "oof_log_loss": 0.5157521915725543,
+          "iterations": [
+            45,
+            47,
+            47
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.01,
+          "oof_log_loss": 0.5178209941991027,
+          "iterations": [
+            83,
+            94,
+            88
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.1,
+          "oof_log_loss": 0.5281011762596102,
+          "iterations": [
+            131,
+            120,
+            114
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 1,
+          "oof_log_loss": 0.5314185183038621,
+          "iterations": [
+            75,
+            72,
+            80
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 10,
+          "oof_log_loss": 0.5314185183038621,
+          "iterations": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.001,
+          "oof_log_loss": 0.5295955876361453,
+          "iterations": [
+            48,
+            48,
+            45
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.01,
+          "oof_log_loss": 0.5314329714900863,
+          "iterations": [
+            93,
+            90,
+            97
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.1,
+          "oof_log_loss": 0.5424584597687183,
+          "iterations": [
+            171,
+            167,
+            144
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 1,
+          "oof_log_loss": 0.5467226066195229,
+          "iterations": [
+            162,
+            133,
+            110
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 10,
+          "oof_log_loss": 0.5467165745686056,
+          "iterations": [
+            0,
+            7,
+            6
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.001,
+          "oof_log_loss": 0.5440895110251249,
+          "iterations": [
+            48,
+            54,
+            51
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.01,
+          "oof_log_loss": 0.5466592199519271,
+          "iterations": [
+            99,
+            107,
+            97
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.1,
+          "oof_log_loss": 0.5551155616899215,
+          "iterations": [
+            160,
+            164,
+            157
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 1,
+          "oof_log_loss": 0.559004443329051,
+          "iterations": [
+            139,
+            153,
+            176
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 10,
+          "oof_log_loss": 0.5589944188339119,
+          "iterations": [
+            0,
+            6,
+            0
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr12",
+            "chr13",
+            "chr15",
+            "chr16",
+            "chr18",
+            "chr2",
+            "chr4",
+            "chr5",
+            "chr7",
+            "chr9",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr11",
+            "chr14",
+            "chr17",
+            "chr19",
+            "chr3",
+            "chr6",
+            "chr8",
+            "chrX"
+          ],
+          "fit_rows": 19025,
+          "validation_rows": 10975
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr14",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr19",
+            "chr3",
+            "chr5",
+            "chr6",
+            "chr7",
+            "chr8",
+            "chr9",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr10",
+            "chr12",
+            "chr13",
+            "chr18",
+            "chr2",
+            "chr4"
+          ],
+          "fit_rows": 20605,
+          "validation_rows": 9395
+        },
+        {
+          "fit_chromosomes": [
+            "chr10",
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr14",
+            "chr17",
+            "chr18",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr4",
+            "chr6",
+            "chr8",
+            "chrX"
+          ],
+          "validation_chromosomes": [
+            "chr1",
+            "chr15",
+            "chr16",
+            "chr5",
+            "chr7",
+            "chr9",
+            "chrY"
+          ],
+          "fit_rows": 20370,
+          "validation_rows": 9630
+        }
+      ],
+      "train_rows": 30000,
+      "source_sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+      "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+      "train_index_sha256": "f1a47ec1739d54c451d803f1d3f41af3dc55384acd6d58d8c30bd7104c42ec96",
+      "embedding_sha256": "9c78438f20d2d06dd7174a7a9ae53c804e6969f46fef8aa6038eb481b008a55f",
+      "seconds": 33.70453238487244
+    },
+    "enhancers_types": {
+      "task": "enhancers_types",
+      "selected": {
+        "layer": 15,
+        "layer_index": 1,
+        "C": 0.001,
+        "oof_log_loss": 0.6351191481456615,
+        "iterations": [
+          92,
+          76,
+          86
+        ]
+      },
+      "candidates": [
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.001,
+          "oof_log_loss": 0.6474370437549472,
+          "iterations": [
+            75,
+            71,
+            71
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.01,
+          "oof_log_loss": 0.6601175179473086,
+          "iterations": [
+            137,
+            138,
+            132
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.1,
+          "oof_log_loss": 0.6855903035155095,
+          "iterations": [
+            265,
+            249,
+            273
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 1,
+          "oof_log_loss": 0.70167930731464,
+          "iterations": [
+            249,
+            239,
+            248
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 10,
+          "oof_log_loss": 0.7016841572856499,
+          "iterations": [
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.001,
+          "oof_log_loss": 0.6351191481456615,
+          "iterations": [
+            92,
+            76,
+            86
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.01,
+          "oof_log_loss": 0.6459546066032159,
+          "iterations": [
+            134,
+            129,
+            139
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.1,
+          "oof_log_loss": 0.6688579203928159,
+          "iterations": [
+            266,
+            258,
+            249
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 1,
+          "oof_log_loss": 0.6839816233538357,
+          "iterations": [
+            251,
+            252,
+            260
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 10,
+          "oof_log_loss": 0.6839816233538357,
+          "iterations": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.001,
+          "oof_log_loss": 0.6492934966872661,
+          "iterations": [
+            74,
+            74,
+            83
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.01,
+          "oof_log_loss": 0.6599642988784058,
+          "iterations": [
+            136,
+            143,
+            135
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.1,
+          "oof_log_loss": 0.6818534251055356,
+          "iterations": [
+            286,
+            277,
+            280
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 1,
+          "oof_log_loss": 0.6982186502399457,
+          "iterations": [
+            324,
+            318,
+            316
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 10,
+          "oof_log_loss": 0.6982172153415852,
+          "iterations": [
+            0,
+            4,
+            0
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.001,
+          "oof_log_loss": 0.666796166142497,
+          "iterations": [
+            78,
+            96,
+            77
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.01,
+          "oof_log_loss": 0.6818255140489765,
+          "iterations": [
+            138,
+            147,
+            147
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.1,
+          "oof_log_loss": 0.7056424619759182,
+          "iterations": [
+            303,
+            300,
+            307
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 1,
+          "oof_log_loss": 0.7212056272772202,
+          "iterations": [
+            413,
+            352,
+            352
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 10,
+          "oof_log_loss": 0.7212337075592673,
+          "iterations": [
+            8,
+            0,
+            3
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr14",
+            "chr16",
+            "chr19",
+            "chr3",
+            "chr4",
+            "chr6",
+            "chr7",
+            "chr9",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr10",
+            "chr15",
+            "chr17",
+            "chr18",
+            "chr2",
+            "chr5",
+            "chr8"
+          ],
+          "fit_rows": 19833,
+          "validation_rows": 10167
+        },
+        {
+          "fit_chromosomes": [
+            "chr10",
+            "chr12",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr17",
+            "chr18",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr4",
+            "chr5",
+            "chr6",
+            "chr8"
+          ],
+          "validation_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr16",
+            "chr7",
+            "chr9",
+            "chrX",
+            "chrY"
+          ],
+          "fit_rows": 20277,
+          "validation_rows": 9723
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr11",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr2",
+            "chr5",
+            "chr7",
+            "chr8",
+            "chr9",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr12",
+            "chr13",
+            "chr14",
+            "chr19",
+            "chr3",
+            "chr4",
+            "chr6"
+          ],
+          "fit_rows": 19890,
+          "validation_rows": 10110
+        }
+      ],
+      "train_rows": 30000,
+      "source_sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+      "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+      "train_index_sha256": "9568a0fe58586e8811d06d49f480f118e1c174ad4f2bd8e55a5141ad68841f89",
+      "embedding_sha256": "9c78438f20d2d06dd7174a7a9ae53c804e6969f46fef8aa6038eb481b008a55f",
+      "seconds": 79.53312873840332
+    },
+    "promoter_all": {
+      "task": "promoter_all",
+      "selected": {
+        "layer": 15,
+        "layer_index": 1,
+        "C": 0.01,
+        "oof_log_loss": 0.3116740913052589,
+        "iterations": [
+          73,
+          66,
+          74
+        ]
+      },
+      "candidates": [
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.001,
+          "oof_log_loss": 0.31578970636931847,
+          "iterations": [
+            43,
+            42,
+            42
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.01,
+          "oof_log_loss": 0.3138466022127174,
+          "iterations": [
+            77,
+            68,
+            63
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.1,
+          "oof_log_loss": 0.32395272999056907,
+          "iterations": [
+            118,
+            121,
+            112
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 1,
+          "oof_log_loss": 0.3303536042155224,
+          "iterations": [
+            93,
+            114,
+            65
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 10,
+          "oof_log_loss": 0.3305065602602611,
+          "iterations": [
+            0,
+            8,
+            23
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.001,
+          "oof_log_loss": 0.31206220924306,
+          "iterations": [
+            46,
+            45,
+            44
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.01,
+          "oof_log_loss": 0.3116740913052589,
+          "iterations": [
+            73,
+            66,
+            74
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.1,
+          "oof_log_loss": 0.3234203435560013,
+          "iterations": [
+            116,
+            112,
+            120
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 1,
+          "oof_log_loss": 0.3304783754546514,
+          "iterations": [
+            98,
+            98,
+            87
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 10,
+          "oof_log_loss": 0.3304783754546514,
+          "iterations": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.001,
+          "oof_log_loss": 0.3179193813805193,
+          "iterations": [
+            40,
+            40,
+            41
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.01,
+          "oof_log_loss": 0.31719347607591153,
+          "iterations": [
+            71,
+            66,
+            70
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.1,
+          "oof_log_loss": 0.3281918134105768,
+          "iterations": [
+            124,
+            115,
+            124
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 1,
+          "oof_log_loss": 0.3363509608165149,
+          "iterations": [
+            104,
+            90,
+            109
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 10,
+          "oof_log_loss": 0.3363509608165149,
+          "iterations": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.001,
+          "oof_log_loss": 0.33330032203490295,
+          "iterations": [
+            49,
+            39,
+            44
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.01,
+          "oof_log_loss": 0.33480044037930945,
+          "iterations": [
+            79,
+            76,
+            73
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.1,
+          "oof_log_loss": 0.344226548720489,
+          "iterations": [
+            149,
+            145,
+            148
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 1,
+          "oof_log_loss": 0.3509207194887065,
+          "iterations": [
+            130,
+            169,
+            166
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 10,
+          "oof_log_loss": 0.3518394840656712,
+          "iterations": [
+            0,
+            0,
+            128
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr12",
+            "chr14",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr4",
+            "chr5",
+            "chr7",
+            "chr8",
+            "chr9",
+            "chrX"
+          ],
+          "validation_chromosomes": [
+            "chr10",
+            "chr13",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr6",
+            "chrY"
+          ],
+          "fit_rows": 20260,
+          "validation_rows": 9740
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr12",
+            "chr13",
+            "chr15",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr5",
+            "chr6",
+            "chr8",
+            "chr9",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr11",
+            "chr14",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr4",
+            "chr7",
+            "chrX"
+          ],
+          "fit_rows": 19397,
+          "validation_rows": 10603
+        },
+        {
+          "fit_chromosomes": [
+            "chr10",
+            "chr11",
+            "chr13",
+            "chr14",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr4",
+            "chr6",
+            "chr7",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr1",
+            "chr12",
+            "chr15",
+            "chr5",
+            "chr8",
+            "chr9"
+          ],
+          "fit_rows": 20343,
+          "validation_rows": 9657
+        }
+      ],
+      "train_rows": 30000,
+      "source_sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+      "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+      "train_index_sha256": "54f1164d271e6526ca5bd0922204d0d60b08dafa5e677506dbf07d6432cb3438",
+      "embedding_sha256": "9c78438f20d2d06dd7174a7a9ae53c804e6969f46fef8aa6038eb481b008a55f",
+      "seconds": 31.027090311050415
+    },
+    "promoter_no_tata": {
+      "task": "promoter_no_tata",
+      "selected": {
+        "layer": 15,
+        "layer_index": 1,
+        "C": 0.001,
+        "oof_log_loss": 0.2947020343502318,
+        "iterations": [
+          44,
+          49,
+          45
+        ]
+      },
+      "candidates": [
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.001,
+          "oof_log_loss": 0.298784152313819,
+          "iterations": [
+            42,
+            39,
+            43
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.01,
+          "oof_log_loss": 0.2991134711492922,
+          "iterations": [
+            69,
+            65,
+            70
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.1,
+          "oof_log_loss": 0.31223669339235055,
+          "iterations": [
+            112,
+            120,
+            115
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 1,
+          "oof_log_loss": 0.3201930903212128,
+          "iterations": [
+            70,
+            107,
+            153
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 10,
+          "oof_log_loss": 0.3206157564673119,
+          "iterations": [
+            0,
+            0,
+            72
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.001,
+          "oof_log_loss": 0.2947020343502318,
+          "iterations": [
+            44,
+            49,
+            45
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.01,
+          "oof_log_loss": 0.29635560413799916,
+          "iterations": [
+            67,
+            67,
+            68
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.1,
+          "oof_log_loss": 0.3095930122260636,
+          "iterations": [
+            122,
+            120,
+            113
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 1,
+          "oof_log_loss": 0.3172012942193307,
+          "iterations": [
+            79,
+            91,
+            89
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 10,
+          "oof_log_loss": 0.31720362583792533,
+          "iterations": [
+            6,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.001,
+          "oof_log_loss": 0.2995738720798408,
+          "iterations": [
+            41,
+            42,
+            42
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.01,
+          "oof_log_loss": 0.30050673711684195,
+          "iterations": [
+            69,
+            69,
+            68
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.1,
+          "oof_log_loss": 0.31335636827366403,
+          "iterations": [
+            115,
+            116,
+            117
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 1,
+          "oof_log_loss": 0.3227474145954079,
+          "iterations": [
+            113,
+            108,
+            98
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 10,
+          "oof_log_loss": 0.3227474145954079,
+          "iterations": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.001,
+          "oof_log_loss": 0.3133309113104054,
+          "iterations": [
+            45,
+            47,
+            42
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.01,
+          "oof_log_loss": 0.3152648644544216,
+          "iterations": [
+            74,
+            69,
+            72
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.1,
+          "oof_log_loss": 0.3250602969496418,
+          "iterations": [
+            141,
+            142,
+            140
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 1,
+          "oof_log_loss": 0.3323738960058389,
+          "iterations": [
+            175,
+            168,
+            164
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 10,
+          "oof_log_loss": 0.3323835934711316,
+          "iterations": [
+            0,
+            0,
+            7
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "fit_chromosomes": [
+            "chr10",
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr14",
+            "chr16",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr4",
+            "chr5",
+            "chr6",
+            "chr7",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr1",
+            "chr15",
+            "chr17",
+            "chr18",
+            "chr8",
+            "chr9",
+            "chrX"
+          ],
+          "fit_rows": 20202,
+          "validation_rows": 9798
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr15",
+            "chr17",
+            "chr18",
+            "chr19",
+            "chr2",
+            "chr7",
+            "chr8",
+            "chr9",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr10",
+            "chr14",
+            "chr16",
+            "chr3",
+            "chr4",
+            "chr5",
+            "chr6"
+          ],
+          "fit_rows": 19396,
+          "validation_rows": 10604
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr14",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr3",
+            "chr4",
+            "chr5",
+            "chr6",
+            "chr8",
+            "chr9",
+            "chrX"
+          ],
+          "validation_chromosomes": [
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr19",
+            "chr2",
+            "chr7",
+            "chrY"
+          ],
+          "fit_rows": 20402,
+          "validation_rows": 9598
+        }
+      ],
+      "train_rows": 30000,
+      "source_sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+      "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+      "train_index_sha256": "0529665ba04b8d54f7f966d1f16421687f8fef9b25b03e1852b4ed48676bf317",
+      "embedding_sha256": "9c78438f20d2d06dd7174a7a9ae53c804e6969f46fef8aa6038eb481b008a55f",
+      "seconds": 33.116312980651855
+    },
+    "promoter_tata": {
+      "task": "promoter_tata",
+      "selected": {
+        "layer": 15,
+        "layer_index": 1,
+        "C": 0.01,
+        "oof_log_loss": 0.36782087855238726,
+        "iterations": [
+          45,
+          40,
+          46
+        ]
+      },
+      "candidates": [
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.001,
+          "oof_log_loss": 0.389470491627207,
+          "iterations": [
+            29,
+            26,
+            24
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.01,
+          "oof_log_loss": 0.3747332440146658,
+          "iterations": [
+            45,
+            45,
+            43
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.1,
+          "oof_log_loss": 0.4454361844339129,
+          "iterations": [
+            89,
+            105,
+            96
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 1,
+          "oof_log_loss": 0.7940166628407452,
+          "iterations": [
+            185,
+            196,
+            174
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 10,
+          "oof_log_loss": 2.0707340013921987,
+          "iterations": [
+            300,
+            260,
+            354
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.001,
+          "oof_log_loss": 0.3848255631044061,
+          "iterations": [
+            21,
+            29,
+            28
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.01,
+          "oof_log_loss": 0.36782087855238726,
+          "iterations": [
+            45,
+            40,
+            46
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.1,
+          "oof_log_loss": 0.4278509901338413,
+          "iterations": [
+            102,
+            101,
+            102
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 1,
+          "oof_log_loss": 0.7405932696617309,
+          "iterations": [
+            197,
+            167,
+            191
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 10,
+          "oof_log_loss": 1.8411867795296324,
+          "iterations": [
+            293,
+            220,
+            320
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.001,
+          "oof_log_loss": 0.39730459131062185,
+          "iterations": [
+            25,
+            25,
+            27
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.01,
+          "oof_log_loss": 0.3929528135126674,
+          "iterations": [
+            40,
+            38,
+            43
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.1,
+          "oof_log_loss": 0.45815053402273886,
+          "iterations": [
+            100,
+            93,
+            93
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 1,
+          "oof_log_loss": 0.7416998289904964,
+          "iterations": [
+            189,
+            192,
+            173
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 10,
+          "oof_log_loss": 1.8883931271398602,
+          "iterations": [
+            302,
+            328,
+            290
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.001,
+          "oof_log_loss": 0.405868970199047,
+          "iterations": [
+            28,
+            29,
+            31
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.01,
+          "oof_log_loss": 0.4053722736022923,
+          "iterations": [
+            44,
+            42,
+            44
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.1,
+          "oof_log_loss": 0.49423874190566314,
+          "iterations": [
+            108,
+            101,
+            112
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 1,
+          "oof_log_loss": 0.8149433408967136,
+          "iterations": [
+            217,
+            197,
+            222
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 10,
+          "oof_log_loss": 1.9931148506115768,
+          "iterations": [
+            405,
+            388,
+            388
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr2",
+            "chr3",
+            "chr4",
+            "chr7",
+            "chr8",
+            "chrX"
+          ],
+          "validation_chromosomes": [
+            "chr10",
+            "chr11",
+            "chr12",
+            "chr19",
+            "chr5",
+            "chr6",
+            "chr9",
+            "chrY"
+          ],
+          "fit_rows": 3271,
+          "validation_rows": 1791
+        },
+        {
+          "fit_chromosomes": [
+            "chr10",
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr5",
+            "chr6",
+            "chr8",
+            "chr9",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr1",
+            "chr14",
+            "chr18",
+            "chr4",
+            "chr7",
+            "chrX"
+          ],
+          "fit_rows": 3445,
+          "validation_rows": 1617
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr11",
+            "chr12",
+            "chr14",
+            "chr18",
+            "chr19",
+            "chr4",
+            "chr5",
+            "chr6",
+            "chr7",
+            "chr9",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr13",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr2",
+            "chr3",
+            "chr8"
+          ],
+          "fit_rows": 3408,
+          "validation_rows": 1654
+        }
+      ],
+      "train_rows": 5062,
+      "source_sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+      "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+      "train_index_sha256": "911a9c10dda37b70ee10fa2f95b07955da093fe158c8ccd2d4afeed9a5641f0b",
+      "embedding_sha256": "9c78438f20d2d06dd7174a7a9ae53c804e6969f46fef8aa6038eb481b008a55f",
+      "seconds": 9.371586561203003
+    },
+    "splice_sites_acceptors": {
+      "task": "splice_sites_acceptors",
+      "selected": {
+        "layer": 8,
+        "layer_index": 0,
+        "C": 0.01,
+        "oof_log_loss": 0.40427103737857817,
+        "iterations": [
+          98,
+          84,
+          88
+        ]
+      },
+      "candidates": [
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.001,
+          "oof_log_loss": 0.4183890162376944,
+          "iterations": [
+            49,
+            48,
+            48
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.01,
+          "oof_log_loss": 0.40427103737857817,
+          "iterations": [
+            98,
+            84,
+            88
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.1,
+          "oof_log_loss": 0.4132743954600192,
+          "iterations": [
+            142,
+            135,
+            147
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 1,
+          "oof_log_loss": 0.4192824759576022,
+          "iterations": [
+            107,
+            105,
+            111
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 10,
+          "oof_log_loss": 0.4196726223721197,
+          "iterations": [
+            15,
+            37,
+            16
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.001,
+          "oof_log_loss": 0.43547658762138625,
+          "iterations": [
+            53,
+            49,
+            48
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.01,
+          "oof_log_loss": 0.41705455129325836,
+          "iterations": [
+            87,
+            89,
+            89
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.1,
+          "oof_log_loss": 0.4231886805300046,
+          "iterations": [
+            138,
+            131,
+            158
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 1,
+          "oof_log_loss": 0.4278320036014424,
+          "iterations": [
+            109,
+            104,
+            126
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 10,
+          "oof_log_loss": 0.4280932393313022,
+          "iterations": [
+            6,
+            0,
+            46
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.001,
+          "oof_log_loss": 0.4878997134293952,
+          "iterations": [
+            49,
+            50,
+            49
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.01,
+          "oof_log_loss": 0.47287393534041355,
+          "iterations": [
+            106,
+            103,
+            99
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.1,
+          "oof_log_loss": 0.4827510183407048,
+          "iterations": [
+            155,
+            150,
+            158
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 1,
+          "oof_log_loss": 0.48995987597366947,
+          "iterations": [
+            121,
+            109,
+            129
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 10,
+          "oof_log_loss": 0.4902404545909184,
+          "iterations": [
+            0,
+            35,
+            0
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.001,
+          "oof_log_loss": 0.5387348350564747,
+          "iterations": [
+            56,
+            51,
+            54
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.01,
+          "oof_log_loss": 0.5266505574773556,
+          "iterations": [
+            109,
+            109,
+            109
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.1,
+          "oof_log_loss": 0.5305981603411741,
+          "iterations": [
+            208,
+            194,
+            217
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 1,
+          "oof_log_loss": 0.5345226851033374,
+          "iterations": [
+            247,
+            266,
+            244
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 10,
+          "oof_log_loss": 0.5345238096910772,
+          "iterations": [
+            3,
+            2,
+            9
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr12",
+            "chr14",
+            "chr17",
+            "chr2",
+            "chr4",
+            "chr5",
+            "chr6",
+            "chr7",
+            "chr8",
+            "chr9",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr11",
+            "chr13",
+            "chr15",
+            "chr16",
+            "chr18",
+            "chr19",
+            "chr3",
+            "chrX"
+          ],
+          "fit_rows": 20332,
+          "validation_rows": 9668
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr11",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr16",
+            "chr18",
+            "chr19",
+            "chr3",
+            "chr5",
+            "chr8",
+            "chr9",
+            "chrX"
+          ],
+          "validation_chromosomes": [
+            "chr12",
+            "chr17",
+            "chr2",
+            "chr4",
+            "chr6",
+            "chr7",
+            "chrY"
+          ],
+          "fit_rows": 19288,
+          "validation_rows": 10712
+        },
+        {
+          "fit_chromosomes": [
+            "chr11",
+            "chr12",
+            "chr13",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr4",
+            "chr6",
+            "chr7",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr14",
+            "chr5",
+            "chr8",
+            "chr9"
+          ],
+          "fit_rows": 20380,
+          "validation_rows": 9620
+        }
+      ],
+      "train_rows": 30000,
+      "source_sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+      "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+      "train_index_sha256": "25f1670278beb0f7bef84e7aefb3ef886b9a9c3ec6107bdd74996ffb42f30102",
+      "embedding_sha256": "9c78438f20d2d06dd7174a7a9ae53c804e6969f46fef8aa6038eb481b008a55f",
+      "seconds": 33.46399474143982
+    },
+    "splice_sites_all": {
+      "task": "splice_sites_all",
+      "selected": {
+        "layer": 8,
+        "layer_index": 0,
+        "C": 0.01,
+        "oof_log_loss": 0.7919483156282445,
+        "iterations": [
+          157,
+          156,
+          154
+        ]
+      },
+      "candidates": [
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.001,
+          "oof_log_loss": 0.8042532629112856,
+          "iterations": [
+            76,
+            84,
+            81
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.01,
+          "oof_log_loss": 0.7919483156282445,
+          "iterations": [
+            157,
+            156,
+            154
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.1,
+          "oof_log_loss": 0.8083081900095102,
+          "iterations": [
+            233,
+            223,
+            212
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 1,
+          "oof_log_loss": 0.8158462531734275,
+          "iterations": [
+            188,
+            173,
+            169
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 10,
+          "oof_log_loss": 0.8160598699689232,
+          "iterations": [
+            0,
+            44,
+            9
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.001,
+          "oof_log_loss": 0.8248321997138374,
+          "iterations": [
+            72,
+            74,
+            81
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.01,
+          "oof_log_loss": 0.8215598766048384,
+          "iterations": [
+            147,
+            145,
+            136
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.1,
+          "oof_log_loss": 0.8429596014713652,
+          "iterations": [
+            200,
+            209,
+            211
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 1,
+          "oof_log_loss": 0.8503172761024613,
+          "iterations": [
+            128,
+            166,
+            124
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 10,
+          "oof_log_loss": 0.8503578455129454,
+          "iterations": [
+            0,
+            13,
+            0
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.001,
+          "oof_log_loss": 0.8827276561649867,
+          "iterations": [
+            80,
+            79,
+            84
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.01,
+          "oof_log_loss": 0.8857629511743023,
+          "iterations": [
+            157,
+            156,
+            166
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.1,
+          "oof_log_loss": 0.9109348045014924,
+          "iterations": [
+            216,
+            243,
+            245
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 1,
+          "oof_log_loss": 0.9208480738715097,
+          "iterations": [
+            142,
+            153,
+            151
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 10,
+          "oof_log_loss": 0.9208512324734635,
+          "iterations": [
+            3,
+            3,
+            0
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.001,
+          "oof_log_loss": 0.9021710485866902,
+          "iterations": [
+            83,
+            77,
+            84
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.01,
+          "oof_log_loss": 0.8960395596190194,
+          "iterations": [
+            169,
+            155,
+            174
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.1,
+          "oof_log_loss": 0.908902323692614,
+          "iterations": [
+            304,
+            286,
+            294
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 1,
+          "oof_log_loss": 0.9155478585054356,
+          "iterations": [
+            322,
+            336,
+            302
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 10,
+          "oof_log_loss": 0.9160650195092334,
+          "iterations": [
+            0,
+            82,
+            12
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr12",
+            "chr13",
+            "chr15",
+            "chr17",
+            "chr18",
+            "chr2",
+            "chr3",
+            "chr4",
+            "chr6",
+            "chr7",
+            "chr9"
+          ],
+          "validation_chromosomes": [
+            "chr11",
+            "chr14",
+            "chr16",
+            "chr19",
+            "chr5",
+            "chr8",
+            "chrX",
+            "chrY"
+          ],
+          "fit_rows": 20683,
+          "validation_rows": 9317
+        },
+        {
+          "fit_chromosomes": [
+            "chr10",
+            "chr11",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr19",
+            "chr4",
+            "chr5",
+            "chr6",
+            "chr8",
+            "chr9",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr1",
+            "chr12",
+            "chr18",
+            "chr2",
+            "chr3",
+            "chr7"
+          ],
+          "fit_rows": 18517,
+          "validation_rows": 11483
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr12",
+            "chr14",
+            "chr16",
+            "chr18",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr5",
+            "chr7",
+            "chr8",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr10",
+            "chr13",
+            "chr15",
+            "chr17",
+            "chr4",
+            "chr6",
+            "chr9"
+          ],
+          "fit_rows": 20800,
+          "validation_rows": 9200
+        }
+      ],
+      "train_rows": 30000,
+      "source_sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+      "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+      "train_index_sha256": "77c3b9178d113bfd0e10348b91135359e7c8b7fa1961a3a5d849a7157387b6df",
+      "embedding_sha256": "9c78438f20d2d06dd7174a7a9ae53c804e6969f46fef8aa6038eb481b008a55f",
+      "seconds": 70.44545030593872
+    },
+    "splice_sites_donors": {
+      "task": "splice_sites_donors",
+      "selected": {
+        "layer": 8,
+        "layer_index": 0,
+        "C": 0.01,
+        "oof_log_loss": 0.38037287586211843,
+        "iterations": [
+          81,
+          88,
+          86
+        ]
+      },
+      "candidates": [
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.001,
+          "oof_log_loss": 0.39779895835697754,
+          "iterations": [
+            47,
+            47,
+            46
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.01,
+          "oof_log_loss": 0.38037287586211843,
+          "iterations": [
+            81,
+            88,
+            86
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 0.1,
+          "oof_log_loss": 0.3875341785658199,
+          "iterations": [
+            151,
+            133,
+            138
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 1,
+          "oof_log_loss": 0.394199541955883,
+          "iterations": [
+            124,
+            109,
+            111
+          ]
+        },
+        {
+          "layer": 8,
+          "layer_index": 0,
+          "C": 10,
+          "oof_log_loss": 0.394358348951287,
+          "iterations": [
+            28,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.001,
+          "oof_log_loss": 0.41463414810502547,
+          "iterations": [
+            47,
+            44,
+            49
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.01,
+          "oof_log_loss": 0.3990359307657149,
+          "iterations": [
+            85,
+            88,
+            89
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 0.1,
+          "oof_log_loss": 0.4078717163467262,
+          "iterations": [
+            136,
+            147,
+            134
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 1,
+          "oof_log_loss": 0.41341950257133747,
+          "iterations": [
+            82,
+            107,
+            97
+          ]
+        },
+        {
+          "layer": 15,
+          "layer_index": 1,
+          "C": 10,
+          "oof_log_loss": 0.41372084156430305,
+          "iterations": [
+            35,
+            0,
+            0
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.001,
+          "oof_log_loss": 0.4628839866664513,
+          "iterations": [
+            47,
+            47,
+            46
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.01,
+          "oof_log_loss": 0.44937834665402193,
+          "iterations": [
+            95,
+            91,
+            89
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 0.1,
+          "oof_log_loss": 0.4607013347248679,
+          "iterations": [
+            152,
+            150,
+            158
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 1,
+          "oof_log_loss": 0.46930951873316057,
+          "iterations": [
+            137,
+            125,
+            119
+          ]
+        },
+        {
+          "layer": 22,
+          "layer_index": 2,
+          "C": 10,
+          "oof_log_loss": 0.4693436043983043,
+          "iterations": [
+            10,
+            3,
+            0
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.001,
+          "oof_log_loss": 0.5035598719806015,
+          "iterations": [
+            52,
+            51,
+            54
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.01,
+          "oof_log_loss": 0.4848783037560291,
+          "iterations": [
+            104,
+            106,
+            103
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 0.1,
+          "oof_log_loss": 0.48806707884828104,
+          "iterations": [
+            191,
+            184,
+            197
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 1,
+          "oof_log_loss": 0.49294743631116617,
+          "iterations": [
+            254,
+            225,
+            248
+          ]
+        },
+        {
+          "layer": 29,
+          "layer_index": 3,
+          "C": 10,
+          "oof_log_loss": 0.49297172592573224,
+          "iterations": [
+            0,
+            8,
+            12
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "fit_chromosomes": [
+            "chr10",
+            "chr11",
+            "chr13",
+            "chr14",
+            "chr15",
+            "chr16",
+            "chr17",
+            "chr18",
+            "chr2",
+            "chr4",
+            "chr5",
+            "chr6",
+            "chr8",
+            "chrX"
+          ],
+          "validation_chromosomes": [
+            "chr1",
+            "chr12",
+            "chr19",
+            "chr3",
+            "chr7",
+            "chr9",
+            "chrY"
+          ],
+          "fit_rows": 19731,
+          "validation_rows": 10269
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr10",
+            "chr12",
+            "chr13",
+            "chr14",
+            "chr16",
+            "chr17",
+            "chr19",
+            "chr3",
+            "chr4",
+            "chr6",
+            "chr7",
+            "chr9",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr11",
+            "chr15",
+            "chr18",
+            "chr2",
+            "chr5",
+            "chr8",
+            "chrX"
+          ],
+          "fit_rows": 19292,
+          "validation_rows": 10708
+        },
+        {
+          "fit_chromosomes": [
+            "chr1",
+            "chr11",
+            "chr12",
+            "chr15",
+            "chr18",
+            "chr19",
+            "chr2",
+            "chr3",
+            "chr5",
+            "chr7",
+            "chr8",
+            "chr9",
+            "chrX",
+            "chrY"
+          ],
+          "validation_chromosomes": [
+            "chr10",
+            "chr13",
+            "chr14",
+            "chr16",
+            "chr17",
+            "chr4",
+            "chr6"
+          ],
+          "fit_rows": 20977,
+          "validation_rows": 9023
+        }
+      ],
+      "train_rows": 30000,
+      "source_sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+      "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+      "train_index_sha256": "4a2da9e73055568a3d81f414583787a3a2e5870584343b398cbaa63cd1e11f60",
+      "embedding_sha256": "9c78438f20d2d06dd7174a7a9ae53c804e6969f46fef8aa6038eb481b008a55f",
+      "seconds": 48.33140540122986
+    }
+  },
+  "selection_sha256": {
+    "H2AFZ": "e9e62b8b4b0695345e31e4c634a8773a3d65419ceac9f1fd2c219d79d3312636",
+    "H3K27ac": "5c7f52e1d309b2f034424eb4b8d6ed09e629337fbb77212a3a3cf39b100b835c",
+    "H3K27me3": "47ace4fc3ee0662d81218b602f7c4a9ac3f70acdb8912652ce4df216bcecea69",
+    "H3K36me3": "f8c82d7b16e517b499b31c095a688cc16776c3d2d78394d0350f3d25a21d3cde",
+    "H3K4me1": "1168b792d378db58ad328c3a8ebd215e00690c60c6e7217b7b43c86203489446",
+    "H3K4me2": "01600bd967f9a3d43375ad129956a384303c0eadbb762e8a2546e0b3f32b2df1",
+    "H3K4me3": "1f9f063d1963fd839a8c195ecef03ae06a2789aabc6249f66bd122a96b35df8f",
+    "H3K9ac": "b787d94ad792015a1d0cc2a5dd17cf14281ca2542efb2a2e7a91a39033d7caf1",
+    "H3K9me3": "a1ad4f1071c21599ee9bb84c8c92e6bdc0af83728bfdd7e457efc466540b2196",
+    "H4K20me1": "84107a18fa4548f1465cf9a4ace02ba06775512fe2f2a81826203a8fbc4c84a4",
+    "enhancers": "27e4b4a58df4daa765c5390332dcd8c86149672f751cf2ff93a3a07889df44db",
+    "enhancers_types": "fba9911cb5f759acc067b7dc08f98ab84db6efc6789d3656a5a4f3c860527771",
+    "promoter_all": "d1c1c6d3b022ee352825f831e00db04addfe3bb5ca20d5a3eb8ff94d4bc905bd",
+    "promoter_no_tata": "7b63e17671ee4461fff08efd6c4f24383103367e2eb5a26d4b32699efc678219",
+    "promoter_tata": "fa149c31a6746aaef52e598f1a26c581d3fbc7a75ec6ab4d5e19b7b993050232",
+    "splice_sites_acceptors": "cfb179e92e43f56bedef1aed482bd597bbac764efb0e2bfeaad5af99253cf3ae",
+    "splice_sites_all": "12c61c69e50596fddc23bd4ce600b73d6327c1e329ab02b4bd2fea7b64db28db",
+    "splice_sites_donors": "1b8dec54e2c468df217527596c41d64dade6c6a16ab26995051735f1fe50df04"
+  },
+  "test_predictions_used": false
+}

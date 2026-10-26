@@ -36,39 +36,50 @@ def main():
  for task,info in frozen['tasks'].items():
   assert sha(R/'selection'/(task+'.json'))==frozen['selection_sha256'][task]
   assert info['source_sha256']==sha('scripts/select_nt_retention.py')
+  assert info['protocol_sha256']==sha('documents/retention-2026-10-25/protocol.md')
   assert info['train_index_sha256']==sha(R/'dataset'/task/'train.npz')
   assert len(info['candidates'])==20
   assert min(info['candidates'],key=lambda v:(v['oof_log_loss'],v['C'],v['layer']))==info['selected']
   assert all(not set(f['fit_chromosomes'])&set(f['validation_chromosomes']) for f in info['folds'])
  for path,digest in download['files'].items():assert sha(R/'dataset/raw'/path)==digest,path
  sources={};embedding_checks={}
+ prior_states=load('documents/adaptation-2026-10-24/results/run-metadata.json')
  for name in NAMES:
   embedding_checks[name]={}
   for split in ['train','test']:
    root=R/'embeddings'/name;assert (root/(split+'-COMPLETE')).exists();m=load(root/(split+'-metadata.json'))
    assert m['repeat_max_abs']==0 and m['source']['revision']=='06615c1660c892fc199840c18123f8385b3542a8'
+   assert m['protocol_sha256']==sha('documents/retention-2026-10-25/protocol.md')
+   if name!='original':assert m['state_sha256']==prior_states[name]['budgets']['4096']['state_sha256']
    assert sha(root/(split+'.npy'))==m['output_sha256'];assert sha(R/'dataset'/(split+'-sequences.jsonl'))==m['dataset_sha256']
    sources.update(m['source_sha256']);embedding_checks[name][split]=m
- scores=[];models={};csvrows=[];max_replay=0
+ scores=[];models={};csvrows=[];max_replay=0;records={}
  for task in tasks:
   root=R/'readouts'/task;assert (root/'COMPLETE').exists();m=load(root/'metrics.json');sources.update(m['source_sha256'])
   assert m['frozen_selection_sha256']==sha(R/'selection/frozen.json');assert m['bootstrap_sha256']==sha(R/'bootstrap/weights.npy')
   assert m['setting']==frozen['tasks'][task]['selected'];models[task]=m
-  a=np.load(R/'dataset'/task/'test.npz');train=np.load(R/'dataset'/task/'train.npz');pred=np.load(root/'predictions.npz');bs=np.load(root/'bootstrap-scores.npz')['scores'];assert bs.shape==(20001,7,3)
-  np.testing.assert_array_equal(pred['labels'],a['labels']);np.testing.assert_array_equal(pred['names'],a['names']);assert list(pred['backbones'])==NAMES
-  li=m['setting']['layer_index']
-  for j,name in enumerate(NAMES):
-   # Independently replay full test predictions and verify full train scaling.
-   xt=np.load(R/'embeddings'/name/'train.npy',mmap_mode='r')[train['ids'],li,:].astype(float)
-   xv=np.load(R/'embeddings'/name/'test.npy',mmap_mode='r')[a['ids'],li,:].astype(float)
-   co=np.load(root/(name+'-readout.npz'));np.testing.assert_allclose(co['mean'],xt.mean(0),rtol=1e-12,atol=1e-12)
-   sd=xt.std(0);sd[sd==0]=1;np.testing.assert_allclose(co['scale'],sd,rtol=1e-10,atol=1e-12)
-   z=((xv-co['mean'])/co['scale'])@co['coefficients'].T+co['intercept']
-   actual=np.column_stack([1-expit(z[:,0]),expit(z[:,0])]) if z.shape[1]==1 else softmax(z,axis=1)
-   delta=float(abs(actual-pred['probabilities'][j]).max());assert delta<1e-12;max_replay=max(max_replay,delta)
-   point=point_scores(a['labels'],pred['probabilities'][j]);np.testing.assert_allclose(point,bs[0,j],atol=1e-12)
+  with np.load(R/'dataset'/task/'test.npz') as a,np.load(R/'dataset'/task/'train.npz') as tr,np.load(root/'predictions.npz') as pred,np.load(root/'bootstrap-scores.npz') as boot:
+   bs=boot['scores'];assert bs.shape==(20001,7,3)
+   np.testing.assert_array_equal(pred['labels'],a['labels']);np.testing.assert_array_equal(pred['names'],a['names']);assert list(pred['backbones'])==NAMES
+   records[task]=dict(train_ids=tr['ids'],test_ids=a['ids'],labels=a['labels'],probabilities=pred['probabilities'],point=bs[0],li=m['setting']['layer_index'])
+   scores.append(bs)
+ # Sequential full-array reads avoid millions of small parallel-filesystem
+ # page faults. Numerical checks and row ordering are identical to the first audit.
+ for j,name in enumerate(NAMES):
+  print('Verifying full scaler/probability data',name,flush=True)
+  fulltrain=np.load(R/'embeddings'/name/'train.npy');fulltest=np.load(R/'embeddings'/name/'test.npy')
+  for task in tasks:
+   rec=records[task];li=rec['li'];root=R/'readouts'/task;m=models[task]
+   xt=fulltrain[rec['train_ids'],li,:].astype(float);xv=fulltest[rec['test_ids'],li,:].astype(float)
+   with np.load(root/(name+'-readout.npz')) as co:
+    np.testing.assert_allclose(co['mean'],xt.mean(0),rtol=1e-12,atol=1e-12)
+    sd=xt.std(0);sd[sd==0]=1;np.testing.assert_allclose(co['scale'],sd,rtol=1e-10,atol=1e-12)
+    z=((xv-co['mean'])/co['scale'])@co['coefficients'].T+co['intercept']
+    actual=np.column_stack([1-expit(z[:,0]),expit(z[:,0])]) if z.shape[1]==1 else softmax(z,axis=1)
+   prob=rec['probabilities'][j];delta=float(abs(actual-prob).max());assert delta<1e-12;max_replay=max(max_replay,delta)
+   point=point_scores(rec['labels'],prob);np.testing.assert_allclose(point,rec['point'][j],atol=1e-12)
    csvrows.append(dict(task=task,family=family(task),backbone=name,layer=m['setting']['layer'],C=m['setting']['C'],**dict(zip(METRICS,map(float,point)))))
-  scores.append(bs)
+  del fulltrain,fulltest,xt,xv
  for path,digest in sources.items():assert sha(Path(path.split('virus-genome-extrapolation/')[-1]))==digest,path
  scores=np.stack(scores,axis=0);valid=np.isfinite(scores[:,1:]).all((0,2,3));assert valid.sum()>=19000
  scores=scores[:,np.r_[True,valid]]
@@ -94,6 +105,18 @@ def main():
  import importlib.metadata,platform
  write(O/'environment.json',dict(python=platform.python_version(),packages={k:importlib.metadata.version(k) for k in ['numpy','scipy','scikit-learn','torch','transformers','pyarrow']}))
  write(O/'verification.json',verification);write(O/'summary.json',summary);write(O/'paired-effects.json',comparisons);write(O/'readout-evidence.json',models);write(O/'embedding-evidence.json',embedding_checks)
+ tables=['# Paired changes on all18 NT benchmark tasks','',
+ 'All backbones are NTv2 500M (multispecies). Conditions use mean seed-specific metrics, not ensemble probabilities. Negative log-loss changes and positive MCC/AUC changes favor the left condition. Intervals are paired two-sided95% genomic-block intervals, unadjusted per task/metric; the separate simultaneous one-sided MCC bounds govern the all-task preservation claim.','']
+ for key in ['baculo-minus-original','general-minus-original','baculo-minus-general']:
+  tables+=['## '+key,'','| Task | MCC change [95% CI] | Log-loss change [95% CI] | ROC AUC change [95% CI] |','|---|---:|---:|---:|']
+  for task in tasks:
+   vals=[]
+   for metric in METRICS:
+    v=comparisons[task][key][metric];lo,hi=v['interval'];vals.append(f"{v['delta']:+.4f} [{lo:+.4f}, {hi:+.4f}]")
+   tables.append('| '+task+' | '+' | '.join(vals)+' |')
+  tables.append('')
+ (O/'paired-effects.md').write_text('\n'.join(tables)+'\n')
+
  for filename,records in [('scores.csv',csvrows),('task-retention.csv',taskrows)]:
   with (O/filename).open('w',newline='') as f:
    w=csv.DictWriter(f,fieldnames=list(records[0]),lineterminator='\n');w.writeheader();w.writerows(records)

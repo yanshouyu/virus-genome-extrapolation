@@ -1,0 +1,11 @@
+{
+  "python": "3.11.5",
+  "packages": {
+    "numpy": "2.4.2+computecanada",
+    "scipy": "1.17.0+computecanada",
+    "scikit-learn": "1.8.0+computecanada",
+    "torch": "2.10.0+computecanada",
+    "transformers": "5.3.0+computecanada",
+    "pyarrow": "23.0.1"
+  }
+}

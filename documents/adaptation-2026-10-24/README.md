@@ -12,3 +12,5 @@ The next deliverable is final AcMNPV-focused report/manuscript assembly. Additio
 - [Protocol](protocol.md), [verification amendment](verification-amendment.md), [execution/collection guide](execution.md).
 
 Scientific raw evidence is preserved under results/. Derived analysis and figures are under analysis/. The early running-status handoff is historical; use this index and the interpretation for current status. Model weights remain on Nibi. No new recurring monitoring was installed.
+
+A completed follow-up evaluates the same NTv2 500M multispecies states on the authors'18 general benchmark tasks: [retention interpretation](../retention-2026-10-25/interpretation.md). Overall retention is supported under the declared margin; four individual histone-task limits remain unresolved. This does not change the original AcMNPV results.
