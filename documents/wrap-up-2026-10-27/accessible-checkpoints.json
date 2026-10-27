@@ -1,0 +1,156 @@
+[
+  {
+    "run": "100m-full-baculo-seed42",
+    "path": "/project/6002642/shouyu/virus-genome-extrapolation-archive/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-full-baculo-seed42/selected_state.pt",
+    "bytes": 391703523,
+    "sha256": "697d72c6f00089ace85a8d0d5d52f2fc920245fc6c8825d0f42dec19c87f9e1d",
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "exact_training_resume": false
+  },
+  {
+    "run": "100m-full-baculo-seed43",
+    "path": "/project/6002642/shouyu/virus-genome-extrapolation-archive/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-full-baculo-seed43/selected_state.pt",
+    "bytes": 391703523,
+    "sha256": "31b3db736fcd3699fe55ee335de9e7ffc34fab749895011ce53d94dfab40c9c6",
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "exact_training_resume": false
+  },
+  {
+    "run": "100m-full-baculo-seed44",
+    "path": "/project/6002642/shouyu/virus-genome-extrapolation-archive/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-full-baculo-seed44/selected_state.pt",
+    "bytes": 391703523,
+    "sha256": "22c4d161c937b127994b144003fcfd8a9d36ffd1c3841bc7c1f0ceae9e451e29",
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "exact_training_resume": false
+  },
+  {
+    "run": "100m-full-general-seed42",
+    "path": "/project/6002642/shouyu/virus-genome-extrapolation-archive/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-full-general-seed42/selected_state.pt",
+    "bytes": 391703523,
+    "sha256": "99dd8e2589bd133a42d138844ceb799cace7e1fbb26566db33bb24974bc79ff8",
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "exact_training_resume": false
+  },
+  {
+    "run": "100m-full-general-seed43",
+    "path": "/project/6002642/shouyu/virus-genome-extrapolation-archive/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-full-general-seed43/selected_state.pt",
+    "bytes": 391703523,
+    "sha256": "3517d7e7d987cfe52c13ef4b786ae0eb18732c42500e776baf342ca0ff73666e",
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "exact_training_resume": false
+  },
+  {
+    "run": "100m-full-general-seed44",
+    "path": "/project/6002642/shouyu/virus-genome-extrapolation-archive/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-full-general-seed44/selected_state.pt",
+    "bytes": 391703523,
+    "sha256": "b1cdcafe9421d93974989ced0ddd8dabd3097c6b9eb88a2d77a487a0c9a664ad",
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "exact_training_resume": false
+  },
+  {
+    "run": "100m-lora-baculo-seed42",
+    "path": "/project/6002642/shouyu/virus-genome-extrapolation-archive/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-lora-baculo-seed42/selected_state.pt",
+    "bytes": 1473219,
+    "sha256": "4b361bc29de83bb80464a933d2e1c2f02a7af5c752eed21cf8ccc88768319da5",
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "exact_training_resume": false
+  },
+  {
+    "run": "100m-lora-general-seed42",
+    "path": "/project/6002642/shouyu/virus-genome-extrapolation-archive/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-lora-general-seed42/selected_state.pt",
+    "bytes": 1473219,
+    "sha256": "b623245f3c76de7a80f41bd41ee576519b5cc97ff1fb65ae1752e95e360927d2",
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "exact_training_resume": false
+  },
+  {
+    "run": "500m-full-baculo-seed42",
+    "path": "/project/6002642/shouyu/virus-genome-extrapolation-archive/2026-10-27-wrap-up/checkpoints/2026-10-24/500m-full-baculo-seed42/selected_state.pt",
+    "bytes": 1993575869,
+    "sha256": "59e3102f5eebfc451c774d19606461b030103bfe0153991fdbcf5e04820db9a8",
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+      "revision": "06615c1660c892fc199840c18123f8385b3542a8"
+    },
+    "exact_training_resume": false
+  },
+  {
+    "run": "500m-full-baculo-seed43",
+    "path": "/project/6002642/shouyu/virus-genome-extrapolation-archive/2026-10-27-wrap-up/checkpoints/2026-10-24/500m-full-baculo-seed43/selected_state.pt",
+    "bytes": 1993575869,
+    "sha256": "33c9c9c98bcd973d6698b1af7b04984e679561442d3b5180a62ce3e4e74cbd76",
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+      "revision": "06615c1660c892fc199840c18123f8385b3542a8"
+    },
+    "exact_training_resume": false
+  },
+  {
+    "run": "500m-full-baculo-seed44",
+    "path": "/project/6002642/shouyu/virus-genome-extrapolation-archive/2026-10-27-wrap-up/checkpoints/2026-10-24/500m-full-baculo-seed44/selected_state.pt",
+    "bytes": 1993575869,
+    "sha256": "2ec1d379a614d5f9a24b6caeb02af23f7e75fbd38574e221c96739993d7d56f6",
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+      "revision": "06615c1660c892fc199840c18123f8385b3542a8"
+    },
+    "exact_training_resume": false
+  },
+  {
+    "run": "500m-full-general-seed42",
+    "path": "/project/6002642/shouyu/virus-genome-extrapolation-archive/2026-10-27-wrap-up/checkpoints/2026-10-24/500m-full-general-seed42/selected_state.pt",
+    "bytes": 1993575869,
+    "sha256": "0cd4f04ff4d8f08521ac6aec1a4b70673e1443bc00be77cbda5a249165952bc8",
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+      "revision": "06615c1660c892fc199840c18123f8385b3542a8"
+    },
+    "exact_training_resume": false
+  },
+  {
+    "run": "500m-full-general-seed43",
+    "path": "/project/6002642/shouyu/virus-genome-extrapolation-archive/2026-10-27-wrap-up/checkpoints/2026-10-24/500m-full-general-seed43/selected_state.pt",
+    "bytes": 1993575869,
+    "sha256": "ee667d1347eb57e60cad7c495b1b5d5fbe6ee2ca54db3aeb33cd669bc07d05f7",
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+      "revision": "06615c1660c892fc199840c18123f8385b3542a8"
+    },
+    "exact_training_resume": false
+  },
+  {
+    "run": "500m-full-general-seed44",
+    "path": "/project/6002642/shouyu/virus-genome-extrapolation-archive/2026-10-27-wrap-up/checkpoints/2026-10-24/500m-full-general-seed44/selected_state.pt",
+    "bytes": 1993575869,
+    "sha256": "aa4f2eab1852c238b32b6d08320cb683352f0977c4c5706f013b195297c6733a",
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+      "revision": "06615c1660c892fc199840c18123f8385b3542a8"
+    },
+    "exact_training_resume": false
+  }
+]

@@ -26,7 +26,7 @@ Every archived regular-file payload is SHA-256 hashed while copied, then indepen
 
 Historical Trainer checkpoints retain all existing model, head, optimizer, scheduler, random-state, tokenizer, configuration, and trainer-state files. Their historical scientific limitations remain unchanged.
 
-The completed controlled/duration adaptation programs saved selected weight dictionaries and LoRA adapters, not optimizer/scheduler/random-state snapshots. These support evaluation and warm starts using the pinned upstream model; they do not support exact interrupted-training resumption. All existing files and metadata are retained. Cached tokenizer, configuration, and custom model code are included in the recovery package; access credentials are excluded.
+The completed controlled/duration adaptation programs saved selected weight dictionaries and LoRA adapters, not optimizer/scheduler/random-state snapshots. These support evaluation and warm starts using the pinned upstream model; they do not support exact interrupted-training resumption. All existing files and metadata are retained. Cached tokenizer, configuration, custom model code, and 16,462,217,726 bytes of upstream weights are included in the recovery package; access credentials are excluded. The upstream weights support reconstruction of LoRA adapters and pinned reference models without a future download. The [accessible checkpoint index](accessible-checkpoints.json) records the 14 endpoint weight hashes.
 
 ## Restore an experiment
 
@@ -55,12 +55,12 @@ Project originals are eligible for removal only after the corresponding archive 
 
 ## Validation
 
-- [Regression suite](regression-tests.txt): 39 passed, two opt-in pretrained-weight tests skipped.
-- [Archive tool tests](archive-tool-tests.txt): restoration, symbolic/hard links, corruption detection, source mutation, and path traversal checks.
+- [Regression suite](regression-tests.txt): 43 passed, two opt-in pretrained-weight tests skipped.
+- [Archive tool tests](archive-tool-tests.txt): 10 passed: restoration, symbolic/hard links, corruption detection, source mutation, path traversal, off-host receipt matching, tracked-file protection, and idempotent retirement.
 - [Report integrity](report-integrity.json): all 78 report files match their recorded hashes; all 88 local HTML links resolve.
 - No new training, feature extraction, model inference, or public model publication.
 
 ## Current execution status
 
-Bulk archiving and independent verification are in progress. Final package sizes, cleanup receipts, and branch synchronization will be recorded here after completion.
+Both checkouts and GitHub are on main; the four stale branches have been retired with published recovery tags. Bulk archiving and independent verification are in progress. Final package sizes and cleanup receipts will be recorded here after completion.
 
