@@ -1,0 +1,1550 @@
+{
+  "H2AFZ": {
+    "baculo-minus-original": {
+      "mcc": {
+        "delta": 0.0075063381337632795,
+        "interval": [
+          -0.016257445162428944,
+          0.03070961778447354
+        ],
+        "one_sided95_lower": -0.012437363923556474,
+        "one_sided95_upper": 0.02673908799495523,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.026337010190244592
+      },
+      "log_loss": {
+        "delta": 0.0007758285456150871,
+        "interval": [
+          -0.006981147846122929,
+          0.008455354101675664
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.0010017938064786902,
+        "interval": [
+          -0.0075270664440418,
+          0.00559438577109665
+        ]
+      }
+    },
+    "general-minus-original": {
+      "mcc": {
+        "delta": -0.005253512424289342,
+        "interval": [
+          -0.028750714224464687,
+          0.017887334400988254
+        ],
+        "one_sided95_lower": -0.024840940919042032,
+        "one_sided95_upper": 0.014298431591425829,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.0374919097038869
+      },
+      "log_loss": {
+        "delta": 0.006202288855586158,
+        "interval": [
+          -0.0013599627105645217,
+          0.01363676213011822
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.006212691995664543,
+        "interval": [
+          -0.012880239446327634,
+          0.0005992675916805275
+        ]
+      }
+    },
+    "baculo-minus-general": {
+      "mcc": {
+        "delta": 0.012759850558052621,
+        "interval": [
+          -0.0037339587176589903,
+          0.0298607145406884
+        ],
+        "one_sided95_lower": -0.001198468202244507,
+        "one_sided95_upper": 0.027041159699961775,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.009464453893642144
+      },
+      "log_loss": {
+        "delta": -0.005426460309971071,
+        "interval": [
+          -0.010056523694122443,
+          -0.0008780621341261869
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.005210898189185853,
+        "interval": [
+          0.0012736072229539764,
+          0.009219123566041694
+        ]
+      }
+    }
+  },
+  "H3K27ac": {
+    "baculo-minus-original": {
+      "mcc": {
+        "delta": -0.01820395724884677,
+        "interval": [
+          -0.046218967421090267,
+          0.008342236956721266
+        ],
+        "one_sided95_lower": -0.041764017413929426,
+        "one_sided95_upper": 0.0038280826333316554,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.05875428167875415
+      },
+      "log_loss": {
+        "delta": 0.009587780835756288,
+        "interval": [
+          0.0009027994179608339,
+          0.01815517083366255
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.006864114629284712,
+        "interval": [
+          -0.014330921318336248,
+          0.0004883279175494015
+        ]
+      }
+    },
+    "general-minus-original": {
+      "mcc": {
+        "delta": -0.025117345353865672,
+        "interval": [
+          -0.05561122261328997,
+          0.0030061302073537076
+        ],
+        "one_sided95_lower": -0.05056452852917379,
+        "one_sided95_upper": -0.0012198197652317794,
+        "margin": 0.05,
+        "conclusion": "unresolved",
+        "simultaneous_one_sided95_lower": -0.06760572948734836
+      },
+      "log_loss": {
+        "delta": 0.014864523883353686,
+        "interval": [
+          0.004233766773548966,
+          0.025445921615609633
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.011580257654478343,
+        "interval": [
+          -0.020569315141032697,
+          -0.002557917728498135
+        ]
+      }
+    },
+    "baculo-minus-general": {
+      "mcc": {
+        "delta": 0.006913388105018903,
+        "interval": [
+          -0.012803255597722153,
+          0.0276243461615201
+        ],
+        "one_sided95_lower": -0.009782255120606959,
+        "one_sided95_upper": 0.02397237404839252,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.02021044176062194
+      },
+      "log_loss": {
+        "delta": -0.005276743047597399,
+        "interval": [
+          -0.011490449424883328,
+          0.0008321643161593311
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.004716143025193631,
+        "interval": [
+          -0.000571069190448742,
+          0.009842637009948887
+        ]
+      }
+    }
+  },
+  "H3K27me3": {
+    "baculo-minus-original": {
+      "mcc": {
+        "delta": 0.001416137780664184,
+        "interval": [
+          -0.016044349391446344,
+          0.018538140366169846
+        ],
+        "one_sided95_lower": -0.013053640779039893,
+        "one_sided95_upper": 0.015681410614199826,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.0234094401774441
+      },
+      "log_loss": {
+        "delta": 0.005711533429804516,
+        "interval": [
+          -0.0029637544945238597,
+          0.01502229492034393
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.002747319089764,
+        "interval": [
+          -0.008658762129039566,
+          0.0029498438369659355
+        ]
+      }
+    },
+    "general-minus-original": {
+      "mcc": {
+        "delta": -0.002120536764308567,
+        "interval": [
+          -0.019450278011461576,
+          0.014718667919884397
+        ],
+        "one_sided95_lower": -0.01646768673492241,
+        "one_sided95_upper": 0.01200590150579903,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.027222659332939058
+      },
+      "log_loss": {
+        "delta": 0.004356194593819751,
+        "interval": [
+          -0.005439132913305204,
+          0.014328538520895414
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.001904041465792039,
+        "interval": [
+          -0.008676902723114568,
+          0.004738798723241605
+        ]
+      }
+    },
+    "baculo-minus-general": {
+      "mcc": {
+        "delta": 0.003536674544972751,
+        "interval": [
+          -0.00935126302410604,
+          0.01591370589978958
+        ],
+        "one_sided95_lower": -0.0072629725466358645,
+        "one_sided95_upper": 0.013986757270417243,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.01477842868458702
+      },
+      "log_loss": {
+        "delta": 0.0013553388359847651,
+        "interval": [
+          -0.0033738368768723684,
+          0.006038148971028599
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.0008432776239719608,
+        "interval": [
+          -0.0044255736183391875,
+          0.0027920970397755916
+        ]
+      }
+    }
+  },
+  "H3K36me3": {
+    "baculo-minus-original": {
+      "mcc": {
+        "delta": 0.0008792773845623936,
+        "interval": [
+          -0.01276672158924648,
+          0.013684941130866489
+        ],
+        "one_sided95_lower": -0.010409788701228934,
+        "one_sided95_upper": 0.011656555746472985,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.018629274959970257
+      },
+      "log_loss": {
+        "delta": -0.0002892536770634502,
+        "interval": [
+          -0.004822766229304503,
+          0.00436620921605697
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.0003749689624663599,
+        "interval": [
+          -0.002633030024103111,
+          0.003234756045537188
+        ]
+      }
+    },
+    "general-minus-original": {
+      "mcc": {
+        "delta": 0.00026713860130589406,
+        "interval": [
+          -0.01569527641641368,
+          0.015957150393848655
+        ],
+        "one_sided95_lower": -0.013057038426267542,
+        "one_sided95_upper": 0.01347835258415164,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.02195962517762025
+      },
+      "log_loss": {
+        "delta": -0.002115167747857083,
+        "interval": [
+          -0.006957097063163312,
+          0.0029636658086183375
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.0009367557288323392,
+        "interval": [
+          -0.0020833105995576003,
+          0.003810896765699748
+        ]
+      }
+    },
+    "baculo-minus-general": {
+      "mcc": {
+        "delta": 0.0006121387832564995,
+        "interval": [
+          -0.012625490891076693,
+          0.013658742193182152
+        ],
+        "one_sided95_lower": -0.010447876511875459,
+        "one_sided95_upper": 0.011741376012312166,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.01801636725874424
+      },
+      "log_loss": {
+        "delta": 0.0018259140707936328,
+        "interval": [
+          -0.0030759484831381174,
+          0.006495385386649247
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.0005617867663659792,
+        "interval": [
+          -0.0033344154938211275,
+          0.0023043272574862516
+        ]
+      }
+    }
+  },
+  "H3K4me1": {
+    "baculo-minus-original": {
+      "mcc": {
+        "delta": -0.003661831341987276,
+        "interval": [
+          -0.020673272647595657,
+          0.013495841712036208
+        ],
+        "one_sided95_lower": -0.01806304182416624,
+        "one_sided95_upper": 0.010638331468633262,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.027180523425452793
+      },
+      "log_loss": {
+        "delta": 0.0013826536924271826,
+        "interval": [
+          -0.003768809523094133,
+          0.00670561737900949
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.0008011940873416945,
+        "interval": [
+          -0.005868932362279924,
+          0.004195638747934874
+        ]
+      }
+    },
+    "general-minus-original": {
+      "mcc": {
+        "delta": 0.0014237896966037278,
+        "interval": [
+          -0.016794684669638377,
+          0.01961561526206858
+        ],
+        "one_sided95_lower": -0.014061130619900702,
+        "one_sided95_upper": 0.016653819120698035,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.023608884279249356
+      },
+      "log_loss": {
+        "delta": 0.0006254036299367938,
+        "interval": [
+          -0.005012797665182473,
+          0.006467478209025609
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.0005047463490335247,
+        "interval": [
+          -0.006187108703654761,
+          0.005016397814430523
+        ]
+      }
+    },
+    "baculo-minus-general": {
+      "mcc": {
+        "delta": -0.005085621038591004,
+        "interval": [
+          -0.02056498022430436,
+          0.010268189881869016
+        ],
+        "one_sided95_lower": -0.01818843314371821,
+        "one_sided95_upper": 0.007736383550286986,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.026566227596876747
+      },
+      "log_loss": {
+        "delta": 0.0007572500624903888,
+        "interval": [
+          -0.002211929908483726,
+          0.0037786378377630985
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.00029644773830816984,
+        "interval": [
+          -0.0035231993809431484,
+          0.00291941708217969
+        ]
+      }
+    }
+  },
+  "H3K4me2": {
+    "baculo-minus-original": {
+      "mcc": {
+        "delta": -0.013030235703253124,
+        "interval": [
+          -0.03721990113204372,
+          0.011461257025851391
+        ],
+        "one_sided95_lower": -0.03299437937168562,
+        "one_sided95_upper": 0.007429408405378905,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.04656732968647721
+      },
+      "log_loss": {
+        "delta": 0.007729711855439081,
+        "interval": [
+          -0.0016010888873924322,
+          0.017014886494618287
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.006041508241880766,
+        "interval": [
+          -0.01236990112253378,
+          0.00026127245409808954
+        ]
+      }
+    },
+    "general-minus-original": {
+      "mcc": {
+        "delta": -0.020218824839124516,
+        "interval": [
+          -0.04737910601479296,
+          0.006810183729494562
+        ],
+        "one_sided95_lower": -0.04341300560783719,
+        "one_sided95_upper": 0.002477629648253006,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.05919550675837664
+      },
+      "log_loss": {
+        "delta": 0.009845574209724928,
+        "interval": [
+          -0.0007186117934397912,
+          0.02037138116325124
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.007719899436540167,
+        "interval": [
+          -0.01460534895942869,
+          -0.0007422705951613496
+        ]
+      }
+    },
+    "baculo-minus-general": {
+      "mcc": {
+        "delta": 0.007188589135871393,
+        "interval": [
+          -0.009120138240677223,
+          0.023406509044507882
+        ],
+        "one_sided95_lower": -0.006492448249659571,
+        "one_sided95_upper": 0.020809357188441867,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.01595030492521544
+      },
+      "log_loss": {
+        "delta": -0.002115862354285847,
+        "interval": [
+          -0.007815773587334759,
+          0.003628686498768832
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.001678391194659401,
+        "interval": [
+          -0.0020659391862670267,
+          0.005356779529418128
+        ]
+      }
+    }
+  },
+  "H3K4me3": {
+    "baculo-minus-original": {
+      "mcc": {
+        "delta": -0.011440063908025433,
+        "interval": [
+          -0.04189581418856795,
+          0.02111755290247983
+        ],
+        "one_sided95_lower": -0.03708779985674639,
+        "one_sided95_upper": 0.015418563453034093,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.054405957747268835
+      },
+      "log_loss": {
+        "delta": 0.005182632066995985,
+        "interval": [
+          -0.006890944166627904,
+          0.016923352464898275
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.001162450844935714,
+        "interval": [
+          -0.007763563103943163,
+          0.005836495323180082
+        ]
+      }
+    },
+    "general-minus-original": {
+      "mcc": {
+        "delta": -0.0005002686282061797,
+        "interval": [
+          -0.03210172173067677,
+          0.03128878889611624
+        ],
+        "one_sided95_lower": -0.02685836557948457,
+        "one_sided95_upper": 0.02631232389005743,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.043595106482435315
+      },
+      "log_loss": {
+        "delta": 0.00036857312504856576,
+        "interval": [
+          -0.0128286981742655,
+          0.013619249215667298
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.0005269777163708911,
+        "interval": [
+          -0.008127613479442524,
+          0.006585217710354149
+        ]
+      }
+    },
+    "baculo-minus-general": {
+      "mcc": {
+        "delta": -0.010939795279819253,
+        "interval": [
+          -0.036951255299505575,
+          0.016695530819727935
+        ],
+        "one_sided95_lower": -0.0329614016865046,
+        "one_sided95_upper": 0.011774629198524542,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.046244408703831195
+      },
+      "log_loss": {
+        "delta": 0.004814058941947419,
+        "interval": [
+          -0.005137180442390928,
+          0.014581359145334169
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.000635473128564823,
+        "interval": [
+          -0.00601785846564781,
+          0.00534148019744979
+        ]
+      }
+    }
+  },
+  "H3K9ac": {
+    "baculo-minus-original": {
+      "mcc": {
+        "delta": -0.0077886294011452195,
+        "interval": [
+          -0.040091937138356265,
+          0.02432855362229682
+        ],
+        "one_sided95_lower": -0.034830270300723026,
+        "one_sided95_upper": 0.019294717942478844,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.053471539479086776
+      },
+      "log_loss": {
+        "delta": 0.0037152108056449085,
+        "interval": [
+          -0.0042171136998260614,
+          0.01185299637601173
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.0016243128415950325,
+        "interval": [
+          -0.007686405057206178,
+          0.004681948646736629
+        ]
+      }
+    },
+    "general-minus-original": {
+      "mcc": {
+        "delta": 0.0021904985550980083,
+        "interval": [
+          -0.031368206438628254,
+          0.03722103631822165
+        ],
+        "one_sided95_lower": -0.02596063664937646,
+        "one_sided95_upper": 0.03160781705154473,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.04559089498223414
+      },
+      "log_loss": {
+        "delta": -0.0012097044862351414,
+        "interval": [
+          -0.010403050303494124,
+          0.008053805943047904
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.0013253757876858785,
+        "interval": [
+          -0.005859601361637953,
+          0.00886866636578111
+        ]
+      }
+    },
+    "baculo-minus-general": {
+      "mcc": {
+        "delta": -0.009979127956243228,
+        "interval": [
+          -0.032806430902718564,
+          0.010976246974144578
+        ],
+        "one_sided95_lower": -0.028964155923162524,
+        "one_sided95_upper": 0.007789816653537673,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.043489827449590214
+      },
+      "log_loss": {
+        "delta": 0.00492491529188005,
+        "interval": [
+          -0.0005562620068215922,
+          0.010480728886155177
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.002949688629280911,
+        "interval": [
+          -0.00761708479849203,
+          0.0015613762791061706
+        ]
+      }
+    }
+  },
+  "H3K9me3": {
+    "baculo-minus-original": {
+      "mcc": {
+        "delta": -0.01564752467636238,
+        "interval": [
+          -0.061185246077587824,
+          0.0318151970053717
+        ],
+        "one_sided95_lower": -0.05412445330003087,
+        "one_sided95_upper": 0.02350111698261946,
+        "margin": 0.05,
+        "conclusion": "unresolved",
+        "simultaneous_one_sided95_lower": -0.0802966258826135
+      },
+      "log_loss": {
+        "delta": 0.0028047209453658795,
+        "interval": [
+          -0.01003342629272575,
+          0.01561234224544748
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.005456978085351838,
+        "interval": [
+          -0.019013574867706287,
+          0.007980645294782705
+        ]
+      }
+    },
+    "general-minus-original": {
+      "mcc": {
+        "delta": -0.040766920996197165,
+        "interval": [
+          -0.08789332034021972,
+          0.0045155113107419285
+        ],
+        "one_sided95_lower": -0.07940063664758135,
+        "one_sided95_upper": -0.002228501068682739,
+        "margin": 0.05,
+        "conclusion": "unresolved",
+        "simultaneous_one_sided95_lower": -0.10780296646672996
+      },
+      "log_loss": {
+        "delta": 0.004702382173010111,
+        "interval": [
+          -0.008548010094908872,
+          0.018194762767480804
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.007546020761245664,
+        "interval": [
+          -0.02217712037523078,
+          0.0063866420051235905
+        ]
+      }
+    },
+    "baculo-minus-general": {
+      "mcc": {
+        "delta": 0.025119396319834786,
+        "interval": [
+          -0.006878590681713154,
+          0.05487252364909149
+        ],
+        "one_sided95_lower": -0.0015549894965547733,
+        "one_sided95_upper": 0.05012908822379893,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.021664448135833205
+      },
+      "log_loss": {
+        "delta": -0.0018976612276442317,
+        "interval": [
+          -0.011560261506151989,
+          0.007540689448182863
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.0020890426758938263,
+        "interval": [
+          -0.006580488270066687,
+          0.01090700142030724
+        ]
+      }
+    }
+  },
+  "H4K20me1": {
+    "baculo-minus-original": {
+      "mcc": {
+        "delta": -0.014932360408025147,
+        "interval": [
+          -0.034190171930941815,
+          0.0051359741068470076
+        ],
+        "one_sided95_lower": -0.031176098785651418,
+        "one_sided95_upper": 0.0016874862185034243,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.0416408838556848
+      },
+      "log_loss": {
+        "delta": 0.000633820274413055,
+        "interval": [
+          -0.00881501235310261,
+          0.010238882903912932
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.0005136266309586635,
+        "interval": [
+          -0.005791836557777563,
+          0.00472674653489548
+        ]
+      }
+    },
+    "general-minus-original": {
+      "mcc": {
+        "delta": -0.00766712719030449,
+        "interval": [
+          -0.030359394161109995,
+          0.01583803976332553
+        ],
+        "one_sided95_lower": -0.02675239410707887,
+        "one_sided95_upper": 0.011885496495617999,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.0391974675047749
+      },
+      "log_loss": {
+        "delta": 0.004394992499494377,
+        "interval": [
+          -0.007545435260458742,
+          0.016598980853332543
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.0020821931986519937,
+        "interval": [
+          -0.00866720535740762,
+          0.004477640509446228
+        ]
+      }
+    },
+    "baculo-minus-general": {
+      "mcc": {
+        "delta": -0.007265233217720657,
+        "interval": [
+          -0.02173019746334772,
+          0.0066597893074384455
+        ],
+        "one_sided95_lower": -0.019242342908421983,
+        "one_sided95_upper": 0.004504752057507531,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.027554046570822745
+      },
+      "log_loss": {
+        "delta": -0.0037611722250813218,
+        "interval": [
+          -0.00984664258496528,
+          0.002086213425306939
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.0015685665676933302,
+        "interval": [
+          -0.0016275216559068272,
+          0.004823444361228515
+        ]
+      }
+    }
+  },
+  "enhancers": {
+    "baculo-minus-original": {
+      "mcc": {
+        "delta": 0.006868906997740232,
+        "interval": [
+          -0.012647835438280733,
+          0.02694409134274678
+        ],
+        "one_sided95_lower": -0.009709814025665828,
+        "one_sided95_upper": 0.02377482846304895,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.020967792719632828
+      },
+      "log_loss": {
+        "delta": -0.009017138009975834,
+        "interval": [
+          -0.01562631603539366,
+          -0.002538148855696516
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.0071585836939466185,
+        "interval": [
+          0.002223275889178383,
+          0.012160799323864902
+        ]
+      }
+    },
+    "general-minus-original": {
+      "mcc": {
+        "delta": -0.012394242766771868,
+        "interval": [
+          -0.03227395612226595,
+          0.007906420984137914
+        ],
+        "one_sided95_lower": -0.02895325797335226,
+        "one_sided95_upper": 0.004637905520658491,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.040468967104630604
+      },
+      "log_loss": {
+        "delta": -0.004568691971431504,
+        "interval": [
+          -0.011097345102647437,
+          0.0017996544905877565
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.0026655799701424954,
+        "interval": [
+          -0.0026077481232961164,
+          0.007891973126572612
+        ]
+      }
+    },
+    "baculo-minus-general": {
+      "mcc": {
+        "delta": 0.0192631497645121,
+        "interval": [
+          0.005460699159774565,
+          0.033051351951257725
+        ],
+        "one_sided95_lower": 0.00772229891853185,
+        "one_sided95_upper": 0.03090122215452014,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.00025637906633886706
+      },
+      "log_loss": {
+        "delta": -0.004448446038544329,
+        "interval": [
+          -0.008421033783636804,
+          -0.0004484556455617227
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.004493003723804123,
+        "interval": [
+          0.0012924799715298475,
+          0.007694885034639662
+        ]
+      }
+    }
+  },
+  "enhancers_types": {
+    "baculo-minus-original": {
+      "mcc": {
+        "delta": 0.011785789097280619,
+        "interval": [
+          -0.008540608324152502,
+          0.03207630853537991
+        ],
+        "one_sided95_lower": -0.0053409772057708745,
+        "one_sided95_upper": 0.028835183826298055,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.017222895217833423
+      },
+      "log_loss": {
+        "delta": -0.01223928340959013,
+        "interval": [
+          -0.020054732577623864,
+          -0.004492070442807613
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.009096467352408877,
+        "interval": [
+          0.0018851937268081487,
+          0.016347576773499666
+        ]
+      }
+    },
+    "general-minus-original": {
+      "mcc": {
+        "delta": -0.006262573859114162,
+        "interval": [
+          -0.02684046078849101,
+          0.014093237968938495
+        ],
+        "one_sided95_lower": -0.02366206832045931,
+        "one_sided95_upper": 0.010968077267627593,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.03517726700596898
+      },
+      "log_loss": {
+        "delta": -0.009444123210181288,
+        "interval": [
+          -0.01722350951847548,
+          -0.0018462455102252967
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.010595348251228875,
+        "interval": [
+          0.0033787059804333665,
+          0.01796532390357626
+        ]
+      }
+    },
+    "baculo-minus-general": {
+      "mcc": {
+        "delta": 0.01804836295639478,
+        "interval": [
+          0.0031533003414058393,
+          0.03324700897971445
+        ],
+        "one_sided95_lower": 0.0055252358097802904,
+        "one_sided95_upper": 0.030736359487738008,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.0024667749532990835
+      },
+      "log_loss": {
+        "delta": -0.0027951601994088415,
+        "interval": [
+          -0.00724470060818099,
+          0.0016477334801037594
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.0014988808988199986,
+        "interval": [
+          -0.005785076240334514,
+          0.002671268734649187
+        ]
+      }
+    }
+  },
+  "promoter_all": {
+    "baculo-minus-original": {
+      "mcc": {
+        "delta": -0.00116015415873727,
+        "interval": [
+          -0.02318943855775386,
+          0.020567369474388784
+        ],
+        "one_sided95_lower": -0.019854003373625306,
+        "one_sided95_upper": 0.0171947337736996,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.032866357132724774
+      },
+      "log_loss": {
+        "delta": 0.003739655170966971,
+        "interval": [
+          -0.00801808495005971,
+          0.015104401078713168
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.00180306856443202,
+        "interval": [
+          -0.0064806455035640005,
+          0.002874270889475322
+        ]
+      }
+    },
+    "general-minus-original": {
+      "mcc": {
+        "delta": 0.00671028941456675,
+        "interval": [
+          -0.015215155872049585,
+          0.028159891514227042
+        ],
+        "one_sided95_lower": -0.011448985774181231,
+        "one_sided95_upper": 0.024778903662619787,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.023336612189143267
+      },
+      "log_loss": {
+        "delta": 0.004065541816294649,
+        "interval": [
+          -0.006600363457552191,
+          0.014873643742906707
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.0015830655035199426,
+        "interval": [
+          -0.005681767129531834,
+          0.0023888570635386282
+        ]
+      }
+    },
+    "baculo-minus-general": {
+      "mcc": {
+        "delta": -0.00787044357330402,
+        "interval": [
+          -0.021762448144682717,
+          0.00554993177952431
+        ],
+        "one_sided95_lower": -0.019574381517977395,
+        "one_sided95_upper": 0.0035335756001612867,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.02816542407554995
+      },
+      "log_loss": {
+        "delta": -0.00032588664532767764,
+        "interval": [
+          -0.006881518889973187,
+          0.006157860744900763
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.00022000306091207733,
+        "interval": [
+          -0.0030922613336162113,
+          0.002550735296649089
+        ]
+      }
+    }
+  },
+  "promoter_no_tata": {
+    "baculo-minus-original": {
+      "mcc": {
+        "delta": -0.003929543520915235,
+        "interval": [
+          -0.027030068150081264,
+          0.01884537073274446
+        ],
+        "one_sided95_lower": -0.023191769880149198,
+        "one_sided95_upper": 0.014982807509814717,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.036843519361581464
+      },
+      "log_loss": {
+        "delta": -0.0018299272171201642,
+        "interval": [
+          -0.010368633357221341,
+          0.006999271231165732
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.0002103715288698238,
+        "interval": [
+          -0.0039325329790250605,
+          0.003321224119241444
+        ]
+      }
+    },
+    "general-minus-original": {
+      "mcc": {
+        "delta": 0.002069234454324387,
+        "interval": [
+          -0.017301198102431685,
+          0.021203225313518204
+        ],
+        "one_sided95_lower": -0.014076947029208897,
+        "one_sided95_upper": 0.017993601227906178,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.025762843338638805
+      },
+      "log_loss": {
+        "delta": -0.0027105689908543673,
+        "interval": [
+          -0.010879617851136569,
+          0.0056871878526432215
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.00014449761578927411,
+        "interval": [
+          -0.0032607786461308075,
+          0.0035222786037294993
+        ]
+      }
+    },
+    "baculo-minus-general": {
+      "mcc": {
+        "delta": -0.005998777975239622,
+        "interval": [
+          -0.02280118034540391,
+          0.010552302089095454
+        ],
+        "one_sided95_lower": -0.02010674034330851,
+        "one_sided95_upper": 0.007814789973487252,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.030085628512198186
+      },
+      "log_loss": {
+        "delta": 0.0008806417737342032,
+        "interval": [
+          -0.003110773522479107,
+          0.004923909030718057
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.0003548691446590979,
+        "interval": [
+          -0.002167296119190784,
+          0.0013516265621351536
+        ]
+      }
+    }
+  },
+  "promoter_tata": {
+    "baculo-minus-original": {
+      "mcc": {
+        "delta": 0.11395906760465191,
+        "interval": [
+          0.02698474080393488,
+          0.20331575981764058
+        ],
+        "one_sided95_lower": 0.04004379086821687,
+        "one_sided95_upper": 0.18844806704616857,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.0053415748062720595
+      },
+      "log_loss": {
+        "delta": -0.056812774069179534,
+        "interval": [
+          -0.10096467912780685,
+          -0.008480157905155314
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.016820932716269166,
+        "interval": [
+          -0.00440600262251997,
+          0.03843353197835144
+        ]
+      }
+    },
+    "general-minus-original": {
+      "mcc": {
+        "delta": 0.06750438307155693,
+        "interval": [
+          -0.014742352915597856,
+          0.15064124324148478
+        ],
+        "one_sided95_lower": -0.0017792527430013634,
+        "one_sided95_upper": 0.13705911626287504,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.04570408231956108
+      },
+      "log_loss": {
+        "delta": -0.04532616494040717,
+        "interval": [
+          -0.08779349763313499,
+          0.0004762862137355162
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.013765278272220294,
+        "interval": [
+          -0.006169971727008543,
+          0.034413891570509746
+        ]
+      }
+    },
+    "baculo-minus-general": {
+      "mcc": {
+        "delta": 0.04645468453309498,
+        "interval": [
+          -0.004446567789742206,
+          0.09953116157622453
+        ],
+        "one_sided95_lower": 0.0034713101722273435,
+        "one_sided95_upper": 0.09034870777854395,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.026628090696352698
+      },
+      "log_loss": {
+        "delta": -0.011486609128772363,
+        "interval": [
+          -0.03914348956231257,
+          0.01625375642713238
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.003055654444048872,
+        "interval": [
+          -0.008024140626152029,
+          0.014180998324575568
+        ]
+      }
+    }
+  },
+  "splice_sites_acceptors": {
+    "baculo-minus-original": {
+      "mcc": {
+        "delta": 0.00961438237190193,
+        "interval": [
+          -0.006565035130323682,
+          0.0263118603330734
+        ],
+        "one_sided95_lower": -0.004175283164436777,
+        "one_sided95_upper": 0.023626472811069568,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.014054042139688527
+      },
+      "log_loss": {
+        "delta": -0.01168118449302602,
+        "interval": [
+          -0.01835133669598764,
+          -0.004963187150419111
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.005222339538760834,
+        "interval": [
+          0.0015005810989238172,
+          0.009018095977986671
+        ]
+      }
+    },
+    "general-minus-original": {
+      "mcc": {
+        "delta": 0.03133895184450319,
+        "interval": [
+          0.011118846615520126,
+          0.05172387959473555
+        ],
+        "one_sided95_lower": 0.01447868266761258,
+        "one_sided95_upper": 0.04825909987467883,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": 0.0027029162974502815
+      },
+      "log_loss": {
+        "delta": -0.027314737787357213,
+        "interval": [
+          -0.03595878775533857,
+          -0.018699634955902916
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.013260276002593385,
+        "interval": [
+          0.0084666923747227,
+          0.018156795306789653
+        ]
+      }
+    },
+    "baculo-minus-general": {
+      "mcc": {
+        "delta": -0.021724569472601263,
+        "interval": [
+          -0.03906569312780608,
+          -0.0048442890093305215
+        ],
+        "one_sided95_lower": -0.03631049278183361,
+        "one_sided95_upper": -0.007619823891661953,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.04665724796729925
+      },
+      "log_loss": {
+        "delta": 0.015633553294331193,
+        "interval": [
+          0.008159705080421851,
+          0.02323687689741353
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.008037936463832551,
+        "interval": [
+          -0.01204199519793231,
+          -0.0041907064113422135
+        ]
+      }
+    }
+  },
+  "splice_sites_all": {
+    "baculo-minus-original": {
+      "mcc": {
+        "delta": 0.012860471284629305,
+        "interval": [
+          -0.005126794549744448,
+          0.03005620835037913
+        ],
+        "one_sided95_lower": -0.002178777288124045,
+        "one_sided95_upper": 0.027549976388371908,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.0122680539645172
+      },
+      "log_loss": {
+        "delta": -0.011055953114140316,
+        "interval": [
+          -0.02099215122315846,
+          -0.0015501463288277826
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.005798692420244667,
+        "interval": [
+          0.0013321901547391907,
+          0.01026076207162212
+        ]
+      }
+    },
+    "general-minus-original": {
+      "mcc": {
+        "delta": 0.038410550985844005,
+        "interval": [
+          0.02005947201446588,
+          0.05663796326657094
+        ],
+        "one_sided95_lower": 0.022991838424763343,
+        "one_sided95_upper": 0.05355940357210054,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": 0.012205721683739791
+      },
+      "log_loss": {
+        "delta": -0.032822810484321785,
+        "interval": [
+          -0.042536055554803005,
+          -0.023100767395349425
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.01566525546159625,
+        "interval": [
+          0.010965381811067704,
+          0.020475393623249842
+        ]
+      }
+    },
+    "baculo-minus-general": {
+      "mcc": {
+        "delta": -0.0255500797012147,
+        "interval": [
+          -0.03899945300262214,
+          -0.012424026962223856
+        ],
+        "one_sided95_lower": -0.03673417953540786,
+        "one_sided95_upper": -0.014580238766732638,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.044783007546153615
+      },
+      "log_loss": {
+        "delta": 0.02176685737018147,
+        "interval": [
+          0.013559297143558047,
+          0.029776316484896134
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.009866563041351584,
+        "interval": [
+          -0.013607012555155834,
+          -0.0061784961951585815
+        ]
+      }
+    }
+  },
+  "splice_sites_donors": {
+    "baculo-minus-original": {
+      "mcc": {
+        "delta": 0.01705664968202336,
+        "interval": [
+          0.0004859268127236444,
+          0.032922765016538104
+        ],
+        "one_sided95_lower": 0.003438059967489776,
+        "one_sided95_upper": 0.030491245164885012,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.006581739237264774
+      },
+      "log_loss": {
+        "delta": -0.01177785641012391,
+        "interval": [
+          -0.018289015748667387,
+          -0.0052172688828340565
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.005524241346609893,
+        "interval": [
+          0.002348106893755436,
+          0.00873899193754631
+        ]
+      }
+    },
+    "general-minus-original": {
+      "mcc": {
+        "delta": 0.04628277215918941,
+        "interval": [
+          0.029375862862086644,
+          0.06280124879654214
+        ],
+        "one_sided95_lower": 0.032209411832819446,
+        "one_sided95_upper": 0.059967073226341344,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": 0.02254452296828588
+      },
+      "log_loss": {
+        "delta": -0.028486232912860288,
+        "interval": [
+          -0.036289343645048024,
+          -0.02070934701361083
+        ]
+      },
+      "roc_auc": {
+        "delta": 0.012915481270744489,
+        "interval": [
+          0.009379187756989645,
+          0.01658569855539892
+        ]
+      }
+    },
+    "baculo-minus-general": {
+      "mcc": {
+        "delta": -0.02922612247716605,
+        "interval": [
+          -0.04249557602736472,
+          -0.016245618977249167
+        ],
+        "one_sided95_lower": -0.040324597091571726,
+        "one_sided95_upper": -0.018250706504367546,
+        "margin": 0.05,
+        "conclusion": "preservation supported",
+        "simultaneous_one_sided95_lower": -0.04799635347922098
+      },
+      "log_loss": {
+        "delta": 0.016708376502736377,
+        "interval": [
+          0.010290765289140202,
+          0.023290981832998738
+        ]
+      },
+      "roc_auc": {
+        "delta": -0.007391239924134596,
+        "interval": [
+          -0.010653360181345781,
+          -0.004218572822268836
+        ]
+      }
+    }
+  }
+}

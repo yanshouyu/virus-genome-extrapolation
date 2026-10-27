@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>compute-cost — NT adaptation study</title><style>body{font:17px/1.65 Georgia,serif;color:#202a35;background:#f3f5f7;margin:0} main{max-width:1100px;margin:auto;background:white;padding:48px 5vw} h1,h2,h3{font-family:system-ui,sans-serif;line-height:1.23;color:#173b53} h1{font-size:34px} h2{margin-top:2em;border-top:1px solid #dce4e9;padding-top:22px} a{color:#116590} img{max-width:100%;height:auto} table{width:100%;border-collapse:collapse;font:14px/1.45 system-ui,sans-serif;margin:25px 0} th,td{padding:9px;border-bottom:1px solid #dce4e9;text-align:left} th{background:#edf3f7} code{overflow-wrap:anywhere;font-size:.85em} p,li{overflow-wrap:break-word} @media print{body{background:white}main{padding:0;max-width:none}h2,h3{break-after:avoid}img,table{break-inside:avoid}a{color:inherit}}</style><main><table>
+<thead>
+<tr>
+<th>Phase</th>
+<th style="text-align:right">H100 allocation minutes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>train feature extraction</td>
+<td style="text-align:right">90.15</td>
+</tr>
+<tr>
+<td>benchmark test feature extraction</td>
+<td style="text-align:right">15.33</td>
+</tr>
+<tr>
+<td>fresh process replay</td>
+<td style="text-align:right">1.27</td>
+</tr>
+<tr>
+<td>engineering GPU smoke</td>
+<td style="text-align:right">2.05</td>
+</tr>
+</tbody>
+</table>
+<p>Total: 1.813 allocated GPU hours; maximum simultaneous study GPUs: 2.</p>
+<p>All GPU jobs use one full H100. Time includes startup/checks/I/O as well as inference. This is allocation time, not measured accelerator utilization or a monetary price. Initial CPU data-audit failures are preserved in jobs.psv.</p>
+</main></html>

@@ -1,0 +1,116 @@
+{
+  "gpu_jobs": [
+    {
+      "job": "25004631",
+      "phase": "train feature extraction",
+      "allocated_gpu_seconds": 741
+    },
+    {
+      "job": "25004643_0",
+      "phase": "train feature extraction",
+      "allocated_gpu_seconds": 703
+    },
+    {
+      "job": "25004643_1",
+      "phase": "train feature extraction",
+      "allocated_gpu_seconds": 742
+    },
+    {
+      "job": "25004643_2",
+      "phase": "train feature extraction",
+      "allocated_gpu_seconds": 704
+    },
+    {
+      "job": "25004643_3",
+      "phase": "train feature extraction",
+      "allocated_gpu_seconds": 775
+    },
+    {
+      "job": "25004643_4",
+      "phase": "train feature extraction",
+      "allocated_gpu_seconds": 868
+    },
+    {
+      "job": "25004643_5",
+      "phase": "train feature extraction",
+      "allocated_gpu_seconds": 876
+    },
+    {
+      "job": "25004644_0",
+      "phase": "benchmark test feature extraction",
+      "allocated_gpu_seconds": 89
+    },
+    {
+      "job": "25004644_1",
+      "phase": "benchmark test feature extraction",
+      "allocated_gpu_seconds": 108
+    },
+    {
+      "job": "25004644_2",
+      "phase": "benchmark test feature extraction",
+      "allocated_gpu_seconds": 123
+    },
+    {
+      "job": "25004644_3",
+      "phase": "benchmark test feature extraction",
+      "allocated_gpu_seconds": 246
+    },
+    {
+      "job": "25004644_4",
+      "phase": "benchmark test feature extraction",
+      "allocated_gpu_seconds": 111
+    },
+    {
+      "job": "25004644_5",
+      "phase": "benchmark test feature extraction",
+      "allocated_gpu_seconds": 106
+    },
+    {
+      "job": "25004644_6",
+      "phase": "benchmark test feature extraction",
+      "allocated_gpu_seconds": 137
+    },
+    {
+      "job": "25004863",
+      "phase": "fresh process replay",
+      "allocated_gpu_seconds": 76
+    },
+    {
+      "job": "25004444",
+      "phase": "engineering GPU smoke",
+      "allocated_gpu_seconds": 50
+    },
+    {
+      "job": "25004455",
+      "phase": "engineering GPU smoke",
+      "allocated_gpu_seconds": 73
+    }
+  ],
+  "total_allocated_gpu_hours": 1.8133333333333332,
+  "max_simultaneous_study_gpus": 2,
+  "phase_allocated_gpu_minutes": {
+    "train feature extraction": 90.15,
+    "benchmark test feature extraction": 15.333333333333334,
+    "fresh process replay": 1.2666666666666666,
+    "engineering GPU smoke": 2.05
+  },
+  "noncompleted_main_jobs": [
+    {
+      "job": "25004286",
+      "state": "FAILED",
+      "exit_code": "1:0"
+    },
+    {
+      "job": "25004391",
+      "state": "FAILED",
+      "exit_code": "1:0"
+    },
+    {
+      "job": "25004813",
+      "state": "CANCELLED by 3157367",
+      "exit_code": "0:0"
+    }
+  ],
+  "accounting_timezone": "UTC",
+  "interpretation": "Allocation wall time with one H100 per GPU job; no dollar-cost estimate. Early engineering failures remain recorded."
+}

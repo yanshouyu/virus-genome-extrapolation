@@ -1,0 +1,338 @@
+{
+  "date": "2026-10-26",
+  "scientific_baseline_commit": "9b67df4",
+  "copied_artifacts": {
+    "figures/figure-1-mlm.png": {
+      "source": "documents/adaptation-2026-10-24/analysis/mlm-selection-audit.png",
+      "sha256": "5ed9e158a17b20395bdc1f94831c31a49282adcf95f2aa90056c92e69fbe2cff"
+    },
+    "figures/figure-1-mlm.pdf": {
+      "source": "documents/adaptation-2026-10-24/analysis/mlm-selection-audit.pdf",
+      "sha256": "50473faa8ed2b81f6d77eec0c5c6c51c80a6ecbdaa57ef3e5e7fffaaa2ff5a0e"
+    },
+    "figures/figure-2-duration.png": {
+      "source": "documents/adaptation-2026-10-24/analysis/development-duration.png",
+      "sha256": "19eb7d4501c2b6dc5658a7d40fd93be2506a48d1766f86f2168e811ea7d1dceb"
+    },
+    "figures/figure-2-duration.pdf": {
+      "source": "documents/adaptation-2026-10-24/analysis/development-duration.pdf",
+      "sha256": "be67dcff6794d6bc7804ec632c78e02e38513783ffefbb8e2ae02460bdb6bbaa"
+    },
+    "figures/figure-3-effects.png": {
+      "source": "documents/adaptation-2026-10-24/analysis/endpoint-effects.png",
+      "sha256": "fe788c18a7eec7a5be376573d3674e34b812dbf8bb39b8334786c18527d3361e"
+    },
+    "figures/figure-3-effects.pdf": {
+      "source": "documents/adaptation-2026-10-24/analysis/endpoint-effects.pdf",
+      "sha256": "627d7b8c2fc63cf6137764c2179d18d68a6886ca8ea08a89da97b81cf7dd6fdb"
+    },
+    "figures/figure-4-families.png": {
+      "source": "documents/retention-2026-10-25/results/family-retention.png",
+      "sha256": "6cccb3642461e412e360e144e714344cab5a3c47e8206cff7ae6f8dd0fb399bd"
+    },
+    "figures/figure-4-families.pdf": {
+      "source": "documents/retention-2026-10-25/results/family-retention.pdf",
+      "sha256": "a64a9c18c639d41a1f074c13488d46895ea72c9e722770b9a75955acaa05a86c"
+    },
+    "figures/figure-5-tasks.png": {
+      "source": "documents/retention-2026-10-25/results/task-retention.png",
+      "sha256": "3e7c3cd44ced5368a6ab4e14ea2da5031d02f2bb73ea138bef40d70a3b7dc560"
+    },
+    "figures/figure-5-tasks.pdf": {
+      "source": "documents/retention-2026-10-25/results/task-retention.pdf",
+      "sha256": "0db1227e82d82d19e830c3bc4f29b95802d5c1babdaa10c199bb3e5c9449e53c"
+    },
+    "figures/figure-6-benefit-retention.png": {
+      "source": "documents/retention-2026-10-25/results/benefit-retention.png",
+      "sha256": "3daf7cfa1c3ee7a4d02e51b2adb4e4041b992ab3a628622289f70cd9ee83c289"
+    },
+    "figures/figure-6-benefit-retention.pdf": {
+      "source": "documents/retention-2026-10-25/results/benefit-retention.pdf",
+      "sha256": "0ee135d412302a4e12e862e12999c192d046128179b0edbcefe54cf2f5e94b27"
+    },
+    "figures/figure-S1-lora.png": {
+      "source": "documents/adaptation-2026-10-24/analysis/pilot-resource-performance.png",
+      "sha256": "5b3082805cd454abe515d184cf5dc79b4221dfea08f7d8ffba1c4901c6e28942"
+    },
+    "figures/figure-S1-lora.pdf": {
+      "source": "documents/adaptation-2026-10-24/analysis/pilot-resource-performance.pdf",
+      "sha256": "94f15ff90eb49033e191a81d640dc75a14661b210cad89c8492281d1d570caa6"
+    },
+    "tables/adaptation-paired-effects.md": {
+      "source": "documents/adaptation-2026-10-24/analysis/paired-effects.md",
+      "sha256": "4ff1f22b5cab42e121186a6938266cac2a1edf5a23d0d4062fca7622d01b35ad"
+    },
+    "tables/adaptation-paired-effects.json": {
+      "source": "documents/adaptation-2026-10-24/analysis/paired-effects.json",
+      "sha256": "d9d2ddeef528e65d6d83660084c006c9ae4f2a6b35f55bfebd7b58edc3cd122e"
+    },
+    "tables/adaptation-readout-scores.csv": {
+      "source": "documents/adaptation-2026-10-24/analysis/readout-scores.csv",
+      "sha256": "f7d2ebc2c7950ece207a102801827534348e5599315d54a46bcdde3bec827428"
+    },
+    "tables/adaptation-mlm-all-seeds.md": {
+      "source": "documents/adaptation-2026-10-24/analysis/mlm-all-seeds.md",
+      "sha256": "2d2a077b4d974deef1373c7b49606aa9d1ddd12f7bc952128bd4905b46d71f44"
+    },
+    "tables/lora-resources.json": {
+      "source": "documents/adaptation-2026-10-24/analysis/pilot-resources.json",
+      "sha256": "e646d0a8090cf360ee386c773a87df39f0fde3b3c9ae2dfbb0fd3bc54540e444"
+    },
+    "tables/retention-paired-effects.md": {
+      "source": "documents/retention-2026-10-25/results/paired-effects.md",
+      "sha256": "ad8e1987b8d45c1b935bcd588fd59b7f143001d0b0ab383cd50271f694f0d3bd"
+    },
+    "tables/retention-paired-effects.json": {
+      "source": "documents/retention-2026-10-25/results/paired-effects.json",
+      "sha256": "8a4510ece9dbc7ba6b03672eaabb6bb5715b92fefa49193943271efc75113376"
+    },
+    "tables/retention-scores.csv": {
+      "source": "documents/retention-2026-10-25/results/scores.csv",
+      "sha256": "15e5dfa37ad2dc07ae044ee3c0916412044d8c74804d40c17a07f6e034cce8e7"
+    },
+    "tables/retention-task-decisions.csv": {
+      "source": "documents/retention-2026-10-25/results/task-retention.csv",
+      "sha256": "6a937bc7a769e4c6e80b88a13526a7880f441b590279161cb48be4bb0d8dd22f"
+    },
+    "tables/retention-summary.json": {
+      "source": "documents/retention-2026-10-25/results/summary.json",
+      "sha256": "7cffe51ab09eecba897c01954091733880de9fbd87dcee1f1db59fa87b8f6415"
+    },
+    "evidence/adaptation/protocol.md": {
+      "source": "documents/adaptation-2026-10-24/protocol.md",
+      "sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931"
+    },
+    "evidence/adaptation/jobs-completed.psv": {
+      "source": "documents/adaptation-2026-10-24/jobs-completed.psv",
+      "sha256": "c896cec564a96a5ca1d03c52d46a3e02d4e40097e030018a29007d272c250c05"
+    },
+    "evidence/retention/protocol.md": {
+      "source": "documents/retention-2026-10-25/protocol.md",
+      "sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5"
+    },
+    "evidence/retention/pre-test-freeze-verification.json": {
+      "source": "documents/retention-2026-10-25/pre-test-freeze-verification.json",
+      "sha256": "c6232a89dcbb1f267d13fc16e90e63cf92e7ce39d6c7525771a29b1b7165dd28"
+    },
+    "evidence/retention/frozen-settings-before-test.json": {
+      "source": "documents/retention-2026-10-25/frozen-settings-before-test.json",
+      "sha256": "cc34d0839e769e68dffa552d2a80b5eb4756811333f920194c60b14b90fe4365"
+    },
+    "evidence/retention/local-verification.json": {
+      "source": "documents/retention-2026-10-25/local-verification.json",
+      "sha256": "22ab2a26a0e8516fcdb17833122deafb773178269387b7e99f65219e31313c0f"
+    },
+    "evidence/retention/compute-cost.md": {
+      "source": "documents/retention-2026-10-25/compute-cost.md",
+      "sha256": "9d359fc073d21409f7a8bd41dbb97b1575e38e5e3583ed08083907ff06525886"
+    },
+    "evidence/retention/compute-cost.json": {
+      "source": "documents/retention-2026-10-25/compute-cost.json",
+      "sha256": "c556833aebd0a9ad1446ae458f1997ec53a0ac03b14caec6b3e0e1815b41d414"
+    },
+    "evidence/retention/jobs.psv": {
+      "source": "documents/retention-2026-10-25/jobs.psv",
+      "sha256": "19971b9fb029bce19646c48ebe9b3f56d343879d06bf7f6b1fb8ac8210a402ad"
+    },
+    "evidence/adaptation/analysis-verification.json": {
+      "source": "documents/adaptation-2026-10-24/analysis/verification.json",
+      "sha256": "0fa5349d1ddffccb2c0f6424e6615d772aa431c234571b3a4ff8b715dfb55efb"
+    },
+    "evidence/adaptation/server-verification.json": {
+      "source": "documents/adaptation-2026-10-24/results/verification.json",
+      "sha256": "cb3232187e0e34d78ed85bc22a0457cc251044a9328dfdb4f6ae94078d9b580e"
+    },
+    "evidence/adaptation/analysis-manifest.json": {
+      "source": "documents/adaptation-2026-10-24/analysis/manifest.json",
+      "sha256": "5a0a131ecd4d6d1b857b148dab0b3a04dd62ae2d9c58f3c76e077d0022f36b53"
+    },
+    "evidence/retention/server-verification.json": {
+      "source": "documents/retention-2026-10-25/results/verification.json",
+      "sha256": "8d3b0dc8a8772fb45763b3e652f22070b684c473bad53409df98e38e0676060b"
+    },
+    "evidence/retention/server-manifest.json": {
+      "source": "documents/retention-2026-10-25/results/manifest.json",
+      "sha256": "0ef403f39c84093475e8dc835e7e0cbf8bda1e32df19463bea7463c556a7b386"
+    },
+    "evidence/retention/fresh-replay.json": {
+      "source": "documents/retention-2026-10-25/results/fresh-replay.json",
+      "sha256": "0f45e6d7bc66fe437fc0360cb99b493d489150c13eb49fd38a57904c1193027d"
+    },
+    "evidence/retention/dataset-audit.json": {
+      "source": "documents/retention-2026-10-25/results/dataset-audit.json",
+      "sha256": "22f51933b6a90bb42fa0346722e7f8eef083d257ae617106bd25c404285b72a7"
+    },
+    "evidence/audits/dataset-repair.txt": {
+      "source": "documents/repair-2026-10-13/README.md",
+      "sha256": "31f82820ea958f824f9c019bb9252c08f5f957e2a4f4bad975ade14bcfe89571"
+    },
+    "evidence/audits/cds-audit.txt": {
+      "source": "documents/cds-audit-2026-10-21/README.md",
+      "sha256": "fb77f96b57af2431e0c0b9b23605e73719544b27db4f7a61f3b8ab9fa45c7b15"
+    },
+    "evidence/audits/sampling-audit.json": {
+      "source": "documents/experiments-2026-10-20/sampling-audit.json",
+      "sha256": "296aa7aabe693850d11a353c4827be2d450f3a1c115ce0201ba8f2733fb72a33"
+    },
+    "evidence/adaptation/execution.txt": {
+      "source": "documents/adaptation-2026-10-24/execution.md",
+      "sha256": "59e0b35613d65629f844a0ed4a27191d7b7199d11a3d07e29c6adc0839c0da0c"
+    },
+    "evidence/adaptation/interpretation.txt": {
+      "source": "documents/adaptation-2026-10-24/interpretation.md",
+      "sha256": "456928d3aa88d40cdd1221f7bdda3d97e9b7046f5083f25626b73f3483ca6981"
+    },
+    "evidence/retention/execution.txt": {
+      "source": "documents/retention-2026-10-25/execution.md",
+      "sha256": "caac2194bd91ec8581d8ff40279c7eb3d1fef986d4344db3851bc002349cb2c9"
+    },
+    "evidence/retention/interpretation.txt": {
+      "source": "documents/retention-2026-10-25/interpretation.md",
+      "sha256": "801a6b144a241d2aec252f28e4aa6d4f937a289b217ee39c3372104ba75eddb6"
+    },
+    "sources/scripts/interpret_adaptation_duration.py": {
+      "source": "scripts/interpret_adaptation_duration.py",
+      "sha256": "d7facab3c9ee341b035163e455fb68a5cb0294c7eed405419b4169c1f5267a85"
+    },
+    "sources/scripts/summarize_adaptation_duration.py": {
+      "source": "scripts/summarize_adaptation_duration.py",
+      "sha256": "8d1a4cd2ad8e63d02e5de4c98cda4cc3fa9a4b5f0678301da8224520d05efe85"
+    },
+    "sources/scripts/prepare_nt_retention.py": {
+      "source": "scripts/prepare_nt_retention.py",
+      "sha256": "983348b6840ecc20a84c1c04378cf87f25b0c90653c956a4d4a95e2d6a32b116"
+    },
+    "sources/scripts/extract_nt_retention.py": {
+      "source": "scripts/extract_nt_retention.py",
+      "sha256": "3a30f90dc73311b2c06fd8796ee5b403fba90e25094e48a5a3693691d0eafe53"
+    },
+    "sources/scripts/select_nt_retention.py": {
+      "source": "scripts/select_nt_retention.py",
+      "sha256": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590"
+    },
+    "sources/scripts/evaluate_nt_retention.py": {
+      "source": "scripts/evaluate_nt_retention.py",
+      "sha256": "b92498e66f38a826c2b5239e7c6dac779b0623151bbaf41e26a47af710cf4392"
+    },
+    "sources/scripts/replay_nt_retention.py": {
+      "source": "scripts/replay_nt_retention.py",
+      "sha256": "5677dcea82bbbcac32db7f704325b11fcda8c08ecb558151ed0986b578067603"
+    },
+    "sources/scripts/finalize_nt_retention.py": {
+      "source": "scripts/finalize_nt_retention.py",
+      "sha256": "367cd5e9250345946b1f37e30745588e5a90d85f8c64f10f1e9d154e48b2ec1b"
+    },
+    "sources/scripts/plot_nt_retention.py": {
+      "source": "scripts/plot_nt_retention.py",
+      "sha256": "f0b27900ebf0dc07869bca2bf405597a72395cfb3b6b94685d31a34c0070d1b9"
+    },
+    "sources/scripts/verify_nt_retention_local.py": {
+      "source": "scripts/verify_nt_retention_local.py",
+      "sha256": "3bbc10c39986c1f5b2d8c3b9e70d1aabbcd3b9e235ee6c8cc7de054024dc30f5"
+    },
+    "sources/scripts/collect_nt_retention_accounting.sh": {
+      "source": "scripts/collect_nt_retention_accounting.sh",
+      "sha256": "49e6dd0e3f6f0b16853f1d002b07ad7845421b4afcdfb4df7db1baf703b212ac"
+    },
+    "sources/scripts/summarize_nt_retention_cost.py": {
+      "source": "scripts/summarize_nt_retention_cost.py",
+      "sha256": "225ead935c9ff652cdc16ed224bebfe5bf5b175d647975febb25d512555d2c2a"
+    },
+    "sources/scripts/assemble_final_report.py": {
+      "source": "scripts/assemble_final_report.py",
+      "sha256": "ad7dab1f41f70c1d790109b0b4cf97e03c624dcce3b70ad9289b6b76eba19b23"
+    },
+    "sources/src/baculo_adapt/retention.py": {
+      "source": "src/baculo_adapt/retention.py",
+      "sha256": "5b03406c61b868912ab321eeab8c80d4b1132a9084d82a93b964ddb2b4970dde"
+    },
+    "sources/tests/test_retention.py": {
+      "source": "tests/test_retention.py",
+      "sha256": "60d5f01f14d99a12091f71e36ef0de7a9252f4027da6180fba21f56e28e67ac0"
+    },
+    "sources/pyproject.toml": {
+      "source": "pyproject.toml",
+      "sha256": "5d1b58bc75f57ba449cd80bd1eb2d6b5988cafa8675d22557fd0a9a5a7e3defa"
+    }
+  },
+  "files": {
+    "README.html": "8a68bd313155c1d928ab534c86d5c8815f39aca36e6cb04278588bd547724536",
+    "README.md": "431cc369a751b0b20d984104583f70ee19d6479c85d3de20636414b454253011",
+    "assembly-verification.json": "5e591c9be371cc285461f0967c78c9ef8ed2c075a002a3f441205d946436eec7",
+    "assets.html": "cb7eeec7d17026303addc21ab3c273329571e35278431a2a1ad5be148eed475b",
+    "assets.md": "eff484188bb8fd361c945576b1d0d8d146e4bd9852d8272e98b51bb1e7f69683",
+    "evidence/adaptation/analysis-manifest.json": "5a0a131ecd4d6d1b857b148dab0b3a04dd62ae2d9c58f3c76e077d0022f36b53",
+    "evidence/adaptation/analysis-verification.json": "0fa5349d1ddffccb2c0f6424e6615d772aa431c234571b3a4ff8b715dfb55efb",
+    "evidence/adaptation/execution.txt": "59e0b35613d65629f844a0ed4a27191d7b7199d11a3d07e29c6adc0839c0da0c",
+    "evidence/adaptation/interpretation.txt": "456928d3aa88d40cdd1221f7bdda3d97e9b7046f5083f25626b73f3483ca6981",
+    "evidence/adaptation/jobs-completed.psv": "c896cec564a96a5ca1d03c52d46a3e02d4e40097e030018a29007d272c250c05",
+    "evidence/adaptation/protocol.html": "ff95f809daaebc65b13a4ed628ff964f2a845529132e704afa43ac6f83869b5a",
+    "evidence/adaptation/protocol.md": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+    "evidence/adaptation/server-verification.json": "cb3232187e0e34d78ed85bc22a0457cc251044a9328dfdb4f6ae94078d9b580e",
+    "evidence/audits/cds-audit.txt": "fb77f96b57af2431e0c0b9b23605e73719544b27db4f7a61f3b8ab9fa45c7b15",
+    "evidence/audits/dataset-repair.txt": "31f82820ea958f824f9c019bb9252c08f5f957e2a4f4bad975ade14bcfe89571",
+    "evidence/audits/sampling-audit.json": "296aa7aabe693850d11a353c4827be2d450f3a1c115ce0201ba8f2733fb72a33",
+    "evidence/retention/compute-cost.html": "6ad177834d5e4b8763672c15369b3244bc905cedbffb4add0f5923fa76a090c0",
+    "evidence/retention/compute-cost.json": "c556833aebd0a9ad1446ae458f1997ec53a0ac03b14caec6b3e0e1815b41d414",
+    "evidence/retention/compute-cost.md": "9d359fc073d21409f7a8bd41dbb97b1575e38e5e3583ed08083907ff06525886",
+    "evidence/retention/dataset-audit.json": "22f51933b6a90bb42fa0346722e7f8eef083d257ae617106bd25c404285b72a7",
+    "evidence/retention/execution.txt": "caac2194bd91ec8581d8ff40279c7eb3d1fef986d4344db3851bc002349cb2c9",
+    "evidence/retention/fresh-replay.json": "0f45e6d7bc66fe437fc0360cb99b493d489150c13eb49fd38a57904c1193027d",
+    "evidence/retention/frozen-settings-before-test.json": "cc34d0839e769e68dffa552d2a80b5eb4756811333f920194c60b14b90fe4365",
+    "evidence/retention/interpretation.txt": "801a6b144a241d2aec252f28e4aa6d4f937a289b217ee39c3372104ba75eddb6",
+    "evidence/retention/jobs.psv": "19971b9fb029bce19646c48ebe9b3f56d343879d06bf7f6b1fb8ac8210a402ad",
+    "evidence/retention/local-verification.json": "22ab2a26a0e8516fcdb17833122deafb773178269387b7e99f65219e31313c0f",
+    "evidence/retention/pre-test-freeze-verification.json": "c6232a89dcbb1f267d13fc16e90e63cf92e7ce39d6c7525771a29b1b7165dd28",
+    "evidence/retention/protocol.html": "321e880ff0422b98fc0f5b0bc229d860740154cfd0239791134f0899fd3ef97e",
+    "evidence/retention/protocol.md": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5",
+    "evidence/retention/server-manifest.json": "0ef403f39c84093475e8dc835e7e0cbf8bda1e32df19463bea7463c556a7b386",
+    "evidence/retention/server-verification.json": "8d3b0dc8a8772fb45763b3e652f22070b684c473bad53409df98e38e0676060b",
+    "figures/figure-1-mlm.pdf": "50473faa8ed2b81f6d77eec0c5c6c51c80a6ecbdaa57ef3e5e7fffaaa2ff5a0e",
+    "figures/figure-1-mlm.png": "5ed9e158a17b20395bdc1f94831c31a49282adcf95f2aa90056c92e69fbe2cff",
+    "figures/figure-2-duration.pdf": "be67dcff6794d6bc7804ec632c78e02e38513783ffefbb8e2ae02460bdb6bbaa",
+    "figures/figure-2-duration.png": "19eb7d4501c2b6dc5658a7d40fd93be2506a48d1766f86f2168e811ea7d1dceb",
+    "figures/figure-3-effects.pdf": "627d7b8c2fc63cf6137764c2179d18d68a6886ca8ea08a89da97b81cf7dd6fdb",
+    "figures/figure-3-effects.png": "fe788c18a7eec7a5be376573d3674e34b812dbf8bb39b8334786c18527d3361e",
+    "figures/figure-4-families.pdf": "a64a9c18c639d41a1f074c13488d46895ea72c9e722770b9a75955acaa05a86c",
+    "figures/figure-4-families.png": "6cccb3642461e412e360e144e714344cab5a3c47e8206cff7ae6f8dd0fb399bd",
+    "figures/figure-5-tasks.pdf": "0db1227e82d82d19e830c3bc4f29b95802d5c1babdaa10c199bb3e5c9449e53c",
+    "figures/figure-5-tasks.png": "3e7c3cd44ced5368a6ab4e14ea2da5031d02f2bb73ea138bef40d70a3b7dc560",
+    "figures/figure-6-benefit-retention.pdf": "0ee135d412302a4e12e862e12999c192d046128179b0edbcefe54cf2f5e94b27",
+    "figures/figure-6-benefit-retention.png": "3daf7cfa1c3ee7a4d02e51b2adb4e4041b992ab3a628622289f70cd9ee83c289",
+    "figures/figure-S1-lora.pdf": "94f15ff90eb49033e191a81d640dc75a14661b210cad89c8492281d1d570caa6",
+    "figures/figure-S1-lora.png": "5b3082805cd454abe515d184cf5dc79b4221dfea08f7d8ffba1c4901c6e28942",
+    "report.html": "da229067cf70e332f02f1bd96c25196b9ea2a65e675b7b6616857fe7225298c7",
+    "report.md": "7525537926adf8b16617552e4f5d05b65ce77d8d028af74ca87389e95694a21e",
+    "reproducibility.html": "8c22f5b8eb85d1786387aa4f406066c17c465d7d8af0a70630cecd708f3ae7e3",
+    "reproducibility.md": "711e76bb358856427ac22bc4ab9295671c7270585cb47bcaefc0cd343ff54e79",
+    "sources/pyproject.toml": "5d1b58bc75f57ba449cd80bd1eb2d6b5988cafa8675d22557fd0a9a5a7e3defa",
+    "sources/scripts/assemble_final_report.py": "ad7dab1f41f70c1d790109b0b4cf97e03c624dcce3b70ad9289b6b76eba19b23",
+    "sources/scripts/collect_nt_retention_accounting.sh": "49e6dd0e3f6f0b16853f1d002b07ad7845421b4afcdfb4df7db1baf703b212ac",
+    "sources/scripts/evaluate_nt_retention.py": "b92498e66f38a826c2b5239e7c6dac779b0623151bbaf41e26a47af710cf4392",
+    "sources/scripts/extract_nt_retention.py": "3a30f90dc73311b2c06fd8796ee5b403fba90e25094e48a5a3693691d0eafe53",
+    "sources/scripts/finalize_nt_retention.py": "367cd5e9250345946b1f37e30745588e5a90d85f8c64f10f1e9d154e48b2ec1b",
+    "sources/scripts/interpret_adaptation_duration.py": "d7facab3c9ee341b035163e455fb68a5cb0294c7eed405419b4169c1f5267a85",
+    "sources/scripts/plot_nt_retention.py": "f0b27900ebf0dc07869bca2bf405597a72395cfb3b6b94685d31a34c0070d1b9",
+    "sources/scripts/prepare_nt_retention.py": "983348b6840ecc20a84c1c04378cf87f25b0c90653c956a4d4a95e2d6a32b116",
+    "sources/scripts/replay_nt_retention.py": "5677dcea82bbbcac32db7f704325b11fcda8c08ecb558151ed0986b578067603",
+    "sources/scripts/select_nt_retention.py": "da3c3b5bfbc7e582f209c22f324127ef8bbd2f8050a5fee28a3e459f7e445590",
+    "sources/scripts/summarize_adaptation_duration.py": "8d1a4cd2ad8e63d02e5de4c98cda4cc3fa9a4b5f0678301da8224520d05efe85",
+    "sources/scripts/summarize_nt_retention_cost.py": "225ead935c9ff652cdc16ed224bebfe5bf5b175d647975febb25d512555d2c2a",
+    "sources/scripts/verify_nt_retention_local.py": "3bbc10c39986c1f5b2d8c3b9e70d1aabbcd3b9e235ee6c8cc7de054024dc30f5",
+    "sources/src/baculo_adapt/retention.py": "5b03406c61b868912ab321eeab8c80d4b1132a9084d82a93b964ddb2b4970dde",
+    "sources/tests/test_retention.py": "60d5f01f14d99a12091f71e36ef0de7a9252f4027da6180fba21f56e28e67ac0",
+    "tables/adaptation-mlm-all-seeds.html": "ebdd7a4f9515215fd5b367a153c51165d860595000f1baa46dbe092a1e838758",
+    "tables/adaptation-mlm-all-seeds.md": "2d2a077b4d974deef1373c7b49606aa9d1ddd12f7bc952128bd4905b46d71f44",
+    "tables/adaptation-paired-effects.html": "e9435baaf4775a71c2055877b0ad3131ad7c01330e057e50706ba855323b8033",
+    "tables/adaptation-paired-effects.json": "d9d2ddeef528e65d6d83660084c006c9ae4f2a6b35f55bfebd7b58edc3cd122e",
+    "tables/adaptation-paired-effects.md": "4ff1f22b5cab42e121186a6938266cac2a1edf5a23d0d4062fca7622d01b35ad",
+    "tables/adaptation-readout-scores.csv": "f7d2ebc2c7950ece207a102801827534348e5599315d54a46bcdde3bec827428",
+    "tables/lora-resources.json": "e646d0a8090cf360ee386c773a87df39f0fde3b3c9ae2dfbb0fd3bc54540e444",
+    "tables/retention-paired-effects.html": "2d3689b496c25f863e6bf116122dca85796116dd3c280a7808ab6a31f04bab33",
+    "tables/retention-paired-effects.json": "8a4510ece9dbc7ba6b03672eaabb6bb5715b92fefa49193943271efc75113376",
+    "tables/retention-paired-effects.md": "ad8e1987b8d45c1b935bcd588fd59b7f143001d0b0ab383cd50271f694f0d3bd",
+    "tables/retention-scores.csv": "15e5dfa37ad2dc07ae044ee3c0916412044d8c74804d40c17a07f6e034cce8e7",
+    "tables/retention-summary.json": "7cffe51ab09eecba897c01954091733880de9fbd87dcee1f1db59fa87b8f6415",
+    "tables/retention-task-decisions.csv": "6a937bc7a769e4c6e80b88a13526a7880f441b590279161cb48be4bb0d8dd22f"
+  }
+}

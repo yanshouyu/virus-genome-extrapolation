@@ -1,0 +1,42 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>reproducibility — NT adaptation study</title><style>body{font:17px/1.65 Georgia,serif;color:#202a35;background:#f3f5f7;margin:0} main{max-width:1100px;margin:auto;background:white;padding:48px 5vw} h1,h2,h3{font-family:system-ui,sans-serif;line-height:1.23;color:#173b53} h1{font-size:34px} h2{margin-top:2em;border-top:1px solid #dce4e9;padding-top:22px} a{color:#116590} img{max-width:100%;height:auto} table{width:100%;border-collapse:collapse;font:14px/1.45 system-ui,sans-serif;margin:25px 0} th,td{padding:9px;border-bottom:1px solid #dce4e9;text-align:left} th{background:#edf3f7} code{overflow-wrap:anywhere;font-size:.85em} p,li{overflow-wrap:break-word} @media print{body{background:white}main{padding:0;max-width:none}h2,h3{break-after:avoid}img,table{break-inside:avoid}a{color:inherit}}</style><main><h1>Reproducibility and evidence index</h1>
+<p>This is a portable reporting package assembled from completed evidence on October 26, 2026. It contains no new training, feature extraction or test prediction. Scientific source state before assembly: commit <code>9b67df4</code>; adaptation interpretation: <code>f5c94dd</code>; retention implementation/freeze: <code>4bf23e2</code> and <code>6a40782</code>.</p>
+<h2>Verified results</h2>
+<ul>
+<li><a href="evidence/adaptation/analysis-verification.json">Adaptation independent verification</a>: 14 scientific runs, 59 readouts, replay tolerance and intervals.</li>
+<li><a href="evidence/adaptation/server-verification.json">Adaptation server verification</a> and <a href="evidence/adaptation/analysis-manifest.json">analysis manifest</a>.</li>
+<li><a href="evidence/retention/server-verification.json">Retention server verification</a>, <a href="evidence/retention/local-verification.json">local independent verification</a>, and <a href="evidence/retention/fresh-replay.json">fresh-process replay</a>: 126 readouts and all statistical bounds.</li>
+<li><a href="evidence/retention/server-manifest.json">Retention server manifest</a>, <a href="evidence/retention/dataset-audit.json">dataset audit</a>, <a href="evidence/retention/pre-test-freeze-verification.json">pre-test freeze</a>, and <a href="evidence/retention/frozen-settings-before-test.json">frozen settings</a>.</li>
+<li><a href="assets.html">Figures and all result tables</a>.</li>
+</ul>
+<h2>Protocol, execution and costs</h2>
+<ul>
+<li><a href="evidence/adaptation/protocol.html">Adaptation protocol</a>, <a href="evidence/adaptation/execution.txt">execution snapshot</a>, and <a href="evidence/adaptation/jobs-completed.psv">complete job accounting</a>.</li>
+<li><a href="evidence/retention/protocol.html">Retention protocol</a>, <a href="evidence/retention/execution.txt">execution snapshot</a>, <a href="evidence/retention/compute-cost.html">cost breakdown</a>, and <a href="evidence/retention/jobs.psv">UTC accounting</a>.</li>
+<li><a href="evidence/audits/dataset-repair.txt">Dataset repair</a>, <a href="evidence/audits/cds-audit.txt">CDS annotation audit</a>, and <a href="evidence/audits/sampling-audit.json">sampling audit</a>. These are historical audits; their test-coordinate inspection does not imply new test predictions.</li>
+<li>Original detailed interpretations: <a href="evidence/adaptation/interpretation.txt">adaptation</a> and <a href="evidence/retention/interpretation.txt">retention</a>. Plain-text snapshots preserve their original references to the full repository without treating those paths as portable package links.</li>
+</ul>
+<h2>Reproduction boundaries</h2>
+<p>The repository is <code>/home/s34yan/projects/260308_virus-genome-extrapolation</code> locally. Nibi's study root is <code>/project/6002642/shouyu/virus-genome-extrapolation</code>; large states and feature caches remain there under <code>runs/2026-10-24</code> and <code>runs/2026-10-25-retention</code>. Original manifests retain exact remote paths and hashes. They describe full scientific inputs, not paths guaranteed to exist within this portable reporting subset.</p>
+<p>Saved numerical summaries are in <code>tables/</code>. Full per-window probabilities, bootstrap weights and supporting evidence remain in the repository's <code>documents/retention-2026-10-25/results/</code>; adaptation raw readout evidence remains in <code>documents/adaptation-2026-10-24/results/</code>. Large weights, features, raw datasets and those prediction arrays are intentionally omitted from this review package. This package is an evidence index and source snapshot, not a self-contained rerun environment.</p>
+<p>From the full repository with the original saved inputs and existing analysis environment, the completed adaptation interpretation is reproduced by <code>scripts/interpret_adaptation_duration.py</code>; retention local replay uses <code>scripts/verify_nt_retention_local.py</code>. Read their input paths and existing execution records before running them. Neither is needed merely to open this report. Scripts for original preparation/extraction/evaluation are included for provenance, and are not rerun by this assembly.</p>
+<p>Selected source snapshots:</p>
+<ul>
+<li><a href="sources/scripts/interpret_adaptation_duration.py">interpret_adaptation_duration.py</a></li>
+<li><a href="sources/scripts/summarize_adaptation_duration.py">summarize_adaptation_duration.py</a></li>
+<li><a href="sources/scripts/prepare_nt_retention.py">prepare_nt_retention.py</a></li>
+<li><a href="sources/scripts/extract_nt_retention.py">extract_nt_retention.py</a></li>
+<li><a href="sources/scripts/select_nt_retention.py">select_nt_retention.py</a></li>
+<li><a href="sources/scripts/evaluate_nt_retention.py">evaluate_nt_retention.py</a></li>
+<li><a href="sources/scripts/replay_nt_retention.py">replay_nt_retention.py</a></li>
+<li><a href="sources/scripts/finalize_nt_retention.py">finalize_nt_retention.py</a></li>
+<li><a href="sources/scripts/plot_nt_retention.py">plot_nt_retention.py</a></li>
+<li><a href="sources/scripts/verify_nt_retention_local.py">verify_nt_retention_local.py</a></li>
+<li><a href="sources/scripts/collect_nt_retention_accounting.sh">collect_nt_retention_accounting.sh</a></li>
+<li><a href="sources/scripts/summarize_nt_retention_cost.py">summarize_nt_retention_cost.py</a></li>
+<li><a href="sources/scripts/assemble_final_report.py">assemble_final_report.py</a></li>
+</ul>
+<p><a href="sources/src/baculo_adapt/retention.py">Statistical helpers</a> · <a href="sources/tests/test_retention.py">Focused statistical tests</a> · <a href="sources/pyproject.toml">Project dependencies</a></p>
+<h2>Package integrity</h2>
+<p><a href="package-manifest.json">Manifest</a> records every copied artifact, original relative path and SHA-256. <a href="assembly-verification.json">Assembly verification</a> records local link, figure and key-result checks. Report rendering uses the existing markdown-it environment; no package installation is required.</p>
+<p><a href="report.html">Return to final report</a></p>
+</main></html>
