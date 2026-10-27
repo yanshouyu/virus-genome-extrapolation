@@ -120,6 +120,7 @@ def create(plan, package):
 
 def verify(receipt, check_source=True):
     result = json.loads(Path(receipt).read_text())
+    already_verified = result.get('verified', False)
     expected = {r['path']: r for r in result['entries']}
     found = set()
     target = Path(result['archive'])
@@ -161,7 +162,11 @@ def verify(receipt, check_source=True):
                 raise RuntimeError(f'Source changed: {entry["path"]}')
     result.update(verified=True, verified_utc=datetime.now(timezone.utc).isoformat(),
                   source_checked=check_source)
-    save(receipt, result)
+    if already_verified:
+        result['original_receipt_sha256'] = hashlib.sha256(Path(receipt).read_bytes()).hexdigest()
+        save(Path(receipt).with_name(Path(receipt).stem + '.reverification.json'), result)
+    else:
+        save(receipt, result)
     print(f'VERIFIED {target.name}: {len(found)} entries', flush=True)
     return result
 

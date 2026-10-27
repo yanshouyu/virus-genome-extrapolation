@@ -28,6 +28,8 @@ Historical Trainer checkpoints retain all existing model, head, optimizer, sched
 
 The completed controlled/duration adaptation programs saved selected weight dictionaries and LoRA adapters, not optimizer/scheduler/random-state snapshots. These support evaluation and warm starts using the pinned upstream model; they do not support exact interrupted-training resumption. All existing files and metadata are retained. Cached tokenizer, configuration, custom model code, and 16,462,217,726 bytes of upstream weights are included in the recovery package; access credentials are excluded. The upstream weights support reconstruction of LoRA adapters and pinned reference models without a future download. The [accessible checkpoint index](accessible-checkpoints.json) records the 14 endpoint weight hashes.
 
+Current environment inventories for local ece657d/cpen_14 and Nibi huggingface are preserved with the private recovery files. They accompany historical per-run metadata; they do not establish the versions of older runs that did not record their environments.
+
 ## Restore an experiment
 
 Locate the archive and member path in the JSON receipts. Check the tar's SHA-256 against its receipt before restoring. From the Nibi repository root:
@@ -47,6 +49,14 @@ git switch -c historical-adaptation ebc5fbb2edb4896bcbcf78e5960d9ed364230ce0
 
 The pre-cleanup bundle predates the new archive tags, so the command above uses the full preserved commit. Published archive tags remain available from GitHub.
 
+The archive tool can recheck a cold archive after originals have been removed:
+
+```bash
+python3 archive_project_artifacts.py archive-plan.json --verify-only --without-source
+```
+
+Run this from the Nibi archive-control folder. It reads every tar and writes separate reverification receipts, preserving the original verification receipts.
+
 ## Storage behavior
 
 Nearline is intended for inactive data. It may take more than 24 hours to create Nibi's initial tape copy, and small files/indexes are not backed up there. Detailed manifests and Git bundles therefore remain in project storage and locally; the compact index is versioned on GitHub. Tape migration status must be reported separately from successful archive verification.
@@ -58,6 +68,7 @@ Project originals are eligible for removal only after the corresponding archive 
 - [Regression suite](regression-tests.txt): 43 passed, two opt-in pretrained-weight tests skipped.
 - [Archive tool tests](archive-tool-tests.txt): 10 passed: restoration, symbolic/hard links, corruption detection, source mutation, path traversal, off-host receipt matching, tracked-file protection, and idempotent retirement.
 - [Report integrity](report-integrity.json): all 78 report files match their recorded hashes; all 88 local HTML links resolve.
+- [Checkpoint provenance](checkpoint-provenance-verification.json): all 82 endpoint/budget states match the hashes recorded in the completed studies.
 - No new training, feature extraction, model inference, or public model publication.
 
 ## Current execution status

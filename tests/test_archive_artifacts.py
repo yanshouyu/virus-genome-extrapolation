@@ -36,7 +36,10 @@ def test_roundtrip_and_replay_without_source(tmp_path):
     assert (restored / 'run/empty').is_dir()
     assert (restored / 'run/link').is_symlink()
     (Path(plan['source_root']) / 'run/state.json').unlink()
+    original_receipt = receipt.read_bytes()
     archive_tool.verify(receipt, check_source=False)
+    assert receipt.read_bytes() == original_receipt
+    assert receipt.with_name('run.reverification.json').is_file()
     with pytest.raises(RuntimeError, match='Source member set'):
         archive_tool.verify(receipt)
 
