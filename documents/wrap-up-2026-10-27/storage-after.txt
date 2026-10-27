@@ -1,0 +1,8 @@
+Captured UTC: 2026-10-27T16:43:36.564057+00:00
+                            Description                Space         # of files
+                    /home (user shouyu)        18GiB/  50GiB          19K/ 500K
+                 /scratch (user shouyu)         0  B/1024GiB           1 /1000K
+          /project (project def-aucoin)        29GiB/ 931GiB          71K/ 500K
+           /nearline (group def-aucoin)       518GiB/9537GiB          16 /1025
+--
+On some clusters, a break down per user may be available by adding the option '--per_user'.

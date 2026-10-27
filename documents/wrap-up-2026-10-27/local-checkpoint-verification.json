@@ -1,0 +1,375 @@
+{
+  "completed_utc": "2026-10-27T16:48:37.182767+00:00",
+  "selected_checkpoints": 14,
+  "model_support_files": 47,
+  "total_verified_bytes": 16700166371,
+  "all_original_source_hashes_match": true,
+  "files": [
+    {
+      "path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-full-baculo-seed42/selected_state.pt",
+      "bytes": 391703523,
+      "sha256": "697d72c6f00089ace85a8d0d5d52f2fc920245fc6c8825d0f42dec19c87f9e1d",
+      "kind": "selected_checkpoint"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-full-baculo-seed43/selected_state.pt",
+      "bytes": 391703523,
+      "sha256": "31b3db736fcd3699fe55ee335de9e7ffc34fab749895011ce53d94dfab40c9c6",
+      "kind": "selected_checkpoint"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-full-baculo-seed44/selected_state.pt",
+      "bytes": 391703523,
+      "sha256": "22c4d161c937b127994b144003fcfd8a9d36ffd1c3841bc7c1f0ceae9e451e29",
+      "kind": "selected_checkpoint"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-full-general-seed42/selected_state.pt",
+      "bytes": 391703523,
+      "sha256": "99dd8e2589bd133a42d138844ceb799cace7e1fbb26566db33bb24974bc79ff8",
+      "kind": "selected_checkpoint"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-full-general-seed43/selected_state.pt",
+      "bytes": 391703523,
+      "sha256": "3517d7e7d987cfe52c13ef4b786ae0eb18732c42500e776baf342ca0ff73666e",
+      "kind": "selected_checkpoint"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-full-general-seed44/selected_state.pt",
+      "bytes": 391703523,
+      "sha256": "b1cdcafe9421d93974989ced0ddd8dabd3097c6b9eb88a2d77a487a0c9a664ad",
+      "kind": "selected_checkpoint"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-lora-baculo-seed42/selected_state.pt",
+      "bytes": 1473219,
+      "sha256": "4b361bc29de83bb80464a933d2e1c2f02a7af5c752eed21cf8ccc88768319da5",
+      "kind": "selected_checkpoint"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-lora-general-seed42/selected_state.pt",
+      "bytes": 1473219,
+      "sha256": "b623245f3c76de7a80f41bd41ee576519b5cc97ff1fb65ae1752e95e360927d2",
+      "kind": "selected_checkpoint"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/500m-full-baculo-seed42/selected_state.pt",
+      "bytes": 1993575869,
+      "sha256": "59e3102f5eebfc451c774d19606461b030103bfe0153991fdbcf5e04820db9a8",
+      "kind": "selected_checkpoint"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/500m-full-baculo-seed43/selected_state.pt",
+      "bytes": 1993575869,
+      "sha256": "33c9c9c98bcd973d6698b1af7b04984e679561442d3b5180a62ce3e4e74cbd76",
+      "kind": "selected_checkpoint"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/500m-full-baculo-seed44/selected_state.pt",
+      "bytes": 1993575869,
+      "sha256": "2ec1d379a614d5f9a24b6caeb02af23f7e75fbd38574e221c96739993d7d56f6",
+      "kind": "selected_checkpoint"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/500m-full-general-seed42/selected_state.pt",
+      "bytes": 1993575869,
+      "sha256": "0cd4f04ff4d8f08521ac6aec1a4b70673e1443bc00be77cbda5a249165952bc8",
+      "kind": "selected_checkpoint"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/500m-full-general-seed43/selected_state.pt",
+      "bytes": 1993575869,
+      "sha256": "ee667d1347eb57e60cad7c495b1b5d5fbe6ee2ca54db3aeb33cd669bc07d05f7",
+      "kind": "selected_checkpoint"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/500m-full-general-seed44/selected_state.pt",
+      "bytes": 1993575869,
+      "sha256": "aa4f2eab1852c238b32b6d08320cb683352f0977c4c5706f013b195297c6733a",
+      "kind": "selected_checkpoint"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/datasets--InstaDeepAI--nucleotide_transformer_downstream_tasks_revised/.no_exist/851f9946252e90c665cdb3cc3eedb78f1f26197c/dataset_infos.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/datasets--InstaDeepAI--nucleotide_transformer_downstream_tasks_revised/.no_exist/851f9946252e90c665cdb3cc3eedb78f1f26197c/nucleotide_transformer_downstream_tasks_revised.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-2.5b-multi-species/.no_exist/b746b125aacd1b0970c05a32fd71ba726754542e/added_tokens.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-2.5b-multi-species/.no_exist/b746b125aacd1b0970c05a32fd71ba726754542e/model.safetensors.index.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-2.5b-multi-species/.no_exist/b746b125aacd1b0970c05a32fd71ba726754542e/tokenizer.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-2.5b-multi-species/snapshots/577c8ce5141a559a269deb007cb34773c9c23b52/model.safetensors.index.json",
+      "bytes": 48150,
+      "sha256": "0427ebe834f21fca34bd3f5537295561e62fe814b1aabdee272d102afae3dafa",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-2.5b-multi-species/snapshots/b746b125aacd1b0970c05a32fd71ba726754542e/config.json",
+      "bytes": 707,
+      "sha256": "7d003a6f278562634e87e63a51a1c2c685dc495c35e16cc309e6a5d912954988",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-2.5b-multi-species/snapshots/b746b125aacd1b0970c05a32fd71ba726754542e/pytorch_model.bin.index.json",
+      "bytes": 46039,
+      "sha256": "71088b187400fee5eec7f6e866d77d22fcd1dd38b930b1359e22d3fd0e284203",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-2.5b-multi-species/snapshots/b746b125aacd1b0970c05a32fd71ba726754542e/special_tokens_map.json",
+      "bytes": 101,
+      "sha256": "d6dc30bf018166daab248b0abf7efda6fd1b1e0a2d1bee5b31b23db2ebdaee77",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-2.5b-multi-species/snapshots/b746b125aacd1b0970c05a32fd71ba726754542e/tokenizer_config.json",
+      "bytes": 129,
+      "sha256": "e516a38aaf16ce0e84ce178e5f23b98f8b9993bea1a0e2166326efb4e8440214",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-2.5b-multi-species/snapshots/b746b125aacd1b0970c05a32fd71ba726754542e/vocab.txt",
+      "bytes": 28718,
+      "sha256": "f1b544e27897936b50bbd925850fa8a08b421c33bb9c26e3711c140c061d0d4c",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-500m-human-ref/.no_exist/f87b5d7233295242e79c951873d290f4cf992045/added_tokens.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-500m-human-ref/.no_exist/f87b5d7233295242e79c951873d290f4cf992045/model.safetensors.index.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-500m-human-ref/.no_exist/f87b5d7233295242e79c951873d290f4cf992045/tokenizer.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-500m-human-ref/snapshots/f87b5d7233295242e79c951873d290f4cf992045/config.json",
+      "bytes": 706,
+      "sha256": "715b4de1c0a3c36ee417cde99640876e024c25afe50c85427ea0317559350cdb",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-500m-human-ref/snapshots/f87b5d7233295242e79c951873d290f4cf992045/special_tokens_map.json",
+      "bytes": 101,
+      "sha256": "d6dc30bf018166daab248b0abf7efda6fd1b1e0a2d1bee5b31b23db2ebdaee77",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-500m-human-ref/snapshots/f87b5d7233295242e79c951873d290f4cf992045/tokenizer_config.json",
+      "bytes": 129,
+      "sha256": "e516a38aaf16ce0e84ce178e5f23b98f8b9993bea1a0e2166326efb4e8440214",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-500m-human-ref/snapshots/f87b5d7233295242e79c951873d290f4cf992045/vocab.txt",
+      "bytes": 28718,
+      "sha256": "f1b544e27897936b50bbd925850fa8a08b421c33bb9c26e3711c140c061d0d4c",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-v2-100m-multi-species/snapshots/f34324c6fde36a4f635f0f1f06cac5d25acd6798/config.json",
+      "bytes": 1064,
+      "sha256": "82399c099aaacdc69e1a3dcdb95e62ff5523a0f9b46cfc5bd960f4c7dc390b29",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-v2-100m-multi-species/snapshots/f34324c6fde36a4f635f0f1f06cac5d25acd6798/esm_config.py",
+      "bytes": 14876,
+      "sha256": "a44e859baa08465ecdcd76b0a73f6e4fe011245a212931c403de1149ae9613ec",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-v2-100m-multi-species/snapshots/f34324c6fde36a4f635f0f1f06cac5d25acd6798/modeling_esm.py",
+      "bytes": 58205,
+      "sha256": "f2b003f45d2fa4f94e92d8bbef927b719dfdd7ab7c7a95743daa2b10ab140cb3",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-v2-100m-multi-species/snapshots/f34324c6fde36a4f635f0f1f06cac5d25acd6798/special_tokens_map.json",
+      "bytes": 101,
+      "sha256": "d6dc30bf018166daab248b0abf7efda6fd1b1e0a2d1bee5b31b23db2ebdaee77",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-v2-100m-multi-species/snapshots/f34324c6fde36a4f635f0f1f06cac5d25acd6798/tokenizer_config.json",
+      "bytes": 129,
+      "sha256": "253d338919eba938e50b776f3243cc739462c207fe64e3d2e81cc5e681bee45b",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-v2-100m-multi-species/snapshots/f34324c6fde36a4f635f0f1f06cac5d25acd6798/vocab.txt",
+      "bytes": 28718,
+      "sha256": "c00e0ad166d6ab3f7540ebc92270392e581bb3106763412f29034b49323e1052",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-v2-100m-multi-species/snapshots/f34324c6fde36a4f635f0f1f06cac5d25acd6798/jax_model/hyperparams.json",
+      "bytes": 659,
+      "sha256": "456b0e6dba82b0ea2cd86f463f1f5421ad7db9c9bacc46ba83b336b0a0e56b54",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-v2-500m-multi-species/.no_exist/06615c1660c892fc199840c18123f8385b3542a8/added_tokens.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-v2-500m-multi-species/.no_exist/06615c1660c892fc199840c18123f8385b3542a8/tokenizer.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-v2-500m-multi-species/snapshots/06615c1660c892fc199840c18123f8385b3542a8/config.json",
+      "bytes": 1065,
+      "sha256": "27e19a9e3fbba65b933bde793b503734744b5c6e376c74dcd1cb7317876efab8",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-v2-500m-multi-species/snapshots/06615c1660c892fc199840c18123f8385b3542a8/esm_config.py",
+      "bytes": 14876,
+      "sha256": "a44e859baa08465ecdcd76b0a73f6e4fe011245a212931c403de1149ae9613ec",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-v2-500m-multi-species/snapshots/06615c1660c892fc199840c18123f8385b3542a8/modeling_esm.py",
+      "bytes": 58205,
+      "sha256": "f2b003f45d2fa4f94e92d8bbef927b719dfdd7ab7c7a95743daa2b10ab140cb3",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-v2-500m-multi-species/snapshots/06615c1660c892fc199840c18123f8385b3542a8/special_tokens_map.json",
+      "bytes": 101,
+      "sha256": "d6dc30bf018166daab248b0abf7efda6fd1b1e0a2d1bee5b31b23db2ebdaee77",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-v2-500m-multi-species/snapshots/06615c1660c892fc199840c18123f8385b3542a8/tokenizer_config.json",
+      "bytes": 129,
+      "sha256": "253d338919eba938e50b776f3243cc739462c207fe64e3d2e81cc5e681bee45b",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-v2-500m-multi-species/snapshots/06615c1660c892fc199840c18123f8385b3542a8/vocab.txt",
+      "bytes": 28718,
+      "sha256": "c00e0ad166d6ab3f7540ebc92270392e581bb3106763412f29034b49323e1052",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-v2-500m-multi-species/snapshots/06615c1660c892fc199840c18123f8385b3542a8/jax_model/hyperparams.json",
+      "bytes": 573,
+      "sha256": "ac1806bd50a95a3a3472186cb89d1094dde52e3d17686b1e98ba16ed7fe066e6",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/modules/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/modules/transformers_modules/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/modules/transformers_modules/InstaDeepAI/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/modules/transformers_modules/InstaDeepAI/nucleotide_hyphen_transformer_hyphen_v2_hyphen_100m_hyphen_multi_hyphen_species/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/modules/transformers_modules/InstaDeepAI/nucleotide_hyphen_transformer_hyphen_v2_hyphen_100m_hyphen_multi_hyphen_species/f34324c6fde36a4f635f0f1f06cac5d25acd6798/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/modules/transformers_modules/InstaDeepAI/nucleotide_hyphen_transformer_hyphen_v2_hyphen_100m_hyphen_multi_hyphen_species/f34324c6fde36a4f635f0f1f06cac5d25acd6798/esm_config.py",
+      "bytes": 14876,
+      "sha256": "a44e859baa08465ecdcd76b0a73f6e4fe011245a212931c403de1149ae9613ec",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/modules/transformers_modules/InstaDeepAI/nucleotide_hyphen_transformer_hyphen_v2_hyphen_100m_hyphen_multi_hyphen_species/f34324c6fde36a4f635f0f1f06cac5d25acd6798/modeling_esm.py",
+      "bytes": 58205,
+      "sha256": "f2b003f45d2fa4f94e92d8bbef927b719dfdd7ab7c7a95743daa2b10ab140cb3",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/modules/transformers_modules/InstaDeepAI/nucleotide_hyphen_transformer_hyphen_v2_hyphen_500m_hyphen_multi_hyphen_species/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/modules/transformers_modules/InstaDeepAI/nucleotide_hyphen_transformer_hyphen_v2_hyphen_500m_hyphen_multi_hyphen_species/06615c1660c892fc199840c18123f8385b3542a8/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/modules/transformers_modules/InstaDeepAI/nucleotide_hyphen_transformer_hyphen_v2_hyphen_500m_hyphen_multi_hyphen_species/06615c1660c892fc199840c18123f8385b3542a8/esm_config.py",
+      "bytes": 14876,
+      "sha256": "a44e859baa08465ecdcd76b0a73f6e4fe011245a212931c403de1149ae9613ec",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/modules/transformers_modules/InstaDeepAI/nucleotide_hyphen_transformer_hyphen_v2_hyphen_500m_hyphen_multi_hyphen_species/06615c1660c892fc199840c18123f8385b3542a8/modeling_esm.py",
+      "bytes": 58555,
+      "sha256": "5add25b9840a7e2ea44750b2c07aa04180c3cab7c48ca827e6cae343858739c3",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-v2-100m-multi-species/snapshots/f34324c6fde36a4f635f0f1f06cac5d25acd6798/model.safetensors",
+      "bytes": 391597600,
+      "sha256": "60d5fe10281f7bf0436e990a55a3cf635eeabaf63b0e3ca4dc73838264d329b8",
+      "kind": "model_support"
+    },
+    {
+      "path": "archives/2026-10-27-wrap-up/model-support/hub/models--InstaDeepAI--nucleotide-transformer-v2-500m-multi-species/snapshots/06615c1660c892fc199840c18123f8385b3542a8/model.safetensors",
+      "bytes": 1993438552,
+      "sha256": "7a00ffaaf8f3ca627741a61e568d7e550b5c79aada70c76c8cb861192fbe7c59",
+      "kind": "model_support"
+    }
+  ]
+}

@@ -8,7 +8,8 @@
       "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
       "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
     },
-    "exact_training_resume": false
+    "exact_training_resume": false,
+    "local_path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-full-baculo-seed42/selected_state.pt"
   },
   {
     "run": "100m-full-baculo-seed43",
@@ -19,7 +20,8 @@
       "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
       "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
     },
-    "exact_training_resume": false
+    "exact_training_resume": false,
+    "local_path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-full-baculo-seed43/selected_state.pt"
   },
   {
     "run": "100m-full-baculo-seed44",
@@ -30,7 +32,8 @@
       "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
       "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
     },
-    "exact_training_resume": false
+    "exact_training_resume": false,
+    "local_path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-full-baculo-seed44/selected_state.pt"
   },
   {
     "run": "100m-full-general-seed42",
@@ -41,7 +44,8 @@
       "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
       "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
     },
-    "exact_training_resume": false
+    "exact_training_resume": false,
+    "local_path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-full-general-seed42/selected_state.pt"
   },
   {
     "run": "100m-full-general-seed43",
@@ -52,7 +56,8 @@
       "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
       "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
     },
-    "exact_training_resume": false
+    "exact_training_resume": false,
+    "local_path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-full-general-seed43/selected_state.pt"
   },
   {
     "run": "100m-full-general-seed44",
@@ -63,7 +68,8 @@
       "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
       "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
     },
-    "exact_training_resume": false
+    "exact_training_resume": false,
+    "local_path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-full-general-seed44/selected_state.pt"
   },
   {
     "run": "100m-lora-baculo-seed42",
@@ -74,7 +80,8 @@
       "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
       "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
     },
-    "exact_training_resume": false
+    "exact_training_resume": false,
+    "local_path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-lora-baculo-seed42/selected_state.pt"
   },
   {
     "run": "100m-lora-general-seed42",
@@ -85,7 +92,8 @@
       "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
       "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
     },
-    "exact_training_resume": false
+    "exact_training_resume": false,
+    "local_path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/100m-lora-general-seed42/selected_state.pt"
   },
   {
     "run": "500m-full-baculo-seed42",
@@ -96,7 +104,8 @@
       "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
       "revision": "06615c1660c892fc199840c18123f8385b3542a8"
     },
-    "exact_training_resume": false
+    "exact_training_resume": false,
+    "local_path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/500m-full-baculo-seed42/selected_state.pt"
   },
   {
     "run": "500m-full-baculo-seed43",
@@ -107,7 +116,8 @@
       "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
       "revision": "06615c1660c892fc199840c18123f8385b3542a8"
     },
-    "exact_training_resume": false
+    "exact_training_resume": false,
+    "local_path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/500m-full-baculo-seed43/selected_state.pt"
   },
   {
     "run": "500m-full-baculo-seed44",
@@ -118,7 +128,8 @@
       "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
       "revision": "06615c1660c892fc199840c18123f8385b3542a8"
     },
-    "exact_training_resume": false
+    "exact_training_resume": false,
+    "local_path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/500m-full-baculo-seed44/selected_state.pt"
   },
   {
     "run": "500m-full-general-seed42",
@@ -129,7 +140,8 @@
       "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
       "revision": "06615c1660c892fc199840c18123f8385b3542a8"
     },
-    "exact_training_resume": false
+    "exact_training_resume": false,
+    "local_path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/500m-full-general-seed42/selected_state.pt"
   },
   {
     "run": "500m-full-general-seed43",
@@ -140,7 +152,8 @@
       "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
       "revision": "06615c1660c892fc199840c18123f8385b3542a8"
     },
-    "exact_training_resume": false
+    "exact_training_resume": false,
+    "local_path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/500m-full-general-seed43/selected_state.pt"
   },
   {
     "run": "500m-full-general-seed44",
@@ -151,6 +164,7 @@
       "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
       "revision": "06615c1660c892fc199840c18123f8385b3542a8"
     },
-    "exact_training_resume": false
+    "exact_training_resume": false,
+    "local_path": "archives/2026-10-27-wrap-up/checkpoints/2026-10-24/500m-full-general-seed44/selected_state.pt"
   }
 ]

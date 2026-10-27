@@ -1,13 +1,13 @@
 # Project wrap-up — October 27, 2026
 
-The completed scientific work is being consolidated onto `main`. The portable final report remains unchanged; its 78 package files and 88 HTML links were checked again without training or model inference.
+The completed scientific work has been consolidated onto `main`. The portable final report remains unchanged; its 78 package files and 88 HTML links were checked again without training or model inference.
 
 ## Recovery locations
 
 - Nibi bulk archives: `/nearline/6002642/shouyu/virus-genome-extrapolation/2026-10-27-wrap-up/experiments/`.
 - Nibi archive control, inventories, per-file SHA-256 manifests, Git bundles, unique scripts, and verification logs: `/project/6002642/shouyu/virus-genome-extrapolation-archive/2026-10-27-wrap-up/`.
 - Readily accessible selected adaptation weights: the control folder's `checkpoints/2026-10-24/` subtree.
-- Local recovery files: ignored `archives/2026-10-27-wrap-up/`, including the local ignored-file tar, pre-cleanup Git bundles from both machines, and receipt copies.
+- Local recovery files: ignored `archives/2026-10-27-wrap-up/`, including the local ignored-file tar, pre-cleanup Git bundles from both machines, receipt copies, 14 selected checkpoint copies, and the cache needed to load those selected models offline.
 - Published branch recovery points: [branch-archive.json](branch-archive.json).
 
 The initial 171 GiB estimate covered only dated runs. The full inventory also found roughly 334 GiB of historical trainer directories. All historical trainer checkpoints are included in the preservation scope. Tar hard links preserve shared adaptation weight files without duplicating their contents. Uncompressed archives avoid recompressing model and array files; actual sizes and verification status are recorded in the manifests.
@@ -36,6 +36,21 @@ Locate the archive and member path in the JSON receipts. Check the tar's SHA-256
 
 ```bash
 tar -xf /nearline/6002642/shouyu/virus-genome-extrapolation/2026-10-27-wrap-up/experiments/experiment-2026-10-24.tar runs/2026-10-24
+```
+
+The compact local analysis inputs retain their original collected/ layout in the local recovery tar. From the local WSL repository root, restore the dated inputs with:
+
+```bash
+tar -xf archives/2026-10-27-wrap-up/payload/local-ignored-artifacts.tar --wildcards 'runs/2026-*'
+```
+
+The local tar's detailed original manifest is also retained under the Nibi control folder's manifests/local/ directory.
+
+For an offline model rebuild, restore the cached upstream models and custom code from the combined archive, then point Hugging Face at that cache:
+
+```bash
+tar -xf /nearline/6002642/shouyu/virus-genome-extrapolation/2026-10-27-wrap-up/experiments/baseline-and-recovery.tar archives/2026-10-27-wrap-up/model-support
+export HF_HOME="$PWD/archives/2026-10-27-wrap-up/model-support"
 ```
 
 Use an empty destination when testing recovery to avoid overwriting working files. Member paths preserve the original repository-relative layout. The combined `baseline-and-recovery.tar` also contains the copied local tar and pre-cleanup bundles under `archives/2026-10-27-wrap-up/`. The local tar has its own manifest and original local repository-relative paths.
@@ -68,10 +83,18 @@ Project originals are eligible for removal only after the corresponding archive 
 - [Regression suite](regression-tests.txt): 43 passed, two opt-in pretrained-weight tests skipped.
 - [Archive tool tests](archive-tool-tests.txt): 10 passed: restoration, symbolic/hard links, corruption detection, source mutation, path traversal, off-host receipt matching, tracked-file protection, and idempotent retirement.
 - [Report integrity](report-integrity.json): all 78 report files match their recorded hashes; all 88 local HTML links resolve.
+- [Standard tar restoration](restore-smoke.json): archived model provenance restored with the expected checksum.
 - [Checkpoint provenance](checkpoint-provenance-verification.json): all 82 endpoint/budget states match the hashes recorded in the completed studies.
-- No new training, feature extraction, model inference, or public model publication.
+- No new scientific training, feature extraction, benchmark inference, or public model publication.
 
-## Current execution status
+## Completion
 
-Both checkouts and GitHub are on main; the four stale branches have been retired with published recovery tags. Bulk archiving and independent verification are in progress. Final package sizes and cleanup receipts will be recorded here after completion.
+Both checkouts and GitHub are on main; the four stale branches have been retired with published recovery tags. All 11 archive packages have been independently verified and their receipts saved locally before the corresponding Nibi originals were retired. The [archive catalog](archive-catalog.json) records exact destinations, sizes, checksums, source paths, and completion times. The archived payload totals 517.54 GiB (555.71 GB). The 14 selected endpoint checkpoints remain accessible in project storage. Tape migration is tracked separately in [tape-status.json](tape-status.json): 5 of 11 tape copies were confirmed at 2026-10-27T16:51:27.070867+00:00.
 
+The [final quota report](storage-after.txt) records project usage falling from 515 to 29 GiB, approximately 486 GiB (522 GB) reclaimed, and nearline usage of 518 GiB. The archive-file payload itself is 555,706,746,880 bytes.
+
+The [independent local checkpoint copy](local-checkpoint-verification.json) contains 14 selected states and 47 model-support files (16.70 GB), all matching their original hashes. The full upstream cache, including historical reference models, remains in the combined nearline archive. The selected states also remain directly accessible in Nibi project storage.
+
+The [local cleanup receipt](local-cleanup.json) records 2.29 GB of unchanged bulky originals retired after verifying both recovery copies. Small local working datasets, editor settings, and notebook notes remain available with archived snapshots.
+
+Final Git recovery bundles are stored under the control folder’s git/ directory and the local recovery folder’s git/ directory: repository-final.bundle and nibi-final.bundle. Their standalone restore/object checks and SHA-256 values are recorded in git-bundle-verification.json beside those bundles.
