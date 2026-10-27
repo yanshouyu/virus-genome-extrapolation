@@ -54,3 +54,7 @@ nbstripout --install
 ```
 
 The [October 23 multispecies adaptation study](documents/adaptation-2026-10-23/README.md) reports the verified 100M/500M paired corpus experiments, uncertainty, compute costs, and an exploratory frozen 2.5B multispecies reference. These are validation-only results; the study did not generate new test predictions.
+
+## Archive and recovery
+
+The [October 27 wrap-up index](documents/wrap-up-2026-10-27/README.md) records branch recovery tags, checkpoint guarantees, archive destinations, and how to restore inputs to their original paths. Historical reports retain the original run paths for provenance.
