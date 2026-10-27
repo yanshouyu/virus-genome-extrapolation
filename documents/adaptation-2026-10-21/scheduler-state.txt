@@ -1,0 +1,12 @@
+            JOBID     USER              ACCOUNT           NAME  ST  TIME_LEFT NODES CPUS TRES_PER_N MIN_MEM NODELIST (REASON)
+         24757107   shouyu       def-aucoin_gpu   baculo-adapt  PD      15:00     1    4        N/A     32G  (PartitionDown)
+         24757108   shouyu       def-aucoin_gpu   baculo-adapt  PD      15:00     1    4        N/A     32G  (PartitionDown)
+down
+941b0822a71a7bebcc8675af0264715aa27ace8db07cb3be4482a4a3f3abffc4  runs/2026-10-21/corpus/baculo_train.jsonl
+9f9641f34f6db2166955797c040b82e696467b14c99f41ef0ee0c93409dc2750  runs/2026-10-21/corpus/baculo_validation.jsonl
+6ceb8e08eee7fa0e6e8d061edf50ba308401a0ed1d8e4943427a57606dc57bcd  runs/2026-10-21/corpus/general_train.jsonl
+d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761  runs/2026-10-21/corpus/mlm_validation.jsonl
+JobID|State|Reason|Elapsed|ExitCode
+24757086|CANCELLED by 3157367|None|00:00:00|0:0
+24757107|PENDING|None|00:00:00|0:0
+24757108|PENDING|None|00:00:00|0:0

@@ -1,0 +1,19 @@
+{
+  "model_dir": "/home/shouyu/.cache/huggingface/hub/models--InstaDeepAI--nucleotide-transformer-2.5b-multi-species/snapshots/b746b125aacd1b0970c05a32fd71ba726754542e",
+  "input_nt": 6000,
+  "position_embedding_type": "absolute",
+  "position_embedding_rows": 1002,
+  "tokenizer_model_max_length": 1000,
+  "legacy_padded_tokens": 1026,
+  "legacy_nonpad_tokens": 1001,
+  "max_position_id": 1002,
+  "legacy_error": "index out of range in self",
+  "safe_nonpad_token_budget": 1000,
+  "corrected_shape": [
+    1,
+    1000,
+    8
+  ],
+  "corrected_forward_finite": true,
+  "scope": "CPU positional embeddings only; no pretrained weights or adaptation training"
+}

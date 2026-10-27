@@ -1,0 +1,12 @@
+................ss...............                                        [100%]
+=============================== warnings summary ===============================
+tests/test_training.py::test_selection_never_tracks_an_unsaved_validation_candidate
+tests/test_training.py::test_selection_never_tracks_an_unsaved_validation_candidate
+tests/test_training.py::test_synthetic_training_selects_validation_and_predicts_test_once
+tests/test_training.py::test_synthetic_training_selects_validation_and_predicts_test_once
+tests/test_training.py::test_synthetic_training_selects_validation_and_predicts_test_once
+  /home/s34yan/miniconda3/envs/ece657d/lib/python3.14/site-packages/torch/utils/data/dataloader.py:668: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+    warnings.warn(warn_msg)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+31 passed, 2 skipped, 5 warnings in 26.52s

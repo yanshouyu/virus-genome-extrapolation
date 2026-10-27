@@ -1,0 +1,989 @@
+{
+  "repo": "InstaDeepAI/nucleotide_transformer_downstream_tasks_revised",
+  "revision": "851f9946252e90c665cdb3cc3eedb78f1f26197c",
+  "tasks": {
+    "H2AFZ": {
+      "train": {
+        "rows": 30000,
+        "unique_sequences": 29853,
+        "class_counts": {
+          "0": 15003,
+          "1": 14997
+        },
+        "chromosome_counts": {
+          "chr8": 1456,
+          "chr12": 1522,
+          "chr1": 2862,
+          "chr17": 1099,
+          "chr13": 830,
+          "chr9": 1146,
+          "chr18": 739,
+          "chr6": 2017,
+          "chr16": 924,
+          "chr2": 2657,
+          "chr14": 884,
+          "chr5": 1772,
+          "chr19": 869,
+          "chr7": 1776,
+          "chr3": 2174,
+          "chrY": 169,
+          "chrX": 1303,
+          "chr10": 1417,
+          "chr11": 1608,
+          "chr4": 1846,
+          "chr15": 930
+        },
+        "length_counts": {
+          "1000": 30000
+        }
+      },
+      "test": {
+        "rows": 3000,
+        "unique_sequences": 2960,
+        "class_counts": {
+          "0": 1506,
+          "1": 1494
+        },
+        "chromosome_counts": {
+          "chr20": 1858,
+          "chr21": 1142
+        },
+        "length_counts": {
+          "1000": 3000
+        }
+      },
+      "shared_chromosomes": [],
+      "test_windows_overlapping_train": 0,
+      "shared_exact_or_rc_sequences": 0
+    },
+    "H3K27ac": {
+      "train": {
+        "rows": 30000,
+        "unique_sequences": 29885,
+        "class_counts": {
+          "0": 14995,
+          "1": 15005
+        },
+        "chromosome_counts": {
+          "chr6": 1841,
+          "chr10": 1480,
+          "chr12": 1571,
+          "chr2": 2446,
+          "chr17": 1285,
+          "chr9": 1300,
+          "chr3": 2038,
+          "chr5": 1716,
+          "chrX": 1293,
+          "chr19": 1163,
+          "chr7": 1627,
+          "chr14": 910,
+          "chr11": 1613,
+          "chr1": 2895,
+          "chr15": 969,
+          "chr4": 1701,
+          "chr16": 1051,
+          "chr8": 1453,
+          "chr18": 669,
+          "chr13": 794,
+          "chrY": 185
+        },
+        "length_counts": {
+          "1000": 30000
+        }
+      },
+      "test": {
+        "rows": 1616,
+        "unique_sequences": 1605,
+        "class_counts": {
+          "1": 808,
+          "0": 808
+        },
+        "chromosome_counts": {
+          "chr20": 1052,
+          "chr21": 564
+        },
+        "length_counts": {
+          "1000": 1616
+        }
+      },
+      "shared_chromosomes": [],
+      "test_windows_overlapping_train": 0,
+      "shared_exact_or_rc_sequences": 0
+    },
+    "H3K27me3": {
+      "train": {
+        "rows": 30000,
+        "unique_sequences": 29871,
+        "class_counts": {
+          "1": 14901,
+          "0": 15099
+        },
+        "chromosome_counts": {
+          "chr12": 1325,
+          "chr1": 3269,
+          "chr4": 1627,
+          "chr3": 1848,
+          "chr7": 2066,
+          "chr11": 1580,
+          "chr13": 698,
+          "chr10": 1495,
+          "chrX": 956,
+          "chr2": 2529,
+          "chr5": 1949,
+          "chr9": 1161,
+          "chr6": 2243,
+          "chr18": 778,
+          "chr15": 1081,
+          "chr19": 733,
+          "chr16": 1170,
+          "chr8": 1529,
+          "chrY": 167,
+          "chr14": 647,
+          "chr17": 1149
+        },
+        "length_counts": {
+          "1000": 30000
+        }
+      },
+      "test": {
+        "rows": 3000,
+        "unique_sequences": 2947,
+        "class_counts": {
+          "1": 1493,
+          "0": 1507
+        },
+        "chromosome_counts": {
+          "chr20": 1759,
+          "chr21": 1241
+        },
+        "length_counts": {
+          "1000": 3000
+        }
+      },
+      "shared_chromosomes": [],
+      "test_windows_overlapping_train": 0,
+      "shared_exact_or_rc_sequences": 0
+    },
+    "H3K36me3": {
+      "train": {
+        "rows": 30000,
+        "unique_sequences": 29885,
+        "class_counts": {
+          "0": 15074,
+          "1": 14926
+        },
+        "chromosome_counts": {
+          "chr7": 1813,
+          "chrX": 1069,
+          "chr16": 1405,
+          "chr4": 1492,
+          "chr8": 1287,
+          "chr1": 3117,
+          "chr9": 1370,
+          "chr17": 1465,
+          "chr15": 998,
+          "chr12": 1470,
+          "chr3": 1921,
+          "chr11": 1656,
+          "chr19": 1429,
+          "chr6": 1723,
+          "chr5": 1802,
+          "chr2": 2319,
+          "chr14": 799,
+          "chr10": 1310,
+          "chr13": 684,
+          "chrY": 179,
+          "chr18": 692
+        },
+        "length_counts": {
+          "1000": 30000
+        }
+      },
+      "test": {
+        "rows": 3000,
+        "unique_sequences": 2960,
+        "class_counts": {
+          "0": 1494,
+          "1": 1506
+        },
+        "chromosome_counts": {
+          "chr20": 1921,
+          "chr21": 1079
+        },
+        "length_counts": {
+          "1000": 3000
+        }
+      },
+      "shared_chromosomes": [],
+      "test_windows_overlapping_train": 0,
+      "shared_exact_or_rc_sequences": 0
+    },
+    "H3K4me1": {
+      "train": {
+        "rows": 30000,
+        "unique_sequences": 29877,
+        "class_counts": {
+          "1": 14980,
+          "0": 15020
+        },
+        "chromosome_counts": {
+          "chr12": 1550,
+          "chr3": 2199,
+          "chr17": 1153,
+          "chr5": 1749,
+          "chr7": 1598,
+          "chr8": 1476,
+          "chr13": 817,
+          "chr1": 2823,
+          "chr2": 2549,
+          "chr15": 980,
+          "chrX": 1269,
+          "chr19": 1024,
+          "chr9": 1243,
+          "chr18": 760,
+          "chr6": 1932,
+          "chr11": 1654,
+          "chr16": 1029,
+          "chr4": 1652,
+          "chr10": 1446,
+          "chrY": 162,
+          "chr14": 935
+        },
+        "length_counts": {
+          "1000": 30000
+        }
+      },
+      "test": {
+        "rows": 3000,
+        "unique_sequences": 2967,
+        "class_counts": {
+          "0": 1495,
+          "1": 1505
+        },
+        "chromosome_counts": {
+          "chr21": 1039,
+          "chr20": 1961
+        },
+        "length_counts": {
+          "1000": 3000
+        }
+      },
+      "shared_chromosomes": [],
+      "test_windows_overlapping_train": 0,
+      "shared_exact_or_rc_sequences": 0
+    },
+    "H3K4me2": {
+      "train": {
+        "rows": 30000,
+        "unique_sequences": 29898,
+        "class_counts": {
+          "1": 15036,
+          "0": 14964
+        },
+        "chromosome_counts": {
+          "chr11": 1545,
+          "chr1": 2854,
+          "chr14": 928,
+          "chr4": 1619,
+          "chr5": 1750,
+          "chrX": 1313,
+          "chr18": 725,
+          "chr8": 1450,
+          "chr6": 1900,
+          "chr3": 2080,
+          "chr15": 952,
+          "chr9": 1255,
+          "chr2": 2565,
+          "chr10": 1570,
+          "chr19": 1062,
+          "chr12": 1479,
+          "chr7": 1753,
+          "chr17": 1169,
+          "chr16": 1027,
+          "chr13": 836,
+          "chrY": 168
+        },
+        "length_counts": {
+          "1000": 30000
+        }
+      },
+      "test": {
+        "rows": 2138,
+        "unique_sequences": 2114,
+        "class_counts": {
+          "1": 1069,
+          "0": 1069
+        },
+        "chromosome_counts": {
+          "chr20": 1362,
+          "chr21": 776
+        },
+        "length_counts": {
+          "1000": 2138
+        }
+      },
+      "shared_chromosomes": [],
+      "test_windows_overlapping_train": 0,
+      "shared_exact_or_rc_sequences": 0
+    },
+    "H3K4me3": {
+      "train": {
+        "rows": 17468,
+        "unique_sequences": 17423,
+        "class_counts": {
+          "1": 8734,
+          "0": 8734
+        },
+        "chromosome_counts": {
+          "chr10": 915,
+          "chr11": 858,
+          "chr12": 867,
+          "chr13": 488,
+          "chr14": 591,
+          "chr15": 517,
+          "chr16": 628,
+          "chr17": 800,
+          "chr18": 394,
+          "chr19": 891,
+          "chr1": 1650,
+          "chr2": 1338,
+          "chr3": 1146,
+          "chr4": 956,
+          "chr5": 983,
+          "chr6": 1032,
+          "chr7": 971,
+          "chr8": 790,
+          "chr9": 745,
+          "chrX": 814,
+          "chrY": 94
+        },
+        "length_counts": {
+          "1000": 17468
+        }
+      },
+      "test": {
+        "rows": 776,
+        "unique_sequences": 773,
+        "class_counts": {
+          "1": 388,
+          "0": 388
+        },
+        "chromosome_counts": {
+          "chr20": 479,
+          "chr21": 297
+        },
+        "length_counts": {
+          "1000": 776
+        }
+      },
+      "shared_chromosomes": [],
+      "test_windows_overlapping_train": 0,
+      "shared_exact_or_rc_sequences": 0
+    },
+    "H3K9ac": {
+      "train": {
+        "rows": 23274,
+        "unique_sequences": 23203,
+        "class_counts": {
+          "1": 11637,
+          "0": 11637
+        },
+        "chromosome_counts": {
+          "chr10": 1130,
+          "chr11": 1283,
+          "chr12": 1194,
+          "chr13": 618,
+          "chr14": 692,
+          "chr15": 761,
+          "chr16": 803,
+          "chr17": 993,
+          "chr18": 512,
+          "chr19": 1023,
+          "chr1": 2259,
+          "chr2": 1810,
+          "chr3": 1621,
+          "chr4": 1262,
+          "chr5": 1312,
+          "chr6": 1445,
+          "chr7": 1321,
+          "chr8": 1090,
+          "chr9": 1006,
+          "chrX": 1016,
+          "chrY": 123
+        },
+        "length_counts": {
+          "1000": 23274
+        }
+      },
+      "test": {
+        "rows": 1004,
+        "unique_sequences": 1000,
+        "class_counts": {
+          "1": 502,
+          "0": 502
+        },
+        "chromosome_counts": {
+          "chr20": 655,
+          "chr21": 349
+        },
+        "length_counts": {
+          "1000": 1004
+        }
+      },
+      "shared_chromosomes": [],
+      "test_windows_overlapping_train": 0,
+      "shared_exact_or_rc_sequences": 0
+    },
+    "H3K9me3": {
+      "train": {
+        "rows": 27438,
+        "unique_sequences": 27332,
+        "class_counts": {
+          "1": 13719,
+          "0": 13719
+        },
+        "chromosome_counts": {
+          "chr10": 1296,
+          "chr11": 1370,
+          "chr12": 1342,
+          "chr13": 739,
+          "chr14": 647,
+          "chr15": 736,
+          "chr16": 822,
+          "chr17": 700,
+          "chr18": 652,
+          "chr19": 1239,
+          "chr1": 2548,
+          "chr2": 2311,
+          "chr3": 1970,
+          "chr4": 1857,
+          "chr5": 1869,
+          "chr6": 1868,
+          "chr7": 2005,
+          "chr8": 1399,
+          "chr9": 972,
+          "chrX": 938,
+          "chrY": 158
+        },
+        "length_counts": {
+          "1000": 27438
+        }
+      },
+      "test": {
+        "rows": 850,
+        "unique_sequences": 845,
+        "class_counts": {
+          "1": 425,
+          "0": 425
+        },
+        "chromosome_counts": {
+          "chr20": 419,
+          "chr21": 431
+        },
+        "length_counts": {
+          "1000": 850
+        }
+      },
+      "shared_chromosomes": [],
+      "test_windows_overlapping_train": 0,
+      "shared_exact_or_rc_sequences": 0
+    },
+    "H4K20me1": {
+      "train": {
+        "rows": 30000,
+        "unique_sequences": 29862,
+        "class_counts": {
+          "1": 15026,
+          "0": 14974
+        },
+        "chromosome_counts": {
+          "chr6": 1785,
+          "chr9": 1439,
+          "chr1": 3509,
+          "chr10": 1465,
+          "chr8": 1395,
+          "chr16": 1409,
+          "chr11": 1719,
+          "chr2": 2165,
+          "chr5": 1753,
+          "chr4": 1460,
+          "chr19": 1093,
+          "chrX": 1020,
+          "chr13": 686,
+          "chr18": 598,
+          "chr3": 1849,
+          "chr15": 1050,
+          "chr14": 728,
+          "chrY": 176,
+          "chr12": 1360,
+          "chr17": 1386,
+          "chr7": 1955
+        },
+        "length_counts": {
+          "1000": 30000
+        }
+      },
+      "test": {
+        "rows": 2270,
+        "unique_sequences": 2242,
+        "class_counts": {
+          "1": 1135,
+          "0": 1135
+        },
+        "chromosome_counts": {
+          "chr20": 1478,
+          "chr21": 792
+        },
+        "length_counts": {
+          "1000": 2270
+        }
+      },
+      "shared_chromosomes": [],
+      "test_windows_overlapping_train": 0,
+      "shared_exact_or_rc_sequences": 0
+    },
+    "enhancers": {
+      "train": {
+        "rows": 30000,
+        "unique_sequences": 29803,
+        "class_counts": {
+          "1": 15006,
+          "0": 14994
+        },
+        "chromosome_counts": {
+          "chr1": 2540,
+          "chr18": 821,
+          "chr14": 965,
+          "chr13": 1062,
+          "chr3": 2083,
+          "chr8": 1525,
+          "chr9": 1343,
+          "chr2": 2580,
+          "chr7": 1721,
+          "chr15": 896,
+          "chr16": 874,
+          "chr4": 1993,
+          "chr11": 1494,
+          "chr10": 1458,
+          "chrX": 1460,
+          "chr5": 1965,
+          "chr6": 1853,
+          "chr12": 1481,
+          "chr17": 922,
+          "chr19": 673,
+          "chrY": 291
+        },
+        "length_counts": {
+          "400": 30000
+        }
+      },
+      "test": {
+        "rows": 3000,
+        "unique_sequences": 2943,
+        "class_counts": {
+          "1": 1453,
+          "0": 1547
+        },
+        "chromosome_counts": {
+          "chr21": 1118,
+          "chr20": 1882
+        },
+        "length_counts": {
+          "400": 3000
+        }
+      },
+      "shared_chromosomes": [],
+      "test_windows_overlapping_train": 0,
+      "shared_exact_or_rc_sequences": 0
+    },
+    "enhancers_types": {
+      "train": {
+        "rows": 30000,
+        "unique_sequences": 29803,
+        "class_counts": {
+          "1": 13922,
+          "0": 14994,
+          "2": 1084
+        },
+        "chromosome_counts": {
+          "chr1": 2540,
+          "chr18": 821,
+          "chr14": 965,
+          "chr13": 1062,
+          "chr3": 2083,
+          "chr8": 1525,
+          "chr9": 1343,
+          "chr2": 2580,
+          "chr7": 1721,
+          "chr15": 896,
+          "chr16": 874,
+          "chr4": 1993,
+          "chr11": 1494,
+          "chr10": 1458,
+          "chrX": 1460,
+          "chr5": 1965,
+          "chr6": 1853,
+          "chr12": 1481,
+          "chr17": 922,
+          "chr19": 673,
+          "chrY": 291
+        },
+        "length_counts": {
+          "400": 30000
+        }
+      },
+      "test": {
+        "rows": 3000,
+        "unique_sequences": 2943,
+        "class_counts": {
+          "1": 1332,
+          "0": 1547,
+          "2": 121
+        },
+        "chromosome_counts": {
+          "chr21": 1118,
+          "chr20": 1882
+        },
+        "length_counts": {
+          "400": 3000
+        }
+      },
+      "shared_chromosomes": [],
+      "test_windows_overlapping_train": 0,
+      "shared_exact_or_rc_sequences": 0
+    },
+    "promoter_all": {
+      "train": {
+        "rows": 30000,
+        "unique_sequences": 29872,
+        "class_counts": {
+          "0": 14950,
+          "1": 15050
+        },
+        "chromosome_counts": {
+          "chr1": 2774,
+          "chr17": 1359,
+          "chr9": 1279,
+          "chr3": 2018,
+          "chr4": 1693,
+          "chr8": 1352,
+          "chr10": 1365,
+          "chr2": 2297,
+          "chr7": 1642,
+          "chr13": 835,
+          "chrX": 1445,
+          "chr12": 1564,
+          "chr19": 1399,
+          "chr14": 990,
+          "chr11": 1686,
+          "chr6": 1663,
+          "chr5": 1759,
+          "chr15": 929,
+          "chr18": 670,
+          "chr16": 1118,
+          "chrY": 163
+        },
+        "length_counts": {
+          "300": 30000
+        }
+      },
+      "test": {
+        "rows": 1584,
+        "unique_sequences": 1571,
+        "class_counts": {
+          "1": 792,
+          "0": 792
+        },
+        "chromosome_counts": {
+          "chr20": 1042,
+          "chr21": 542
+        },
+        "length_counts": {
+          "300": 1584
+        }
+      },
+      "shared_chromosomes": [],
+      "test_windows_overlapping_train": 0,
+      "shared_exact_or_rc_sequences": 0
+    },
+    "promoter_no_tata": {
+      "train": {
+        "rows": 30000,
+        "unique_sequences": 29872,
+        "class_counts": {
+          "1": 14980,
+          "0": 15020
+        },
+        "chromosome_counts": {
+          "chr10": 1368,
+          "chr2": 2303,
+          "chr12": 1556,
+          "chr1": 2804,
+          "chr3": 2012,
+          "chr17": 1354,
+          "chr4": 1653,
+          "chr9": 1283,
+          "chr8": 1312,
+          "chr19": 1436,
+          "chr16": 1108,
+          "chr14": 1012,
+          "chrX": 1419,
+          "chr6": 1676,
+          "chr5": 1775,
+          "chr7": 1647,
+          "chr15": 960,
+          "chr18": 666,
+          "chr11": 1669,
+          "chrY": 170,
+          "chr13": 817
+        },
+        "length_counts": {
+          "300": 30000
+        }
+      },
+      "test": {
+        "rows": 1372,
+        "unique_sequences": 1363,
+        "class_counts": {
+          "1": 686,
+          "0": 686
+        },
+        "chromosome_counts": {
+          "chr20": 896,
+          "chr21": 476
+        },
+        "length_counts": {
+          "300": 1372
+        }
+      },
+      "shared_chromosomes": [],
+      "test_windows_overlapping_train": 0,
+      "shared_exact_or_rc_sequences": 0
+    },
+    "promoter_tata": {
+      "train": {
+        "rows": 5062,
+        "unique_sequences": 5059,
+        "class_counts": {
+          "1": 2531,
+          "0": 2531
+        },
+        "chromosome_counts": {
+          "chr10": 218,
+          "chr11": 271,
+          "chr12": 281,
+          "chr13": 113,
+          "chr14": 145,
+          "chr15": 139,
+          "chr16": 166,
+          "chr17": 241,
+          "chr18": 115,
+          "chr19": 190,
+          "chr1": 510,
+          "chr2": 400,
+          "chr3": 339,
+          "chr4": 340,
+          "chr5": 293,
+          "chr6": 308,
+          "chr7": 264,
+          "chr8": 256,
+          "chr9": 202,
+          "chrX": 243,
+          "chrY": 28
+        },
+        "length_counts": {
+          "300": 5062
+        }
+      },
+      "test": {
+        "rows": 212,
+        "unique_sequences": 212,
+        "class_counts": {
+          "1": 106,
+          "0": 106
+        },
+        "chromosome_counts": {
+          "chr20": 143,
+          "chr21": 69
+        },
+        "length_counts": {
+          "300": 212
+        }
+      },
+      "shared_chromosomes": [],
+      "test_windows_overlapping_train": 0,
+      "shared_exact_or_rc_sequences": 0
+    },
+    "splice_sites_acceptors": {
+      "train": {
+        "rows": 30000,
+        "unique_sequences": 29858,
+        "class_counts": {
+          "1": 15031,
+          "0": 14969
+        },
+        "chromosome_counts": {
+          "chr16": 968,
+          "chr10": 1481,
+          "chr1": 2624,
+          "chr13": 978,
+          "chr4": 1828,
+          "chr11": 1556,
+          "chrX": 1383,
+          "chr17": 1137,
+          "chr14": 931,
+          "chr2": 2543,
+          "chr15": 979,
+          "chr8": 1449,
+          "chr12": 1469,
+          "chr6": 1785,
+          "chr7": 1722,
+          "chr9": 1266,
+          "chr5": 1869,
+          "chr3": 2097,
+          "chrY": 228,
+          "chr18": 789,
+          "chr19": 918
+        },
+        "length_counts": {
+          "600": 30000
+        }
+      },
+      "test": {
+        "rows": 3000,
+        "unique_sequences": 2964,
+        "class_counts": {
+          "1": 1475,
+          "0": 1525
+        },
+        "chromosome_counts": {
+          "chr20": 1882,
+          "chr21": 1118
+        },
+        "length_counts": {
+          "600": 3000
+        }
+      },
+      "shared_chromosomes": [],
+      "test_windows_overlapping_train": 0,
+      "shared_exact_or_rc_sequences": 0
+    },
+    "splice_sites_all": {
+      "train": {
+        "rows": 30000,
+        "unique_sequences": 29937,
+        "class_counts": {
+          "1": 10047,
+          "0": 9846,
+          "2": 10107
+        },
+        "chromosome_counts": {
+          "chr16": 1084,
+          "chr15": 1120,
+          "chr5": 1715,
+          "chr11": 1576,
+          "chr7": 1668,
+          "chr1": 2779,
+          "chr6": 1655,
+          "chr2": 2632,
+          "chr4": 1764,
+          "chr14": 983,
+          "chr18": 782,
+          "chr8": 1448,
+          "chr12": 1624,
+          "chr13": 830,
+          "chr17": 1177,
+          "chr9": 1251,
+          "chr19": 1022,
+          "chr3": 1998,
+          "chrX": 1291,
+          "chr10": 1403,
+          "chrY": 198
+        },
+        "length_counts": {
+          "600": 30000
+        }
+      },
+      "test": {
+        "rows": 3000,
+        "unique_sequences": 2976,
+        "class_counts": {
+          "1": 952,
+          "2": 1019,
+          "0": 1029
+        },
+        "chromosome_counts": {
+          "chr21": 1101,
+          "chr20": 1899
+        },
+        "length_counts": {
+          "600": 3000
+        }
+      },
+      "shared_chromosomes": [],
+      "test_windows_overlapping_train": 0,
+      "shared_exact_or_rc_sequences": 0
+    },
+    "splice_sites_donors": {
+      "train": {
+        "rows": 30000,
+        "unique_sequences": 29840,
+        "class_counts": {
+          "1": 15084,
+          "0": 14916
+        },
+        "chromosome_counts": {
+          "chr17": 1137,
+          "chr16": 979,
+          "chr13": 933,
+          "chr12": 1507,
+          "chr2": 2552,
+          "chr1": 2659,
+          "chr4": 1807,
+          "chr3": 2085,
+          "chr6": 1779,
+          "chr7": 1689,
+          "chr15": 1007,
+          "chr9": 1233,
+          "chr14": 970,
+          "chr11": 1527,
+          "chr18": 820,
+          "chr5": 1841,
+          "chr8": 1462,
+          "chrX": 1499,
+          "chr10": 1418,
+          "chrY": 212,
+          "chr19": 884
+        },
+        "length_counts": {
+          "600": 30000
+        }
+      },
+      "test": {
+        "rows": 3000,
+        "unique_sequences": 2957,
+        "class_counts": {
+          "1": 1480,
+          "0": 1520
+        },
+        "chromosome_counts": {
+          "chr20": 1901,
+          "chr21": 1099
+        },
+        "length_counts": {
+          "600": 3000
+        }
+      },
+      "shared_chromosomes": [],
+      "test_windows_overlapping_train": 0,
+      "shared_exact_or_rc_sequences": 0
+    }
+  },
+  "unique_sequences": {
+    "train": 434501,
+    "test": 32388
+  },
+  "global_shared_exact_or_rc_sequences": 0,
+  "source_sha256": "983348b6840ecc20a84c1c04378cf87f25b0c90653c956a4d4a95e2d6a32b116",
+  "protocol_sha256": "26a763c4844adfb7e608eac1f9431fd144175bdca8b3aaf6e829b65d4ef958a5"
+}

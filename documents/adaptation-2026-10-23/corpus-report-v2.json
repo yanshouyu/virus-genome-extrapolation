@@ -1,0 +1,1785 @@
+{
+  "window_nt": 1536,
+  "stride_nt": 1536,
+  "manifest": [
+    {
+      "accession": "NC_001623.1",
+      "organism": "Autographa californica nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus aucalifornicae"
+      ],
+      "group": "Alphabaculovirus aucalifornicae",
+      "length": 133894,
+      "sha256": "ce88c2dc6f0274822d29ff7a808f81c05292185ff4458bea88427ba28b36004b",
+      "excluded": true
+    },
+    {
+      "accession": "NC_001875.2",
+      "organism": "Orgyia pseudotsugata multiple nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus orpseudotsugatae"
+      ],
+      "group": "Alphabaculovirus orpseudotsugatae",
+      "length": 131995,
+      "sha256": "d8617c7546d8a17b6d445fa04553b952e6253c4b58a4a2e05c7a50e27e070c04",
+      "excluded": false
+    },
+    {
+      "accession": "NC_001962.1",
+      "organism": "Bombyx mori nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus bomori"
+      ],
+      "group": "Alphabaculovirus bomori",
+      "length": 128413,
+      "sha256": "be8d4cb059ba7424f8d3f59ae18a94a0359b6730dea8c0f1110b2cd92a3157a0",
+      "excluded": false
+    },
+    {
+      "accession": "NC_001973.1",
+      "organism": "Lymantria dispar multiple nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus lydisparis"
+      ],
+      "group": "Alphabaculovirus lydisparis",
+      "length": 161046,
+      "sha256": "9cc1bb926c8ef9ec46ccea97cbd5b1da654e8568bc6598c3f9f83df4d220427a",
+      "excluded": false
+    },
+    {
+      "accession": "NC_002169.1",
+      "organism": "Spodoptera exigua multiple nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus"
+      ],
+      "group": "Spodoptera exigua multiple nucleopolyhedrovirus",
+      "length": 135611,
+      "sha256": "339eb9432c5d080898d5976fe93ac26cfd14079d1b5937e4d0d666583552fc56",
+      "excluded": false
+    },
+    {
+      "accession": "NC_002331.1",
+      "organism": "Xestia c-nigrum granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus xecnigri"
+      ],
+      "group": "Betabaculovirus xecnigri",
+      "length": 178733,
+      "sha256": "7fc331db14e9f5c182c5a1dc07d314ca2e2e263c468d9ca252a89b1ff9e9ad9f",
+      "excluded": false
+    },
+    {
+      "accession": "NC_002593.1",
+      "organism": "Plutella xylostella granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus pluxylostellae"
+      ],
+      "group": "Betabaculovirus pluxylostellae",
+      "length": 100999,
+      "sha256": "3ef40794724ebae7b45cefb3c130faa4e48baa2c37ac65829cfb07cae31a0bee",
+      "excluded": false
+    },
+    {
+      "accession": "NC_002654.2",
+      "organism": "Helicoverpa armigera nucleopolyhedrovirus G4",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus helarmigerae"
+      ],
+      "group": "Alphabaculovirus helarmigerae",
+      "length": 131405,
+      "sha256": "cc04aa8fd948fb1550e6f29016060380a003e1ac0520db6e28c6e56f147d4ff8",
+      "excluded": false
+    },
+    {
+      "accession": "NC_002816.1",
+      "organism": "Cydia pomonella granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus cypomonellae"
+      ],
+      "group": "Betabaculovirus cypomonellae",
+      "length": 123500,
+      "sha256": "f3a114e07c3adb7f7821eccd4a5c59f73bb6cadc0ebe9ebcd1e3c0fc52f93c49",
+      "excluded": false
+    },
+    {
+      "accession": "NC_003083.1",
+      "organism": "Epiphyas postvittana nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus eppostvittanae"
+      ],
+      "group": "Alphabaculovirus eppostvittanae",
+      "length": 118584,
+      "sha256": "388127c31ec6c3a2647aed31e7bebbc36ca49dc83365b4fd91d16fa6b877bfe3",
+      "excluded": false
+    },
+    {
+      "accession": "NC_003084.1",
+      "organism": "Culex nigripalpus nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Deltabaculovirus",
+        "Deltabaculovirus cunigripalpi"
+      ],
+      "group": "Deltabaculovirus cunigripalpi",
+      "length": 108252,
+      "sha256": "488fb4866c7307a66532db949e160786b85a4d896b1f0245f9aa142ccb01838c",
+      "excluded": false
+    },
+    {
+      "accession": "NC_003094.2",
+      "organism": "Helicoverpa armigera nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus helarmigerae"
+      ],
+      "group": "Alphabaculovirus helarmigerae",
+      "length": 130759,
+      "sha256": "ff1e67eae814ee1753a2c20d7802bcb28545941fb7040fbf10cefb57c7c1e137",
+      "excluded": false
+    },
+    {
+      "accession": "NC_003102.1",
+      "organism": "Spodoptera litura nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus spliturae"
+      ],
+      "group": "Alphabaculovirus spliturae",
+      "length": 139342,
+      "sha256": "af3d5a9a39f239428ed46d291def9ff00407fa2baf20b8bfb33f035c226b31b9",
+      "excluded": false
+    },
+    {
+      "accession": "NC_003529.1",
+      "organism": "Mamestra configurata nucleopolyhedrovirus A",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus maconfiguratae"
+      ],
+      "group": "Alphabaculovirus maconfiguratae",
+      "length": 155060,
+      "sha256": "610c3a69c50dfa11bd0ed779327a8a38eccb406557209462d4c770fe770b39f9",
+      "excluded": false
+    },
+    {
+      "accession": "NC_004062.1",
+      "organism": "Phthorimaea operculella granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus phoperculellae"
+      ],
+      "group": "Betabaculovirus phoperculellae",
+      "length": 119217,
+      "sha256": "093cbd9ecfa9a91154936d17023aa0c7d5cdf340a3f1f68daf744eb010f32194",
+      "excluded": false
+    },
+    {
+      "accession": "NC_004117.1",
+      "organism": "Mamestra configurata nucleopolyhedrovirus B",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus sp. 'altermaconfiguratae'"
+      ],
+      "group": "Alphabaculovirus sp. 'altermaconfiguratae'",
+      "length": 158482,
+      "sha256": "9bf961f8e71e610e7e8f7772cc977f39f309e46af9fbfc3ae03d316aca6af690",
+      "excluded": false
+    },
+    {
+      "accession": "NC_004323.1",
+      "organism": "Rachiplusia ou multiple nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus raous"
+      ],
+      "group": "Alphabaculovirus raous",
+      "length": 131526,
+      "sha256": "342daff9dbc221e2e04c96957e8d9d8ec7cd098c85c96db1cbe574338841a6f0",
+      "excluded": false
+    },
+    {
+      "accession": "NC_004690.1",
+      "organism": "Adoxophyes honmai nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus adhonmai"
+      ],
+      "group": "Alphabaculovirus adhonmai",
+      "length": 113220,
+      "sha256": "0f37577b4e8af73da1e8d7ce3bcd740e04d7651568d5e1991b0dbd98ad765074",
+      "excluded": false
+    },
+    {
+      "accession": "NC_004778.3",
+      "organism": "Choristoneura fumiferana multiple nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus chofumiferanae"
+      ],
+      "group": "Alphabaculovirus chofumiferanae",
+      "length": 129593,
+      "sha256": "fce4dd12bd761faa1dfa2224613ed23139e50c424f96fbcc5a8cb173204819f1",
+      "excluded": false
+    },
+    {
+      "accession": "NC_005038.1",
+      "organism": "Adoxophyes orana granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus adoranae"
+      ],
+      "group": "Betabaculovirus adoranae",
+      "length": 99657,
+      "sha256": "50b4ee199266b4cd2fb794c9d661ee555e39458f4862d38739ef3dfb68a68e41",
+      "excluded": false
+    },
+    {
+      "accession": "NC_005068.1",
+      "organism": "Cryptophlebia leucotreta granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus cryleucotretae"
+      ],
+      "group": "Betabaculovirus cryleucotretae",
+      "length": 110907,
+      "sha256": "4cbcc66abc6d57b872d7b837564f91c17ee3b903a985eaacc58311d89ae644c0",
+      "excluded": false
+    },
+    {
+      "accession": "NC_005137.2",
+      "organism": "Choristoneura fumiferana DEF multiple nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus alterchofumiferanae"
+      ],
+      "group": "Alphabaculovirus alterchofumiferanae",
+      "length": 131160,
+      "sha256": "23d323632e2a863ccda32c0f5177aa56779acc197b1289d4810cbb51f9b5eb47",
+      "excluded": false
+    },
+    {
+      "accession": "NC_005905.1",
+      "organism": "Neodiprion sertifer nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Gammabaculovirus",
+        "Gammabaculovirus nesertiferis"
+      ],
+      "group": "Gammabaculovirus nesertiferis",
+      "length": 86462,
+      "sha256": "fda8151d23776ab4638ca1910498568afe9b80fd88a1e884cd63aae2b4dec518",
+      "excluded": false
+    },
+    {
+      "accession": "NC_005906.1",
+      "organism": "Neodiprion lecontei nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Gammabaculovirus",
+        "Gammabaculovirus nelecontei"
+      ],
+      "group": "Gammabaculovirus nelecontei",
+      "length": 81755,
+      "sha256": "866175fc3369599bf5968404304ae7e9e65627053ca9ce5a938cb7ea425e0ea5",
+      "excluded": false
+    },
+    {
+      "accession": "NC_007151.1",
+      "organism": "Chrysodeixis chalcites nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus chrychalcites"
+      ],
+      "group": "Alphabaculovirus chrychalcites",
+      "length": 149622,
+      "sha256": "baab5b11f237ef18e75d789eb10536f713a66fd72083d8372728fe08fa6d383e",
+      "excluded": false
+    },
+    {
+      "accession": "NC_007383.1",
+      "organism": "Trichoplusia ni single nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus trini"
+      ],
+      "group": "Alphabaculovirus trini",
+      "length": 134394,
+      "sha256": "040bcf0fd7d89dacd1eae8dc2265885f5a9ce3d48c9786f3adf5968a55c09eae",
+      "excluded": false
+    },
+    {
+      "accession": "NC_007767.1",
+      "organism": "Hyphantria cunea nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus hycuneae"
+      ],
+      "group": "Alphabaculovirus hycuneae",
+      "length": 132959,
+      "sha256": "a290e2561a00ec2e679e9ac63052765a16ef681c15a5c88e599fbaeae2b6ff98",
+      "excluded": false
+    },
+    {
+      "accession": "NC_007921.1",
+      "organism": "Agrotis segetum nucleopolyhedrovirus A",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus agsegetum"
+      ],
+      "group": "Alphabaculovirus agsegetum",
+      "length": 147544,
+      "sha256": "a2dea0b07aa4e9c83b1cd0607b08fc61ef97b2923560837729c2e15d7e752f1b",
+      "excluded": false
+    },
+    {
+      "accession": "NC_008035.3",
+      "organism": "Antheraea pernyi nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus anpernyi"
+      ],
+      "group": "Alphabaculovirus anpernyi",
+      "length": 126629,
+      "sha256": "a4bcc049176be5f0816de78f7072f66652d1807cb18a71f8ab333a9ee5e5d93e",
+      "excluded": false
+    },
+    {
+      "accession": "NC_008168.1",
+      "organism": "Choristoneura fumiferana granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus chofumiferanae"
+      ],
+      "group": "Betabaculovirus chofumiferanae",
+      "length": 104710,
+      "sha256": "7d53e09ebaefc4321f6ffb735a4d13fec922b19a670417894bf0b5cd0e5f8754",
+      "excluded": false
+    },
+    {
+      "accession": "NC_008252.1",
+      "organism": "Neodiprion abietis nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Gammabaculovirus",
+        "Gammabaculovirus neabietis"
+      ],
+      "group": "Gammabaculovirus neabietis",
+      "length": 84264,
+      "sha256": "d809c43dc01e88faea9e75b2b0355c784c24bbe2e34219bcc64d3a21ad75be6a",
+      "excluded": false
+    },
+    {
+      "accession": "NC_008293.1",
+      "organism": "Clanis bilineata nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus clabilineatae"
+      ],
+      "group": "Alphabaculovirus clabilineatae",
+      "length": 135454,
+      "sha256": "17c17c8c3ffdc5883d1bb1eb323b94a9b788f46f51b6fdf2e3a0c422a3fee888",
+      "excluded": false
+    },
+    {
+      "accession": "NC_008348.1",
+      "organism": "Leucania separata nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus leseparatae"
+      ],
+      "group": "Alphabaculovirus leseparatae",
+      "length": 168041,
+      "sha256": "f23fd3c7ceb8f5185d0581b73a0df6de6549c2c76b6b2b48fc2d4c02b8b3b7be",
+      "excluded": false
+    },
+    {
+      "accession": "NC_008586.1",
+      "organism": "Ectropis obliqua nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus ecobliquae"
+      ],
+      "group": "Alphabaculovirus ecobliquae",
+      "length": 131204,
+      "sha256": "da814982398bab461f0bce1f82cbca4124fc16fd4a6b36d6afeafc4bb4066f0d",
+      "excluded": false
+    },
+    {
+      "accession": "NC_008725.1",
+      "organism": "Maruca vitrata nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus mavitratae"
+      ],
+      "group": "Alphabaculovirus mavitratae",
+      "length": 111953,
+      "sha256": "7c94ce8877ca31fb7c65293afa6456ca871623cd4bbacf066911f03e8bc7e9b8",
+      "excluded": false
+    },
+    {
+      "accession": "NC_009011.2",
+      "organism": "Spodoptera frugiperda multiple nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus spofrugiperdae"
+      ],
+      "group": "Alphabaculovirus spofrugiperdae",
+      "length": 131331,
+      "sha256": "05ac46ea4ed72c4429f295aee88d4e9258f9ea9d8abda0ddaa9889f0dbf833a6",
+      "excluded": false
+    },
+    {
+      "accession": "NC_009503.1",
+      "organism": "Spodoptera litura granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus spliturae"
+      ],
+      "group": "Betabaculovirus spliturae",
+      "length": 124121,
+      "sha256": "583c06eb69861a179f7b6a5943d2176b093bce8585cbae1f16e2b17661bcbd27",
+      "excluded": false
+    },
+    {
+      "accession": "NC_010240.1",
+      "organism": "Helicoverpa armigera granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus helarmigerae"
+      ],
+      "group": "Betabaculovirus helarmigerae",
+      "length": 169794,
+      "sha256": "500de242f177126c4a30c01f8e193e6af0c6fd61fb12abc2c901198f5dbd23db",
+      "excluded": false
+    },
+    {
+      "accession": "NC_010276.1",
+      "organism": "Orgyia leucostigma nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus orleucostigmae"
+      ],
+      "group": "Alphabaculovirus orleucostigmae",
+      "length": 156179,
+      "sha256": "4236eff37ced90a441852d40cedc9087fec59ae4036b3e6c342ae48ae911f1a3",
+      "excluded": false
+    },
+    {
+      "accession": "NC_011345.1",
+      "organism": "Agrotis ipsilon multiple nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus agipsilonis"
+      ],
+      "group": "Alphabaculovirus agipsilonis",
+      "length": 155122,
+      "sha256": "e01992489974c54beb26b94617f8715b93b752852e1b895c383a8686f3c8a8d0",
+      "excluded": false
+    },
+    {
+      "accession": "NC_011423.1",
+      "organism": "Adoxophyes orana nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus"
+      ],
+      "group": "Adoxophyes orana nucleopolyhedrovirus",
+      "length": 111724,
+      "sha256": "8431899d63ac3c7f57ed6da0bbf06be02444a0fdc14dea1bf4fde5f7c39fd88c",
+      "excluded": false
+    },
+    {
+      "accession": "NC_011616.1",
+      "organism": "Spodoptera litura nucleopolyhedrovirus II",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus"
+      ],
+      "group": "Spodoptera litura nucleopolyhedrovirus II",
+      "length": 148634,
+      "sha256": "1d3b8e58ca47ab30774cc7856b52eff78d2ab11562a43db83a7e4486b84a6ee6",
+      "excluded": false
+    },
+    {
+      "accession": "NC_012639.1",
+      "organism": "Euproctis pseudoconspersa nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus eupseudoconspersae"
+      ],
+      "group": "Alphabaculovirus eupseudoconspersae",
+      "length": 141291,
+      "sha256": "a30d1ecbdb94bcdd97eb1038a366a9c6b95cf84cee659704b4c819f3173d32b7",
+      "excluded": false
+    },
+    {
+      "accession": "NC_013772.1",
+      "organism": "Pseudalatia unipuncta granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus myunipunctae"
+      ],
+      "group": "Betabaculovirus myunipunctae",
+      "length": 176677,
+      "sha256": "17f1dd41e31a13d47934c06198855933c3e96697691b2bce2b1f197e44bb34cd",
+      "excluded": false
+    },
+    {
+      "accession": "NC_013797.1",
+      "organism": "Betabaculovirus arrapae",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus"
+      ],
+      "group": "Betabaculovirus arrapae",
+      "length": 108592,
+      "sha256": "af7b49e060a51de798c7bf293d407836806ba1b4237fdf9422540d320450cc61",
+      "excluded": false
+    },
+    {
+      "accession": "NC_013953.1",
+      "organism": "Lymantria xylina nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus lyxylinae"
+      ],
+      "group": "Alphabaculovirus lyxylinae",
+      "length": 156344,
+      "sha256": "bc1836ae9b850543754282fd1d21ccfc3f51ffabc3a6225814dec761e8f5a26e",
+      "excluded": false
+    },
+    {
+      "accession": "NC_015398.1",
+      "organism": "Clostera anachoreta granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus clanachoretae"
+      ],
+      "group": "Betabaculovirus clanachoretae",
+      "length": 101487,
+      "sha256": "dc5fa6fe84d80a539c7ce68882fda4627e1aac9a70b2150e1ee6278336916d7f",
+      "excluded": false
+    },
+    {
+      "accession": "NC_018504.1",
+      "organism": "Apocheima cinerarium nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus"
+      ],
+      "group": "Apocheima cinerarium nucleopolyhedrovirus",
+      "length": 123876,
+      "sha256": "d56340e05b7265b3498ec5d9fbe0de581e9fa236dc1ed5088dba6334a584cec6",
+      "excluded": false
+    },
+    {
+      "accession": "NC_018875.1",
+      "organism": "Epinotia aporema granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus epaporemae"
+      ],
+      "group": "Betabaculovirus epaporemae",
+      "length": 119082,
+      "sha256": "bd8c3cd96882797bb9569979ebd2b52b49efb7bf9ad277a8ab7d72a504ebde3b",
+      "excluded": false
+    },
+    {
+      "accession": "NC_019945.1",
+      "organism": "Thysanoplusia orichalcea nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus thorichlaceae"
+      ],
+      "group": "Alphabaculovirus thorichlaceae",
+      "length": 132978,
+      "sha256": "e039f9c62142a6e453ef58dd132edccac8d7f5158abf3e6d33618c2daf4c01ec",
+      "excluded": false
+    },
+    {
+      "accession": "NC_021923.1",
+      "organism": "Hemileuca sp. nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus heleucae"
+      ],
+      "group": "Alphabaculovirus heleucae",
+      "length": 140633,
+      "sha256": "39c29c98f1115d9c7a4b58750b1d1c501ffd371db0c15e1253c1af20e6e60b2f",
+      "excluded": false
+    },
+    {
+      "accession": "NC_021924.1",
+      "organism": "Choristoneura rosaceana nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus chorosaceanae"
+      ],
+      "group": "Alphabaculovirus chorosaceanae",
+      "length": 129052,
+      "sha256": "dddb96ec426d0ad7cacc1368f531b3fcd29f3a6c7b1ba3026d15d5c4d5602720",
+      "excluded": false
+    },
+    {
+      "accession": "NC_022646.1",
+      "organism": "Clostera anastomosis granulovirus Henan",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus clanastomosis"
+      ],
+      "group": "Betabaculovirus clanastomosis",
+      "length": 101818,
+      "sha256": "abad7e33fcad5031271c791ca56c468e26d3cd831632c191f2e6564290082d5d",
+      "excluded": false
+    },
+    {
+      "accession": "NC_023177.1",
+      "organism": "Choristoneura murinana nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus chomurinanae"
+      ],
+      "group": "Alphabaculovirus chomurinanae",
+      "length": 124688,
+      "sha256": "45a89235ca9e9e4007db5d72212ab8be90cfe6f89f921a6e68b79313cbeb1cdb",
+      "excluded": false
+    },
+    {
+      "accession": "NC_023442.1",
+      "organism": "Buzura suppressaria nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus busuppressariae"
+      ],
+      "group": "Alphabaculovirus busuppressariae",
+      "length": 120420,
+      "sha256": "415b1460f6589ce4b857fd25c313b265f312786e97d20aba4697ea58634c297c",
+      "excluded": false
+    },
+    {
+      "accession": "NC_023681.1",
+      "organism": "Mamestra brassicae multiple nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus mabrassicae"
+      ],
+      "group": "Alphabaculovirus mabrassicae",
+      "length": 152710,
+      "sha256": "5ee153e26ebe992b85aab051f30eccf2aab96f52bad620dd6031742b7bd151f8",
+      "excluded": false
+    },
+    {
+      "accession": "NC_024625.1",
+      "organism": "Peridroma alphabaculovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus"
+      ],
+      "group": "Peridroma alphabaculovirus",
+      "length": 151109,
+      "sha256": "adbd9f6486bb6701c273ee196364eb6ce5249dbc0966a45ec573e1682f276ea1",
+      "excluded": false
+    },
+    {
+      "accession": "NC_025257.1",
+      "organism": "Erinnyis ello granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus erellonis"
+      ],
+      "group": "Betabaculovirus erellonis",
+      "length": 102759,
+      "sha256": "7aa00f3c0b3fab301e80d883f8f6434e1540d51a208c85a8252c4876359c99c9",
+      "excluded": false
+    },
+    {
+      "accession": "NC_025960.1",
+      "organism": "Agrotis segetum nucleopolyhedrovirus B",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus alteragsegetum"
+      ],
+      "group": "Alphabaculovirus alteragsegetum",
+      "length": 148981,
+      "sha256": "0acd0830859e483889ed4f5eeb76c2ecec3b33b9a54753ca53b25332822e1c7d",
+      "excluded": false
+    },
+    {
+      "accession": "NC_026268.1",
+      "organism": "Pseudoplusia includens SNPV IE",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus alterchrincludentis"
+      ],
+      "group": "Alphabaculovirus alterchrincludentis",
+      "length": 139132,
+      "sha256": "4e092c5f7fa1acb9a78bc7e2b0f32c4f2c7a8b588686a215749582930fd8eecd",
+      "excluded": false
+    },
+    {
+      "accession": "NC_026430.1",
+      "organism": "Condylorrhiza vestigialis mutiple nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus covestigialis"
+      ],
+      "group": "Alphabaculovirus covestigialis",
+      "length": 125767,
+      "sha256": "770724f39988e60f6604a5ab7e5362df061f54ea0dec99177b9771073f870400",
+      "excluded": false
+    },
+    {
+      "accession": "NC_026511.1",
+      "organism": "Spodoptera frugiperda granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus spofrugiperdae"
+      ],
+      "group": "Betabaculovirus spofrugiperdae",
+      "length": 140913,
+      "sha256": "6d564b9e31e893cb4cb35a327488f7181562a5d584425929f1881dbcdb9742bd",
+      "excluded": false
+    },
+    {
+      "accession": "NC_026922.1",
+      "organism": "Lambdina fiscellaria nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus lafiscellariae"
+      ],
+      "group": "Alphabaculovirus lafiscellariae",
+      "length": 157977,
+      "sha256": "65163de3a48082bfacec23afd14d30b54a8ee6425e1587a3f72e52d8420a8c91",
+      "excluded": false
+    },
+    {
+      "accession": "NC_027923.1",
+      "organism": "Perigonia lusca single nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus peluscae"
+      ],
+      "group": "Alphabaculovirus peluscae",
+      "length": 132831,
+      "sha256": "ffb98ef1d4b0615bfbdf6a3e5a2c0cf81f7232153907adfa99a39903c0b77bdd",
+      "excluded": false
+    },
+    {
+      "accession": "NC_028491.1",
+      "organism": "Diatraea saccharalis granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus disaccharalis"
+      ],
+      "group": "Betabaculovirus disaccharalis",
+      "length": 98392,
+      "sha256": "6ba8092b7a4a6c15282b6ac4e1164e785968ba346df135c87f9075c6940fdd07",
+      "excluded": false
+    },
+    {
+      "accession": "NC_028636.1",
+      "organism": "Sucra jujuba nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus sujujubae"
+      ],
+      "group": "Alphabaculovirus sujujubae",
+      "length": 135952,
+      "sha256": "8ead34ad53bc8b7d6d9063e418c3f05b0d84ff0eca2dee2cee90cf50ffa35cea",
+      "excluded": false
+    },
+    {
+      "accession": "NC_029996.1",
+      "organism": "Mocis latipes granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus molatipedis"
+      ],
+      "group": "Betabaculovirus molatipedis",
+      "length": 134272,
+      "sha256": "3f80f68bf0621e3ccfd618d363c407ae730623cf8af460d78addfcece8bbabfe",
+      "excluded": false
+    },
+    {
+      "accession": "NC_029997.2",
+      "organism": "Urbanus proteus nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus urprotei"
+      ],
+      "group": "Alphabaculovirus urprotei",
+      "length": 105555,
+      "sha256": "6f1718e950b3312d41454d4f97bfdffc15a92e6cd0199ec12d16c516ee236b1b",
+      "excluded": false
+    },
+    {
+      "accession": "NC_030240.1",
+      "organism": "Catopsilia pomona nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus capomonae"
+      ],
+      "group": "Alphabaculovirus capomonae",
+      "length": 128058,
+      "sha256": "4f6a1adc17d22f0d30a41e0f6ffae8d51e8cb58d446d3e9350b1dc89d8fa3628",
+      "excluded": false
+    },
+    {
+      "accession": "NC_031761.1",
+      "organism": "Anticarsia gemmatalis multiple nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus angemmatalis"
+      ],
+      "group": "Alphabaculovirus angemmatalis",
+      "length": 131855,
+      "sha256": "ba889b36872691d5362b003a053388563da5f7ddb5dd15ccc94734a2b71aae77",
+      "excluded": false
+    },
+    {
+      "accession": "NC_032255.1",
+      "organism": "Plodia interpunctella granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus plinterpunctellae"
+      ],
+      "group": "Betabaculovirus plinterpunctellae",
+      "length": 112536,
+      "sha256": "7bf9406c9cc35efd20d4c7e4930ec1361dedfadc9c6c2f55209557defa30848e",
+      "excluded": false
+    },
+    {
+      "accession": "NC_038369.1",
+      "organism": "Spodoptera littoralis nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus splittoralis"
+      ],
+      "group": "Alphabaculovirus splittoralis",
+      "length": 137998,
+      "sha256": "0d11ca678306f301d8be93387eedb60282dfc44d2903ce3eae495f3736117175",
+      "excluded": false
+    },
+    {
+      "accession": "NC_038371.1",
+      "organism": "Clostera anastomosis granulovirus B",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus alterclanastomosis"
+      ],
+      "group": "Betabaculovirus alterclanastomosis",
+      "length": 107439,
+      "sha256": "567cb98e3584d3a3122d93391c8169dfc523f464a9b5a390c231005173418993",
+      "excluded": false
+    },
+    {
+      "accession": "NC_038375.1",
+      "organism": "Trichoplusia ni granulovirus LBIV-12",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus trini"
+      ],
+      "group": "Betabaculovirus trini",
+      "length": 175360,
+      "sha256": "5749dafae83cda9eb6f53ce8f30a090333560564b86e88b53d9f7cf0ef412a21",
+      "excluded": false
+    },
+    {
+      "accession": "NC_039213.1",
+      "organism": "Agrotis segetum granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus agsegetum"
+      ],
+      "group": "Betabaculovirus agsegetum",
+      "length": 131557,
+      "sha256": "db3217a809119cf283365e2685892311f7a9a7c0ea4688c052f3bd24a0171bf4",
+      "excluded": false
+    },
+    {
+      "accession": "NC_040606.1",
+      "organism": "Malacosoma neustria nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus"
+      ],
+      "group": "Malacosoma neustria nucleopolyhedrovirus",
+      "length": 130202,
+      "sha256": "3955412bc5813752378882963ed841c5e1adfc776671613880c9139437af041b",
+      "excluded": false
+    },
+    {
+      "accession": "NC_040621.1",
+      "organism": "Operophtera brumata nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus opbrumatae"
+      ],
+      "group": "Alphabaculovirus opbrumatae",
+      "length": 119054,
+      "sha256": "32e860a2b9cb7837ccad070e837fae8ed3f297c9de1ef977fdb090a2b12d4909",
+      "excluded": false
+    },
+    {
+      "accession": "NC_043520.1",
+      "organism": "Lonomia obliqua multiple nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus lonobliquae"
+      ],
+      "group": "Alphabaculovirus lonobliquae",
+      "length": 120023,
+      "sha256": "7721c3d67f26fa94f69a6af893e6b95bc2c6516250155f8959bbc8089f08ae9d",
+      "excluded": false
+    },
+    {
+      "accession": "NC_043529.1",
+      "organism": "Oxyplax ochracea nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus oxochraceae"
+      ],
+      "group": "Alphabaculovirus oxochraceae",
+      "length": 113971,
+      "sha256": "7ffe784ce712356a1dcae9fbf06229b4789422524ea972792edb7d384de3c359",
+      "excluded": false
+    },
+    {
+      "accession": "NC_043530.1",
+      "organism": "Mythimna unipuncta nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus"
+      ],
+      "group": "Mythimna unipuncta nucleopolyhedrovirus",
+      "length": 148482,
+      "sha256": "d6d8f438d1e148aa2a7efbcc04ebde560ebfcebc15845aaf4c1756461a7c501a",
+      "excluded": false
+    },
+    {
+      "accession": "NC_055453.1",
+      "organism": "Hyposidra talaca nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus hytalacae"
+      ],
+      "group": "Alphabaculovirus hytalacae",
+      "length": 139089,
+      "sha256": "839f5be57fc22effe0c1c90d580c27231a4d684ff049cc2844982f5af41988c0",
+      "excluded": false
+    },
+    {
+      "accession": "NC_055455.1",
+      "organism": "Spodoptera exempta nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus spexemptae"
+      ],
+      "group": "Alphabaculovirus spexemptae",
+      "length": 129528,
+      "sha256": "84e5afb5c21e375b47bccaba71325a3df8864c6d937f5bad2eb460b456630df8",
+      "excluded": false
+    },
+    {
+      "accession": "NC_055467.1",
+      "organism": "Cyclophragma undans nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus cycundantis"
+      ],
+      "group": "Alphabaculovirus cycundantis",
+      "length": 142900,
+      "sha256": "b937a6da0e4e057fbd857560120c650064822d9afd91a51f2acb955fa65c5aa4",
+      "excluded": false
+    },
+    {
+      "accession": "NC_055500.1",
+      "organism": "Cryptophlebia peltastica nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus crypeltasticae"
+      ],
+      "group": "Alphabaculovirus crypeltasticae",
+      "length": 115728,
+      "sha256": "cb267a45d621bfc81c669c13088d0056483252e9ddf695273f2836c4cd0cfb5a",
+      "excluded": false
+    },
+    {
+      "accession": "NC_055502.1",
+      "organism": "Spodoptera eridania nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus speridaniae"
+      ],
+      "group": "Alphabaculovirus speridaniae",
+      "length": 149090,
+      "sha256": "79658601f53fae386a972d7bbb89185a66525d7913116040199be505aca302a1",
+      "excluded": false
+    },
+    {
+      "accession": "NC_076031.1",
+      "organism": "Mythimna unipuncta nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus"
+      ],
+      "group": "Mythimna unipuncta nucleopolyhedrovirus",
+      "length": 156647,
+      "sha256": "5c2491f7b67e5479e4e1c9be5d02f4df58eed29b861a507b433ec98e2d101de0",
+      "excluded": false
+    },
+    {
+      "accession": "NC_076246.1",
+      "organism": "Spodoptera exigua multiple nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus"
+      ],
+      "group": "Spodoptera exigua multiple nucleopolyhedrovirus",
+      "length": 128525,
+      "sha256": "3510507c429ec413d15a94c7dd79f8533d6a4684ae05505ffa92239c6797b870",
+      "excluded": false
+    },
+    {
+      "accession": "NC_076652.1",
+      "organism": "Hyphantria cunea granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus hycuneae"
+      ],
+      "group": "Betabaculovirus hycuneae",
+      "length": 114825,
+      "sha256": "5aecc8385f1a935651df14308cef3629c725b8a955bcaca01bf0d66cf85cdcc7",
+      "excluded": false
+    },
+    {
+      "accession": "NC_076682.1",
+      "organism": "Rachiplusia nu nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus ranus"
+      ],
+      "group": "Alphabaculovirus ranus",
+      "length": 128587,
+      "sha256": "283aee120f158ba9c77b1c2a1ea1f0f78de56d3f96432ead05aa7af98cd22cb1",
+      "excluded": false
+    },
+    {
+      "accession": "NC_076692.1",
+      "organism": "Dione juno nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus dijunonis"
+      ],
+      "group": "Alphabaculovirus dijunonis",
+      "length": 122075,
+      "sha256": "95a93439dc25be6919727453384dcf9e30534be20f03ec3837f4c7257a3acb5b",
+      "excluded": false
+    },
+    {
+      "accession": "NC_076728.1",
+      "organism": "Euproctis digramma nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus"
+      ],
+      "group": "Euproctis digramma nucleopolyhedrovirus",
+      "length": 161734,
+      "sha256": "6030278db068faf2b26b70463a8c844d9188c84c1991df3bfc5f88b37aa7972a",
+      "excluded": false
+    },
+    {
+      "accession": "NC_076869.1",
+      "organism": "Spodoptera eridania nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus speridaniae"
+      ],
+      "group": "Alphabaculovirus speridaniae",
+      "length": 137373,
+      "sha256": "d8f2614406c12762a552e3d2c1f0f922c1a6a068106fda6f2735468ad947e883",
+      "excluded": false
+    },
+    {
+      "accession": "NC_076905.1",
+      "organism": "Matsumuraeses phaseoli granulovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Betabaculovirus",
+        "Betabaculovirus maphaseoli"
+      ],
+      "group": "Betabaculovirus maphaseoli",
+      "length": 116875,
+      "sha256": "cdd02ea0593e7d324a6576cc46313e58c036b19a8eb3d2d0d1bce4eef3bde114",
+      "excluded": false
+    },
+    {
+      "accession": "NC_077025.1",
+      "organism": "Chrysodeixis includens nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus alterchrincludentis"
+      ],
+      "group": "Alphabaculovirus alterchrincludentis",
+      "length": 130540,
+      "sha256": "98467e82e65b197f3271499e9cfcafd50fb69e16f781accf565ef2c229bfbd37",
+      "excluded": false
+    },
+    {
+      "accession": "NC_077106.1",
+      "organism": "Trabala vishnou gigantina nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus travishnous"
+      ],
+      "group": "Alphabaculovirus travishnous",
+      "length": 165657,
+      "sha256": "ba4f4ece603d985e7e13629892c8398e963375c8df5d9c1bdfb1db254d68ed72",
+      "excluded": false
+    },
+    {
+      "accession": "NC_077147.1",
+      "organism": "Olene mendosa nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus olmendosae"
+      ],
+      "group": "Alphabaculovirus olmendosae",
+      "length": 142291,
+      "sha256": "de2a2aed4a1da28a98cff1335e312cb99dd3349c3af072d3b91f1a84e7f847f0",
+      "excluded": false
+    },
+    {
+      "accession": "NC_077155.1",
+      "organism": "Erannis ankeraria nucleopolyhedrovirus",
+      "taxonomy": [
+        "Viruses",
+        "Viruses incertae sedis",
+        "Naldaviricetes",
+        "Lefavirales",
+        "Baculoviridae",
+        "Alphabaculovirus",
+        "Alphabaculovirus erankerariae"
+      ],
+      "group": "Alphabaculovirus erankerariae",
+      "length": 125247,
+      "sha256": "12da3457b9a0d611a2c1c5dc8da62dd61d997184477ec7d051b9ea9d2f44818a",
+      "excluded": false
+    }
+  ],
+  "general_sources": [
+    {
+      "organism": "Saccharomyces_cerevisiae",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/refseq/fungi/Saccharomyces_cerevisiae/latest_assembly_versions/GCF_000146045.2_R64/GCF_000146045.2_R64_genomic.fna.gz",
+      "archive_sha256": "1ec41f951b35f2752d5065edeafe6972455609d4383fb36dae12519a60b27a73",
+      "candidate_windows": 15812,
+      "selected_windows": 4722
+    },
+    {
+      "organism": "Caenorhabditis_elegans",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/refseq/invertebrate/Caenorhabditis_elegans/latest_assembly_versions/GCF_000002985.6_WBcel235/GCF_000002985.6_WBcel235_genomic.fna.gz",
+      "archive_sha256": "d62fb938c408acd0df3126aa38fd126d4a411f070e1a41ffa4f4a1056984cdd4",
+      "candidate_windows": 130572,
+      "selected_windows": 4722
+    },
+    {
+      "organism": "Drosophila_melanogaster",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/refseq/invertebrate/Drosophila_melanogaster/latest_assembly_versions/GCF_000001215.4_Release_6_plus_ISO1_MT/GCF_000001215.4_Release_6_plus_ISO1_MT_genomic.fna.gz",
+      "archive_sha256": "e69e907b5e87ce756236dcef93e82001cfd08f1a0ed5f22e36cbbd3a87ebc57d",
+      "candidate_windows": 182366,
+      "selected_windows": 4720
+    }
+  ],
+  "groups": [
+    "Betabaculovirus agsegetum",
+    "Alphabaculovirus busuppressariae",
+    "Alphabaculovirus peluscae",
+    "Alphabaculovirus adhonmai",
+    "Betabaculovirus myunipunctae",
+    "Betabaculovirus disaccharalis",
+    "Alphabaculovirus chrychalcites",
+    "Alphabaculovirus heleucae",
+    "Alphabaculovirus orpseudotsugatae",
+    "Alphabaculovirus lydisparis",
+    "Alphabaculovirus sp. 'altermaconfiguratae'",
+    "Alphabaculovirus spexemptae",
+    "Betabaculovirus epaporemae",
+    "Alphabaculovirus cycundantis",
+    "Betabaculovirus alterclanastomosis",
+    "Alphabaculovirus urprotei",
+    "Betabaculovirus clanachoretae",
+    "Betabaculovirus hycuneae",
+    "Alphabaculovirus sujujubae",
+    "Apocheima cinerarium nucleopolyhedrovirus",
+    "Alphabaculovirus spliturae",
+    "Malacosoma neustria nucleopolyhedrovirus",
+    "Betabaculovirus pluxylostellae",
+    "Betabaculovirus clanastomosis",
+    "Alphabaculovirus lyxylinae",
+    "Alphabaculovirus anpernyi",
+    "Alphabaculovirus olmendosae",
+    "Betabaculovirus molatipedis",
+    "Alphabaculovirus leseparatae",
+    "Alphabaculovirus ranus",
+    "Betabaculovirus chofumiferanae",
+    "Alphabaculovirus oxochraceae",
+    "Alphabaculovirus orleucostigmae",
+    "Spodoptera exigua multiple nucleopolyhedrovirus",
+    "Alphabaculovirus speridaniae",
+    "Betabaculovirus spofrugiperdae",
+    "Alphabaculovirus chofumiferanae",
+    "Alphabaculovirus mavitratae",
+    "Alphabaculovirus erankerariae",
+    "Alphabaculovirus crypeltasticae",
+    "Betabaculovirus cypomonellae",
+    "Betabaculovirus erellonis",
+    "Alphabaculovirus thorichlaceae",
+    "Alphabaculovirus angemmatalis",
+    "Alphabaculovirus mabrassicae",
+    "Betabaculovirus phoperculellae",
+    "Alphabaculovirus agipsilonis",
+    "Alphabaculovirus clabilineatae",
+    "Alphabaculovirus opbrumatae",
+    "Alphabaculovirus spofrugiperdae",
+    "Alphabaculovirus eppostvittanae",
+    "Betabaculovirus trini",
+    "Alphabaculovirus eupseudoconspersae",
+    "Alphabaculovirus alterchofumiferanae",
+    "Alphabaculovirus alterchrincludentis",
+    "Betabaculovirus arrapae",
+    "Alphabaculovirus splittoralis",
+    "Gammabaculovirus neabietis",
+    "Alphabaculovirus bomori",
+    "Gammabaculovirus nelecontei",
+    "Alphabaculovirus ecobliquae",
+    "Betabaculovirus xecnigri",
+    "Alphabaculovirus raous",
+    "Alphabaculovirus dijunonis",
+    "Adoxophyes orana nucleopolyhedrovirus",
+    "Mythimna unipuncta nucleopolyhedrovirus",
+    "Betabaculovirus adoranae",
+    "Gammabaculovirus nesertiferis",
+    "Alphabaculovirus travishnous",
+    "Euproctis digramma nucleopolyhedrovirus",
+    "Alphabaculovirus helarmigerae",
+    "Betabaculovirus maphaseoli",
+    "Betabaculovirus spliturae",
+    "Betabaculovirus cryleucotretae",
+    "Alphabaculovirus lafiscellariae",
+    "Alphabaculovirus hycuneae",
+    "Spodoptera litura nucleopolyhedrovirus II",
+    "Peridroma alphabaculovirus",
+    "Alphabaculovirus alteragsegetum",
+    "Alphabaculovirus trini",
+    "Betabaculovirus plinterpunctellae",
+    "Alphabaculovirus capomonae",
+    "Betabaculovirus helarmigerae",
+    "Alphabaculovirus chomurinanae",
+    "Alphabaculovirus covestigialis",
+    "Alphabaculovirus hytalacae",
+    "Alphabaculovirus lonobliquae",
+    "Alphabaculovirus maconfiguratae",
+    "Alphabaculovirus agsegetum",
+    "Alphabaculovirus chorosaceanae",
+    "Deltabaculovirus cunigripalpi"
+  ],
+  "validation_groups": [
+    "Alphabaculovirus adhonmai",
+    "Alphabaculovirus busuppressariae",
+    "Alphabaculovirus chrychalcites",
+    "Alphabaculovirus heleucae",
+    "Alphabaculovirus orpseudotsugatae",
+    "Alphabaculovirus peluscae",
+    "Betabaculovirus agsegetum",
+    "Betabaculovirus disaccharalis",
+    "Betabaculovirus myunipunctae"
+  ],
+  "counts": {
+    "train": 14164,
+    "validation": 1448
+  },
+  "general_windows": 14164,
+  "files": {
+    "baculo_train.jsonl": "941b0822a71a7bebcc8675af0264715aa27ace8db07cb3be4482a4a3f3abffc4",
+    "baculo_validation.jsonl": "9f9641f34f6db2166955797c040b82e696467b14c99f41ef0ee0c93409dc2750",
+    "general_train.jsonl": "6455320fd95ae86d27d32c80c101b18c9529cc064f252e7972181a947d852e04",
+    "mlm_validation.jsonl": "d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761"
+  },
+  "manifest_source_sha256": "9798d293740b9b7e801fc13f4ff78c490600c60c1992fe61099ceada67d5de64",
+  "general_strand_pairing": "Every selected locus included in both orientations; equal unique-locus count to baculovirus.",
+  "excluded_general_v1_sha256": "6ceb8e08eee7fa0e6e8d061edf50ba308401a0ed1d8e4943427a57606dc57bcd"
+}

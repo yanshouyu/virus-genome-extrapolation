@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-26",
+  "copied_artifacts": 63,
+  "local_html_links_checked": 88,
+  "broken_links": [],
+  "copied_hashes_match": true,
+  "all_pngs_decode": true,
+  "adaptation_runs": 14,
+  "adaptation_readouts": 59,
+  "retention_tasks": 18,
+  "retention_readouts": 126,
+  "simultaneous_unresolved_tasks": [
+    "H3K27ac",
+    "H3K4me3",
+    "H3K9ac",
+    "H3K9me3"
+  ],
+  "main_score_tables_checked_against_saved_metrics": true,
+  "figure_overview_visually_inspected": true,
+  "html_browser_preview": "Unavailable: browser policy disallows local file URLs; static link checks completed.",
+  "new_training": false,
+  "new_model_inference": false,
+  "scope": "Report assembly and packaging, using previously independently verified scientific results."
+}

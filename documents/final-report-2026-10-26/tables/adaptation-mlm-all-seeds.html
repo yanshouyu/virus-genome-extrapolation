@@ -1,0 +1,463 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>adaptation-mlm-all-seeds — NT adaptation study</title><style>body{font:17px/1.65 Georgia,serif;color:#202a35;background:#f3f5f7;margin:0} main{max-width:1100px;margin:auto;background:white;padding:48px 5vw} h1,h2,h3{font-family:system-ui,sans-serif;line-height:1.23;color:#173b53} h1{font-size:34px} h2{margin-top:2em;border-top:1px solid #dce4e9;padding-top:22px} a{color:#116590} img{max-width:100%;height:auto} table{width:100%;border-collapse:collapse;font:14px/1.45 system-ui,sans-serif;margin:25px 0} th,td{padding:9px;border-bottom:1px solid #dce4e9;text-align:left} th{background:#edf3f7} code{overflow-wrap:anywhere;font-size:.85em} p,li{overflow-wrap:break-word} @media print{body{background:white}main{padding:0;max-width:none}h2,h3{break-after:avoid}img,table{break-inside:avoid}a{color:inherit}}</style><main><table>
+<thead>
+<tr>
+<th>Run (NTv2 multispecies)</th>
+<th style="text-align:right">Budget</th>
+<th style="text-align:right">Selected step</th>
+<th style="text-align:right">Selection loss</th>
+<th style="text-align:right">Endpoint loss</th>
+<th style="text-align:right">Audit selected loss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100m-full-baculo-seed42</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">6.845196</td>
+<td style="text-align:right">6.845196</td>
+<td style="text-align:right">6.952232</td>
+</tr>
+<tr>
+<td>100m-full-baculo-seed42</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">6.828424</td>
+<td style="text-align:right">6.828424</td>
+<td style="text-align:right">6.936804</td>
+</tr>
+<tr>
+<td>100m-full-baculo-seed42</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">6.806217</td>
+<td style="text-align:right">6.806217</td>
+<td style="text-align:right">6.918434</td>
+</tr>
+<tr>
+<td>100m-full-baculo-seed42</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">3584</td>
+<td style="text-align:right">6.791215</td>
+<td style="text-align:right">6.791229</td>
+<td style="text-align:right">6.901613</td>
+</tr>
+<tr>
+<td>100m-full-baculo-seed43</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">6.843943</td>
+<td style="text-align:right">6.843943</td>
+<td style="text-align:right">6.955302</td>
+</tr>
+<tr>
+<td>100m-full-baculo-seed43</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">6.825892</td>
+<td style="text-align:right">6.825892</td>
+<td style="text-align:right">6.935525</td>
+</tr>
+<tr>
+<td>100m-full-baculo-seed43</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">6.804917</td>
+<td style="text-align:right">6.804917</td>
+<td style="text-align:right">6.915615</td>
+</tr>
+<tr>
+<td>100m-full-baculo-seed43</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">6.790113</td>
+<td style="text-align:right">6.790113</td>
+<td style="text-align:right">6.904797</td>
+</tr>
+<tr>
+<td>100m-full-baculo-seed44</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">6.847824</td>
+<td style="text-align:right">6.847824</td>
+<td style="text-align:right">6.956294</td>
+</tr>
+<tr>
+<td>100m-full-baculo-seed44</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">6.829168</td>
+<td style="text-align:right">6.829168</td>
+<td style="text-align:right">6.938426</td>
+</tr>
+<tr>
+<td>100m-full-baculo-seed44</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">6.806026</td>
+<td style="text-align:right">6.806026</td>
+<td style="text-align:right">6.917975</td>
+</tr>
+<tr>
+<td>100m-full-baculo-seed44</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">6.790505</td>
+<td style="text-align:right">6.790505</td>
+<td style="text-align:right">6.904985</td>
+</tr>
+<tr>
+<td>100m-full-general-seed42</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">128</td>
+<td style="text-align:right">6.961866</td>
+<td style="text-align:right">6.974671</td>
+<td style="text-align:right">7.068919</td>
+</tr>
+<tr>
+<td>100m-full-general-seed42</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">128</td>
+<td style="text-align:right">6.961866</td>
+<td style="text-align:right">6.985684</td>
+<td style="text-align:right">7.068919</td>
+</tr>
+<tr>
+<td>100m-full-general-seed42</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">128</td>
+<td style="text-align:right">6.961866</td>
+<td style="text-align:right">6.982833</td>
+<td style="text-align:right">7.068919</td>
+</tr>
+<tr>
+<td>100m-full-general-seed42</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">128</td>
+<td style="text-align:right">6.961866</td>
+<td style="text-align:right">6.983519</td>
+<td style="text-align:right">7.068919</td>
+</tr>
+<tr>
+<td>100m-full-general-seed43</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">128</td>
+<td style="text-align:right">6.963923</td>
+<td style="text-align:right">6.983500</td>
+<td style="text-align:right">7.070709</td>
+</tr>
+<tr>
+<td>100m-full-general-seed43</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">128</td>
+<td style="text-align:right">6.963923</td>
+<td style="text-align:right">6.979838</td>
+<td style="text-align:right">7.070709</td>
+</tr>
+<tr>
+<td>100m-full-general-seed43</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">128</td>
+<td style="text-align:right">6.963923</td>
+<td style="text-align:right">6.994228</td>
+<td style="text-align:right">7.070709</td>
+</tr>
+<tr>
+<td>100m-full-general-seed43</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">128</td>
+<td style="text-align:right">6.963923</td>
+<td style="text-align:right">6.989723</td>
+<td style="text-align:right">7.070709</td>
+</tr>
+<tr>
+<td>100m-full-general-seed44</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">256</td>
+<td style="text-align:right">6.958351</td>
+<td style="text-align:right">6.974057</td>
+<td style="text-align:right">7.066179</td>
+</tr>
+<tr>
+<td>100m-full-general-seed44</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">256</td>
+<td style="text-align:right">6.958351</td>
+<td style="text-align:right">6.981101</td>
+<td style="text-align:right">7.066179</td>
+</tr>
+<tr>
+<td>100m-full-general-seed44</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">256</td>
+<td style="text-align:right">6.958351</td>
+<td style="text-align:right">6.987983</td>
+<td style="text-align:right">7.066179</td>
+</tr>
+<tr>
+<td>100m-full-general-seed44</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">256</td>
+<td style="text-align:right">6.958351</td>
+<td style="text-align:right">6.984469</td>
+<td style="text-align:right">7.066179</td>
+</tr>
+<tr>
+<td>100m-lora-baculo-seed42</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">6.890028</td>
+<td style="text-align:right">6.890028</td>
+<td style="text-align:right">6.998358</td>
+</tr>
+<tr>
+<td>100m-lora-baculo-seed42</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">6.879962</td>
+<td style="text-align:right">6.879962</td>
+<td style="text-align:right">6.987754</td>
+</tr>
+<tr>
+<td>100m-lora-baculo-seed42</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">6.870441</td>
+<td style="text-align:right">6.870441</td>
+<td style="text-align:right">6.979304</td>
+</tr>
+<tr>
+<td>100m-lora-baculo-seed42</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">3328</td>
+<td style="text-align:right">6.864203</td>
+<td style="text-align:right">6.864524</td>
+<td style="text-align:right">6.973393</td>
+</tr>
+<tr>
+<td>100m-lora-general-seed42</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">256</td>
+<td style="text-align:right">6.944974</td>
+<td style="text-align:right">6.950150</td>
+<td style="text-align:right">7.052410</td>
+</tr>
+<tr>
+<td>100m-lora-general-seed42</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">256</td>
+<td style="text-align:right">6.944974</td>
+<td style="text-align:right">6.950740</td>
+<td style="text-align:right">7.052410</td>
+</tr>
+<tr>
+<td>100m-lora-general-seed42</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">256</td>
+<td style="text-align:right">6.944974</td>
+<td style="text-align:right">6.957478</td>
+<td style="text-align:right">7.052410</td>
+</tr>
+<tr>
+<td>100m-lora-general-seed42</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">256</td>
+<td style="text-align:right">6.944974</td>
+<td style="text-align:right">6.962668</td>
+<td style="text-align:right">7.052410</td>
+</tr>
+<tr>
+<td>500m-full-baculo-seed42</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">6.691090</td>
+<td style="text-align:right">6.691090</td>
+<td style="text-align:right">6.799527</td>
+</tr>
+<tr>
+<td>500m-full-baculo-seed42</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">6.632070</td>
+<td style="text-align:right">6.632070</td>
+<td style="text-align:right">6.730107</td>
+</tr>
+<tr>
+<td>500m-full-baculo-seed42</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">6.535169</td>
+<td style="text-align:right">6.535169</td>
+<td style="text-align:right">6.623997</td>
+</tr>
+<tr>
+<td>500m-full-baculo-seed42</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">6.479429</td>
+<td style="text-align:right">6.479429</td>
+<td style="text-align:right">6.561136</td>
+</tr>
+<tr>
+<td>500m-full-baculo-seed43</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">6.709819</td>
+<td style="text-align:right">6.709819</td>
+<td style="text-align:right">6.803331</td>
+</tr>
+<tr>
+<td>500m-full-baculo-seed43</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">6.637492</td>
+<td style="text-align:right">6.637492</td>
+<td style="text-align:right">6.734004</td>
+</tr>
+<tr>
+<td>500m-full-baculo-seed43</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">6.528831</td>
+<td style="text-align:right">6.528831</td>
+<td style="text-align:right">6.630252</td>
+</tr>
+<tr>
+<td>500m-full-baculo-seed43</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">6.473786</td>
+<td style="text-align:right">6.473786</td>
+<td style="text-align:right">6.563913</td>
+</tr>
+<tr>
+<td>500m-full-baculo-seed44</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">6.697368</td>
+<td style="text-align:right">6.697368</td>
+<td style="text-align:right">6.804212</td>
+</tr>
+<tr>
+<td>500m-full-baculo-seed44</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">6.634188</td>
+<td style="text-align:right">6.634188</td>
+<td style="text-align:right">6.727047</td>
+</tr>
+<tr>
+<td>500m-full-baculo-seed44</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">6.529947</td>
+<td style="text-align:right">6.529947</td>
+<td style="text-align:right">6.629650</td>
+</tr>
+<tr>
+<td>500m-full-baculo-seed44</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">6.473745</td>
+<td style="text-align:right">6.473745</td>
+<td style="text-align:right">6.565888</td>
+</tr>
+<tr>
+<td>500m-full-general-seed42</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">256</td>
+<td style="text-align:right">6.874177</td>
+<td style="text-align:right">6.889869</td>
+<td style="text-align:right">6.977456</td>
+</tr>
+<tr>
+<td>500m-full-general-seed42</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">256</td>
+<td style="text-align:right">6.874177</td>
+<td style="text-align:right">6.896667</td>
+<td style="text-align:right">6.977456</td>
+</tr>
+<tr>
+<td>500m-full-general-seed42</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">256</td>
+<td style="text-align:right">6.874177</td>
+<td style="text-align:right">6.900009</td>
+<td style="text-align:right">6.977456</td>
+</tr>
+<tr>
+<td>500m-full-general-seed42</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">256</td>
+<td style="text-align:right">6.874177</td>
+<td style="text-align:right">6.899544</td>
+<td style="text-align:right">6.977456</td>
+</tr>
+<tr>
+<td>500m-full-general-seed43</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">128</td>
+<td style="text-align:right">6.874082</td>
+<td style="text-align:right">6.891204</td>
+<td style="text-align:right">6.980519</td>
+</tr>
+<tr>
+<td>500m-full-general-seed43</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">128</td>
+<td style="text-align:right">6.874082</td>
+<td style="text-align:right">6.890409</td>
+<td style="text-align:right">6.980519</td>
+</tr>
+<tr>
+<td>500m-full-general-seed43</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">128</td>
+<td style="text-align:right">6.874082</td>
+<td style="text-align:right">6.899335</td>
+<td style="text-align:right">6.980519</td>
+</tr>
+<tr>
+<td>500m-full-general-seed43</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">128</td>
+<td style="text-align:right">6.874082</td>
+<td style="text-align:right">6.895988</td>
+<td style="text-align:right">6.980519</td>
+</tr>
+<tr>
+<td>500m-full-general-seed44</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">128</td>
+<td style="text-align:right">6.869736</td>
+<td style="text-align:right">6.887622</td>
+<td style="text-align:right">6.975624</td>
+</tr>
+<tr>
+<td>500m-full-general-seed44</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">128</td>
+<td style="text-align:right">6.869736</td>
+<td style="text-align:right">6.889948</td>
+<td style="text-align:right">6.975624</td>
+</tr>
+<tr>
+<td>500m-full-general-seed44</td>
+<td style="text-align:right">2048</td>
+<td style="text-align:right">128</td>
+<td style="text-align:right">6.869736</td>
+<td style="text-align:right">6.901181</td>
+<td style="text-align:right">6.975624</td>
+</tr>
+<tr>
+<td>500m-full-general-seed44</td>
+<td style="text-align:right">4096</td>
+<td style="text-align:right">128</td>
+<td style="text-align:right">6.869736</td>
+<td style="text-align:right">6.896218</td>
+<td style="text-align:right">6.975624</td>
+</tr>
+</tbody>
+</table>
+</main></html>

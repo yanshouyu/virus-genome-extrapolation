@@ -1,0 +1,81 @@
+{
+  "dataset_version": "clean_v2",
+  "genome": "NC_001623.1",
+  "seed": 42,
+  "policy": "same-strand overlap, same associated ORF, exact/RC duplicate and known cluster groups; opposite-strand overlap allowed",
+  "target_fractions": {
+    "train": 0.6,
+    "validation": 0.2,
+    "test": 0.2
+  },
+  "source_sha256": {
+    "data/interim/tss_seq_range.fasta": "dd9e066adf29cd7452b747bd93ad55fe824ba5c0b98f06308a5fcdb32ad26d31",
+    "data/interim/tss_neg_seq_range.fasta": "a7e3a7b554f2479bf83d23b41cb312d4cd7c92960f5a44fe5b769c8e53d4b448",
+    "data/interim/cluster_tss_pos_clusters.tsv": "ba899dcff6007064057e5555ff1215e41493e4698538db337466e003b8e85232",
+    "data/interim/cluster_tss_neg_clusters.tsv": "8895bf9668cdbfc48c49f67b218a0cb59601311ffacc16c8988d84719963d72d",
+    "data/interim/tss_seq_range.csv": "9827bd41990fa3d127097d7a6ff108a76273af720f7234e3933c378c15ad041c",
+    "data/raw/baculovirus/Baculovirus_TSS.csv": "a9d792dfb222ae1b124b16c03a7491a2d922ad06e16dd5c39e43727c5124937a"
+  },
+  "source_rows": 391,
+  "excluded_label_errors": [
+    {
+      "name": "129683|129704:130004|+|1",
+      "label": 1,
+      "reasons": [
+        "positive_anchor_outside_window"
+      ],
+      "contained_tss_1based": []
+    },
+    {
+      "name": "132967|132651:132951|-|1",
+      "label": 1,
+      "reasons": [
+        "positive_anchor_outside_window"
+      ],
+      "contained_tss_1based": []
+    },
+    {
+      "name": "neg_15|129388:129688|+|0",
+      "label": 0,
+      "reasons": [
+        "negative_contains_recorded_tss"
+      ],
+      "contained_tss_1based": [
+        129684
+      ]
+    }
+  ],
+  "rows": 388,
+  "groups": 319,
+  "splits": {
+    "train": {
+      "rows": 233,
+      "labels": {
+        "1": 122,
+        "0": 111
+      },
+      "groups": 191,
+      "sha256": "998e6bdf8659e906319179c98bb11b0c23446a9f57fb2310b5bad8721ddaeb40"
+    },
+    "validation": {
+      "rows": 77,
+      "labels": {
+        "1": 40,
+        "0": 37
+      },
+      "groups": 64,
+      "sha256": "cf57a574aaa279cf2eedcb2050646e3b64228d322ccbe48706c2a9c2def38d7e"
+    },
+    "test": {
+      "rows": 78,
+      "labels": {
+        "1": 41,
+        "0": 37
+      },
+      "groups": 64,
+      "sha256": "4d3f1779600d68022322e3d0be4aa42d3b80ebaf79e83d7566a37d948907ff52"
+    }
+  },
+  "cross_split_violations": [],
+  "limitations": "New split of previously inspected windows; not an unseen biological cohort or proof of independence from pretraining data. No exhaustive remote homology search."
+}

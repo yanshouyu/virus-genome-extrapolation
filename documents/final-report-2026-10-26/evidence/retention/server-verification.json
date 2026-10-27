@@ -1,0 +1,17 @@
+{
+  "tasks": 18,
+  "backbones": 7,
+  "readouts": 126,
+  "all_embedding_hashes_match": true,
+  "all_raw_dataset_hashes_match": true,
+  "source_hashes_checked": 4,
+  "full_training_scalers_verified": true,
+  "fresh_process_embedding_max_abs": 0.0,
+  "full_test_probability_replay_max_abs": 0,
+  "all_metrics_recomputed": true,
+  "paired_common_bootstrap_resamples": 20000,
+  "frozen_settings_sha256": "cc34d0839e769e68dffa552d2a80b5eb4756811333f920194c60b14b90fe4365",
+  "acmnpv_test_opened": false,
+  "new_backbone_training": false,
+  "all18_task_preservation_supported": false
+}

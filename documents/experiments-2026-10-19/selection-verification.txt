@@ -1,0 +1,2 @@
+The summary rejected the original seed-44 run because the best-step metric and retained checkpoint pointer are inconsistent.
+The controlled Trainer regression passes after synchronizing evaluation and saves; the full suite reports 18 passed and 2 opt-in pretrained checks skipped.

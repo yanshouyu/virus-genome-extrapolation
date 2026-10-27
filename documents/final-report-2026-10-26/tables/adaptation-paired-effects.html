@@ -1,0 +1,85 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>adaptation-paired-effects — NT adaptation study</title><style>body{font:17px/1.65 Georgia,serif;color:#202a35;background:#f3f5f7;margin:0} main{max-width:1100px;margin:auto;background:white;padding:48px 5vw} h1,h2,h3{font-family:system-ui,sans-serif;line-height:1.23;color:#173b53} h1{font-size:34px} h2{margin-top:2em;border-top:1px solid #dce4e9;padding-top:22px} a{color:#116590} img{max-width:100%;height:auto} table{width:100%;border-collapse:collapse;font:14px/1.45 system-ui,sans-serif;margin:25px 0} th,td{padding:9px;border-bottom:1px solid #dce4e9;text-align:left} th{background:#edf3f7} code{overflow-wrap:anywhere;font-size:.85em} p,li{overflow-wrap:break-word} @media print{body{background:white}main{padding:0;max-width:none}h2,h3{break-after:avoid}img,table{break-inside:avoid}a{color:inherit}}</style><main><table>
+<thead>
+<tr>
+<th>Comparison (left minus right)</th>
+<th style="text-align:right">Log loss [95% CI]</th>
+<th style="text-align:right">MCC [95% CI]</th>
+<th style="text-align:right">ROC AUC [95% CI]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100m-budget4096-baculo-minus-general</td>
+<td style="text-align:right">-0.0189 [-0.0814, +0.0483]</td>
+<td style="text-align:right">+0.0864 [-0.0253, +0.2065]</td>
+<td style="text-align:right">+0.0077 [-0.0457, +0.0614]</td>
+</tr>
+<tr>
+<td>100m-budget4096-baculo-minus-before</td>
+<td style="text-align:right">-0.0243 [-0.0969, +0.0530]</td>
+<td style="text-align:right">+0.0434 [-0.0996, +0.1996]</td>
+<td style="text-align:right">+0.0158 [-0.0474, +0.0826]</td>
+</tr>
+<tr>
+<td>100m-baculo-4096-minus-512</td>
+<td style="text-align:right">-0.0138 [-0.0510, +0.0262]</td>
+<td style="text-align:right">-0.0176 [-0.0845, +0.0401]</td>
+<td style="text-align:right">+0.0092 [-0.0180, +0.0380]</td>
+</tr>
+<tr>
+<td>100m-general-4096-minus-512</td>
+<td style="text-align:right">+0.0000 [+0.0000, +0.0000]</td>
+<td style="text-align:right">+0.0000 [+0.0000, +0.0000]</td>
+<td style="text-align:right">+0.0000 [+0.0000, +0.0000]</td>
+</tr>
+<tr>
+<td>100m-budget4096-baculo-minus-kmer</td>
+<td style="text-align:right">+0.0038 [-0.1070, +0.1115]</td>
+<td style="text-align:right">+0.0623 [-0.1568, +0.3039]</td>
+<td style="text-align:right">-0.0180 [-0.1028, +0.0698]</td>
+</tr>
+<tr>
+<td>500m-budget4096-baculo-minus-general</td>
+<td style="text-align:right">-0.1498 [-0.2536, -0.0611]</td>
+<td style="text-align:right">+0.1664 [+0.0169, +0.3131]</td>
+<td style="text-align:right">+0.0930 [+0.0360, +0.1648]</td>
+</tr>
+<tr>
+<td>500m-budget4096-baculo-minus-before</td>
+<td style="text-align:right">-0.1832 [-0.3495, -0.0356]</td>
+<td style="text-align:right">+0.2176 [+0.0194, +0.4326]</td>
+<td style="text-align:right">+0.1101 [+0.0164, +0.2181]</td>
+</tr>
+<tr>
+<td>500m-baculo-4096-minus-512</td>
+<td style="text-align:right">-0.0873 [-0.1564, -0.0329]</td>
+<td style="text-align:right">+0.0691 [-0.0267, +0.1575]</td>
+<td style="text-align:right">+0.0507 [+0.0148, +0.0988]</td>
+</tr>
+<tr>
+<td>500m-general-4096-minus-512</td>
+<td style="text-align:right">+0.0000 [+0.0000, +0.0000]</td>
+<td style="text-align:right">+0.0000 [+0.0000, +0.0000]</td>
+<td style="text-align:right">+0.0000 [+0.0000, +0.0000]</td>
+</tr>
+<tr>
+<td>500m-budget4096-baculo-minus-kmer</td>
+<td style="text-align:right">-0.1076 [-0.2200, +0.0042]</td>
+<td style="text-align:right">+0.1593 [-0.0254, +0.3708]</td>
+<td style="text-align:right">+0.0520 [-0.0230, +0.1356]</td>
+</tr>
+<tr>
+<td>pilot-100m-baculo-lora-minus-full-seed42</td>
+<td style="text-align:right">-0.0044 [-0.0562, +0.0455]</td>
+<td style="text-align:right">+0.1041 [-0.0087, +0.2383]</td>
+<td style="text-align:right">+0.0128 [-0.0360, +0.0670]</td>
+</tr>
+<tr>
+<td>pilot-100m-general-lora-minus-full-seed42</td>
+<td style="text-align:right">+0.0159 [-0.0208, +0.0478]</td>
+<td style="text-align:right">+0.0529 [-0.0465, +0.1610]</td>
+<td style="text-align:right">-0.0054 [-0.0416, +0.0351]</td>
+</tr>
+</tbody>
+</table>
+</main></html>

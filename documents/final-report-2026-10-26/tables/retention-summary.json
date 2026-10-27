@@ -1,0 +1,198 @@
+{
+  "Promoter": {
+    "baculo-minus-original": {
+      "delta": 0.03628978997499965,
+      "interval": [
+        0.005428997437193109,
+        0.0676230678393754
+      ],
+      "one_sided95_lower": 0.010258602877190848,
+      "one_sided95_upper": 0.06275104671957543
+    },
+    "general-minus-original": {
+      "delta": 0.025427968980149318,
+      "interval": [
+        -0.00408232501355466,
+        0.05560540206314813
+      ],
+      "one_sided95_lower": 0.00047790693138347626,
+      "one_sided95_upper": 0.05060164166898911
+    },
+    "baculo-minus-general": {
+      "delta": 0.010861820994850335,
+      "interval": [
+        -0.007344484711111318,
+        0.02915815973647125
+      ],
+      "one_sided95_lower": -0.004278561934700581,
+      "one_sided95_upper": 0.02628374126519951
+    },
+    "mcc": {
+      "original": 0.7358553091116932,
+      "500m-full-baculo-seed42": 0.7725418618459093,
+      "500m-full-baculo-seed43": 0.7725327436894563,
+      "500m-full-baculo-seed44": 0.771360691724713,
+      "500m-full-general-seed42": 0.766475967808233,
+      "500m-full-general-seed43": 0.754595339956064,
+      "500m-full-general-seed44": 0.7627785265112305
+    }
+  },
+  "Enhancer": {
+    "baculo-minus-original": {
+      "delta": 0.009327348047510453,
+      "interval": [
+        -0.00954425132082761,
+        0.028248026596494717
+      ],
+      "one_sided95_lower": -0.0065410659867334905,
+      "one_sided95_upper": 0.025274896990845282
+    },
+    "general-minus-original": {
+      "delta": -0.009328408312943015,
+      "interval": [
+        -0.028468043081774034,
+        0.00991626827318913
+      ],
+      "one_sided95_lower": -0.025229623223243992,
+      "one_sided95_upper": 0.006868581270037312
+    },
+    "baculo-minus-general": {
+      "delta": 0.018655756360453468,
+      "interval": [
+        0.005292153013670362,
+        0.03231561921891285
+      ],
+      "one_sided95_lower": 0.0073479883919382845,
+      "one_sided95_upper": 0.030166489426129272
+    },
+    "mcc": {
+      "original": 0.48551463958743873,
+      "500m-full-baculo-seed42": 0.49650662138209045,
+      "500m-full-baculo-seed43": 0.49707927730061285,
+      "500m-full-baculo-seed44": 0.4909400642221441,
+      "500m-full-general-seed42": 0.47670605798392984,
+      "500m-full-general-seed43": 0.4726881089598785,
+      "500m-full-general-seed44": 0.4791645268796787
+    }
+  },
+  "Splice": {
+    "baculo-minus-original": {
+      "delta": 0.013177167779518273,
+      "interval": [
+        0.002890364417591812,
+        0.023249338348079667
+      ],
+      "one_sided95_lower": 0.004565903674061189,
+      "one_sided95_upper": 0.021684948518871733
+    },
+    "general-minus-original": {
+      "delta": 0.038677424996512055,
+      "interval": [
+        0.02726513932011266,
+        0.04998802352803203
+      ],
+      "one_sided95_lower": 0.029023048906081282,
+      "one_sided95_upper": 0.048233436598213775
+    },
+    "baculo-minus-general": {
+      "delta": -0.025500257216993782,
+      "interval": [
+        -0.03473860315381845,
+        -0.016331481600994936
+      ],
+      "one_sided95_lower": -0.03326944328682711,
+      "one_sided95_upper": -0.017866770829778042
+    },
+    "mcc": {
+      "original": 0.5694469107059211,
+      "500m-full-baculo-seed42": 0.580034304034438,
+      "500m-full-baculo-seed43": 0.5833379139643026,
+      "500m-full-baculo-seed44": 0.5845000174575773,
+      "500m-full-general-seed42": 0.6100900398957246,
+      "500m-full-general-seed43": 0.6106602322314642,
+      "500m-full-general-seed44": 0.603622734980111
+    }
+  },
+  "Histone": {
+    "baculo-minus-original": {
+      "delta": -0.007490284938865499,
+      "interval": [
+        -0.01613800398619545,
+        0.0010287065369102844
+      ],
+      "one_sided95_lower": -0.014792435480510699,
+      "one_sided95_upper": -0.0003908091485217537
+    },
+    "general-minus-original": {
+      "delta": -0.009776310934328847,
+      "interval": [
+        -0.018795808323355645,
+        -0.000764437175524794
+      ],
+      "one_sided95_lower": -0.017404064341074145,
+      "one_sided95_upper": -0.0021401130217914787
+    },
+    "baculo-minus-general": {
+      "delta": 0.0022860259954633477,
+      "interval": [
+        -0.0041722794178896076,
+        0.008572169964738726
+      ],
+      "one_sided95_lower": -0.003112065995845453,
+      "one_sided95_upper": 0.007544657849441668
+    },
+    "mcc": {
+      "original": 0.5269937965102262,
+      "500m-full-baculo-seed42": 0.517469998638121,
+      "500m-full-baculo-seed43": 0.5222633286807673,
+      "500m-full-baculo-seed44": 0.5187772073951935,
+      "500m-full-general-seed42": 0.5163098132379111,
+      "500m-full-general-seed43": 0.5186936686780121,
+      "500m-full-general-seed44": 0.5166489748117685
+    }
+  },
+  "Category-balanced overall": {
+    "baculo-minus-original": {
+      "delta": 0.012826005215790803,
+      "interval": [
+        0.0027717527689041037,
+        0.022726597558317685
+      ],
+      "one_sided95_lower": 0.004312027577129096,
+      "one_sided95_upper": 0.02109407734038833,
+      "margin": 0.02,
+      "conclusion": "preservation supported"
+    },
+    "general-minus-original": {
+      "delta": 0.011250168682347406,
+      "interval": [
+        0.0017511838985912996,
+        0.020665597783773245
+      ],
+      "one_sided95_lower": 0.003376311384247216,
+      "one_sided95_upper": 0.019106010177922766,
+      "margin": 0.02,
+      "conclusion": "preservation supported"
+    },
+    "baculo-minus-general": {
+      "delta": 0.0015758365334433977,
+      "interval": [
+        -0.004575634750487589,
+        0.007711801809656636
+      ],
+      "one_sided95_lower": -0.0036556462533295806,
+      "one_sided95_upper": 0.00674515699119768,
+      "margin": 0.02,
+      "conclusion": "preservation supported"
+    },
+    "mcc": {
+      "original": 0.5794526639788198,
+      "500m-full-baculo-seed42": 0.5916381964751397,
+      "500m-full-baculo-seed43": 0.5938033159087848,
+      "500m-full-baculo-seed44": 0.5913944951999069,
+      "500m-full-general-seed42": 0.5923954697314497,
+      "500m-full-general-seed43": 0.5891593374563546,
+      "500m-full-general-seed44": 0.5905536907956972
+    }
+  }
+}

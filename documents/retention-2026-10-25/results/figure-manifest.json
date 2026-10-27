@@ -1,0 +1,11 @@
+{
+  "source_sha256": "f0b27900ebf0dc07869bca2bf405597a72395cfb3b6b94685d31a34c0070d1b9",
+  "figures": {
+    "task-retention.pdf": "0db1227e82d82d19e830c3bc4f29b95802d5c1babdaa10c199bb3e5c9449e53c",
+    "family-retention.png": "6cccb3642461e412e360e144e714344cab5a3c47e8206cff7ae6f8dd0fb399bd",
+    "benefit-retention.png": "3daf7cfa1c3ee7a4d02e51b2adb4e4041b992ab3a628622289f70cd9ee83c289",
+    "task-retention.png": "3e7c3cd44ced5368a6ab4e14ea2da5031d02f2bb73ea138bef40d70a3b7dc560",
+    "benefit-retention.pdf": "0ee135d412302a4e12e862e12999c192d046128179b0edbcefe54cf2f5e94b27",
+    "family-retention.pdf": "a64a9c18c639d41a1f074c13488d46895ea72c9e722770b9a75955acaa05a86c"
+  }
+}

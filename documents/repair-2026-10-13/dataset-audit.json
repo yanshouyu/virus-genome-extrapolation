@@ -1,0 +1,42 @@
+{
+  "policy": "same-strand overlap and duplicate/group leakage prohibited; opposite-strand overlap allowed",
+  "splits": {
+    "train": {
+      "rows": 233,
+      "labels": {
+        "1": 122,
+        "0": 111
+      },
+      "lengths": {
+        "300": 233
+      },
+      "sha256": "998e6bdf8659e906319179c98bb11b0c23446a9f57fb2310b5bad8721ddaeb40"
+    },
+    "validation": {
+      "rows": 77,
+      "labels": {
+        "1": 40,
+        "0": 37
+      },
+      "lengths": {
+        "300": 77
+      },
+      "sha256": "cf57a574aaa279cf2eedcb2050646e3b64228d322ccbe48706c2a9c2def38d7e"
+    },
+    "test": {
+      "rows": 78,
+      "labels": {
+        "1": 41,
+        "0": 37
+      },
+      "lengths": {
+        "300": 78
+      },
+      "sha256": "4d3f1779600d68022322e3d0be4aa42d3b80ebaf79e83d7566a37d948907ff52"
+    }
+  },
+  "duplicate_identifiers": 0,
+  "violations": [],
+  "label_errors": [],
+  "allowed_opposite_strand_overlap_pairs": 97
+}

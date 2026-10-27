@@ -1,0 +1,117 @@
+{
+  "candidates": [
+    {
+      "C": 0.01,
+      "validation": {
+        "log_loss": 0.4486707545628413,
+        "accuracy": 0.7792207792207793,
+        "precision": 0.8285714285714286,
+        "recall": 0.725,
+        "mcc": 0.5647490074727369,
+        "roc_auc": 0.8817567567567568,
+        "average_precision": 0.8692213279356961
+      }
+    },
+    {
+      "C": 0.1,
+      "validation": {
+        "log_loss": 0.628326014056195,
+        "accuracy": 0.7402597402597403,
+        "precision": 0.7777777777777778,
+        "recall": 0.7,
+        "mcc": 0.48443887383848594,
+        "roc_auc": 0.8297297297297297,
+        "average_precision": 0.8047876086654687
+      }
+    },
+    {
+      "C": 1.0,
+      "validation": {
+        "log_loss": 1.0863286438019422,
+        "accuracy": 0.7142857142857143,
+        "precision": 0.75,
+        "recall": 0.675,
+        "mcc": 0.4323413971826711,
+        "roc_auc": 0.7993243243243242,
+        "average_precision": 0.7645554031863357
+      }
+    },
+    {
+      "C": 10.0,
+      "validation": {
+        "log_loss": 1.622136035073197,
+        "accuracy": 0.7142857142857143,
+        "precision": 0.75,
+        "recall": 0.675,
+        "mcc": 0.4323413971826711,
+        "roc_auc": 0.7972972972972973,
+        "average_precision": 0.7660162304417091
+      }
+    },
+    {
+      "C": 100.0,
+      "validation": {
+        "log_loss": 2.354955460417486,
+        "accuracy": 0.6883116883116883,
+        "precision": 0.7352941176470589,
+        "recall": 0.625,
+        "mcc": 0.3840996432645162,
+        "roc_auc": 0.8087837837837837,
+        "average_precision": 0.7700283834092023
+      }
+    }
+  ],
+  "selected_C": 0.01,
+  "train_prevalence": 0.5236051502145923,
+  "packages": {
+    "numpy": "2.4.2",
+    "scikit-learn": "1.7.1"
+  },
+  "dataset_sha256": {
+    "train": "998e6bdf8659e906319179c98bb11b0c23446a9f57fb2310b5bad8721ddaeb40",
+    "validation": "cf57a574aaa279cf2eedcb2050646e3b64228d322ccbe48706c2a9c2def38d7e",
+    "test": "4d3f1779600d68022322e3d0be4aa42d3b80ebaf79e83d7566a37d948907ff52"
+  },
+  "models": {
+    "prevalence": {
+      "validation": {
+        "log_loss": 0.6924220998269133,
+        "accuracy": 0.5194805194805194,
+        "precision": 0.5194805194805194,
+        "recall": 1.0,
+        "mcc": 0.0,
+        "roc_auc": 0.5,
+        "average_precision": 0.5194805194805194
+      },
+      "test": {
+        "log_loss": 0.6918399884039073,
+        "accuracy": 0.5256410256410257,
+        "precision": 0.5256410256410257,
+        "recall": 1.0,
+        "mcc": 0.0,
+        "roc_auc": 0.5,
+        "average_precision": 0.5256410256410257
+      }
+    },
+    "kmer_logistic": {
+      "validation": {
+        "log_loss": 0.4486707545628413,
+        "accuracy": 0.7792207792207793,
+        "precision": 0.8285714285714286,
+        "recall": 0.725,
+        "mcc": 0.5647490074727369,
+        "roc_auc": 0.8817567567567568,
+        "average_precision": 0.8692213279356961
+      },
+      "test": {
+        "log_loss": 0.4485513960258241,
+        "accuracy": 0.782051282051282,
+        "precision": 0.8157894736842105,
+        "recall": 0.7560975609756098,
+        "mcc": 0.5663486464186276,
+        "roc_auc": 0.8800263678312459,
+        "average_precision": 0.8564874011447988
+      }
+    }
+  }
+}

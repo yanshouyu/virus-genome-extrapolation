@@ -1,0 +1,110 @@
+{
+  "base_commit": "3a0e592f1c293128e057c1ca75945505ca6ed4fd",
+  "source_sha256": {
+    "scripts/extract_validation_embeddings.py": "1485b91bcd679bdc26b9e6fcbbe7ca8155cfd84145a9ef85e0fbc9feac2d0402",
+    "scripts/analyze_validation_readouts.py": "2217588f0d9a2266c3baf160c21a78f29f0b42d73be872e358431fe8a01cf7e0",
+    "scripts/extract_validation_embeddings.slurm": "ab71fb88726c780956f139c9d17795e45860ea83bd3c11a1b18d328a633aed0d",
+    "scripts/analyze_validation_readouts.slurm": "3ba3f1eb959719dcb4c59e542363c8785dc2647fb6fd14a81c58837e47584879",
+    "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c",
+    "scripts/run_sequence_baselines.py": "abf48639eecee0e18a0f0d2d62050de8ed7b6120eea0be3bff0d2e1876b0ac1b"
+  },
+  "collected_artifact_sha256": {
+    "embeddings/ntv1/metadata.json": "bfabdd5355a5e1660538c92e4dda7429a8ba36814c0a9c0f11df8a5a3676bc80",
+    "embeddings/ntv1/train.npz": "8bed0d980f360afbeac4e49eb241845ffb668b51e2fe54a65b9e5a368cf6a4d2",
+    "embeddings/ntv1/validation.npz": "12820e8df68d6a988400d7cce0b352cfdfe8ae0492ef6dfe7b4da67dad2b1bcb",
+    "embeddings/ntv2/metadata.json": "73d8f2b6dee39f7e97a8de02405d4e571867ce1e5e7c7ffe6cd4d95f42839307",
+    "embeddings/ntv2/train.npz": "fe34a6cd6b7a6254d59d95e7408fda22749c134ea9128ca36e6a3e1dbddbb8ff",
+    "embeddings/ntv2/validation.npz": "e6e61dad1e4038733415d86852e0f30201fd6d376e815e3d5b41a315732d10ed",
+    "readouts/COMPLETE": "5e78b600e173f728074be37c173529ff1a70f228e8acfbba688054d659e19913",
+    "readouts/kmer_model.npz": "2c8b4e3abee3546f427461a8c8b7779238f56bb2c51d9981043fc16c5b76d6ea",
+    "readouts/kmer_outer_oof.npz": "d1daa1e82a1fffacb108d1fc0e7ea89f1f29bff164692d11c344dd430b021db3",
+    "readouts/kmer_validation.npz": "cee61989b7f30c4f42ea981413ff1cfede7e7860ab28ac855631eef8a1550a66",
+    "readouts/metrics.json": "a383736010eb8bd37450bc427fd7c4a417ccbe35c247693bdd9e094de3fc6fad",
+    "readouts/ntv1_cls_model.npz": "49b0a22193e84b7b9baeea3ed5f6ad973a6e3ae78206b9c6185f324d73bef878",
+    "readouts/ntv1_cls_outer_oof.npz": "facf59917fb1388b0c97a0e3424abae573b13c76fae1dba2b7d0302c8e20d912",
+    "readouts/ntv1_cls_validation.npz": "03923cf058456bc1dfb2ed279656d4c51df011de47b8a6a266289f22f4e9b98c",
+    "readouts/ntv1_mean_model.npz": "f2210251919e29a32220635a353cef18b9bf09f0e0b449f26f0d086a911babbd",
+    "readouts/ntv1_mean_outer_oof.npz": "8e83257d205b53f47c5d415acf0e93e96e8d261db3fc7a8fbbeb48445dd4d9b1",
+    "readouts/ntv1_mean_validation.npz": "ff28b6de4d3f0eb368b5b37984ab69a48137e9ff650a5dfb666f780fd5e0df30",
+    "readouts/ntv2_cls_model.npz": "4e8198feebe5849dbf5463a31b9973217ef44bf5b373b973b0d3552fb72a1b37",
+    "readouts/ntv2_cls_outer_oof.npz": "1a6ebd68f481322cfa1acdda3c5f3970b9a6edb18a39aa540b5bc60d77ea18ab",
+    "readouts/ntv2_cls_validation.npz": "94427b662e3184e7043764ec8d81fc3843f69218e4caf8bcb1766224a1d740b1",
+    "readouts/ntv2_mean_model.npz": "cc6c75bc9b2ca7e4306458a411add6b8785931bc525ae9ae542826191f954c0b",
+    "readouts/ntv2_mean_outer_oof.npz": "113eb08e30ec79c239fc2955a5324e6cd7bba7b6771e274b88f8ba4624fc75b3",
+    "readouts/ntv2_mean_validation.npz": "75182ebb36e98a78064092f69a2fb2fa25b10ebdedc2d003511d72e82d413583"
+  },
+  "export_verification": {
+    "kmer": {
+      "export_replay_max_abs": 2.220446049250313e-16,
+      "metrics_recomputed": true
+    },
+    "ntv1_cls": {
+      "export_replay_max_abs": 2.7755575615628914e-16,
+      "metrics_recomputed": true
+    },
+    "ntv1_mean": {
+      "export_replay_max_abs": 3.3306690738754696e-16,
+      "metrics_recomputed": true
+    },
+    "ntv2_cls": {
+      "export_replay_max_abs": 2.220446049250313e-16,
+      "metrics_recomputed": true
+    },
+    "ntv2_mean": {
+      "export_replay_max_abs": 2.220446049250313e-16,
+      "metrics_recomputed": true
+    }
+  },
+  "extraction": {
+    "ntv1": {
+      "source": "InstaDeepAI/nucleotide-transformer-500m-human-ref",
+      "revision": "f87b5d7233295242e79c951873d290f4cf992045",
+      "packages": {
+        "torch": "2.10.0+computecanada",
+        "transformers": "5.3.0+computecanada",
+        "numpy": "2.4.2+computecanada"
+      },
+      "script_sha256": "1485b91bcd679bdc26b9e6fcbbe7ca8155cfd84145a9ef85e0fbc9feac2d0402",
+      "splits": {
+        "train": {
+          "n": 233,
+          "sha256": "998e6bdf8659e906319179c98bb11b0c23446a9f57fb2310b5bad8721ddaeb40",
+          "replay_max_abs": 0.0,
+          "dimensions": 1280
+        },
+        "validation": {
+          "n": 77,
+          "sha256": "cf57a574aaa279cf2eedcb2050646e3b64228d322ccbe48706c2a9c2def38d7e",
+          "replay_max_abs": 0.0,
+          "dimensions": 1280
+        }
+      },
+      "elapsed_seconds": 5.903169631958008
+    },
+    "ntv2": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+      "revision": "06615c1660c892fc199840c18123f8385b3542a8",
+      "packages": {
+        "torch": "2.10.0+computecanada",
+        "transformers": "5.3.0+computecanada",
+        "numpy": "2.4.2+computecanada"
+      },
+      "script_sha256": "1485b91bcd679bdc26b9e6fcbbe7ca8155cfd84145a9ef85e0fbc9feac2d0402",
+      "splits": {
+        "train": {
+          "n": 233,
+          "sha256": "998e6bdf8659e906319179c98bb11b0c23446a9f57fb2310b5bad8721ddaeb40",
+          "replay_max_abs": 0.0,
+          "dimensions": 1024
+        },
+        "validation": {
+          "n": 77,
+          "sha256": "cf57a574aaa279cf2eedcb2050646e3b64228d322ccbe48706c2a9c2def38d7e",
+          "replay_max_abs": 0.0,
+          "dimensions": 1024
+        }
+      },
+      "elapsed_seconds": 5.594599485397339
+    }
+  }
+}

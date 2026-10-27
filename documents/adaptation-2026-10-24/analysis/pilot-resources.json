@@ -1,0 +1,58 @@
+[
+  {
+    "run": "100m-full-baculo-seed42",
+    "trainable_parameters": 97889132,
+    "trainable_fraction": 1.0,
+    "peak_allocated_gb": 6.88184576,
+    "training_minutes": 11.075514698028565,
+    "program_minutes": 11.364792545636496,
+    "allocated_gpu_minutes": 11.883333333333333,
+    "selected_step": 3584,
+    "audit_loss": 6.901612539160875,
+    "log_loss": 0.45294035767398994,
+    "mcc": 0.5837321673877869,
+    "roc_auc": 0.8641891891891892
+  },
+  {
+    "run": "100m-lora-baculo-seed42",
+    "trainable_parameters": 360448,
+    "trainable_fraction": 0.0036686976168244178,
+    "peak_allocated_gb": 5.056764928,
+    "training_minutes": 10.359478759765626,
+    "program_minutes": 10.641412218411764,
+    "allocated_gpu_minutes": 11.35,
+    "selected_step": 3328,
+    "audit_loss": 6.9733931830311136,
+    "log_loss": 0.4484925907953879,
+    "mcc": 0.6878378378378378,
+    "roc_auc": 0.8770270270270271
+  },
+  {
+    "run": "100m-full-general-seed42",
+    "trainable_parameters": 97889132,
+    "trainable_fraction": 1.0,
+    "peak_allocated_gb": 6.881849344,
+    "training_minutes": 11.08069614569346,
+    "program_minutes": 11.313169058163961,
+    "allocated_gpu_minutes": 12.383333333333333,
+    "selected_step": 128,
+    "audit_loss": 7.068919225699371,
+    "log_loss": 0.4730368161248178,
+    "mcc": 0.5575106592778106,
+    "roc_auc": 0.8547297297297297
+  },
+  {
+    "run": "100m-lora-general-seed42",
+    "trainable_parameters": 360448,
+    "trainable_fraction": 0.0036686976168244178,
+    "peak_allocated_gb": 5.056764928,
+    "training_minutes": 10.43632965485255,
+    "program_minutes": 10.670551800727845,
+    "allocated_gpu_minutes": 11.25,
+    "selected_step": 256,
+    "audit_loss": 7.052409550089852,
+    "log_loss": 0.4889654929703884,
+    "mcc": 0.6103985186201879,
+    "roc_auc": 0.8493243243243244
+  }
+]

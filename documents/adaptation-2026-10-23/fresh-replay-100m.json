@@ -1,0 +1,80 @@
+{
+  "100m-baculo-seed42": {
+    "selected_state_exact": true,
+    "embedding_replay_max_abs": {
+      "train": {
+        "cls": 0.0,
+        "mean": 0.0
+      },
+      "validation": {
+        "cls": 0.0,
+        "mean": 0.0
+      }
+    }
+  },
+  "100m-baculo-seed43": {
+    "selected_state_exact": true,
+    "embedding_replay_max_abs": {
+      "train": {
+        "cls": 0.0,
+        "mean": 0.0
+      },
+      "validation": {
+        "cls": 0.0,
+        "mean": 0.0
+      }
+    }
+  },
+  "100m-baculo-seed44": {
+    "selected_state_exact": true,
+    "embedding_replay_max_abs": {
+      "train": {
+        "cls": 0.0,
+        "mean": 0.0
+      },
+      "validation": {
+        "cls": 0.0,
+        "mean": 0.0
+      }
+    }
+  },
+  "100m-general-seed42": {
+    "selected_state_exact": true,
+    "embedding_replay_max_abs": {
+      "train": {
+        "cls": 0.0,
+        "mean": 0.0
+      },
+      "validation": {
+        "cls": 0.0,
+        "mean": 0.0
+      }
+    }
+  },
+  "100m-general-seed43": {
+    "selected_state_exact": true,
+    "embedding_replay_max_abs": {
+      "train": {
+        "cls": 0.0,
+        "mean": 0.0
+      },
+      "validation": {
+        "cls": 0.0,
+        "mean": 0.0
+      }
+    }
+  },
+  "100m-general-seed44": {
+    "selected_state_exact": true,
+    "embedding_replay_max_abs": {
+      "train": {
+        "cls": 0.0,
+        "mean": 0.0
+      },
+      "validation": {
+        "cls": 0.0,
+        "mean": 0.0
+      }
+    }
+  }
+}

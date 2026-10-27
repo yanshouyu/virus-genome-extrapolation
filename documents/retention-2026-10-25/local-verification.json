@@ -1,0 +1,14 @@
+{
+  "tasks": 18,
+  "readouts": 126,
+  "all_saved_metrics_recomputed": true,
+  "all_paired_intervals_and_simultaneous_task_bounds_reproduced": true,
+  "all_family_and_overall_intervals_reproduced": true,
+  "common_valid_resamples": 20000,
+  "all_server_manifest_hashes_match": true,
+  "pre_test_frozen_settings_match": true,
+  "genomic_blocks_independently_reconstructed": true,
+  "bootstrap_weights_regenerated": true,
+  "source_sha256": "3bbc10c39986c1f5b2d8c3b9e70d1aabbcd3b9e235ee6c8cc7de054024dc30f5",
+  "new_inference": false
+}

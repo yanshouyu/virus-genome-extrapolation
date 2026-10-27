@@ -1,0 +1,70 @@
+{
+  "100m": {
+    "baculo": {
+      "jobids": [
+        "24896408_0",
+        "24896408_2",
+        "24896408_4"
+      ],
+      "slurm_allocated_seconds": 1110,
+      "training_seconds": 949.2325110435486,
+      "selected_steps": [
+        512,
+        512,
+        512
+      ],
+      "gpu": "NVIDIA H100 80GB HBM3 MIG 2g.20gb",
+      "max_gpu_allocated_bytes": 3184759296
+    },
+    "general": {
+      "jobids": [
+        "24897074_1",
+        "24897074_3",
+        "24897074_5"
+      ],
+      "slurm_allocated_seconds": 1109,
+      "training_seconds": 949.5584616661072,
+      "selected_steps": [
+        128,
+        128,
+        128
+      ],
+      "gpu": "NVIDIA H100 80GB HBM3 MIG 2g.20gb",
+      "max_gpu_allocated_bytes": 3184759296
+    }
+  },
+  "500m": {
+    "baculo": {
+      "jobids": [
+        "24896596_0",
+        "24896596_2",
+        "24896596_4"
+      ],
+      "slurm_allocated_seconds": 739,
+      "training_seconds": 446.9018020629883,
+      "selected_steps": [
+        512,
+        512,
+        512
+      ],
+      "gpu": "NVIDIA H100 80GB HBM3",
+      "max_gpu_allocated_bytes": 19067677696
+    },
+    "general": {
+      "jobids": [
+        "24897075_1",
+        "24897075_3",
+        "24897075_5"
+      ],
+      "slurm_allocated_seconds": 601,
+      "training_seconds": 404.9001181125641,
+      "selected_steps": [
+        256,
+        256,
+        128
+      ],
+      "gpu": "NVIDIA H100 80GB HBM3",
+      "max_gpu_allocated_bytes": 19067677696
+    }
+  }
+}

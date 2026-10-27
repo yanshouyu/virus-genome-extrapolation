@@ -1,16 +1,14 @@
-# Processed Datasets
+# Processed datasets
 
-This directory contains the processed training and testing datasets for the virus genome extrapolation project.
+Use [clean_v2](clean_v2/README.md) for continued work. It provides separate train, validation and test files, a strand-aware grouping policy, label checks and a source/hash manifest.
 
-## Files
+The original `train.csv`, `test.csv`, `train.fasta` and `test.fasta` in this directory are local course artifacts. They remain unchanged for provenance. Their per-class MMseqs2 split contains same-strand genomic overlaps across train/test and three label-inconsistent source rows; do not use them for new model selection or final evaluation.
 
-- `train.fasta`: Combined FASTA file containing training sequences from both positive and negative TSS classes. Sequences are grouped by MMseqs2 clusters to prevent within-cluster leakage during training.
-- `train.csv`: Same sequences as in `train.fasta`, for easy loading by `datasets.load_dataset()`.
-- `test.fasta`: Combined FASTA file containing testing sequences from both positive and negative TSS classes, similarly grouped.
-- `test.csv`: Same sequences as in `test.fasta`, for easy loading by `datasets.load_dataset()`.
+To reproduce the current export from the local interim inputs, run from the repository root:
 
-## Generation
+```bash
+PYTHONPATH=src python scripts/grouped_train_test_split.py
+PYTHONPATH=src python scripts/audit_dataset.py
+```
 
-These files were created using the `grouped_train_test_split.py` script, which performs a grouped train-test split (20% test size) on the interim TSS sequence data (`data/interim/tss_seq_range.fasta` and `data/interim/tss_neg_seq_range.fasta`) using cluster information from MMseqs2 clustering results.
-
-The split ensures that sequences from the same cluster (based on sequence similarity) are not split across train and test sets, maintaining data integrity for model evaluation.
+The clean export is tracked by Git. Large raw data, interim clustering artifacts and the historical course exports remain ignored. See [the repair report](../../documents/repair-2026-10-13/README.md).

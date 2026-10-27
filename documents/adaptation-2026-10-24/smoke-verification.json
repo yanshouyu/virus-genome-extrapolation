@@ -1,0 +1,260 @@
+{
+  "smoke-500m-full": {
+    "args": {
+      "size": "500m",
+      "condition": "baculo",
+      "method": "full",
+      "seed": 42,
+      "steps": 4096,
+      "lr": 1e-05,
+      "rank": 8,
+      "alpha": 16,
+      "microbatch": 16,
+      "smoke": true,
+      "output": "runs/2026-10-24/smoke-500m-full"
+    },
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+      "revision": "06615c1660c892fc199840c18123f8385b3542a8"
+    },
+    "pretraining_scope": "multispecies",
+    "initial_mlm_loss": 6.941208839416504,
+    "all_source_parameters_exact": true,
+    "token_limit": 2048,
+    "lora_targets": [],
+    "parameters": 498345436,
+    "trainable_parameters": 498345436,
+    "packages": {
+      "torch": "2.10.0+computecanada",
+      "transformers": "5.3.0+computecanada",
+      "numpy": "2.4.2+computecanada"
+    },
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017493504,
+    "corpus_sha256": "941b0822a71a7bebcc8675af0264715aa27ace8db07cb3be4482a4a3f3abffc4",
+    "eval_sha256": "d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761",
+    "source_sha256": {
+      "/project/6002642/shouyu/virus-genome-extrapolation/scripts/run_adaptation_duration.py": "6ceea286eea0789df43c69daa2f7b359a98e44376fa50e4414585920b9562b7b",
+      "src/baculo_adapt/duration.py": "990066639e15877a90964090eeaa39c39c36c129e4b7a0de64780b6c77242772",
+      "src/baculo_adapt/masking.py": "3c776076796c913b0d25c0203f6eb0c90bbd58660b7ee32e15c43446eb48ea2d",
+      "scripts/run_controlled_adaptation.py": "2c6a2ad9907ea0f85cc7513b170026c135ed31ca7e2b168312f0ab063096c2dc",
+      "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c"
+    },
+    "protocol_sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+    "budgets": {
+      "5": {
+        "budget": 5,
+        "selected_step": 5,
+        "selected_mlm_loss": 6.747527122497559,
+        "endpoint_mlm_loss": 6.747527122497559,
+        "input_tokens": 41120,
+        "masked_tokens": 6269,
+        "state_sha256": "85e0bf93438937b6228b90714bc5ae9f7c471644af602c6dfb54ecc5c2cc7e12",
+        "state_exact_reload": true
+      }
+    },
+    "selected_step": 5,
+    "selected_mlm_loss": 6.747527122497559,
+    "trainable_parameter_max_change": 5.811452865600586e-06,
+    "frozen_parameters_exact": null,
+    "frozen_parameters_sha256": null,
+    "training_seconds": 12.248931407928467,
+    "input_tokens": 41120,
+    "masked_tokens": 6269,
+    "max_gpu_allocated_bytes": 19067360768,
+    "max_gpu_reserved_bytes": 20208156672,
+    "plateau": {
+      "assessable": false
+    },
+    "total_seconds": 34.95737552642822,
+    "state_sha256": "85e0bf93438937b6228b90714bc5ae9f7c471644af602c6dfb54ecc5c2cc7e12",
+    "saved_state_exact_replay": true
+  },
+  "smoke-100m-lora": {
+    "args": {
+      "size": "100m",
+      "condition": "baculo",
+      "method": "lora",
+      "seed": 42,
+      "steps": 4096,
+      "lr": 0.0001,
+      "rank": 8,
+      "alpha": 16,
+      "microbatch": 16,
+      "smoke": true,
+      "output": "runs/2026-10-24/smoke-100m-lora"
+    },
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "pretraining_scope": "multispecies",
+    "initial_mlm_loss": 7.874791622161865,
+    "all_source_parameters_exact": true,
+    "token_limit": 2048,
+    "lora_targets": [
+      "esm.encoder.layer.0.attention.self.query",
+      "esm.encoder.layer.0.attention.self.value",
+      "esm.encoder.layer.1.attention.self.query",
+      "esm.encoder.layer.1.attention.self.value",
+      "esm.encoder.layer.2.attention.self.query",
+      "esm.encoder.layer.2.attention.self.value",
+      "esm.encoder.layer.3.attention.self.query",
+      "esm.encoder.layer.3.attention.self.value",
+      "esm.encoder.layer.4.attention.self.query",
+      "esm.encoder.layer.4.attention.self.value",
+      "esm.encoder.layer.5.attention.self.query",
+      "esm.encoder.layer.5.attention.self.value",
+      "esm.encoder.layer.6.attention.self.query",
+      "esm.encoder.layer.6.attention.self.value",
+      "esm.encoder.layer.7.attention.self.query",
+      "esm.encoder.layer.7.attention.self.value",
+      "esm.encoder.layer.8.attention.self.query",
+      "esm.encoder.layer.8.attention.self.value",
+      "esm.encoder.layer.9.attention.self.query",
+      "esm.encoder.layer.9.attention.self.value",
+      "esm.encoder.layer.10.attention.self.query",
+      "esm.encoder.layer.10.attention.self.value",
+      "esm.encoder.layer.11.attention.self.query",
+      "esm.encoder.layer.11.attention.self.value",
+      "esm.encoder.layer.12.attention.self.query",
+      "esm.encoder.layer.12.attention.self.value",
+      "esm.encoder.layer.13.attention.self.query",
+      "esm.encoder.layer.13.attention.self.value",
+      "esm.encoder.layer.14.attention.self.query",
+      "esm.encoder.layer.14.attention.self.value",
+      "esm.encoder.layer.15.attention.self.query",
+      "esm.encoder.layer.15.attention.self.value",
+      "esm.encoder.layer.16.attention.self.query",
+      "esm.encoder.layer.16.attention.self.value",
+      "esm.encoder.layer.17.attention.self.query",
+      "esm.encoder.layer.17.attention.self.value",
+      "esm.encoder.layer.18.attention.self.query",
+      "esm.encoder.layer.18.attention.self.value",
+      "esm.encoder.layer.19.attention.self.query",
+      "esm.encoder.layer.19.attention.self.value",
+      "esm.encoder.layer.20.attention.self.query",
+      "esm.encoder.layer.20.attention.self.value",
+      "esm.encoder.layer.21.attention.self.query",
+      "esm.encoder.layer.21.attention.self.value"
+    ],
+    "parameters": 98249580,
+    "trainable_parameters": 360448,
+    "packages": {
+      "torch": "2.10.0+computecanada",
+      "transformers": "5.3.0+computecanada",
+      "numpy": "2.4.2+computecanada"
+    },
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017493504,
+    "corpus_sha256": "941b0822a71a7bebcc8675af0264715aa27ace8db07cb3be4482a4a3f3abffc4",
+    "eval_sha256": "d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761",
+    "source_sha256": {
+      "/project/6002642/shouyu/virus-genome-extrapolation/scripts/run_adaptation_duration.py": "6ceea286eea0789df43c69daa2f7b359a98e44376fa50e4414585920b9562b7b",
+      "src/baculo_adapt/duration.py": "990066639e15877a90964090eeaa39c39c36c129e4b7a0de64780b6c77242772",
+      "src/baculo_adapt/masking.py": "3c776076796c913b0d25c0203f6eb0c90bbd58660b7ee32e15c43446eb48ea2d",
+      "scripts/run_controlled_adaptation.py": "2c6a2ad9907ea0f85cc7513b170026c135ed31ca7e2b168312f0ab063096c2dc",
+      "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c"
+    },
+    "protocol_sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+    "budgets": {
+      "5": {
+        "budget": 5,
+        "selected_step": 5,
+        "selected_mlm_loss": 7.888537883758545,
+        "endpoint_mlm_loss": 7.888537883758545,
+        "input_tokens": 41120,
+        "masked_tokens": 6269,
+        "state_sha256": "94d6d8442cf54149410937d42378f0397a12a3e526ae58dc7d83ee69350dd378",
+        "state_exact_reload": true
+      }
+    },
+    "selected_step": 5,
+    "selected_mlm_loss": 7.888537883758545,
+    "trainable_parameter_max_change": 5.805207911180332e-05,
+    "frozen_parameters_exact": true,
+    "frozen_parameters_sha256": "ad56ace6dca1ce31e0781740a7d704f441ab97e4a8e0140bd46690af6efae264",
+    "training_seconds": 1.5672907829284668,
+    "input_tokens": 41120,
+    "masked_tokens": 6269,
+    "max_gpu_allocated_bytes": 5056764928,
+    "max_gpu_reserved_bytes": 5322571776,
+    "plateau": {
+      "assessable": false
+    },
+    "total_seconds": 14.43407940864563,
+    "state_sha256": "94d6d8442cf54149410937d42378f0397a12a3e526ae58dc7d83ee69350dd378",
+    "saved_state_exact_replay": true
+  },
+  "smoke-100m-full": {
+    "args": {
+      "size": "100m",
+      "condition": "baculo",
+      "method": "full",
+      "seed": 42,
+      "steps": 4096,
+      "lr": 1e-05,
+      "rank": 8,
+      "alpha": 16,
+      "microbatch": 16,
+      "smoke": true,
+      "output": "runs/2026-10-24/smoke-100m-full"
+    },
+    "source": {
+      "source": "InstaDeepAI/nucleotide-transformer-v2-100m-multi-species",
+      "revision": "f34324c6fde36a4f635f0f1f06cac5d25acd6798"
+    },
+    "pretraining_scope": "multispecies",
+    "initial_mlm_loss": 7.874791622161865,
+    "all_source_parameters_exact": true,
+    "token_limit": 2048,
+    "lora_targets": [],
+    "parameters": 97889132,
+    "trainable_parameters": 97889132,
+    "packages": {
+      "torch": "2.10.0+computecanada",
+      "transformers": "5.3.0+computecanada",
+      "numpy": "2.4.2+computecanada"
+    },
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017493504,
+    "corpus_sha256": "941b0822a71a7bebcc8675af0264715aa27ace8db07cb3be4482a4a3f3abffc4",
+    "eval_sha256": "d48b74a6bf0bd4f0da2462293b2101a4749e5eb7162aeab11f03a7ab60b92761",
+    "source_sha256": {
+      "/project/6002642/shouyu/virus-genome-extrapolation/scripts/run_adaptation_duration.py": "6ceea286eea0789df43c69daa2f7b359a98e44376fa50e4414585920b9562b7b",
+      "src/baculo_adapt/duration.py": "990066639e15877a90964090eeaa39c39c36c129e4b7a0de64780b6c77242772",
+      "src/baculo_adapt/masking.py": "3c776076796c913b0d25c0203f6eb0c90bbd58660b7ee32e15c43446eb48ea2d",
+      "scripts/run_controlled_adaptation.py": "2c6a2ad9907ea0f85cc7513b170026c135ed31ca7e2b168312f0ab063096c2dc",
+      "src/baculo_tss_probe/models.py": "85d4b5c23b2234e0fe949498b73f0e82ee788a861e85e9ebfe5227d2c25e9f6c"
+    },
+    "protocol_sha256": "4c2b383becbfeaa167541f4bd07e2ccf50a1134f117e62e6bcfe682b8308d931",
+    "budgets": {
+      "5": {
+        "budget": 5,
+        "selected_step": 5,
+        "selected_mlm_loss": 7.42232084274292,
+        "endpoint_mlm_loss": 7.42232084274292,
+        "input_tokens": 41120,
+        "masked_tokens": 6269,
+        "state_sha256": "0bfa37c11ca916ced8e22729efe551edbd13e5797c73428419865df7fa8c4c28",
+        "state_exact_reload": true
+      }
+    },
+    "selected_step": 5,
+    "selected_mlm_loss": 7.42232084274292,
+    "trainable_parameter_max_change": 5.811452865600586e-06,
+    "frozen_parameters_exact": null,
+    "frozen_parameters_sha256": null,
+    "training_seconds": 3.987546682357788,
+    "input_tokens": 41120,
+    "masked_tokens": 6269,
+    "max_gpu_allocated_bytes": 6881849344,
+    "max_gpu_reserved_bytes": 7321157632,
+    "plateau": {
+      "assessable": false
+    },
+    "total_seconds": 19.65737557411194,
+    "state_sha256": "0bfa37c11ca916ced8e22729efe551edbd13e5797c73428419865df7fa8c4c28",
+    "saved_state_exact_replay": true
+  }
+}

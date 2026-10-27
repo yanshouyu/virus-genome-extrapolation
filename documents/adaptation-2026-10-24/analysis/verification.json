@@ -1,0 +1,314 @@
+{
+  "scientific_runs": 14,
+  "readouts": 59,
+  "accounting_rows": 66,
+  "all_accounting_completed": true,
+  "source_hashes_checked": 11,
+  "selections_and_plateaus_recomputed": true,
+  "train_validation_hashes_match": true,
+  "probability_replay_max_abs": 4.440892098500626e-16,
+  "existing_intervals_reproduced": true,
+  "resamples": 2000,
+  "validation_groups": 64,
+  "test_opened": false,
+  "training_or_embedding_inference_launched": false,
+  "per_readout": {
+    "100m_before": {
+      "training_only_scaling": true,
+      "replay_max_abs": 3.3306690738754696e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-baculo-seed42-budget512": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-baculo-seed42-budget1024": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-baculo-seed42-budget2048": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-baculo-seed42-budget4096": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-baculo-seed43-budget512": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-baculo-seed43-budget1024": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-baculo-seed43-budget2048": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-baculo-seed43-budget4096": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-baculo-seed44-budget512": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-baculo-seed44-budget1024": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-baculo-seed44-budget2048": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-baculo-seed44-budget4096": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-general-seed42-budget512": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-general-seed42-budget1024": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-general-seed42-budget2048": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-general-seed42-budget4096": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-general-seed43-budget512": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-general-seed43-budget1024": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-general-seed43-budget2048": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-general-seed43-budget4096": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-general-seed44-budget512": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-general-seed44-budget1024": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-general-seed44-budget2048": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-full-general-seed44-budget4096": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-lora-baculo-seed42-budget512": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-lora-baculo-seed42-budget1024": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-lora-baculo-seed42-budget2048": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-lora-baculo-seed42-budget4096": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-lora-general-seed42-budget512": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-lora-general-seed42-budget1024": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-lora-general-seed42-budget2048": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "100m-lora-general-seed42-budget4096": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m_before": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.7755575615628914e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-baculo-seed42-budget512": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-baculo-seed42-budget1024": {
+      "training_only_scaling": true,
+      "replay_max_abs": 3.3306690738754696e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-baculo-seed42-budget2048": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-baculo-seed42-budget4096": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.636779683484747e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-baculo-seed43-budget512": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-baculo-seed43-budget1024": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-baculo-seed43-budget2048": {
+      "training_only_scaling": true,
+      "replay_max_abs": 3.0531133177191805e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-baculo-seed43-budget4096": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-baculo-seed44-budget512": {
+      "training_only_scaling": true,
+      "replay_max_abs": 4.440892098500626e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-baculo-seed44-budget1024": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-baculo-seed44-budget2048": {
+      "training_only_scaling": true,
+      "replay_max_abs": 3.3306690738754696e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-baculo-seed44-budget4096": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-general-seed42-budget512": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-general-seed42-budget1024": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-general-seed42-budget2048": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-general-seed42-budget4096": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-general-seed43-budget512": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-general-seed43-budget1024": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-general-seed43-budget2048": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-general-seed43-budget4096": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-general-seed44-budget512": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-general-seed44-budget1024": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-general-seed44-budget2048": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "500m-full-general-seed44-budget4096": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    },
+    "kmer": {
+      "training_only_scaling": true,
+      "replay_max_abs": 2.220446049250313e-16,
+      "seven_metrics_recomputed": true
+    }
+  },
+  "audit_panel_regenerated_and_selection_loci_excluded": true,
+  "audit_csv_matches_replay": true
+}

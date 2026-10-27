@@ -1,0 +1,94 @@
+{
+  "backbones": {
+    "original": {
+      "train": {
+        "rows": 64,
+        "all_four_layers_max_abs": 0.0,
+        "state_sha256": null
+      },
+      "test": {
+        "rows": 64,
+        "all_four_layers_max_abs": 0.0,
+        "state_sha256": null
+      }
+    },
+    "500m-full-baculo-seed42": {
+      "train": {
+        "rows": 64,
+        "all_four_layers_max_abs": 0.0,
+        "state_sha256": "59e3102f5eebfc451c774d19606461b030103bfe0153991fdbcf5e04820db9a8"
+      },
+      "test": {
+        "rows": 64,
+        "all_four_layers_max_abs": 0.0,
+        "state_sha256": "59e3102f5eebfc451c774d19606461b030103bfe0153991fdbcf5e04820db9a8"
+      }
+    },
+    "500m-full-baculo-seed43": {
+      "train": {
+        "rows": 64,
+        "all_four_layers_max_abs": 0.0,
+        "state_sha256": "33c9c9c98bcd973d6698b1af7b04984e679561442d3b5180a62ce3e4e74cbd76"
+      },
+      "test": {
+        "rows": 64,
+        "all_four_layers_max_abs": 0.0,
+        "state_sha256": "33c9c9c98bcd973d6698b1af7b04984e679561442d3b5180a62ce3e4e74cbd76"
+      }
+    },
+    "500m-full-baculo-seed44": {
+      "train": {
+        "rows": 64,
+        "all_four_layers_max_abs": 0.0,
+        "state_sha256": "2ec1d379a614d5f9a24b6caeb02af23f7e75fbd38574e221c96739993d7d56f6"
+      },
+      "test": {
+        "rows": 64,
+        "all_four_layers_max_abs": 0.0,
+        "state_sha256": "2ec1d379a614d5f9a24b6caeb02af23f7e75fbd38574e221c96739993d7d56f6"
+      }
+    },
+    "500m-full-general-seed42": {
+      "train": {
+        "rows": 64,
+        "all_four_layers_max_abs": 0.0,
+        "state_sha256": "0cd4f04ff4d8f08521ac6aec1a4b70673e1443bc00be77cbda5a249165952bc8"
+      },
+      "test": {
+        "rows": 64,
+        "all_four_layers_max_abs": 0.0,
+        "state_sha256": "0cd4f04ff4d8f08521ac6aec1a4b70673e1443bc00be77cbda5a249165952bc8"
+      }
+    },
+    "500m-full-general-seed43": {
+      "train": {
+        "rows": 64,
+        "all_four_layers_max_abs": 0.0,
+        "state_sha256": "ee667d1347eb57e60cad7c495b1b5d5fbe6ee2ca54db3aeb33cd669bc07d05f7"
+      },
+      "test": {
+        "rows": 64,
+        "all_four_layers_max_abs": 0.0,
+        "state_sha256": "ee667d1347eb57e60cad7c495b1b5d5fbe6ee2ca54db3aeb33cd669bc07d05f7"
+      }
+    },
+    "500m-full-general-seed44": {
+      "train": {
+        "rows": 64,
+        "all_four_layers_max_abs": 0.0,
+        "state_sha256": "aa4f2eab1852c238b32b6d08320cb683352f0977c4c5706f013b195297c6733a"
+      },
+      "test": {
+        "rows": 64,
+        "all_four_layers_max_abs": 0.0,
+        "state_sha256": "aa4f2eab1852c238b32b6d08320cb683352f0977c4c5706f013b195297c6733a"
+      }
+    }
+  },
+  "max_abs": 0.0,
+  "source_sha256": {
+    "/project/6002642/shouyu/virus-genome-extrapolation/scripts/replay_nt_retention.py": "5677dcea82bbbcac32db7f704325b11fcda8c08ecb558151ed0986b578067603",
+    "scripts/extract_nt_retention.py": "3a30f90dc73311b2c06fd8796ee5b403fba90e25094e48a5a3693691d0eafe53"
+  },
+  "seconds": 37.17248845100403
+}

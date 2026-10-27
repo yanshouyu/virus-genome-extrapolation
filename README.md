@@ -1,11 +1,60 @@
 # virus-genome-extrapolation
-Assess the ability of DNA LLMs in understanding virus genome context use a sequence-wise probing task: Predict existence of experimentally validated transcription-start-sites (TSS) on Baculovirus genome sequences. By comparing the performance with the human promoter benchmark task, we can have a basic estimation of the DNA LLMs' extrapolation.
 
-## For Contributors
+This began as an ECE657D course project probing frozen Nucleotide Transformer representations on human promoter and AcMNPV TSS classification. The continuation goal is a publishable, reproducible study of generalization.
 
-This repository uses nbstripout to keep committed notebooks clean. After cloning:
+The current [repair report](documents/repair-2026-10-13/README.md) explains the clean dataset, overlap causes, model compatibility fixes and verification. The [initial assessment](documents/project-assessment.md) records the course baseline and publication plan.
+
+The [October 19 baseline experiment](documents/experiments-2026-10-19/README.md) compares sequence-composition baselines with three-seed frozen NT probes on Nibi. It records an additional checkpoint-selection fix, prediction/weight verification and the recovered cause of the historical adaptation CUDA failure.
+
+For continuation in a new chat, read the [October 20 discussion handoff](documents/handoff-2026-10-20.md): model/corpus confounding, the inherited head choice, and expectations for longer work windows.
+
+## Current workflow (WSL Ubuntu)
+
+```bash
+cd /home/s34yan/projects/260308_virus-genome-extrapolation
+conda activate ece657d
+PYTHONPATH=src python scripts/audit_dataset.py
+PYTHONPATH=src python -m baculo_tss_probe.train --help
+```
+
+The active [clean dataset](data/processed/clean_v2/README.md) has 233 training, 77 validation and 78 test samples. Same-strand overlaps and related groups stay together; opposite-strand overlap is allowed. Three source rows with inconsistent TSS labels were excluded and documented. Original course files remain one directory above the versioned export.
+
+Training now selects checkpoints by validation loss and predicts the final test once per run. Step-based validation and checkpoint saving use the same interval so unsaved evaluations cannot corrupt best-checkpoint selection. New probes use an explicit raw first-token representation for both model versions, so their results form a new baseline. Model revisions, seeds, package versions and dataset metadata are saved with each run.
+
+```bash
+# Runs training; use a suitable compute node/environment.
+PYTHONPATH=src python -m baculo_tss_probe.train --organism virus --epochs 50 --seed 42
+# Prepared Nibi template for manual submission from the repository root:
+sbatch scripts/run_probe.slurm --organism virus --epochs 50
+```
+
+The local environment differs from the project dependency pins. See the repair report before installing or upgrading dependencies. No local environment changes were made during the repairs.
+
+## Layout
+
+- `data/raw/baculovirus/`: curated source TSS table, accession manifest and local GenBank records.
+- `data/interim/`: fixed course positive coordinates and generated FASTA/clustering inputs.
+- `data/processed/clean_v2/`: tracked, versioned train/validation/test export and manifest.
+- `src/baculo_tss_probe/`: splitting, validation, frozen-encoder classifier and training.
+- `scripts/`: extraction, split generation, auditing, compatibility check and Nibi template.
+- `tests/`: small regression tests plus opt-in cached pretrained checks.
+- `notebooks/`: course preparation and plotting; local `trainer_states/` and `figures/` are ignored.
+- `runs/`: ignored training outputs.
+- `documents/`: assessment, repair notes and compact verification evidence.
+
+Course work is on `dev`; `main` is older. Domain-adaptation code remains on `feat/domain-adaptation` and has not been merged. The original local `scripts/run_training.slurm` remains untracked; the new template is `scripts/run_probe.slurm`.
+
+## Contributors
+
+Keep changes small and evidence-driven. Preserve the course artifacts when introducing revised experiments. Notebook output stripping:
 
 ```bash
 pip install nbstripout
 nbstripout --install
 ```
+
+The [October 23 multispecies adaptation study](documents/adaptation-2026-10-23/README.md) reports the verified 100M/500M paired corpus experiments, uncertainty, compute costs, and an exploratory frozen 2.5B multispecies reference. These are validation-only results; the study did not generate new test predictions.
+
+## Archive and recovery
+
+The [October 27 wrap-up index](documents/wrap-up-2026-10-27/README.md) records branch recovery tags, checkpoint guarantees, archive destinations, and how to restore inputs to their original paths. Historical reports retain the original run paths for provenance.

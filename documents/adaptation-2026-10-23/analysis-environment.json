@@ -1,0 +1,12 @@
+{
+  "packages": {
+    "numpy": "2.4.2+computecanada",
+    "scikit-learn": "1.8.0+computecanada",
+    "scipy": "1.17.0+computecanada"
+  },
+  "source_sha256": {
+    "scripts/evaluate_controlled_adaptation.py": "9faf5cc87f5c1a3cd4e8e56b62833740f9aab0afe2ce5babc30198f496e1f48a",
+    "scripts/analyze_validation_readouts.py": "2217588f0d9a2266c3baf160c21a78f29f0b42d73be872e358431fe8a01cf7e0",
+    "scripts/run_sequence_baselines.py": "abf48639eecee0e18a0f0d2d62050de8ed7b6120eea0be3bff0d2e1876b0ac1b"
+  }
+}

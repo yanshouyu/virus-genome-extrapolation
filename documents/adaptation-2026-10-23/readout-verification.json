@@ -1,0 +1,82 @@
+{
+  "100m_before": {
+    "train_only_scaling_verified": true,
+    "probability_replay_max_abs": 2.220446049250313e-16,
+    "metrics_recomputed": true
+  },
+  "100m_baculo_seed42": {
+    "train_only_scaling_verified": true,
+    "probability_replay_max_abs": 2.220446049250313e-16,
+    "metrics_recomputed": true
+  },
+  "100m_baculo_seed43": {
+    "train_only_scaling_verified": true,
+    "probability_replay_max_abs": 2.220446049250313e-16,
+    "metrics_recomputed": true
+  },
+  "100m_baculo_seed44": {
+    "train_only_scaling_verified": true,
+    "probability_replay_max_abs": 2.220446049250313e-16,
+    "metrics_recomputed": true
+  },
+  "100m_general_seed42": {
+    "train_only_scaling_verified": true,
+    "probability_replay_max_abs": 2.220446049250313e-16,
+    "metrics_recomputed": true
+  },
+  "100m_general_seed43": {
+    "train_only_scaling_verified": true,
+    "probability_replay_max_abs": 1.3877787807814457e-16,
+    "metrics_recomputed": true
+  },
+  "100m_general_seed44": {
+    "train_only_scaling_verified": true,
+    "probability_replay_max_abs": 2.220446049250313e-16,
+    "metrics_recomputed": true
+  },
+  "500m_before": {
+    "train_only_scaling_verified": true,
+    "probability_replay_max_abs": 2.7755575615628914e-16,
+    "metrics_recomputed": true
+  },
+  "500m_baculo_seed42": {
+    "train_only_scaling_verified": true,
+    "probability_replay_max_abs": 2.220446049250313e-16,
+    "metrics_recomputed": true
+  },
+  "500m_baculo_seed43": {
+    "train_only_scaling_verified": true,
+    "probability_replay_max_abs": 2.220446049250313e-16,
+    "metrics_recomputed": true
+  },
+  "500m_baculo_seed44": {
+    "train_only_scaling_verified": true,
+    "probability_replay_max_abs": 4.440892098500626e-16,
+    "metrics_recomputed": true
+  },
+  "500m_general_seed42": {
+    "train_only_scaling_verified": true,
+    "probability_replay_max_abs": 2.498001805406602e-16,
+    "metrics_recomputed": true
+  },
+  "500m_general_seed43": {
+    "train_only_scaling_verified": true,
+    "probability_replay_max_abs": 2.220446049250313e-16,
+    "metrics_recomputed": true
+  },
+  "500m_general_seed44": {
+    "train_only_scaling_verified": true,
+    "probability_replay_max_abs": 3.3306690738754696e-16,
+    "metrics_recomputed": true
+  },
+  "kmer": {
+    "train_only_scaling_verified": true,
+    "probability_replay_max_abs": 2.220446049250313e-16,
+    "metrics_recomputed": true
+  },
+  "capacity_2.5b": {
+    "train_only_scaling_verified": true,
+    "probability_replay_max_abs": 2.7755575615628914e-16,
+    "metrics_recomputed": true
+  }
+}

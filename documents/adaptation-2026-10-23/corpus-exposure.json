@@ -1,0 +1,34 @@
+{
+  "baculo": {
+    "windows": 14164,
+    "orientations": {
+      "+": 7082,
+      "-": 7082
+    },
+    "unique_genomic_windows": 7082,
+    "loci_with_both_orientations": 7082,
+    "source_accessions": 87,
+    "groups": 82,
+    "unique_oriented_sequences": 14164,
+    "gc_mean": 0.41888675368304623,
+    "gc_sd": 0.06611236818028697,
+    "total_window_nt": 21755904,
+    "unique_locus_nt": 10877952
+  },
+  "general": {
+    "windows": 14164,
+    "orientations": {
+      "+": 7082,
+      "-": 7082
+    },
+    "unique_genomic_windows": 7082,
+    "loci_with_both_orientations": 7082,
+    "source_accessions": 89,
+    "groups": 3,
+    "unique_oriented_sequences": 14164,
+    "gc_mean": 0.3863359573566789,
+    "gc_sd": 0.05308120048177757,
+    "total_window_nt": 21755904,
+    "unique_locus_nt": 10877952
+  }
+}

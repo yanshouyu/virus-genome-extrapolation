@@ -1,0 +1,42 @@
+SequenceClassification LOAD REPORT from: /tmp/tmpzc3s7317
+Key                                                | Status     |
+---------------------------------------------------+------------+---------------------------------------------------------------------------------------
+backbone.embeddings.position_embeddings.weight     | UNEXPECTED |
+backbone.encoder.layer.0.intermediate.dense.bias   | MISSING    |
+backbone.pooler.dense.bias                         | MISSING    |
+backbone.encoder.layer.0.output.dense.bias         | MISSING    |
+backbone.pooler.dense.weight                       | MISSING    |
+backbone.encoder.layer.0.intermediate.dense.weight | MISMATCH   | Reinit due to size mismatch - ckpt: torch.Size([64, 16]) vs model:torch.Size([32, 16])
+
+Notes:
+- UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+- MISMATCH	:ckpt weights were loaded, but they did not match the original empty weight shapes.
+Original encoder: <class 'transformers_modules.InstaDeepAI.nucleotide_hyphen_transformer_hyphen_v2_hyphen_500m_hyphen_multi_hyphen_species.06615c1660c892fc199840c18123f8385b3542a8.modeling_esm.EsmModel'>
+Reconstructed encoder: <class 'transformers.models.esm.modeling_esm.EsmModel'>
+Original intermediate weight: (64, 16)
+Reconstructed intermediate weight: (32, 16)
+Traceback (most recent call last):
+  File "/home/s34yan/projects/260308_virus-genome-extrapolation/scripts/check_nt_checkpoint.py", line 64, in <module>
+    main()
+    ~~~~^^
+  File "/home/s34yan/projects/260308_virus-genome-extrapolation/scripts/check_nt_checkpoint.py", line 56, in main
+    restored = SequenceClassification.from_pretrained(directory).eval()
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/s34yan/miniconda3/envs/ece657d/lib/python3.14/site-packages/transformers/modeling_utils.py", line 4138, in from_pretrained
+    loading_info = cls._finalize_model_loading(model, load_config, loading_info)
+  File "/home/s34yan/miniconda3/envs/ece657d/lib/python3.14/site-packages/transformers/modeling_utils.py", line 4299, in _finalize_model_loading
+    log_state_dict_report(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        logger=logger,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/s34yan/miniconda3/envs/ece657d/lib/python3.14/site-packages/transformers/utils/loading_report.py", line 278, in log_state_dict_report
+    raise RuntimeError(
+        "You set `ignore_mismatched_sizes` to `False`, thus raising an error. For details look at the above report!"
+    )
+RuntimeError: You set `ignore_mismatched_sizes` to `False`, thus raising an error. For details look at the above report!

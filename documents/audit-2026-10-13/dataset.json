@@ -1,0 +1,66 @@
+{
+  "scope": "NC_001623.1; linear intervals; genomic overlap is not a homology search",
+  "splits": {
+    "train": {
+      "sha256": "2f2956edb7916da667a8c58ec31bc639cc213206f76264a10d4397f0f60528cb",
+      "rows": 312,
+      "labels": {
+        "1": 164,
+        "0": 148
+      },
+      "lengths": {
+        "300": 312
+      }
+    },
+    "test": {
+      "sha256": "b5e606244ef25220f33dd1023f42a32e6b9ac088c4ab75a194eecf9074b9e66d",
+      "rows": 79,
+      "labels": {
+        "1": 41,
+        "0": 38
+      },
+      "lengths": {
+        "300": 79
+      }
+    }
+  },
+  "overlap_pairs": 65,
+  "same_strand_pairs": 23,
+  "test_rows_overlapping_train": 41,
+  "test_rows_overlapping_train_same_strand": 20,
+  "max_overlap_bp": 297,
+  "largest_overlaps": [
+    {
+      "train": "116461|116182:116482|+|1",
+      "test": "116465|116185:116485|+|1",
+      "overlap_bp": 297,
+      "same_strand": true
+    },
+    {
+      "train": "93340|93331:93631|-|1",
+      "test": "93365|93336:93636|-|1",
+      "overlap_bp": 295,
+      "same_strand": true
+    },
+    {
+      "train": "110500|110220:110520|+|1",
+      "test": "neg_78|110227:110527|-|0",
+      "overlap_bp": 293,
+      "same_strand": false
+    },
+    {
+      "train": "10835|10718:11018|-|1",
+      "test": "neg_91|10727:11027|+|0",
+      "overlap_bp": 291,
+      "same_strand": false
+    },
+    {
+      "train": "109841|109732:110032|-|1",
+      "test": "109754|109744:110044|-|1",
+      "overlap_bp": 288,
+      "same_strand": true
+    }
+  ],
+  "shared_exact_sequences": 0,
+  "test_sequences_matching_train_reverse_complement": 0
+}
